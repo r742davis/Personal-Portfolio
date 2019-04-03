@@ -3,14 +3,17 @@ import './App.scss';
 
 //---Component Imports---//
 import Introduction from './components/Introduction';
-import NavBar from './components/NavBar';
+import Navigation from './components/Navigation';
+import ParallaxBackground from './components/ParallaxBackground';
 
 class App extends Component {
   render() {
     return (
       <>
-        <NavBar />
-        <Introduction />
+        <div className="main-container">
+          <ParallaxBackground />
+          <Introduction />
+        </div>
       </>
     );
   }
