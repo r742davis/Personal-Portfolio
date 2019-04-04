@@ -28,23 +28,28 @@ class Navigation extends Component {
   }
   render() {
     return (
-      <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">Richard</NavbarBrand>
+      <>
+        <Navbar light expand="md" sticky="top" className="navbar-default shadow p-3 mb-5">
+          <div className="container">
+            <NavbarBrand href="/">Richard
+            </NavbarBrand>
+          </div>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/">Home</NavLink>
+                <NavLink className="text-white" href="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/">About</NavLink>
+                <NavLink className="text-white" href="/">About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/">Project</NavLink>
+                <NavLink className="text-white" href="/">Project</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
+                <DropdownToggle className="text-white"
+                nav
+                caret>
                   Contact
                 </DropdownToggle>
                 <DropdownMenu right>
@@ -60,7 +65,7 @@ class Navigation extends Component {
             </Nav>
           </Collapse>
         </Navbar>
-      </div>
+      </>
     );
   }
 }
