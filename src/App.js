@@ -11,6 +11,7 @@ class App extends Component {
     return (
       <>
         <div className="main-container">
+          <Navigation />
           <ParallaxBackground />
           <Introduction />
         </div>
