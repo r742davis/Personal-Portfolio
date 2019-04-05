@@ -21,15 +21,13 @@ section {
 .nav-item {
   color: white !important;
   border-radius: 1em;
-  margin-left: 0.5em;
-  margin-right:0.5em;
-  transition: 0.1s;
+  transition: 0.2s;
 }
 .nav-item:hover {
   color: #7200b2 !important;
   background: white;
   border-radius: 1em;
-  transition: 0.1ss;
+  transition: 0.2s;
 }
 
 .navbar-center {
@@ -66,8 +64,7 @@ section {
   transition: 0.5s;
 }
 .contact-button:hover {
-  background: white;
-  color: dodgerblue;
+  background: transparent;
 }
 
 @media (max-width: 768px) {
