@@ -29,14 +29,24 @@ class Navigation extends Component {
   render() {
     return (
       <>
-        <Navbar light expand="md" sticky="top" className="navbar-default shadow p-3 mb-5">
-          <div className="container">
-            <NavbarBrand href="/">Richard
+        <Navbar
+          light
+          expand="md"
+          sticky="top"
+          className="navbar shadow p-3 mb-5"
+        >
+
+            <NavbarBrand
+              className="text-white"
+              href="/"
+            >Richard
             </NavbarBrand>
-          </div>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav
+              className="ml-auto"
+              navbar
+            >
               <NavItem>
                 <NavLink className="text-white" href="/">Home</NavLink>
               </NavItem>
@@ -64,10 +74,11 @@ class Navigation extends Component {
               </UncontrolledDropdown>
             </Nav>
           </Collapse>
+
         </Navbar>
       </>
     );
   }
 }
 
-export default Navigation
+export default Navigation;

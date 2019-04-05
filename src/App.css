@@ -1,22 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Caveat|Wire+One|Text+Me+One|Satisfy|Reenie+Beanie');
-
+@import url("https://fonts.googleapis.com/css?family=Caveat|Wire+One|Text+Me+One|Satisfy|Reenie+Beanie");
 /* Reset */
 body, html {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
-}
+  scroll-behavior: smooth; }
 
 /**************/
 /*** NavBar ***/
 /**************/
 .navbar {
   background: linear-gradient(to bottom right, #7200b2, #b5009c);
-  margin: 0 !important;
-}
+  margin: 0 !important; }
+
 .nav-item {
-  color: white;
-}
+  color: white; }
 
 /*****************/
 /*** Home Page ***/
@@ -31,16 +28,13 @@ body, html {
   height: 100vh;
   margin: 0 auto;
   background: url("./images/patterned-colors.jpg") no-repeat;
-  background-size: 200%;
-}
+  background-size: 200%; }
 
 .home-container h1, h2 {
-  color: white;
-}
+  color: white; }
 
 .contact-button {
-  width: 200px;
-}
+  width: 200px; }
 
 /***************************/
 /*** Parallax Background ***/
@@ -50,8 +44,7 @@ body, html {
   transform-style: preserve-3d;
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: scroll;
-}
+  overflow-y: scroll; }
 
 .parallax-container {
   display: flex;
@@ -65,5 +58,4 @@ body, html {
   background: url("./images/patterned-colors.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  margin-left: -38px;
-}
+  margin-left: -38px; }

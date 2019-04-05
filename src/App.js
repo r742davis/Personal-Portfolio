@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
-import './App.scss';
+import './App.css';
 
 //---Component Imports---//
-import Introduction from './components/Introduction';
 import Navigation from './components/Navigation';
-import ParallaxBackground from './components/ParallaxBackground';
+import Home from './components/Home';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+
+// import ParallaxBackground from './components/ParallaxBackground';
 
 class App extends Component {
   render() {
     return (
       <>
-        <div className="main-container">
-          <Navigation />
-          <ParallaxBackground />
-          <Introduction />
-        </div>
+        <Navigation />
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
       </>
     );
   }
