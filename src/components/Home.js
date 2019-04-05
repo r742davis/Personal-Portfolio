@@ -6,6 +6,7 @@ class Home extends Component {
   render() {
     return (
       <>
+      <section id="#home">
         <div className="home-container">
           <h1>Richard Davis</h1>
           <h1>
@@ -25,6 +26,7 @@ class Home extends Component {
             href="/"
           >Contact Me</Button>
         </div>
+      </section>
       </>
     )
   }

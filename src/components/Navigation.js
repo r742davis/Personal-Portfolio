@@ -6,13 +6,13 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  Button
+  NavLink
 } from 'reactstrap';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Home from './Home';
+import About from './About';
+import Projects from './Projects';
+import Contact from './Contact';
 
 class Navigation extends Component {
   constructor(props) {
@@ -31,6 +31,7 @@ class Navigation extends Component {
   render() {
     return (
       <>
+        <Router>
         <Navbar
           light
           expand="md"
@@ -49,21 +50,22 @@ class Navigation extends Component {
               className="ml-auto navbar-center"
               navbar>
               <NavItem>
-                <NavLink className="nav-item" href="/">Home</NavLink>
+                <NavLink href="#home" className="nav-item">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className="nav-item" href="/">About</NavLink>
+                <NavLink href="#about" className="nav-item">About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className="nav-item" href="/">Project</NavLink>
+                <NavLink href="#projects" className="nav-item">Project</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className="nav-item" href="/">Contact</NavLink>
+                <NavLink href="#contact" className="nav-item">Contact</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
 
         </Navbar>
+      </Router>
       </>
     );
   }

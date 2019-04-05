@@ -4,7 +4,7 @@ class Contact extends Component {
   render() {
     return (
       <>
-      <section>
+      <section id="#contact">
         <h1>Contact Page</h1>
       </section>
       </>

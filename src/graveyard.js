@@ -40,3 +40,9 @@ handleType = () => {
 
   setTimeout(this.handleType, typingSpeed);
 };
+
+//Router Code
+  <Route path="/" exact component={Home} />
+  <Route path="/about" component={About} />
+  <Route path="/projects" component={Projects} />
+  <Route path="/contact" component={Contact} />
