@@ -10,7 +10,9 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  DropdownItem,
+  Button
+} from 'reactstrap';
 
 class Navigation extends Component {
   constructor(props) {
@@ -32,8 +34,7 @@ class Navigation extends Component {
         <Navbar
           light
           expand="md"
-          sticky="top"
-          className="navbar shadow p-3 mb-5"
+          className="navbar fixed-top sticky-top shadow p-3 mb-5"
         >
           <NavbarBrand
             className="text-white"
@@ -45,33 +46,20 @@ class Navigation extends Component {
             isOpen={this.state.isOpen}
             navbar>
             <Nav
-              className="ml-auto"
+              className="ml-auto navbar-center"
               navbar>
               <NavItem>
-                <NavLink className="text-white" href="/">Home</NavLink>
+                <NavLink className="nav-item" href="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className="text-white" href="/">About</NavLink>
+                <NavLink className="nav-item" href="/">About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className="text-white" href="/">Project</NavLink>
+                <NavLink className="nav-item" href="/">Project</NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle className="text-white"
-                nav
-                caret>
-                  Contact
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem href="mailto:richard.trow.davis@gmail.com">
-                    Email
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Contact Page
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              <NavItem>
+                <NavLink className="nav-item" href="/">Contact</NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
 

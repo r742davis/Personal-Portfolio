@@ -33,4 +33,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### Code Sources
 
-Typewriter Effect: [CSS-Tricks](https://css-tricks.com/snippets/css/typewriter-effect/)
+Typewriter Effect: [React Rotating Text](https://github.com/adrianmcli/react-rotating-text)

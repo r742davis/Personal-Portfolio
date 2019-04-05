@@ -2,20 +2,21 @@ import React, { Component } from 'react';
 
 class About extends Component {
   state = {
-    isTop: true
+    isTop: false
   };
 
-  componentDidMount() {
-    document.addEventListener('scroll', () => {
-      
-    })
-  }
+  // componentDidMount() {
+  //   document.addEventListener('scroll', () => {
+  //
+  //   })
+  // }
 
   render() {
     return (
       <>
-        <h1>Hello</h1>
-        {this.state.isTop ? <h1>Top</h1> : <h1>Bottom</h1>}
+      <section>
+        <h1>About Page</h1>
+      </section>
       </>
     )
   }
