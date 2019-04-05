@@ -35,18 +35,18 @@ class Navigation extends Component {
           sticky="top"
           className="navbar shadow p-3 mb-5"
         >
-
-            <NavbarBrand
-              className="text-white"
-              href="/"
-            >Richard
-            </NavbarBrand>
+          <NavbarBrand
+            className="text-white"
+            href="/"
+          >Richard
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
+          <Collapse
+            isOpen={this.state.isOpen}
+            navbar>
             <Nav
               className="ml-auto"
-              navbar
-            >
+              navbar>
               <NavItem>
                 <NavLink className="text-white" href="/">Home</NavLink>
               </NavItem>

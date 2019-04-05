@@ -18,6 +18,12 @@ body, html {
   color: white;
 }
 
+// @media (max-width: 768px) {
+//   .transition {
+//     transition: all 2.0s;
+//   }
+// }
+
 /*****************/
 /*** Home Page ***/
 /*****************/
@@ -38,32 +44,59 @@ body, html {
   color: white;
 }
 
+/*** Contact Button ***/
 .contact-button {
   width: 200px;
+  transition: 1s;
 }
+
+@media (max-width: 768px) {
+  .contact-button {
+    width: 368px;
+    transition: 1s;
+  }
+}
+
+/*** Cursor ***/
+.react-rotating-text-cursor {
+  animation: blink 1.1s cubic-bezier(0.68, 0.01, 0.01, 0.99) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 
 /***************************/
 /*** Parallax Background ***/
 /***************************/
-.main-container {
-  perspective: 1px;
-  transform-style: preserve-3d;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
-.parallax-container {
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 auto;
-  position: relative;
-  height: 100vh;
-  width: auto;
-  transform: translateZ(-5px) scale(6);
-  z-index: -1;
-  background: url("./images/patterned-colors.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-left: -38px;
-}
+// .main-container {
+//   perspective: 1px;
+//   transform-style: preserve-3d;
+//   height: 100vh;
+//   overflow-x: hidden;
+//   overflow-y: scroll;
+// }
+//
+// .parallax-container {
+//   display: flex;
+//   flex-direction: column;
+//   flex: 1 0 auto;
+//   position: relative;
+//   height: 100vh;
+//   width: auto;
+//   transform: translateZ(-5px) scale(6);
+//   z-index: -1;
+//   background: url("./images/patterned-colors.jpg");
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   margin-left: -38px;
+// }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
+const ReactRotatingText = require('react-rotating-text');
 
 class Home extends Component {
   render() {
@@ -7,15 +8,13 @@ class Home extends Component {
       <>
         <div className="home-container">
           <h1>
-            <a
-              href=""
-              class="typewrite"
-              data-period="2000"
-              data-type="['Full-Stack Web Developer', 'UX Designer', 'Creative Writer', 'Doggo Enthusiast']">
-                <span class="wrap"></span>
-              </a>
+            <ReactRotatingText
+              items={['Full-Stack Web Developer', 'UX Designer', 'Creative Writer', 'Traveler', 'Doggo Enthusiast']}
+              pause={2500}
+              typingInterval={120}
+              deletingInterval={70}
+            />
           </h1>
-          <br/>
           <h2>Let's make something beautiful</h2>
           <Button
             className="contact-button"
