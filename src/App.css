@@ -30,6 +30,9 @@ section {
 .navbar-center {
   text-align: center; }
 
+.current {
+  background: yellow; }
+
 /*****************/
 /*** Home Page ***/
 /*****************/
@@ -75,6 +78,24 @@ section {
     opacity: 1; }
   100% {
     opacity: 0; } }
+
+/******************/
+/*** About Page ***/
+/******************/
+#about h1 {
+  padding-top: 70px; }
+
+/*********************/
+/*** Projects Page ***/
+/*********************/
+#projects h1 {
+  padding-top: 70px; }
+
+/********************/
+/*** Contact Page ***/
+/********************/
+#contact h1 {
+  padding-top: 70px; }
 
 /***************************/
 /*** Parallax Background ***/

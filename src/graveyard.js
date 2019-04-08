@@ -46,3 +46,16 @@ handleType = () => {
   <Route path="/about" component={About} />
   <Route path="/projects" component={Projects} />
   <Route path="/contact" component={Contact} />
+
+  //Scrolling snippets
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll)
+  }
+
+  handleScroll = () => {
+    console.log("Scroll event triggered!");
+  }

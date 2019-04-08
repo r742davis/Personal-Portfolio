@@ -8,11 +8,6 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import Projects from './Projects';
-import Contact from './Contact';
 
 class Navigation extends Component {
   constructor(props) {
@@ -23,15 +18,24 @@ class Navigation extends Component {
       isOpen: false
     };
   }
+
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
     });
   }
+
+  // componentDidMount() {
+  //   document.addEventListener("DOMContentLoaded", function() {
+  //     var scrollStart = 0;
+  //     var nav = document.querySelector(".nav");
+  //     var offset = navbarElement.getBoundingClientRect();
+  //   })
+  // }
+
   render() {
     return (
       <>
-        <Router>
         <Navbar
           light
           expand="md"
@@ -50,7 +54,7 @@ class Navigation extends Component {
               className="ml-auto navbar-center"
               navbar>
               <NavItem>
-                <NavLink href="#home" className="nav-item">Home</NavLink>
+                <NavLink href="#home" className="nav-item current">Home</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#about" className="nav-item">About</NavLink>
@@ -63,9 +67,7 @@ class Navigation extends Component {
               </NavItem>
             </Nav>
           </Collapse>
-
         </Navbar>
-      </Router>
       </>
     );
   }

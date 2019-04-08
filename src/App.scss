@@ -34,6 +34,10 @@ section {
   text-align: center;
 }
 
+.current {
+  background: yellow;
+}
+
 
 /*****************/
 /*** Home Page ***/
@@ -91,6 +95,26 @@ section {
   }
 }
 
+/******************/
+/*** About Page ***/
+/******************/
+#about h1 {
+  padding-top: 70px;
+}
+
+/*********************/
+/*** Projects Page ***/
+/*********************/
+#projects h1 {
+  padding-top: 70px;
+}
+
+/********************/
+/*** Contact Page ***/
+/********************/
+#contact h1 {
+  padding-top: 70px;
+}
 
 /***************************/
 /*** Parallax Background ***/

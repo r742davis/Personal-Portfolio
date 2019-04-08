@@ -6,7 +6,7 @@ class Home extends Component {
   render() {
     return (
       <>
-      <section id="home">
+      <section id="home" onScroll={this.handleScroll}>
         <div className="home-container">
           <h1>Richard Davis</h1>
           <h1>
