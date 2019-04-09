@@ -58,16 +58,16 @@ class Navigation extends Component {
             navbar
             >
               <NavItem>
-                <NavLink href="#home" className={this.state.scrolled ? "nav-link" : "nav-link-recolored"}>Home</NavLink>
+                <NavLink href="#home" className={this.state.scrolled ? "nav-link section" : "nav-link-recolored section"}>Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#about" className={this.state.scrolled ? "nav-link" : "nav-link-recolored"}>About</NavLink>
+                <NavLink href="#about" className={this.state.scrolled ? "nav-link section" : "nav-link-recolored section"}>About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#projects" className={this.state.scrolled ? "nav-link" : "nav-link-recolored"}>Project</NavLink>
+                <NavLink href="#projects" className={this.state.scrolled ? "nav-link section" : "nav-link-recolored section"}>Project</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#contact" className={this.state.scrolled ? "nav-link" : "nav-link-recolored"}>Contact</NavLink>
+                <NavLink href="#contact" className={this.state.scrolled ? "nav-link section" : "nav-link-recolored section"}>Contact</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
