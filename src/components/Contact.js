@@ -9,10 +9,6 @@ import {
 
 
 class Contact extends Component {
-  componentDidMount() {
-
-  }
-
   render() {
     return (
       <>
@@ -22,7 +18,7 @@ class Contact extends Component {
         </div>
           <div className="contact-container">
           <MDBCol>
-            <MDBCard className="card-container">
+            <MDBCard className="card-container" data-aos="fade-up" data-aos-duration="750" data-aos-anchor-placement="top-center">
               <MDBCardBody>
                 <i className="fas fa-phone contact-icon"></i>
                 <MDBCardTitle>PHONE</MDBCardTitle>
@@ -33,7 +29,7 @@ class Contact extends Component {
             </MDBCard>
           </MDBCol>
           <MDBCol>
-            <MDBCard className="card-container">
+            <MDBCard className="card-container" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
               <MDBCardBody>
                 <i className="fas fa-at contact-icon"></i>
                 <MDBCardTitle>EMAIL</MDBCardTitle>
@@ -44,7 +40,7 @@ class Contact extends Component {
             </MDBCard>
           </MDBCol>
           <MDBCol>
-            <MDBCard className="card-container social-card">
+            <MDBCard className="card-container social-card" data-aos="fade-up" data-aos-duration="1250" data-aos-anchor-placement="top-center">
               <MDBCardBody>
                 <i className="fas fa-thumbs-up contact-icon"></i>
                 <MDBCardTitle>SOCIAL</MDBCardTitle>

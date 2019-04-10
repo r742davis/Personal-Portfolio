@@ -4,7 +4,6 @@ import {
   MDBCard,
   MDBCardBody,
   MDBCardTitle,
-  MDBCardText,
   MDBListGroup,
   MDBListGroupItem
 } from 'mdbreact';
@@ -24,7 +23,7 @@ class About extends Component {
             <h4>Full-Stack Web Developer</h4>
             <p>I'm just a poor boy from a poor family, babadoosh babadoosh can you do the fandango? Very very exciting, throw the maid in lightning oooooooooo MAMA MIA MAMA MIA.</p>
           </div>
-          <img src={profile} className="profile-picture" />
+          <img src={profile} className="profile-picture" alt="profile of richard" />
           <div className="skills-list">
             <MDBCard>
               <MDBCardBody>
@@ -42,7 +41,7 @@ class About extends Component {
             </MDBCard>
           </div>
           <div className="cv-button-container">
-            <MDBBtn className="cv-button"><a href="">Download CV</a></MDBBtn>
+            <MDBBtn className="cv-button"><a href="https://drive.google.com/open?id=1XL9bvtIZfgzgDIp401hvK6Y-RZ6N70GK" target="_blank">Download CV</a></MDBBtn>
           </div>
         </div>
       </section>
