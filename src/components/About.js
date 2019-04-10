@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {
-  MDBCardImage,
-  MDBCardHeader
+  MDBBtn
 } from 'mdbreact';
 import profile from '../images/richard-davis.jpeg';
 
@@ -21,6 +20,9 @@ class About extends Component {
             <p>I'm just a poor boy from a poor family, babadoosh babadoosh can you do the fandango? Very very exciting, throw the maid in lightning oooooooooo MAMA MIA MAMA MIA.</p>
           </div>
           <div className="skills-list">
+          </div>
+          <div className="cv-button-container">
+            <MDBBtn className="cv-button"><a href="">Download CV</a></MDBBtn>
           </div>
         </div>
       </section>

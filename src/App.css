@@ -6,6 +6,9 @@ body, html {
 
 section {
   height: 100vh; }
+  @media (max-width: 800px) {
+    section {
+      height: 120vh; } }
 
 /**************/
 /*** NavBar ***/
@@ -120,14 +123,6 @@ section {
 .react-rotating-text-cursor {
   animation: blink 1.1s cubic-bezier(0.68, 0.01, 0.01, 0.99) infinite; }
 
-@keyframes blink {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
 /**************/
 /*** Titles ***/
 /**************/
@@ -137,6 +132,9 @@ section {
   align-items: center;
   justify-content: center;
   margin: 0 auto; }
+  @media (max-width: 800px) {
+    .title-container {
+      padding-top: 75px; } }
 
 .title-container h1 {
   display: inline-flex;
@@ -173,6 +171,32 @@ section {
     .description-container {
       text-align: center; } }
 
+.skills-list {
+  width: 400px;
+  height: 200px;
+  border: 1px solid black; }
+
+.cv-button-container {
+  width: 400px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center; }
+
+.cv-button {
+  background: #7200b2 !important;
+  height: 60px;
+  width: 300px;
+  font-size: 20px;
+  box-shadow: 0 0.5rem 1rem #888888;
+  transition: 0.4s ease-in-out; }
+
+.cv-button:hover {
+  transform: translate3d(0, -0.4rem, -1rem);
+  transition: 0.4s; }
+
+.cv-button a {
+  color: white; }
+
 /*********************/
 /*** Projects Page ***/
 /*********************/
@@ -205,13 +229,16 @@ section {
   width: 22rem;
   height: 16rem;
   margin: 2rem 0.5rem 2rem 0.5rem;
-  transition: 0.5s ease-out; }
+  transition: 0.4s ease-in-out; }
   @media (max-width: 1200px) {
     .card-container {
       width: 18rem; } }
   @media (max-width: 800px) {
     .card-container {
       margin-bottom: 0.25rem; } }
+
+.card-container:hover {
+  transform: translate3d(0, -0.5rem, 1rem); }
 
 @media (max-width: 1000px) {
   .social-card {
@@ -240,3 +267,14 @@ section {
 /**************/
 .footer {
   margin-top: 2rem; }
+
+/******************/
+/*** Animations ***/
+/******************/
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
