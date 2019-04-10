@@ -5,7 +5,9 @@ class Projects extends Component {
     return (
       <>
       <section id="projects">
-        <h1>Projects Page</h1>
+        <div className="title-container">
+          <h1>Projects Page</h1>
+        </div>
       </section>
       </>
     )

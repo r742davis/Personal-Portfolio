@@ -64,7 +64,7 @@ class Navigation extends Component {
                 <NavLink href="#about" className={this.state.scrolled ? "nav-link section" : "nav-link-recolored section"}>About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#projects" className={this.state.scrolled ? "nav-link section" : "nav-link-recolored section"}>Project</NavLink>
+                <NavLink href="#projects" className={this.state.scrolled ? "nav-link section" : "nav-link-recolored section"}>Projects</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#contact" className={this.state.scrolled ? "nav-link section" : "nav-link-recolored section"}>Contact</NavLink>

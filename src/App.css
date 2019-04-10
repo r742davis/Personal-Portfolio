@@ -128,30 +128,32 @@ section {
   100% {
     opacity: 0; } }
 
+/**************/
+/*** Titles ***/
+/**************/
+.title-container {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; }
+
+.title-container h1 {
+  display: inline-flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-top: 2px solid #7200b2;
+  border-bottom: 2px solid #7200b2; }
+
 /******************/
 /*** About Page ***/
 /******************/
-#about {
-  background: #333; }
-
-#about h1 {
-  padding-top: 100px;
-  text-align: center; }
-
 /*********************/
 /*** Projects Page ***/
 /*********************/
-#projects h1 {
-  padding-top: 100px;
-  text-align: center; }
-
 /********************/
 /*** Contact Page ***/
 /********************/
-#contact h1 {
-  padding-top: 100px;
-  text-align: center; }
-
 .contact-container {
   display: flex;
   margin: auto;
