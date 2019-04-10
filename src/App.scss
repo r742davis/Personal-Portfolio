@@ -183,25 +183,23 @@ section {
   width: 300px;
   height: 300px;
   border-radius: 10rem;
-  margin: 3rem;
+  margin: 1rem 3rem 3rem 3rem;
   box-shadow: 0 1rem 2rem #888888;
   transition: 0.5s;
 }
 .description-container {
   width: 400px;
-  border: 1px solid black;
   margin-top: 3rem;
+  padding: 1rem 1rem 1rem 2rem;
   transition: 0.5s;
   @include respond-to('medium') { text-align: center;}
 }
 .skills-list {
   width: 400px;
   height: 200px;
-  border: 1px solid black;
 }
 .cv-button-container {
   width: 400px;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
 }

@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import {
-  MDBBtn
+  MDBBtn,
+  MDBCard,
+  MDBCardBody,
+  MDBCardTitle,
+  MDBCardText,
+  MDBListGroup,
+  MDBListGroupItem
 } from 'mdbreact';
 import profile from '../images/richard-davis.jpeg';
 
@@ -20,6 +26,20 @@ class About extends Component {
             <p>I'm just a poor boy from a poor family, babadoosh babadoosh can you do the fandango? Very very exciting, throw the maid in lightning oooooooooo MAMA MIA MAMA MIA.</p>
           </div>
           <div className="skills-list">
+            <MDBCard>
+              <MDBCardBody>
+                <MDBCardTitle>Top Skills</MDBCardTitle>
+                <MDBListGroup>
+                  <MDBListGroupItem>HTML/CSS</MDBListGroupItem>
+                  <MDBListGroupItem>JavaScript</MDBListGroupItem>
+                  <MDBListGroupItem>Ruby</MDBListGroupItem>
+                  <MDBListGroupItem>Ruby on Rails</MDBListGroupItem>
+                  <MDBListGroupItem>ReactJS</MDBListGroupItem>
+                  <MDBListGroupItem>PostgreSQL</MDBListGroupItem>
+                  <MDBListGroupItem>MongoDB</MDBListGroupItem>
+                </MDBListGroup>
+              </MDBCardBody>
+            </MDBCard>
           </div>
           <div className="cv-button-container">
             <MDBBtn className="cv-button"><a href="">Download CV</a></MDBBtn>
