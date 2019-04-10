@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  MDBCol, MDBContainer, MDBRow, MDBFooter
+  MDBContainer, MDBFooter
 } from 'mdbreact';
 
 class Footer extends Component {
