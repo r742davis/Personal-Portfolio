@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Caveat|Wire+One|Text+Me+One|Swanky+and+Moo+Moo|Reenie+Beanie");
-/* Reset */
 body, html {
   margin: 0;
   padding: 0;
@@ -14,7 +13,7 @@ section {
 .navbar {
   background: linear-gradient(to bottom right, #7200b2, #b5009c);
   margin: 0 !important;
-  transition: 0.2s; }
+  transition: color 1s; }
 
 .navbar-center {
   text-align: center; }
@@ -54,7 +53,6 @@ section {
   -webkit-transform: scaleX(0.8);
   transform: scaleX(0.8); }
 
-/* Color Change */
 .navbar-recolored {
   background: white; }
 
@@ -114,15 +112,9 @@ section {
   width: 200px;
   border-radius: 1em;
   transition: 0.5s; }
-
-.contact-button:hover {
-  background: transparent; }
-
-/*Adjust button size upon screen resizing*/
-@media (max-width: 768px) {
-  .contact-button {
-    width: 368px;
-    transition: 0.5s; } }
+  @media (max-width: 800px) {
+    .contact-button {
+      width: 368px; } }
 
 /*** Blinking Cursor on Home Page ***/
 .react-rotating-text-cursor {
@@ -139,42 +131,75 @@ section {
 /******************/
 /*** About Page ***/
 /******************/
+#about {
+  background: #333; }
+
 #about h1 {
-  padding-top: 100px; }
+  padding-top: 100px;
+  text-align: center; }
 
 /*********************/
 /*** Projects Page ***/
 /*********************/
 #projects h1 {
-  padding-top: 100px; }
+  padding-top: 100px;
+  text-align: center; }
 
 /********************/
 /*** Contact Page ***/
 /********************/
 #contact h1 {
-  padding-top: 100px; }
+  padding-top: 100px;
+  text-align: center; }
 
 .contact-container {
   display: flex;
-  margin: 0 auto;
+  margin: auto;
   align-items: center;
   justify-content: center;
-  width: 50%; }
+  margin: 0 auto;
+  width: 70%; }
+  @media (max-width: 1000px) {
+    .contact-container {
+      display: grid;
+      width: 800px;
+      grid-template-columns: 20rem 20rem;
+      grid-auto-rows: auto; } }
+  @media (max-width: 800px) {
+    .contact-container {
+      grid-template-columns: 20rem;
+      width: auto; } }
 
 .card-container {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 25rem;
-  height: 15rem; }
+  width: 22rem;
+  height: 16rem;
+  margin: 2rem 0.5rem 2rem 0.5rem;
+  transition: 0.5s ease-out; }
+  @media (max-width: 1200px) {
+    .card-container {
+      width: 18rem; } }
+  @media (max-width: 800px) {
+    .card-container {
+      margin-bottom: 0.25rem; } }
+
+@media (max-width: 1000px) {
+  .social-card {
+    width: 38rem; } }
+
+@media (max-width: 800px) {
+  .social-card {
+    width: 18rem; } }
 
 .contact-icon {
   display: flex;
   justify-content: center;
   margin: 0 auto;
   padding: 2rem;
-  font-size: 2rem; }
+  font-size: 3rem; }
 
 .social-icons-container {
   display: flex; }
@@ -182,3 +207,9 @@ section {
 .social-icon {
   font-size: 3rem;
   margin: 0.5rem; }
+
+/**************/
+/*** Footer ***/
+/**************/
+.footer {
+  margin-top: 2rem; }

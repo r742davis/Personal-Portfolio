@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import {
-  MDBBtn,
   MDBCard,
   MDBCardBody,
-  MDBCardImage,
   MDBCardTitle,
   MDBCardText,
   MDBCol
@@ -40,15 +38,15 @@ class Contact extends Component {
             </MDBCard>
           </MDBCol>
           <MDBCol>
-            <MDBCard className="card-container">
+            <MDBCard className="card-container social-card">
               <MDBCardBody>
                 <i className="fas fa-thumbs-up contact-icon"></i>
                 <MDBCardTitle>SOCIAL</MDBCardTitle>
                 <div className="social-icon-container">
                   <a href="https://www.facebook.com/richard.trow.davis"><i className="fab fa-facebook social-icon"></i></a>
                   <a href="https://www.linkedin.com/in/richard-t-davis/"><i className="fab fa-linkedin social-icon"></i></a>
-                  <a href="#"><i className="fab fa-github-square social-icon"></i></a>
-                  <a href="#"><i className="fab fa-medium social-icon"></i></a>
+                  <a href="https://github.com/r742davis"><i className="fab fa-github-square social-icon"></i></a>
+                  <a href="https://medium.com/@richard.trow.davis"><i className="fab fa-medium social-icon"></i></a>
                 </div>
               </MDBCardBody>
             </MDBCard>

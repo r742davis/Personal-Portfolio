@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Caveat|Wire+One|Text+Me+One|Swanky+and+Moo+Moo|Reenie+Beanie');
 
-/* Reset */
+// Screen Size Breakpoints
+$breakpoints: (
+  'small': 450px,
+  'medium': 800px,
+  'large': 1000px,
+  'xl': 1200px
+) !default;
+
+// Mixin that responds to @include
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+// CSS Reset
 body, html {
   margin: 0;
   padding: 0;
@@ -16,7 +33,7 @@ section {
 .navbar {
   background: linear-gradient(to bottom right, #7200b2, #b5009c);
   margin: 0 !important;
-  transition: 0.2s;
+  transition: color 1s;
 }
 .navbar-center {
   text-align: center;
@@ -58,7 +75,7 @@ section {
   transform: scaleX(.8);
 }
 
-/* Color Change */
+// NavBar Color Change
 .navbar-recolored {
   background: white;
 }
@@ -120,16 +137,7 @@ section {
   width: 200px;
   border-radius: 1em;
   transition: 0.5s;
-}
-.contact-button:hover {
-  background: transparent;
-}
-/*Adjust button size upon screen resizing*/
-@media (max-width: 768px) {
-  .contact-button {
-    width: 368px;
-    transition: 0.5s;
-  }
+  @include respond-to('medium') { width: 368px; }
 }
 
 /*** Blinking Cursor on Home Page ***/
@@ -151,8 +159,12 @@ section {
 /******************/
 /*** About Page ***/
 /******************/
+#about {
+  background: #333;
+}
 #about h1 {
   padding-top: 100px;
+  text-align: center;
 }
 
 /*********************/
@@ -160,6 +172,7 @@ section {
 /*********************/
 #projects h1 {
   padding-top: 100px;
+  text-align: center;
 }
 
 /********************/
@@ -167,29 +180,49 @@ section {
 /********************/
 #contact h1 {
   padding-top: 100px;
+  text-align: center;
 }
 
 .contact-container {
   display: flex;
-  margin: 0 auto;
+  margin: auto;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  margin: 0 auto;
+  width: 70%;
+  @include respond-to('large') {
+    display: grid;
+    width: 800px;
+    grid-template-columns: 20rem 20rem;
+    grid-auto-rows: auto;
+  }
+  @include respond-to('medium') {
+    grid-template-columns: 20rem;
+    width: auto;
+  }
 }
 .card-container {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 25rem;
-  height: 15rem;
+  width: 22rem;
+  height: 16rem;
+  margin: 2rem 0.5rem 2rem 0.5rem;
+  transition: 0.5s ease-out;
+  @include respond-to('xl') { width: 18rem; }
+  @include respond-to('medium') { margin-bottom: 0.25rem; }
+}
+.social-card {
+  @include respond-to('large') { width: 38rem; }
+  @include respond-to('medium') { width: 18rem; }
 }
 .contact-icon {
   display: flex;
   justify-content: center;
   margin: 0 auto;
   padding: 2rem;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .social-icons-container {
   display: flex;
@@ -197,4 +230,11 @@ section {
 .social-icon {
   font-size: 3rem;
   margin: 0.5rem;
+}
+
+/**************/
+/*** Footer ***/
+/**************/
+.footer {
+  margin-top: 2rem;
 }
