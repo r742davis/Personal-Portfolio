@@ -86,3 +86,25 @@ handleType = () => {
 //   background-size: contain;
 //   margin-left: -38px;
 // }
+
+
+//Button
+<div className="cv-button-container">
+  <MDBBtn className="cv-button"><a href="https://drive.google.com/open?id=1XL9bvtIZfgzgDIp401hvK6Y-RZ6N70GK" target="_blank">Download CV</a></MDBBtn>
+</div>
+
+//Top Skills Section
+<MDBCard>
+  <MDBCardBody>
+    <MDBCardTitle>Top Skills</MDBCardTitle>
+    <MDBListGroup>
+      <MDBListGroupItem>HTML/CSS</MDBListGroupItem>
+      <MDBListGroupItem>JavaScript</MDBListGroupItem>
+      <MDBListGroupItem>Ruby</MDBListGroupItem>
+      <MDBListGroupItem>Ruby on Rails</MDBListGroupItem>
+      <MDBListGroupItem>ReactJS</MDBListGroupItem>
+      <MDBListGroupItem>PostgreSQL</MDBListGroupItem>
+      <MDBListGroupItem>MongoDB</MDBListGroupItem>
+    </MDBListGroup>
+  </MDBCardBody>
+</MDBCard>

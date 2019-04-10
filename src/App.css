@@ -127,10 +127,10 @@ section {
 /*** Titles ***/
 /**************/
 .title-container {
+  text-transform: uppercase;
   padding-top: 100px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0 auto; }
   @media (max-width: 800px) {
     .title-container {
@@ -166,14 +166,21 @@ section {
   width: 400px;
   margin-top: 3rem;
   padding: 1rem 1rem 1rem 2rem;
+  text-align: right;
   transition: 0.5s; }
   @media (max-width: 800px) {
     .description-container {
       text-align: center; } }
 
-.skills-list {
+.skills-list-container {
   width: 400px;
-  height: 200px; }
+  margin-top: 3rem;
+  padding: 1rem 1rem 1rem 2rem;
+  text-align: left;
+  list-style: none; }
+
+.skills-list-container ul li {
+  list-style: none; }
 
 .cv-button-container {
   width: 400px;

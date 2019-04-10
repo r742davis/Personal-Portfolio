@@ -13,9 +13,7 @@ import Footer from './components/Footer';
 
 class App extends Component {
   componentDidMount() {
-    AOS.init({
-      
-    })
+    AOS.init({ })
   }
   render() {
     return (
