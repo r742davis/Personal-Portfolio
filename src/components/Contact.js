@@ -9,6 +9,10 @@ import {
 
 
 class Contact extends Component {
+  componentDidMount() {
+
+  }
+
   render() {
     return (
       <>

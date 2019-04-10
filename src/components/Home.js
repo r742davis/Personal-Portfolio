@@ -14,7 +14,7 @@ class Home extends Component {
               items={['Full-Stack Web Developer', 'UX Designer', 'Creative Writer', 'Traveler', 'Doggo Enthusiast']}
               pause={3000}
               typingInterval={120}
-              deletingInterval={70}
+              deletingInterval={30}
             />
           </h1>
           <br />
