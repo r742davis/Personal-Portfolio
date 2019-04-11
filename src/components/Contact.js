@@ -14,11 +14,11 @@ class Contact extends Component {
       <>
       <section id="contact">
         <div className="title-container">
-          <h1>Contact Me</h1>
+          <h1 data-aos="fade-up">Contact Me</h1>
         </div>
           <div className="contact-container">
           <MDBCol>
-            <MDBCard className="card-container" data-aos="fade-up" data-aos-duration="750" data-aos-anchor-placement="top-center">
+            <MDBCard className="card-container" data-aos="fade-up" data-aos-duration="750">
               <MDBCardBody>
                 <i className="fas fa-phone contact-icon"></i>
                 <MDBCardTitle>PHONE</MDBCardTitle>
@@ -29,7 +29,7 @@ class Contact extends Component {
             </MDBCard>
           </MDBCol>
           <MDBCol>
-            <MDBCard className="card-container" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
+            <MDBCard className="card-container" data-aos="fade-up" data-aos-duration="1000">
               <MDBCardBody>
                 <i className="fas fa-at contact-icon"></i>
                 <MDBCardTitle>EMAIL</MDBCardTitle>
@@ -40,7 +40,7 @@ class Contact extends Component {
             </MDBCard>
           </MDBCol>
           <MDBCol>
-            <MDBCard className="card-container social-card" data-aos="fade-up" data-aos-duration="1250" data-aos-anchor-placement="top-center">
+            <MDBCard className="card-container social-card" data-aos="fade-up" data-aos-duration="1250">
               <MDBCardBody>
                 <i className="fas fa-thumbs-up contact-icon"></i>
                 <MDBCardTitle>SOCIAL</MDBCardTitle>

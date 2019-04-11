@@ -18,14 +18,13 @@ $breakpoints: (
 }
 
 // CSS Reset
-body, html {
+body, html, ul, li {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
 }
 section {
   height: 100vh;
-  @include respond-to('medium') { height: 120vh }
 }
 
 /**************/
@@ -116,6 +115,11 @@ section {
 /*****************/
 /*** Home Page ***/
 /*****************/
+#home {
+  @include respond-to('medium') {
+    height: auto;
+  }
+}
 .home-container {
   margin: 0 auto;
   background: url("./images/patterned-colors.jpg") no-repeat center center fixed;
@@ -155,7 +159,7 @@ section {
   text-transform: uppercase;
   padding-top: 100px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   margin: 0 auto;
   @include respond-to('medium') { padding-top: 75px; }
 }
@@ -171,6 +175,10 @@ section {
 /******************/
 /*** About Page ***/
 /******************/
+#about {
+  @include respond-to('medium') { height: auto; }
+  @include respond-to('large') { height: auto; }
+}
 .about-container {
   display: flex;
   flex-direction: row;
@@ -201,26 +209,43 @@ section {
   padding: 1rem 1rem 1rem 2rem;
   text-align: left;
   list-style: none;
+  box-shadow: 0 0.5rem 1rem #888888;
+  transition: 0.4s ease-in-out;
+  @include respond-to('medium') {
+    width: auto;
+  }
+}
+.skills-list-container:hover {
+  transform: translate3d(0, -0.5rem, 1rem);
 }
 .skills-list-container ul li {
   list-style: none;
+}
+.skills-list-container li {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+.skill-icon {
+  margin-right: 1rem;
 }
 .cv-button-container {
   width: 400px;
   display: flex;
   justify-content: center;
+  @include respond-to('medium') {
+    width: auto;
+  }
 }
 .cv-button {
   background: #7200b2 !important;
   height: 60px;
   width: 300px;
   font-size: 20px;
-  box-shadow: 0 0.5rem 1rem #888888;
+  box-shadow: 0 0.2rem 1rem #888888;
   transition: 0.4s ease-in-out;
 }
 .cv-button:hover {
-  transform: translate3d(0, -0.4rem, -1rem);
-  transition: 0.4s;
+  transform: translate3d(0, -0.5rem, -1rem);
 }
 .cv-button a {
   color: white;
@@ -229,11 +254,20 @@ section {
 /*********************/
 /*** Projects Page ***/
 /*********************/
-
+#projects {
+  @include respond-to('medium') {
+    height: auto;
+  }
+}
 
 /********************/
 /*** Contact Page ***/
 /********************/
+#contact {
+  @include respond-to('medium') {
+    height: 120vh;
+  }
+}
 .contact-container {
   display: flex;
   margin: auto;
@@ -260,6 +294,7 @@ section {
   width: 22rem;
   height: 16rem;
   margin: 2rem 0.5rem 2rem 0.5rem;
+  box-shadow: 0 0.5rem 1rem #888888;
   transition: 0.4s ease-in-out;
   @include respond-to('xl') { width: 18rem; }
   @include respond-to('medium') { margin-bottom: 0.25rem; }
