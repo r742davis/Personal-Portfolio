@@ -90,7 +90,7 @@ handleType = () => {
 
 //Button
 <div className="cv-button-container">
-  <MDBBtn className="cv-button"><a href="https://drive.google.com/open?id=1XL9bvtIZfgzgDIp401hvK6Y-RZ6N70GK" target="_blank">Download CV</a></MDBBtn>
+  <MDBBtn className="cv-button" data-aos="fade-up"><a href="https://drive.google.com/open?id=1XL9bvtIZfgzgDIp401hvK6Y-RZ6N70GK" target="_blank">Download CV</a></MDBBtn>
 </div>
 
 //Top Skills Section

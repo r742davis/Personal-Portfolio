@@ -10,18 +10,15 @@ class About extends Component {
       <>
       <section id="about">
         <div className="title-container">
-          <h1 data-aos="fade-up">About</h1>
+          <h1 data-aos="fade-up">A little about me</h1>
         </div>
         <div className="about-container">
+          <img src={profile} className="profile-picture" alt="profile of richard" data-aos="fade-up"/>
           <div className="description-container" data-aos="fade-up">
             <h1>Richard Davis</h1>
             <h4>Full-Stack Web Developer</h4>
             <p>I'm just a poor boy from a poor family, babadoosh babadoosh can you do the fandango? Very very exciting, throw the maid in lightning oooooooooo MAMA MIA MAMA MIA.</p>
-            <div className="cv-button-container">
-              <MDBBtn className="cv-button" data-aos="fade-up"><a href="https://drive.google.com/open?id=1XL9bvtIZfgzgDIp401hvK6Y-RZ6N70GK" target="_blank">Download CV</a></MDBBtn>
-            </div>
           </div>
-          <img src={profile} className="profile-picture" alt="profile of richard" data-aos="fade-up"/>
           <div className="skills-list-container" data-aos="fade-up">
             <h1>Top Developer Skills</h1>
             <hr />
@@ -35,7 +32,6 @@ class About extends Component {
               <li><i className="fas fa-check-circle skill-icon"></i>MongoDB</li>
             </ul>
             <hr />
-
           </div>
         </div>
       </section>
