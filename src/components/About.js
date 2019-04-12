@@ -18,10 +18,10 @@ class About extends Component {
           <h1 data-aos="fade-up">About</h1>
         </div>
         <div className="about-container">
-          <div className="description-container">
-            <h1 data-aos="fade-up">Richard Davis</h1>
-            <h4 data-aos="fade-up">Full-Stack Web Developer</h4>
-            <p data-aos="fade-up">I'm just a poor boy from a poor family, babadoosh babadoosh can you do the fandango? Very very exciting, throw the maid in lightning oooooooooo MAMA MIA MAMA MIA.</p>
+          <div className="description-container" data-aos="fade-up">
+            <h1>Richard Davis</h1>
+            <h4>Full-Stack Web Developer</h4>
+            <p>I'm just a poor boy from a poor family, babadoosh babadoosh can you do the fandango? Very very exciting, throw the maid in lightning oooooooooo MAMA MIA MAMA MIA.</p>
             <div className="cv-button-container">
               <MDBBtn className="cv-button" data-aos="fade-up"><a href="https://drive.google.com/open?id=1XL9bvtIZfgzgDIp401hvK6Y-RZ6N70GK" target="_blank">Download CV</a></MDBBtn>
             </div>

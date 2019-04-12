@@ -160,18 +160,20 @@ section {
   width: auto; }
 
 .profile-picture {
-  width: 300px;
-  height: 300px;
-  border-radius: 10rem;
-  margin: 1rem 3rem 3rem 3rem;
+  width: 400px;
+  height: 400px;
+  border-radius: 500px;
+  padding: 1rem;
+  margin: 3rem;
   box-shadow: 0 1rem 2rem #888888;
   transition: 0.5s; }
 
 .description-container {
   width: 400px;
   margin-top: 3rem;
-  padding: 1rem 1rem 1rem 2rem;
+  padding: 1rem;
   text-align: right;
+  box-shadow: 0 0.5rem 1rem #888888;
   transition: 0.5s; }
   @media (max-width: 800px) {
     .description-container {
@@ -180,7 +182,7 @@ section {
 .skills-list-container {
   width: 400px;
   margin-top: 3rem;
-  padding: 1rem 1rem 1rem 2rem;
+  padding: 1rem;
   text-align: left;
   list-style: none;
   box-shadow: 0 0.5rem 1rem #888888;
