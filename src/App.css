@@ -1,32 +1,42 @@
-@import url("https://fonts.googleapis.com/css?family=Caveat|Wire+One|Text+Me+One|Swanky+and+Moo+Moo|Reenie+Beanie");
-body, html, ul, li {
+@import url("https://fonts.googleapis.com/css?family=Arvo|Lato+Light");
+body, html, ul, li, h1 {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth; }
-
-section {
-  height: auto; }
+  scroll-behavior: smooth;
+  font-family: 'Lato', sans-serif; }
 
 /**************/
 /*** NavBar ***/
 /**************/
 .navbar {
-  background: linear-gradient(to bottom right, #7200b2, #b5009c);
-  margin: 0 !important;
+  background: transparent;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 0 !important;
+  z-index: 2;
+  box-shadow: none !important;
   transition: color 1s; }
+  @media (max-width: 767px) {
+    .navbar {
+      background: white !important; } }
 
 .navbar-center {
   text-align: center; }
 
-.brand {
-  font-family: 'Swanky and Moo Moo', cursive;
+.navbar-brand {
+  font-family: 'Arvo', serif;
   font-size: 2rem;
-  margin: 0;
+  font-weight: 200;
+  margin: 1rem;
   padding: 0; }
 
 .nav-link {
-  font-size: 1.25rem;
+  font-size: 1rem;
+  margin: 1rem;
   position: relative;
+  padding: 0;
   margin-right: 1.25rem;
   color: #e5b3e2 !important;
   transition: 0.2s; }
@@ -54,7 +64,10 @@ section {
   transform: scaleX(0.8); }
 
 .navbar-recolored {
-  background: white; }
+  background: white !important;
+  opacity: 1;
+  padding-bottom: 50px;
+  box-shadow: 0 0.4rem 1rem #d9d9d9 !important; }
 
 .nav-link-recolored {
   color: #7200b2 !important;
@@ -82,8 +95,8 @@ section {
   -webkit-transform: scaleX(0.8);
   transform: scaleX(0.8); }
 
-.brand-recolored {
-  font-family: 'Swanky and Moo Moo', cursive;
+.navbar-brand-recolored {
+  font-family: 'Arvo', serif;
   font-size: 24px;
   color: #7200b2 !important; }
 
@@ -115,14 +128,13 @@ section {
     height: auto; } }
 
 .home-container {
-  margin: 0 auto;
   background: url("./images/cactus.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin: 0 auto;
   height: 100vh;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -169,7 +181,7 @@ section {
   border-radius: 500px;
   padding: 1rem;
   margin: 3rem;
-  box-shadow: 0 1rem 2rem #888888;
+  box-shadow: 0 1rem 2rem #d9d9d9;
   transition: 0.5s; }
 
 .description-container {
@@ -177,7 +189,7 @@ section {
   margin-top: 3rem;
   padding: 1rem;
   text-align: right;
-  box-shadow: 0 0.5rem 1rem #888888;
+  box-shadow: 0 0.5rem 1rem #d9d9d9;
   transition: 0.5s; }
   @media (max-width: 800px) {
     .description-container {
@@ -189,7 +201,7 @@ section {
   padding: 1rem;
   text-align: left;
   list-style: none;
-  box-shadow: 0 0.5rem 1rem #888888;
+  box-shadow: 0 0.5rem 1rem #d9d9d9;
   transition: 0.4s ease-in-out; }
   @media (max-width: 800px) {
     .skills-list-container {
@@ -221,7 +233,7 @@ section {
   height: 60px;
   width: 300px;
   font-size: 20px;
-  box-shadow: 0 0.2rem 1rem #888888;
+  box-shadow: 0 0.2rem 1rem #d9d9d9;
   transition: 0.4s ease-in-out; }
 
 .cv-button:hover {
@@ -261,7 +273,7 @@ section {
       margin-bottom: 0.25rem; } }
 
 .project-grid:hover {
-  box-shadow: rgba(114, 0, 178, 0.2) 0 0 0 8rem inset, 0 0.2rem 1rem #888888;
+  box-shadow: rgba(114, 0, 178, 0.2) 0 0 0 8rem inset, 0 0.2rem 1rem #d9d9d9;
   transition: 0.2s; }
 
 .project-grid:after {
@@ -366,7 +378,7 @@ section {
   width: 22rem;
   height: 16rem;
   margin: 2rem 0.5rem 2rem 0.5rem;
-  box-shadow: 0 0.5rem 1rem #888888;
+  box-shadow: 0 0.5rem 1rem #d9d9d9;
   transition: 0.4s ease-in-out; }
   @media (max-width: 1200px) {
     .card-container {

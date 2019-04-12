@@ -8,7 +8,7 @@ class Home extends Component {
       <>
       <section id="home" onScroll={this.handleScroll}>
         <div className="home-container">
-          <h1>Richard Davis</h1>
+
           <h1>
             <ReactRotatingText
               items={['Full-Stack Web Developer', 'UX Designer', 'Creative Writer', 'Traveler', 'Doggo Enthusiast']}
@@ -23,7 +23,7 @@ class Home extends Component {
           <Button
             className="contact-button"
             color="primary"
-            href="/"
+            href="#contact"
           >Contact Me</Button>
         </div>
       </section>

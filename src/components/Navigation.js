@@ -41,10 +41,10 @@ class Navigation extends Component {
         <Navbar
         light
         expand="md"
-        className={this.state.scrolled ? "navbar fixed-top sticky-top shadow p-3 mb-5" : "navbar-recolored fixed-top sticky-top shadow p-3 mb-5"}
+        className={this.state.scrolled ? "navbar" : "navbar-recolored"}
         >
           <NavbarBrand
-          className={this.state.scrolled ? "brand text-white" : "brand-recolored"}
+          className={this.state.scrolled ? "navbar-brand text-white" : "navbar-brand-recolored"}
           href="/"
           >Richard
           </NavbarBrand>
