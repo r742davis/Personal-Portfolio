@@ -112,9 +112,29 @@ section {
   color: #7200b2 !important;
 }
 
+/**************/
+/*** Titles ***/
+/**************/
+.title-container {
+  text-transform: uppercase;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  @include respond-to('medium') { padding-top: 75px; }
+}
+
+.title-container h1 {
+  display: inline-flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-top: 2px solid #7200b2;
+  border-bottom: 2px solid #7200b2;
+}
+
 /*****************/
 /*** Home Page ***/
-/*****************/
+/*****************************************************/
 #home {
   @include respond-to('medium') {
     height: auto;
@@ -122,7 +142,7 @@ section {
 }
 .home-container {
   margin: 0 auto;
-  background: url("./images/retro-computers.jpg") no-repeat center center fixed;
+  background: url('./images/lily-flower.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -151,30 +171,9 @@ section {
   animation: blink 1.1s cubic-bezier(0.68, 0.01, 0.01, 0.99) infinite;
 }
 
-
-/**************/
-/*** Titles ***/
-/**************/
-.title-container {
-  text-transform: uppercase;
-  padding-top: 100px;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  @include respond-to('medium') { padding-top: 75px; }
-}
-
-.title-container h1 {
-  display: inline-flex;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-top: 2px solid #7200b2;
-  border-bottom: 2px solid #7200b2;
-}
-
 /******************/
 /*** About Page ***/
-/******************/
+/*****************************************************/
 #about {
   @include respond-to('large') { height: auto; }
   @include respond-to('xl') { height: auto; }
@@ -253,7 +252,7 @@ section {
 
 /*********************/
 /*** Projects Page ***/
-/*********************/
+/*****************************************************/
 .projects-container {
   display: grid;
   width: 80%;
@@ -274,11 +273,7 @@ section {
   width: 22rem;
   height: auto;
   margin: 0.5rem;
-  background: url('./images/cactus.jpg') no-repeat center center;
-  background-size: contain;
-  position: relative;
-  overflow: hidden;
-  transition: 0.2s ease-in-out;
+  transition: 0.4s ease-in-out;
   @include respond-to('xl') { width: 18rem; }
   @include respond-to('medium') { margin-bottom: 0.25rem; }
 }
@@ -287,27 +282,69 @@ section {
 
 }
 .project-grid:after{
-  content: "Hello";
+  content: "";
   width: 80%;
-  height: 80%;
+  height: auto;
   display: block;
-  font:  16pt 'bookman old syle' ;
+  font:  4rem 'Reenie Beanie' ;
   color: white;
-  border: 4px solid;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 1.0s;
 }
 .project-grid:hover:after {
-  opacity: 1;
+  opacity: 0.5;
 }
+#project-grid-1 {
+  background: url('./images/cactus.jpg') no-repeat center center;
+  background-size: cover;
+}
+#project-grid-2 {
+  background: url('./images/comp-on-desk.jpg') no-repeat center center;
+  background-size: cover;
+}
+#project-grid-3 {
+  background: url('./images/sky-river.jpg') no-repeat center center;
+  background-size: cover;
+}
+#project-grid-4 {
+  background: url('./images/starry-night.jpg') no-repeat center center;
+  background-size: cover;
+}
+#project-grid-5 {
+  background: url('./images/lily-flower.jpg') no-repeat center center;
+  background-size: cover;
+}
+#project-grid-6 {
+  background: url('./images/computer.jpg') no-repeat center center;
+  background-size: cover;
+}
+#project-grid-1:after {
+  content: "Mug Club";
+}
+#project-grid-2:after {
+  content: "Vie du Vin";
+}
+#project-grid-3:after {
+  content: "Traveleritis";
+}
+#project-grid-4:after {
+  content: "Pokedex";
+}
+#project-grid-5:after {
+  content: "My Portfolio";
+}
+#project-grid-6:after {
+  content: "Project 6";
+}
+
 
 /********************/
 /*** Contact Page ***/
-/********************/
+/*****************************************************/
 #contact {
   @include respond-to('medium') {
     height: 120vh;
@@ -368,14 +405,14 @@ section {
 
 /**************/
 /*** Footer ***/
-/**************/
+/*****************************************************/
 .footer {
   margin-top: 2rem;
 }
 
 /******************/
 /*** Animations ***/
-/******************/
+/*****************************************************/
 @keyframes blink {
   0% {
     opacity: 0;
