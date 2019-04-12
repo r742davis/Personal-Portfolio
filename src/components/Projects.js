@@ -6,7 +6,7 @@ class Projects extends Component {
       <>
       <section id="projects">
         <div className="title-container">
-          <h1 data-aos="fade-up">Projects Page</h1>
+          <h1 data-aos="fade-up">My Projects</h1>
         </div>
         <div className="projects-container">
           <div className="project-grid" id="project-grid-1"></div>

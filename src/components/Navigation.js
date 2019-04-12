@@ -28,7 +28,7 @@ class Navigation extends Component {
 
   componentDidMount() {
     document.addEventListener('scroll', () => {
-      const scrolled = window.scrollY < window.innerHeight+70;
+      const scrolled = window.scrollY < window.innerHeight;
       if (scrolled !== this.state.scrolled) {
         this.setState({ scrolled })
       }
