@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import {
-  MDBBtn,
-  MDBCard,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBListGroup,
-  MDBListGroupItem
+  MDBBtn
 } from 'mdbreact';
 import profile from '../images/richard-davis.jpeg';
 

@@ -7,7 +7,6 @@ import {
   MDBCol
 } from 'mdbreact';
 
-
 class Contact extends Component {
   render() {
     return (

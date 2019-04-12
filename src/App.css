@@ -116,7 +116,7 @@ section {
 
 .home-container {
   margin: 0 auto;
-  background: url("./images/lily-flower.jpg") no-repeat center center;
+  background: url("./images/cactus.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -248,7 +248,7 @@ section {
   width: 22rem;
   height: auto;
   margin: 0.5rem;
-  transition: 0.4s ease-in-out; }
+  transition: 0.4s; }
   @media (max-width: 1200px) {
     .project-grid {
       width: 18rem; } }
@@ -257,24 +257,27 @@ section {
       margin-bottom: 0.25rem; } }
 
 .project-grid:hover {
-  box-shadow: rgba(114, 0, 178, 0.2) 0 0 0 8rem inset, 0 0.2rem 1rem #888888; }
+  box-shadow: rgba(114, 0, 178, 0.2) 0 0 0 8rem inset, 0 0.2rem 1rem #888888;
+  transition: 0.2s; }
 
 .project-grid:after {
   content: "";
   width: 80%;
-  height: auto;
+  height: 80%;
   display: block;
   font: 4rem 'Reenie Beanie';
   color: white;
+  border: 4px solid;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: opacity 1.0s; }
+  transition: opacity 0.2s; }
 
 .project-grid:hover:after {
-  opacity: 0.5; }
+  opacity: 0.5;
+  transition: 0.4s; }
 
 #project-grid-1 {
   background: url("./images/cactus.jpg") no-repeat center center;
@@ -321,6 +324,14 @@ section {
 /********************/
 /*** Contact Page ***/
 /*****************************************************/
+@media (max-width: 1200px) {
+  #contact {
+    height: 120vh; } }
+
+@media (max-width: 1000px) {
+  #contact {
+    height: 120vh; } }
+
 @media (max-width: 800px) {
   #contact {
     height: 120vh; } }
