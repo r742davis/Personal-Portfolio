@@ -255,8 +255,9 @@ section {
 /*****************************************************/
 .projects-container {
   display: grid;
-  width: 80%;
+  width: 66rem;
   margin: 0 auto;
+  margin-top: 1rem;
   justify-items: center;
   grid-template-columns:
     [first] 1fr
@@ -265,6 +266,9 @@ section {
   grid-template-rows:
     [first] 16rem
     [second] 16rem;
+  @include respond-to('large') { width: 52rem; }
+  // @include respond-to('medium') { width; }
+  transition: 0.4s;
 }
 .project-grid {
   display: flex;
@@ -272,9 +276,8 @@ section {
   align-items: center;
   width: 22rem;
   height: auto;
-  margin: 0.5rem;
   transition: 0.4s;
-  @include respond-to('xl') { width: 18rem; }
+  @include respond-to('large') { width: 18rem; }
   @include respond-to('medium') { margin-bottom: 0.25rem; }
 }
 .project-grid:hover {

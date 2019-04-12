@@ -235,11 +235,16 @@ section {
 /*****************************************************/
 .projects-container {
   display: grid;
-  width: 80%;
+  width: 66rem;
   margin: 0 auto;
+  margin-top: 1rem;
   justify-items: center;
   grid-template-columns: [first] 1fr [second] 1fr [third] 1fr;
-  grid-template-rows: [first] 16rem [second] 16rem; }
+  grid-template-rows: [first] 16rem [second] 16rem;
+  transition: 0.4s; }
+  @media (max-width: 1000px) {
+    .projects-container {
+      width: 52rem; } }
 
 .project-grid {
   display: flex;
@@ -247,9 +252,8 @@ section {
   align-items: center;
   width: 22rem;
   height: auto;
-  margin: 0.5rem;
   transition: 0.4s; }
-  @media (max-width: 1200px) {
+  @media (max-width: 1000px) {
     .project-grid {
       width: 18rem; } }
   @media (max-width: 800px) {
