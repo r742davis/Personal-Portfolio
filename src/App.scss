@@ -176,7 +176,6 @@ section {
 /*** About Page ***/
 /******************/
 #about {
-  @include respond-to('medium') { height: auto; }
   @include respond-to('large') { height: auto; }
 }
 .about-container {
@@ -258,6 +257,24 @@ section {
   @include respond-to('medium') {
     height: auto;
   }
+}
+
+.projects-container {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  grid-template-columns:
+    [first] 1fr
+    [second] 1fr
+    [third] 1fr;
+  grid-template-rows:
+    [first] 200px
+    [second] 200px;
+}
+
+.project-grid {
+  border: 1px solid black;
 }
 
 /********************/

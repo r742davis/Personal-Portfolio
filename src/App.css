@@ -147,10 +147,6 @@ section {
 /******************/
 /*** About Page ***/
 /******************/
-@media (max-width: 800px) {
-  #about {
-    height: auto; } }
-
 @media (max-width: 1000px) {
   #about {
     height: auto; } }
@@ -234,6 +230,17 @@ section {
 @media (max-width: 800px) {
   #projects {
     height: auto; } }
+
+.projects-container {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  grid-template-columns: [first] 1fr [second] 1fr [third] 1fr;
+  grid-template-rows: [first] 200px [second] 200px; }
+
+.project-grid {
+  border: 1px solid black; }
 
 /********************/
 /*** Contact Page ***/
