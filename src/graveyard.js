@@ -108,3 +108,19 @@ handleType = () => {
     </MDBListGroup>
   </MDBCardBody>
 </MDBCard>
+
+
+//Contact button
+<Button
+  className="contact-button"
+  color="primary"
+  href="#contact"
+>Contact Me</Button>
+
+/*** Contact Button on Home Page ***/
+.contact-button {
+  width: 200px;
+  border-radius: 1em;
+  transition: 0.5s;
+  @include respond-to('medium') { width: 368px; }
+}

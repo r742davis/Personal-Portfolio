@@ -8,23 +8,19 @@ class Home extends Component {
       <>
       <section id="home" onScroll={this.handleScroll}>
         <div className="home-container">
-
+          <div className='tagline-container'>
+            <h2>Hello, my name is</h2>
+            <h2>Richard</h2>
+          </div>
           <h1>
             <ReactRotatingText
-              items={['Full-Stack Web Developer', 'UX Designer', 'Creative Writer', 'Traveler', 'Doggo Enthusiast']}
+              items={['Full-Stack Web Developer', 'UX Designer', 'Creative Writer', 'Traveler', 'Doggo Enthusiast', 'Wine Lover', 'Observer']}
               pause={3000}
               typingInterval={120}
               deletingInterval={30}
             />
           </h1>
-          <br />
-          <h2>Let's make something</h2>
-          <h2>Beautiful</h2>
-          <Button
-            className="contact-button"
-            color="primary"
-            href="#contact"
-          >Contact Me</Button>
+
         </div>
       </section>
       </>

@@ -17,7 +17,7 @@ class About extends Component {
           <div className="description-container" data-aos="fade-up">
             <h1>Richard Davis</h1>
             <h4>Full-Stack Web Developer</h4>
-            <p>I'm just a poor boy from a poor family, babadoosh babadoosh can you do the fandango? Very very exciting, throw the maid in lightning oooooooooo MAMA MIA MAMA MIA.</p>
+            <p>I am passionate coder who relishes diving into both structures and the UI experience. I build fast, intuitive, and responsive UIs.</p>
           </div>
           <div className="skills-list-container" data-aos="fade-up">
             <h1>Top Developer Skills</h1>
