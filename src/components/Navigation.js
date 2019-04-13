@@ -46,12 +46,13 @@ class Navigation extends Component {
           <NavbarBrand
           className={this.state.scrolled ? "navbar-brand text-white" : "navbar-brand-recolored"}
           href="/"
-          >Richard
+          >R
           </NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
+          <NavbarToggler
+            onClick={this.toggle} />
           <Collapse
-          isOpen={this.state.isOpen}
-          navbar
+            isOpen={this.state.isOpen}
+            navbar
           >
             <Nav
             className="ml-auto navbar-center"

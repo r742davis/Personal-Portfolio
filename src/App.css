@@ -34,7 +34,7 @@ body, html, ul, li, h1 {
   box-shadow: 0 0.4rem 1rem #d9d9d9 !important; }
 
 .navbar-brand {
-  font-family: 'Lato', cursive;
+  font-family: 'Arvo', cursive;
   font-size: 2rem;
   font-weight: 200;
   margin-left: 2rem;
@@ -180,13 +180,13 @@ body, html, ul, li, h1 {
 .tagline-container h2 {
   transform: rotate(-10deg);
   font-family: 'Kristi', cursive;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 100;
   color: whitesmoke; }
 
 .tagline-container h2:nth-child(2) {
   text-align: center;
-  font-size: 5rem;
+  font-size: 6rem;
   margin-bottom: 4rem; }
 
 /*** Blinking Cursor on Home Page ***/
@@ -233,7 +233,8 @@ body, html, ul, li, h1 {
       text-align: center; } }
 
 .description-container h1 {
-  font-family: 'Kristi', serif; }
+  font-family: 'Kristi', serif;
+  font-size: 4rem; }
 
 .skills-list-container {
   width: 400px;
@@ -319,7 +320,7 @@ body, html, ul, li, h1 {
       margin-bottom: 0.25rem; } }
 
 .project-grid:hover {
-  box-shadow: rgba(114, 0, 178, 0.2) 0 0 0 8rem inset, 0 0.2rem 1rem #d9d9d9;
+  box-shadow: rgba(114, 0, 178, 0.2) 0 0 0 8rem inset;
   transition: 0.2s; }
 
 .project-grid:after {
@@ -327,7 +328,7 @@ body, html, ul, li, h1 {
   width: 80%;
   height: 80%;
   display: block;
-  font: 4rem 'Lato';
+  font: 2rem 'Lato-Light';
   color: white;
   border: 4px solid;
   text-align: center;
@@ -338,7 +339,7 @@ body, html, ul, li, h1 {
   transition: opacity 0.2s; }
 
 .project-grid:hover:after {
-  opacity: 0.5;
+  opacity: 0.7;
   transition: 0.4s; }
 
 #project-grid-1 {
@@ -387,7 +388,8 @@ body, html, ul, li, h1 {
 /*** Contact Page ***/
 /*****************************************************/
 #contact {
-  padding-bottom: 200px; }
+  background: #f2f2f2;
+  padding-bottom: 400px; }
   @media (max-width: 1200px) {
     #contact {
       height: 120vh; } }
