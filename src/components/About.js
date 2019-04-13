@@ -12,14 +12,14 @@ class About extends Component {
         <div className="title-container">
           <h1 data-aos="fade-up">A little about me</h1>
         </div>
-        <div className="about-container">
-          <img src={profile} className="profile-picture" alt="profile of richard" data-aos="fade-up"/>
-          <div className="description-container" data-aos="fade-up">
+        <div className="about-container" data-aos="fade-up">
+          <img src={profile} className="profile-picture" alt="profile of richard"/>
+          <div className="description-container">
             <h1>Richard Davis</h1>
             <h4>Full-Stack Web Developer</h4>
             <p>I am passionate coder who relishes diving into both structures and the UI experience. I build fast, intuitive, and responsive UIs.</p>
           </div>
-          <div className="skills-list-container" data-aos="fade-up">
+          <div className="skills-list-container">
             <h1>Top Developer Skills</h1>
             <hr />
             <ul>

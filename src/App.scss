@@ -37,6 +37,7 @@ body, html, ul, li, h1 {
   width: 100%;
   top: 0;
   padding: 0 !important;
+  padding-right: 2rem !important;
   z-index: 2;
   box-shadow: none !important;
   transition: color 1s;
@@ -55,11 +56,10 @@ body, html, ul, li, h1 {
   box-shadow: 0 0.4rem 1rem #d9d9d9 !important;
 }
 .navbar-brand {
-  font-family: 'Arvo', cursive;
+  font-family: 'Lato', cursive;
   font-size: 2rem;
   font-weight: 200;
-  padding: 0.75rem;
-  margin: 0;
+  margin-left: 2rem;
   transition: 0.4s;
   @include respond-to('navbar') {
     font-family: 'Arvo', cursive;
@@ -225,6 +225,8 @@ body, html, ul, li, h1 {
 /*** About Page ***/
 /*****************************************************/
 #about {
+  background: #f2f2f2;
+  padding-bottom: 200px;
   @include respond-to('large') { height: auto; }
   @include respond-to('xl') { height: auto; }
 }
@@ -307,6 +309,9 @@ body, html, ul, li, h1 {
 /*********************/
 /*** Projects Page ***/
 /*****************************************************/
+#projects {
+  padding-bottom: 200px;
+}
 .projects-container {
   display: grid;
   width: 66rem;
@@ -405,6 +410,7 @@ body, html, ul, li, h1 {
 /*** Contact Page ***/
 /*****************************************************/
 #contact {
+  padding-bottom: 200px;
   @include respond-to('xl') { height: 120vh; }
   @include respond-to('large') { height: 120vh; }
   @include respond-to('medium') { height: 120vh; }

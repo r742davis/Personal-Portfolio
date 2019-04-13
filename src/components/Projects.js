@@ -17,7 +17,7 @@ class Projects extends Component {
         <div className="title-container">
           <h1 data-aos="fade-up">My Projects</h1>
         </div>
-        <div className="projects-container">
+        <div className="projects-container" data-aos="fade-up">
           <div
           className="project-grid"
           id="project-grid-1"

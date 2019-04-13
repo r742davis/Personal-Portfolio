@@ -124,3 +124,10 @@ handleType = () => {
   transition: 0.5s;
   @include respond-to('medium') { width: 368px; }
 }
+
+// Brand
+  <NavbarBrand
+  className={this.state.scrolled ? "navbar-brand text-white" : "navbar-brand-recolored"}
+  href="/"
+  >Richard
+  </NavbarBrand>

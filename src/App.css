@@ -15,6 +15,7 @@ body, html, ul, li, h1 {
   width: 100%;
   top: 0;
   padding: 0 !important;
+  padding-right: 2rem !important;
   z-index: 2;
   box-shadow: none !important;
   transition: color 1s; }
@@ -33,11 +34,10 @@ body, html, ul, li, h1 {
   box-shadow: 0 0.4rem 1rem #d9d9d9 !important; }
 
 .navbar-brand {
-  font-family: 'Arvo', cursive;
+  font-family: 'Lato', cursive;
   font-size: 2rem;
   font-weight: 200;
-  padding: 0.75rem;
-  margin: 0;
+  margin-left: 2rem;
   transition: 0.4s; }
   @media (max-width: 767px) {
     .navbar-brand {
@@ -196,13 +196,15 @@ body, html, ul, li, h1 {
 /******************/
 /*** About Page ***/
 /*****************************************************/
-@media (max-width: 1000px) {
-  #about {
-    height: auto; } }
-
-@media (max-width: 1200px) {
-  #about {
-    height: auto; } }
+#about {
+  background: #f2f2f2;
+  padding-bottom: 200px; }
+  @media (max-width: 1000px) {
+    #about {
+      height: auto; } }
+  @media (max-width: 1200px) {
+    #about {
+      height: auto; } }
 
 .about-container {
   display: flex;
@@ -286,6 +288,9 @@ body, html, ul, li, h1 {
 /*********************/
 /*** Projects Page ***/
 /*****************************************************/
+#projects {
+  padding-bottom: 200px; }
+
 .projects-container {
   display: grid;
   width: 66rem;
@@ -381,17 +386,17 @@ body, html, ul, li, h1 {
 /********************/
 /*** Contact Page ***/
 /*****************************************************/
-@media (max-width: 1200px) {
-  #contact {
-    height: 120vh; } }
-
-@media (max-width: 1000px) {
-  #contact {
-    height: 120vh; } }
-
-@media (max-width: 800px) {
-  #contact {
-    height: 120vh; } }
+#contact {
+  padding-bottom: 200px; }
+  @media (max-width: 1200px) {
+    #contact {
+      height: 120vh; } }
+  @media (max-width: 1000px) {
+    #contact {
+      height: 120vh; } }
+  @media (max-width: 800px) {
+    #contact {
+      height: 120vh; } }
 
 .contact-container {
   display: flex;
