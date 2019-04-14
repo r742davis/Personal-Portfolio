@@ -17,7 +17,10 @@ class About extends Component {
           <div className="description-container">
             <h1>Richard Davis</h1>
             <h4>Full-Stack Web Developer</h4>
-            <p>I am passionate coder who relishes diving into both structures and the UI experience. I build fast, intuitive, and responsive UIs.</p>
+            <p>I am passionate coder who relishes diving into both structures and the UI experience. I specialize in React, MongoDB, and Ruby on Rails. I am always looking to learn something new and challenge myself as a coder everyday. </p>
+            <div className="cv-button-container">
+              <MDBBtn className="cv-button" data-aos="fade-up"><a href="https://drive.google.com/open?id=1XL9bvtIZfgzgDIp401hvK6Y-RZ6N70GK" target="_blank">Download CV</a></MDBBtn>
+            </div>
           </div>
           <div className="skills-list-container">
             <h1>Top Developer Skills</h1>

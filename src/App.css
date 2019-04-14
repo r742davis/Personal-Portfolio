@@ -227,6 +227,8 @@ body, html, ul, li, h1 {
   margin-top: 3rem;
   padding: 1rem;
   text-align: left;
+  display: flex;
+  flex-direction: column;
   transition: 0.5s; }
   @media (max-width: 800px) {
     .description-container {
@@ -234,7 +236,10 @@ body, html, ul, li, h1 {
 
 .description-container h1 {
   font-family: 'Kristi', serif;
-  font-size: 4rem; }
+  font-size: 5rem; }
+
+.description-container {
+  align-items: center; }
 
 .skills-list-container {
   width: 400px;
@@ -388,8 +393,7 @@ body, html, ul, li, h1 {
 /*** Contact Page ***/
 /*****************************************************/
 #contact {
-  background: #f2f2f2;
-  padding-bottom: 400px; }
+  background: #f2f2f2; }
   @media (max-width: 1200px) {
     #contact {
       height: 120vh; } }
@@ -398,7 +402,7 @@ body, html, ul, li, h1 {
       height: 120vh; } }
   @media (max-width: 800px) {
     #contact {
-      height: 120vh; } }
+      height: auto; } }
 
 .contact-container {
   display: flex;
