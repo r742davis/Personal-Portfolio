@@ -239,10 +239,10 @@ body, html, ul, li, h1 {
   width: auto;
 }
 .profile-picture {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 500px;
-  margin: 3rem;
+  margin: 2rem;
   box-shadow: 0 1rem 2rem #d9d9d9;
   transition: 0.5s;
 }
@@ -254,7 +254,10 @@ body, html, ul, li, h1 {
   display: flex;
   flex-direction: column;
   transition: 0.5s;
-  @include respond-to('medium') { text-align: center;}
+  @include respond-to('medium') {
+    text-align: center;
+    margin-top: 0;
+  }
 }
 .description-container h1 {
   font-family: 'Kristi', serif;
@@ -291,6 +294,20 @@ body, html, ul, li, h1 {
 .skill-icon {
   margin-right: 1rem;
 }
+// Colored Coordinated Developer Skills
+.javascript {
+  color: #ffdc00;
+}
+.ruby {
+  color: #ba0046;
+}
+.html {
+  color: #0074d9;
+}
+.databases {
+  color: #3d9970;
+}
+
 .cv-button-container {
   width: 400px;
   display: flex;
@@ -304,9 +321,6 @@ body, html, ul, li, h1 {
   font-size: 20px;
   box-shadow: 0 0.2rem 1rem #d9d9d9;
   transition: 0.4s ease-in-out;
-}
-.cv-button:hover {
-  transform: translate3d(0, -0.5rem, -1rem);
 }
 .cv-button a {
   color: white;
