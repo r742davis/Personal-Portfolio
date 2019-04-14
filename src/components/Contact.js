@@ -21,9 +21,9 @@ class Contact extends Component {
               <MDBCardBody>
                 <i className="fas fa-phone contact-icon"></i>
                 <MDBCardTitle>PHONE</MDBCardTitle>
-                <MDBCardText>
-                  (530)737-3198
-                </MDBCardText>
+                <p><a href="tel:530-737-3198">
+                  (530) 737-3198
+                </a></p>
               </MDBCardBody>
             </MDBCard>
           </MDBCol>
@@ -32,9 +32,9 @@ class Contact extends Component {
               <MDBCardBody>
                 <i className="fas fa-at contact-icon"></i>
                 <MDBCardTitle>EMAIL</MDBCardTitle>
-                <MDBCardText>
+                <p><a href="mailto:richardtrowdavis@gmail.com">
                 richardtrowdavis@gmail.com
-                </MDBCardText>
+                </a></p>
               </MDBCardBody>
             </MDBCard>
           </MDBCol>

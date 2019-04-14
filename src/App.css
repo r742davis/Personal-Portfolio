@@ -326,14 +326,15 @@ body, html, ul, li, h1 {
 
 .project-grid:hover {
   box-shadow: rgba(114, 0, 178, 0.2) 0 0 0 8rem inset;
-  transition: 0.2s; }
+  transition: 0.2s;
+  cursor: pointer; }
 
 .project-grid:after {
   content: "";
   width: 80%;
   height: 80%;
   display: block;
-  font: 2rem 'Lato-Light';
+  font: 2rem 'Arvo';
   color: white;
   border: 4px solid;
   text-align: center;
@@ -427,6 +428,7 @@ body, html, ul, li, h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-size: 24px;
   width: 22rem;
   height: 16rem;
   margin: 2rem 0.5rem 2rem 0.5rem;
@@ -441,6 +443,23 @@ body, html, ul, li, h1 {
 
 .card-container:hover {
   transform: translate3d(0, -0.5rem, 1rem); }
+
+.card-container h4 {
+  font-family: 'Arvo', serif;
+  font-size: 2rem; }
+
+.card-container p {
+  font-family: 'Lato-Light', sans-serif;
+  font-size: 1.25rem; }
+
+.card-container a {
+  text-decoration: none;
+  color: #7200b2;
+  transition: 0.2s; }
+
+.card-container a:hover {
+  color: #da99ff;
+  transition: 0.2s; }
 
 @media (max-width: 1000px) {
   .social-card {
