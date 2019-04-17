@@ -224,11 +224,9 @@ body, html, ul, li, h1 {
 
 .description-container {
   width: 400px;
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding: 1rem;
   text-align: left;
-  display: flex;
-  flex-direction: column;
   transition: 0.5s; }
   @media (max-width: 800px) {
     .description-container {
@@ -239,8 +237,24 @@ body, html, ul, li, h1 {
   font-family: 'Kristi', serif;
   font-size: 5rem; }
 
-.description-container {
-  align-items: center; }
+.cv-button-container {
+  width: 400px;
+  display: flex;
+  justify-content: center; }
+  @media (max-width: 800px) {
+    .cv-button-container {
+      width: auto; } }
+
+.cv-button {
+  background: #7200b2 !important;
+  height: 60px;
+  width: 300px;
+  font-size: 20px;
+  box-shadow: 0 0.2rem 1rem #d9d9d9;
+  transition: 0.4s ease-in-out; }
+
+.cv-button a {
+  color: white; }
 
 .skills-list-container {
   width: 400px;
@@ -281,25 +295,6 @@ body, html, ul, li, h1 {
 
 .databases {
   color: #3d9970; }
-
-.cv-button-container {
-  width: 400px;
-  display: flex;
-  justify-content: center; }
-  @media (max-width: 800px) {
-    .cv-button-container {
-      width: auto; } }
-
-.cv-button {
-  background: #7200b2 !important;
-  height: 60px;
-  width: 300px;
-  font-size: 20px;
-  box-shadow: 0 0.2rem 1rem #d9d9d9;
-  transition: 0.4s ease-in-out; }
-
-.cv-button a {
-  color: white; }
 
 /*********************/
 /*** Projects Page ***/
