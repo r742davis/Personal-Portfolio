@@ -339,9 +339,32 @@ body, html, ul, li, h1 {
   grid-template-rows:
     [first] 16rem
     [second] 16rem;
-  @include respond-to('large') { width: 52rem; }
-  // @include respond-to('medium') { width; }
   transition: 0.4s;
+  @include respond-to('large') {
+    width: 42rem;
+    grid-template-columns:
+      [first] 1fr
+      [second] 1fr;
+    grid-template-rows:
+      [first] 16rem
+      [second] 16rem
+      [third] 16rem;
+  }
+  @include respond-to('medium') {
+    width: 30rem;
+    grid-template-columns:
+      [first] 1fr;
+    grid-template-rows:
+      [first] 16rem
+      [second] 16rem
+      [third] 16rem
+      [fourth] 16rem
+      [fifth] 16rem
+      [sixth] 16rem;
+  }
+  @include respond-to('small') {
+    width: 400px;
+  }
 }
 .project-grid {
   display: flex;
@@ -350,8 +373,9 @@ body, html, ul, li, h1 {
   width: 22rem;
   height: auto;
   transition: 0.4s;
-  @include respond-to('large') { width: 18rem; }
-  @include respond-to('medium') { margin-bottom: 0.25rem; }
+  // @include respond-to('large') {
+  //   width: 18rem; }
+  @include respond-to('small') { width: 400px; }
 }
 .project-grid:hover {
   box-shadow: rgba(114, 0, 178, 0.2) 0 0 0 8rem inset;
