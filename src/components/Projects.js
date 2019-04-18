@@ -3,6 +3,7 @@ import project_1 from '../images/bear.jpg';
 import project_2 from '../images/wines.png';
 import project_3 from '../images/traveleritis.png';
 import project_4 from '../images/bakersdozen.png';
+import project_5 from '../images/pokemon_api.png';
 
 
 class Projects extends Component {
@@ -71,34 +72,43 @@ class Projects extends Component {
             src={project_1}
             className="project-grid"
             id="project-grid-1"
+            alt="project 1"
             onClick={this.toggleModal1}
           />
           <img
             src={project_2}
             className="project-grid"
             id="project-grid-2"
+            alt="project 2"
             onClick={this.toggleModal2}
           />
           <img
             src={project_3}
             className="project-grid"
             id="project-grid-3"
+            alt="project 3"
             onClick={this.toggleModal3}
           />
           <img
             src={project_4}
             className="project-grid"
             id="project-grid-4"
+            alt="project 4"
             onClick={this.toggleModal4}
           />
-          <div
+          <img
+            src={project_5}
             className="project-grid"
             id="project-grid-5"
-            onClick={this.toggleModal5}></div>
-          <div
+            alt="project 5"
+            onClick={this.toggleModal5}
+          />
+          <img
             className="project-grid"
             id="project-grid-6"
-            onClick={this.toggleModal6}></div>
+            alt="project 6"
+            onClick={this.toggleModal6}
+          />
         </div>
       </section>
       </>
