@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Button } from 'reactstrap';
 const ReactRotatingText = require('react-rotating-text');
 
 class Home extends Component {
