@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import project_1 from '../images/bear.jpg';
+import project_2 from '../images/wines.png';
 
 
 class Projects extends Component {
@@ -63,16 +64,19 @@ class Projects extends Component {
         <div className="title-container">
           <h1 data-aos="fade-up">My Projects</h1>
         </div>
-        <div className="projects-container" data-aos="fade-up">
+        <div className="projects-container">
           <img
-          src={project_1}
-          className="project-grid"
-          id="project-grid-1"
-          onClick={this.toggleModal1}
+            src={project_1}
+            className="project-grid"
+            id="project-grid-1"
+            onClick={this.toggleModal1}
           />
-          <div
-          className="project-grid"
-          id="project-grid-2" onClick={this.toggleModal2}></div>
+          <img
+            src={project_2}
+            className="project-grid"
+            id="project-grid-2"
+            onClick={this.toggleModal2}
+          />
           <div
           className="project-grid"
           id="project-grid-3" onClick={this.toggleModal3}></div>

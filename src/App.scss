@@ -373,8 +373,6 @@ body, html, ul, li, h1 {
   width: 22rem;
   height: auto;
   transition: 0.4s;
-  // @include respond-to('large') {
-  //   width: 18rem; }
   @include respond-to('small') { width: 400px; }
 }
 .project-grid:hover {
