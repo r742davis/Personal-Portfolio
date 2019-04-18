@@ -367,17 +367,16 @@ body, html, ul, li, h1 {
   }
 }
 .project-grid {
-  background-size: contain;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 22rem;
-  height: auto;
+  height: 16rem;
   transition: 0.4s;
+  object-fit: cover;
   @include respond-to('small') { width: 400px; }
 }
-.project-grid:hover {
+.project-grid img:hover {
   box-shadow: rgba(114, 0, 178, 0.2) 0 0 0 8rem inset;
   transition: 0.2s;
   cursor: pointer;
@@ -400,6 +399,8 @@ body, html, ul, li, h1 {
 .project-grid:hover:after {
   opacity: 0.7;
   transition: 0.4s;
+}
+.projects-container img {
 }
 #project-grid-1:after {
   content: "Mug Club";

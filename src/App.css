@@ -326,19 +326,18 @@ body, html, ul, li, h1 {
       width: 400px; } }
 
 .project-grid {
-  background-size: contain;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 22rem;
-  height: auto;
-  transition: 0.4s; }
+  height: 16rem;
+  transition: 0.4s;
+  object-fit: cover; }
   @media (max-width: 450px) {
     .project-grid {
       width: 400px; } }
 
-.project-grid:hover {
+.project-grid img:hover {
   box-shadow: rgba(114, 0, 178, 0.2) 0 0 0 8rem inset;
   transition: 0.2s;
   cursor: pointer; }

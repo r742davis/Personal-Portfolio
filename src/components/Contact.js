@@ -3,7 +3,6 @@ import {
   MDBCard,
   MDBCardBody,
   MDBCardTitle,
-  MDBCardText,
   MDBCol
 } from 'mdbreact';
 
