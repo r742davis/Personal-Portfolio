@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import project_1 from '../images/bear.jpg';
 import project_2 from '../images/wines.png';
+import project_3 from '../images/traveleritis.png';
 
 
 class Projects extends Component {
@@ -77,21 +78,24 @@ class Projects extends Component {
             id="project-grid-2"
             onClick={this.toggleModal2}
           />
+          <img
+            src={project_3}
+            className="project-grid"
+            id="project-grid-3"
+            onClick={this.toggleModal3}
+          />
           <div
-          className="project-grid"
-          id="project-grid-3" onClick={this.toggleModal3}></div>
+            className="project-grid"
+            id="project-grid-4"
+            onClick={this.toggleModal4}></div>
           <div
-          className="project-grid"
-          id="project-grid-4"
-          onClick={this.toggleModal4}></div>
+            className="project-grid"
+            id="project-grid-5"
+            onClick={this.toggleModal5}></div>
           <div
-          className="project-grid"
-          id="project-grid-5"
-          onClick={this.toggleModal5}></div>
-          <div
-          className="project-grid"
-          id="project-grid-6"
-          onClick={this.toggleModal6}></div>
+            className="project-grid"
+            id="project-grid-6"
+            onClick={this.toggleModal6}></div>
         </div>
       </section>
       </>
