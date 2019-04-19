@@ -383,7 +383,8 @@ body, html, ul, li, h1 {
 /*** Contact Page ***/
 /*****************************************************/
 #contact {
-  background: #f2f2f2; }
+  background: #f2f2f2;
+  height: 100vh; }
   @media (max-width: 1200px) {
     #contact {
       height: 120vh; } }
@@ -392,7 +393,7 @@ body, html, ul, li, h1 {
       height: 120vh; } }
   @media (max-width: 800px) {
     #contact {
-      height: auto; } }
+      height: 120vh; } }
 
 .contact-container {
   display: flex;
@@ -400,7 +401,8 @@ body, html, ul, li, h1 {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  width: 70%; }
+  width: 70%;
+  height: 50vh; }
   @media (max-width: 1000px) {
     .contact-container {
       display: grid;
@@ -410,7 +412,8 @@ body, html, ul, li, h1 {
   @media (max-width: 800px) {
     .contact-container {
       grid-template-columns: 20rem;
-      width: auto; } }
+      width: auto;
+      height: 80vh; } }
 
 .card-container {
   display: flex;

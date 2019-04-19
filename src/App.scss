@@ -427,9 +427,10 @@ body, html, ul, li, h1 {
 /*****************************************************/
 #contact {
   background: #f2f2f2;
+  height: 100vh;
   @include respond-to('xl') { height: 120vh; }
   @include respond-to('large') { height: 120vh; }
-  @include respond-to('medium') { height: auto; }
+  @include respond-to('medium') { height: 120vh; }
 }
 .contact-container {
   display: flex;
@@ -438,6 +439,7 @@ body, html, ul, li, h1 {
   justify-content: center;
   margin: 0 auto;
   width: 70%;
+  height: 50vh;
   @include respond-to('large') {
     display: grid;
     width: 800px;
@@ -447,6 +449,7 @@ body, html, ul, li, h1 {
   @include respond-to('medium') {
     grid-template-columns: 20rem;
     width: auto;
+    height: 80vh;
   }
 }
 .card-container {
