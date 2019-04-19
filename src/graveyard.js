@@ -131,3 +131,31 @@ handleType = () => {
   href="/"
   >Richard
   </NavbarBrand>
+
+
+// Skills container
+<div className="skills-list-container" data-aos="fade-up">
+  <h1>Tech Skills</h1>
+  <hr />
+  <ul>
+    <li><i className="fas fa-check-circle skill-icon html"></i>HTML/CSS</li>
+    <li><i className="fas fa-check-circle skill-icon javascript"></i>React</li>
+    <li><i className="fas fa-check-circle skill-icon javascript"></i>Node.js</li>
+    <li><i className="fas fa-check-circle skill-icon ruby"></i>Ruby</li>
+    <li><i className="fas fa-check-circle skill-icon ruby"></i>Ruby on Rails</li>
+    <li><i className="fas fa-check-circle skill-icon databases"></i>PostgreSQL</li>
+    <li><i className="fas fa-check-circle skill-icon databases"></i>MongoDB</li>
+  </ul>
+  <hr />
+</div>
+
+// CV Button
+<div className="cv-button-container">
+  <MDBBtn className="cv-button">
+    <a
+      href="https://drive.google.com/open?id=1XL9bvtIZfgzgDIp401hvK6Y-RZ6N70GK"
+      target="_blank"
+      rel="noopener noreferrer">Download CV
+    </a>
+  </MDBBtn>
+</div>

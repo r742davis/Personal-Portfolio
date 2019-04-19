@@ -10,17 +10,10 @@ class About extends Component {
       <>
       <section id="about">
         <div className="title-container">
-          <h1 data-aos="fade-up">A little about me</h1>
+          <h1 data-aos="fade-up">My Story</h1>
         </div>
-        <div className="about-container" data-aos="fade-up">
-          <div className="description-container" data-aos="fade-up">
-            <h1>Richard Davis</h1>
-            <h4>Full-Stack Web Developer</h4>
-            <p>
-            I am passionate coder who relishes diving into both structures and the UI experience. I specialize in React, MongoDB, and Ruby on Rails. I am always looking to learn something new and challenge myself as a coder everyday.
-            </p>
-          </div>
-          <div className="picture-cv-container">
+        <div className="about-container">
+          <div className="picture-cv-container" data-aos="fade-up">
             <img
               src={profile}
               className="profile-picture"
@@ -36,21 +29,16 @@ class About extends Component {
               </MDBBtn>
             </div>
           </div>
-          <div className="skills-list-container" data-aos="fade-up">
-            <h1>Top Developer Skills</h1>
+          <div className="description-container" data-aos="fade-up">
+            <h1>Richard Davis</h1>
             <hr />
-            <ul>
-              <li><i className="fas fa-check-circle skill-icon html"></i>HTML/CSS</li>
-              <li><i className="fas fa-check-circle skill-icon javascript"></i>JavaScript</li>
-              <li><i className="fas fa-check-circle skill-icon javascript"></i>React</li>
-              <li><i className="fas fa-check-circle skill-icon javascript"></i>Node.js</li>
-              <li><i className="fas fa-check-circle skill-icon ruby"></i>Ruby</li>
-              <li><i className="fas fa-check-circle skill-icon ruby"></i>Ruby on Rails</li>
-              <li><i className="fas fa-check-circle skill-icon databases"></i>PostgreSQL</li>
-              <li><i className="fas fa-check-circle skill-icon databases"></i>MongoDB</li>
-            </ul>
-            <hr />
+            <h4>Full-Stack Web Developer</h4>
+            <p>
+            I am passionate coder who relishes diving into both structures and the UI experience. I specialize in React, MongoDB, and Ruby on Rails. I am always looking to learn something new and challenge myself as a coder everyday.
+            </p>
+
           </div>
+
         </div>
       </section>
       </>

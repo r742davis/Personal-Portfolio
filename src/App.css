@@ -126,17 +126,18 @@ body, html, ul, li, h1 {
 /**************/
 .title-container {
   padding-top: 100px;
+  padding-left: 200px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0 auto; }
   @media (max-width: 800px) {
     .title-container {
       padding-top: 75px; } }
 
 .title-container h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Kristi', cursive;
+  font-size: 5rem;
   display: inline-flex;
-  padding-top: 0.5rem;
   padding-bottom: 0.5rem; }
 
 .title-container h1:after {
@@ -198,7 +199,7 @@ body, html, ul, li, h1 {
 /******************/
 #about {
   background: #f2f2f2;
-  padding-bottom: 200px; }
+  height: 120vh; }
   @media (max-width: 1000px) {
     #about {
       height: auto; } }
@@ -209,21 +210,20 @@ body, html, ul, li, h1 {
 .about-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
-  margin: 0 auto;
-  width: auto; }
+  justify-content: flex-start;
+  padding-left: 200px;
+  margin: 0 auto; }
 
 .picture-cv-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center; }
 
 .profile-picture {
-  width: 250px;
-  height: 250px;
-  border-radius: 500px;
-  margin: 2rem;
+  width: 300px;
+  height: 300px;
   box-shadow: 0 1rem 2rem #d9d9d9;
   transition: 0.5s; }
 
@@ -236,7 +236,7 @@ body, html, ul, li, h1 {
       width: auto; } }
 
 .cv-button {
-  background: #7200b2 !important;
+  background: #5c9598 !important;
   height: 60px;
   width: 300px;
   font-size: 20px;
@@ -247,11 +247,9 @@ body, html, ul, li, h1 {
   color: white; }
 
 .description-container {
-  border: 1px solid blue;
   width: 400px;
-  margin-top: 1rem;
   padding: 1rem;
-  text-align: right;
+  text-align: left;
   transition: 0.5s; }
   @media (max-width: 800px) {
     .description-container {
@@ -259,14 +257,15 @@ body, html, ul, li, h1 {
       margin-top: 0; } }
 
 .description-container h1 {
+  color: #5c9598;
   font-family: 'Kristi', serif;
   font-size: 5rem; }
 
 .skills-list-container {
-  border: 1px solid blue;
-  width: 400px;
-  margin-top: 3rem;
+  width: 300px;
+  margin-top: 1rem;
   padding: 1rem;
+  border-radius: 2rem;
   text-align: left;
   list-style: none;
   box-shadow: 0 0.5rem 1rem #d9d9d9;
@@ -279,7 +278,7 @@ body, html, ul, li, h1 {
   transform: translate3d(0, -0.5rem, 1rem); }
 
 .skills-list-container h1 {
-  color: #7200b2; }
+  color: #5c9598; }
 
 .skills-list-container ul li {
   list-style: none; }
