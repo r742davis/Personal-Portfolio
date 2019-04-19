@@ -154,7 +154,7 @@ body, html, ul, li, h1 {
 
 /*****************/
 /*** Home Page ***/
-/*****************************************************/
+/*****************/
 @media (max-width: 800px) {
   #home {
     height: auto; } }
@@ -195,7 +195,7 @@ body, html, ul, li, h1 {
 
 /******************/
 /*** About Page ***/
-/*****************************************************/
+/******************/
 #about {
   background: #f2f2f2;
   padding-bottom: 200px; }
@@ -214,6 +214,11 @@ body, html, ul, li, h1 {
   margin: 0 auto;
   width: auto; }
 
+.picture-cv-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 .profile-picture {
   width: 250px;
   height: 250px;
@@ -221,21 +226,6 @@ body, html, ul, li, h1 {
   margin: 2rem;
   box-shadow: 0 1rem 2rem #d9d9d9;
   transition: 0.5s; }
-
-.description-container {
-  width: 400px;
-  margin-top: 1rem;
-  padding: 1rem;
-  text-align: left;
-  transition: 0.5s; }
-  @media (max-width: 800px) {
-    .description-container {
-      text-align: center;
-      margin-top: 0; } }
-
-.description-container h1 {
-  font-family: 'Kristi', serif;
-  font-size: 5rem; }
 
 .cv-button-container {
   width: 400px;
@@ -256,7 +246,24 @@ body, html, ul, li, h1 {
 .cv-button a {
   color: white; }
 
+.description-container {
+  border: 1px solid blue;
+  width: 400px;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: right;
+  transition: 0.5s; }
+  @media (max-width: 800px) {
+    .description-container {
+      text-align: center;
+      margin-top: 0; } }
+
+.description-container h1 {
+  font-family: 'Kristi', serif;
+  font-size: 5rem; }
+
 .skills-list-container {
+  border: 1px solid blue;
   width: 400px;
   margin-top: 3rem;
   padding: 1rem;

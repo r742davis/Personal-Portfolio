@@ -13,11 +13,19 @@ class About extends Component {
           <h1 data-aos="fade-up">A little about me</h1>
         </div>
         <div className="about-container" data-aos="fade-up">
-          <img src={profile} className="profile-picture" alt="profile of richard"/>
           <div className="description-container" data-aos="fade-up">
             <h1>Richard Davis</h1>
             <h4>Full-Stack Web Developer</h4>
-            <p>I am passionate coder who relishes diving into both structures and the UI experience. I specialize in React, MongoDB, and Ruby on Rails. I am always looking to learn something new and challenge myself as a coder everyday. </p>
+            <p>
+            I am passionate coder who relishes diving into both structures and the UI experience. I specialize in React, MongoDB, and Ruby on Rails. I am always looking to learn something new and challenge myself as a coder everyday.
+            </p>
+          </div>
+          <div className="picture-cv-container">
+            <img
+              src={profile}
+              className="profile-picture"
+              alt="profile of richard"
+            />
             <div className="cv-button-container">
               <MDBBtn className="cv-button">
                 <a
