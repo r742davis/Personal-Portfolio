@@ -3,7 +3,8 @@ import project_1 from '../images/bear.jpg';
 import project_2 from '../images/wines.png';
 import project_3 from '../images/traveleritis.png';
 import project_4 from '../images/bakersdozen.png';
-import project_5 from '../images/pokemon_api.png';
+import project_5 from '../images/pokemon.png';
+import project_6 from '../images/retro-computers.jpg';
 
 
 class Projects extends Component {
@@ -104,6 +105,7 @@ class Projects extends Component {
             onClick={this.toggleModal5}
           />
           <img
+            src={project_6}
             className="project-grid"
             id="project-grid-6"
             alt="project 6"

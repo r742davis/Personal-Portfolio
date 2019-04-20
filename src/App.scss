@@ -149,11 +149,16 @@ body, html, ul, li, h1 {
 /**************/
 .title-container {
   padding-top: 100px;
-  padding-left: 255px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   margin: 0 auto;
-  @include respond-to('medium') { padding-top: 75px; }
+  @include respond-to('medium') {
+    padding-top: 75px;
+  }
+}
+.about-title {
+  justify-content: flex-start;
+  padding-left: 255px;
 }
 
 .title-container h1 {
@@ -225,9 +230,10 @@ body, html, ul, li, h1 {
 /******************/
 #about {
   background: #f2f2f2;
-  height: 120vh;
-  @include respond-to('large') { height: auto; }
-  @include respond-to('xl') { height: auto; }
+  height: auto;
+  // @include respond-to('xl') { height: auto; }
+  // @include respond-to('large') { height: auto; }
+  // @include respond-to('medium') { height: auto; }
 }
 
 // whole page container
@@ -360,13 +366,14 @@ body, html, ul, li, h1 {
 
 /*********************/
 /*** Projects Page ***/
-/*****************************************************/
+/*********************/
 #projects {
   padding-bottom: 200px;
 }
 .projects-container {
   display: grid;
-  width: 66rem;
+  width: 1200px;
+  height: 600px;
   margin: 0 auto;
   margin-top: 1rem;
   justify-items: center;
@@ -375,11 +382,11 @@ body, html, ul, li, h1 {
     [second] 1fr
     [third] 1fr;
   grid-template-rows:
-    [first] 16rem
-    [second] 16rem;
-  transition: 0.4s;
-  @include respond-to('large') {
+    [first] 18rem
+    [second] 18rem;
+  @include respond-to('xl') {
     width: 42rem;
+    height: auto;
     grid-template-columns:
       [first] 1fr
       [second] 1fr;
@@ -387,9 +394,11 @@ body, html, ul, li, h1 {
       [first] 16rem
       [second] 16rem
       [third] 16rem;
+    transition: 0.4s;
   }
   @include respond-to('medium') {
     width: 30rem;
+    height: auto;
     grid-template-columns:
       [first] 1fr;
     grid-template-rows:
@@ -399,9 +408,12 @@ body, html, ul, li, h1 {
       [fourth] 16rem
       [fifth] 16rem
       [sixth] 16rem;
+    transition: 0.4s;
   }
   @include respond-to('small') {
     width: 400px;
+    height: auto;
+    transition: 0.4s;
   }
 }
 .project-grid {
@@ -410,15 +422,17 @@ body, html, ul, li, h1 {
   align-items: center;
   width: 22rem;
   height: 16rem;
+  margin: 10px;
   transition: 0.4s;
   object-fit: cover;
   @include respond-to('small') { width: 400px; }
 }
-.project-grid img:hover {
-  box-shadow: rgba(114, 0, 178, 0.2) 0 0 0 8rem inset;
-  transition: 0.2s;
-  cursor: pointer;
-}
+// .projects-container img:hover {
+//   box-shadow: rgba(114, 0, 178, 0.2) 0 0 0 8rem inset;
+//   transition: 0.2s;
+//   z-index: 2;
+//   cursor: pointer;
+// }
 .project-grid:after{
   content: "";
   width: 80%;

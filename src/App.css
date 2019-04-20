@@ -126,13 +126,16 @@ body, html, ul, li, h1 {
 /**************/
 .title-container {
   padding-top: 100px;
-  padding-left: 255px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   margin: 0 auto; }
   @media (max-width: 800px) {
     .title-container {
       padding-top: 75px; } }
+
+.about-title {
+  justify-content: flex-start;
+  padding-left: 255px; }
 
 .title-container h1 {
   font-family: 'Kristi', cursive;
@@ -199,13 +202,7 @@ body, html, ul, li, h1 {
 /******************/
 #about {
   background: #f2f2f2;
-  height: 120vh; }
-  @media (max-width: 1000px) {
-    #about {
-      height: auto; } }
-  @media (max-width: 1200px) {
-    #about {
-      height: auto; } }
+  height: auto; }
 
 .about-container {
   display: flex;
@@ -329,32 +326,38 @@ body, html, ul, li, h1 {
 
 /*********************/
 /*** Projects Page ***/
-/*****************************************************/
+/*********************/
 #projects {
   padding-bottom: 200px; }
 
 .projects-container {
   display: grid;
-  width: 66rem;
+  width: 1200px;
+  height: 600px;
   margin: 0 auto;
   margin-top: 1rem;
   justify-items: center;
   grid-template-columns: [first] 1fr [second] 1fr [third] 1fr;
-  grid-template-rows: [first] 16rem [second] 16rem;
-  transition: 0.4s; }
-  @media (max-width: 1000px) {
+  grid-template-rows: [first] 18rem [second] 18rem; }
+  @media (max-width: 1200px) {
     .projects-container {
       width: 42rem;
+      height: auto;
       grid-template-columns: [first] 1fr [second] 1fr;
-      grid-template-rows: [first] 16rem [second] 16rem [third] 16rem; } }
+      grid-template-rows: [first] 16rem [second] 16rem [third] 16rem;
+      transition: 0.4s; } }
   @media (max-width: 800px) {
     .projects-container {
       width: 30rem;
+      height: auto;
       grid-template-columns: [first] 1fr;
-      grid-template-rows: [first] 16rem [second] 16rem [third] 16rem [fourth] 16rem [fifth] 16rem [sixth] 16rem; } }
+      grid-template-rows: [first] 16rem [second] 16rem [third] 16rem [fourth] 16rem [fifth] 16rem [sixth] 16rem;
+      transition: 0.4s; } }
   @media (max-width: 450px) {
     .projects-container {
-      width: 400px; } }
+      width: 400px;
+      height: auto;
+      transition: 0.4s; } }
 
 .project-grid {
   display: flex;
@@ -362,16 +365,12 @@ body, html, ul, li, h1 {
   align-items: center;
   width: 22rem;
   height: 16rem;
+  margin: 10px;
   transition: 0.4s;
   object-fit: cover; }
   @media (max-width: 450px) {
     .project-grid {
       width: 400px; } }
-
-.project-grid img:hover {
-  box-shadow: rgba(114, 0, 178, 0.2) 0 0 0 8rem inset;
-  transition: 0.2s;
-  cursor: pointer; }
 
 .project-grid:after {
   content: "";

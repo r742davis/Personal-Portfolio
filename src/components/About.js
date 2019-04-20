@@ -9,7 +9,7 @@ class About extends Component {
     return (
       <>
       <section id="about">
-        <div className="title-container">
+        <div className="title-container about-title">
           <h1 data-aos="fade-up">My Story</h1>
         </div>
         <div className="about-container">
