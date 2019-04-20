@@ -296,7 +296,7 @@ body, html, ul, li, h1 {
   font-size: 5rem;
 }
 
-//New skills container with tech and core skills sections
+//New skills container with frontend and backend skills sections
 .skills-container {
   display: flex;
   justify-content: space-between;
@@ -306,15 +306,15 @@ body, html, ul, li, h1 {
 }
 
 // skills list container with developer skills
-.tech-skills-title {
+.frontend-skills-title {
   background: #7200b2;
 }
-.tech-skills-title h4 {
+.frontend-skills-title h4 {
   padding: 1rem;
   color: whitesmoke;
-  font-family: 'Arvo', serif;
+  font-family: 'Lato-Light', sans-serif;
 }
-.tech-skills-container {
+.frontend-skills-container {
   width: 49%;
   text-align: left;
   list-style: none;
@@ -324,10 +324,10 @@ body, html, ul, li, h1 {
     width: auto;
   }
 }
-.tech-skills-container ul li {
+.frontend-skills-container ul li {
   list-style: none;
 }
-.tech-skills-container li {
+.frontend-skills-container li {
   padding-left: 1rem;
   margin: 0.25rem;
   font-size: 1.5rem;
@@ -337,15 +337,15 @@ body, html, ul, li, h1 {
   height: 30px;
   margin-right: 1rem;
 }
-.core-skills-title {
+.backend-skills-title {
   background: #7200b2;
 }
-.core-skills-title h4 {
+.backend-skills-title h4 {
   padding: 1rem;
   color: whitesmoke;
-  font-family: 'Arvo', serif;
+  font-family: 'Lato-Light', sans-serif;
 }
-.core-skills-container {
+.backend-skills-container {
   width: 49%;
   text-align: left;
   list-style: none;
@@ -355,10 +355,10 @@ body, html, ul, li, h1 {
     width: auto;
   }
 }
-.core-skills-container ul li {
+.backend-skills-container ul li {
   list-style: none;
 }
-.core-skills-container li {
+.backend-skills-container li {
   padding-left: 1rem;
   margin: 0.25rem;
   font-size: 1.5rem;

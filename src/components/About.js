@@ -37,8 +37,8 @@ class About extends Component {
             I am passionate coder who relishes diving into both structures and the UI experience. I specialize in React, MongoDB, and Ruby on Rails. I am always looking to learn something new and challenge myself as a coder everyday.
             </p>
             <div className="skills-container">
-              <div className="tech-skills-container">
-                <div className="tech-skills-title">
+              <div className="frontend-skills-container">
+                <div className="frontend-skills-title">
                   <h4>Frontend Skills</h4>
                 </div>
                 <ul>
@@ -52,8 +52,8 @@ class About extends Component {
                   <li><img src="http://pluspng.com/img-png/jquery-logo-png-kategoriedateilogo-software-wikipedia-256.png" className="skill-icon"/>jQuery</li>
                 </ul>
               </div>
-              <div className="core-skills-container">
-                <div className="core-skills-title">
+              <div className="backend-skills-container">
+                <div className="backend-skills-title">
                   <h4>Backend Skills</h4>
                 </div>
                 <ul>
