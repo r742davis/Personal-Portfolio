@@ -31,14 +31,21 @@ class About extends Component {
           </div>
           <div className="description-container" data-aos="fade-up">
             <h1>Richard Davis</h1>
-            <hr />
+              <hr />
             <h4>Full-Stack Web Developer</h4>
             <p>
             I am passionate coder who relishes diving into both structures and the UI experience. I specialize in React, MongoDB, and Ruby on Rails. I am always looking to learn something new and challenge myself as a coder everyday.
             </p>
+              <hr />
+            <div className="skills-container">
+              <div className="tech-skills">
 
+              </div>
+              <div className="core-skills">
+
+              </div>
+            </div>
           </div>
-
         </div>
       </section>
       </>

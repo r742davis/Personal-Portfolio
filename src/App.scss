@@ -149,7 +149,7 @@ body, html, ul, li, h1 {
 /**************/
 .title-container {
   padding-top: 100px;
-  padding-left: 200px;
+  padding-left: 255px;
   display: flex;
   justify-content: flex-start;
   margin: 0 auto;
@@ -169,7 +169,7 @@ body, html, ul, li, h1 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #da99ff;
+  background-color: #5c9598;
   -webkit-transform: scaleX(0.5);
   transform: scaleX(0.5);
   -webkit-transition: all 0.2s ease-in-out 0s;
@@ -229,6 +229,7 @@ body, html, ul, li, h1 {
   @include respond-to('large') { height: auto; }
   @include respond-to('xl') { height: auto; }
 }
+
 // whole page container
 .about-container {
   display: flex;
@@ -236,6 +237,7 @@ body, html, ul, li, h1 {
   flex-wrap: wrap;
   justify-content: flex-start;
   padding-left: 200px;
+  padding-top: 50px;
   margin: 0 auto;
 }
 // picture and cv download button container
@@ -249,7 +251,7 @@ body, html, ul, li, h1 {
   width: 300px;
   height: 300px;
   box-shadow: 0 1rem 2rem #d9d9d9;
-  transition: 0.5s;
+  transition: 0.4s ease-in-out;
 }
 .cv-button-container {
   width: 400px;
@@ -270,11 +272,9 @@ body, html, ul, li, h1 {
 }
 // description container with name, title, and description
 .description-container {
-  width: 400px;
-  // margin-top: 1rem;
-  padding: 1rem;
+  width: 800px;
   text-align: left;
-  transition: 0.5s;
+  transition: 0.4s ease-in-out;
   @include respond-to('medium') {
     text-align: center;
     margin-top: 0;
@@ -282,15 +282,15 @@ body, html, ul, li, h1 {
 }
 .description-container h1 {
   color: #5c9598;
-  font-family: 'Kristi', serif;
+  font-family: 'Arvo', serif;
   font-size: 5rem;
 }
+
+
+
+
 // skills list container with developer skills
 .skills-list-container {
-  width: 300px;
-  margin-top: 1rem;
-  padding: 1rem;
-  border-radius: 2rem;
   text-align: left;
   list-style: none;
   box-shadow: 0 0.5rem 1rem #d9d9d9;
