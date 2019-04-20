@@ -158,7 +158,7 @@ body, html, ul, li, h1 {
 }
 .about-title {
   justify-content: flex-start;
-  padding-left: 255px;
+  padding-left: 155px;
 }
 
 .title-container h1 {
@@ -242,7 +242,7 @@ body, html, ul, li, h1 {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
-  padding-left: 200px;
+  padding-left: 100px;
   padding-top: 50px;
   margin: 0 auto;
 }
@@ -282,7 +282,7 @@ body, html, ul, li, h1 {
 
 // description container with name, title, and description
 .description-container {
-  width: 800px;
+  width: 700px;
   text-align: left;
   transition: 0.4s ease-in-out;
   @include respond-to('medium') {
