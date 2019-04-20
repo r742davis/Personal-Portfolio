@@ -366,7 +366,10 @@ body, html, ul, li, h1 {
   object-fit: cover;
   box-shadow: 0 0.5rem 1rem #d9d9d9;
   transition: 0.4s; }
-  @media (max-width: 450px) {
+  @media (max-width: 1200px) {
+    .project-grid {
+      height: 15rem; } }
+  @media (max-width: 800px) {
     .project-grid {
       width: 400px; } }
 
