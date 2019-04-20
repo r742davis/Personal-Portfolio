@@ -69,13 +69,15 @@ class Projects extends Component {
           <h1 data-aos="fade-up">My Projects</h1>
         </div>
         <div className="projects-container">
-          <img
-            src={project_1}
-            className="project-grid"
-            id="project-grid-1"
-            alt="project 1"
-            onClick={this.toggleModal1}
-          />
+          <div className="project-grid-1">
+            <img
+              src={project_1}
+              className="project-grid"
+
+              alt="project 1"
+              onClick={this.toggleModal1}
+            />
+          </div>
           <img
             src={project_2}
             className="project-grid"

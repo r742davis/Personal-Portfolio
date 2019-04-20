@@ -372,44 +372,7 @@ body, html, ul, li, h1 {
 
 .project-grid:hover {
   filter: blur(1px) brightness(60%);
-  box-shadow: 0 0 16px #7200b2; }
-
-.project-grid:after {
-  content: "";
-  width: 80%;
-  height: 80%;
-  display: block;
-  font: 2rem 'Arvo';
-  color: white;
-  border: 4px solid;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.2s; }
-
-.project-grid:hover:after {
-  opacity: 0.7;
-  transition: 0.4s; }
-
-#project-grid-1:after {
-  content: "Mug Club"; }
-
-#project-grid-2:after {
-  content: "Vie du Vin"; }
-
-#project-grid-3:after {
-  content: "Traveleritis"; }
-
-#project-grid-4:after {
-  content: "Pokedex"; }
-
-#project-grid-5:after {
-  content: "My Portfolio"; }
-
-#project-grid-6:after {
-  content: "Project 6"; }
+  box-shadow: 0 0 8px #7200b2; }
 
 /********************/
 /*** Contact Page ***/
