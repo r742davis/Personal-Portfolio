@@ -26,39 +26,33 @@ class Projects extends Component {
   }
   toggleModal1 = () => {
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen1: !this.state.isOpen1
     })
-    console.log(this.state.isOpen);
   }
   toggleModal2 = () => {
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen2: !this.state.isOpen2
     })
-    console.log(this.state.isOpen);
   }
   toggleModal3 = () => {
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen3: !this.state.isOpen3
     })
-    console.log(this.state.isOpen);
   }
   toggleModal4 = () => {
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen4: !this.state.isOpen4
     })
-    console.log(this.state.isOpen);
   }
   toggleModal5 = () => {
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen5: !this.state.isOpen5
     })
-    console.log(this.state.isOpen);
   }
   toggleModal6 = () => {
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen6: !this.state.isOpen6
     })
-    console.log(this.state.isOpen);
   }
 
   render() {
@@ -78,6 +72,14 @@ class Projects extends Component {
               onClick={this.toggleModal1}
             />
           </div>
+          {this.state.isOpen1 ?
+            <div className="backdrop">
+              <div className="modal">
+                <h1>Hello</h1>
+              </div>
+            </div>
+          : null
+          }
           <img
             src={project_2}
             className="project-grid"

@@ -435,6 +435,25 @@ body, html, ul, li, h1 {
   box-shadow: 0 0 8px #7200b2;
 }
 
+// Modal Style
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+.modal {
+  background: #fff;
+  position: relative;
+  border-radius: 1rem;
+  width: 500;
+  height: 400px;
+  margin: 0 auto;
+  padding: 30px;
+}
 
 
 
