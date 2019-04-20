@@ -147,7 +147,7 @@ body, html, ul, li, h1 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #5c9598;
+  background-color: #7200b2;
   -webkit-transform: scaleX(0.5);
   transform: scaleX(0.5);
   -webkit-transition: all 0.2s ease-in-out 0s;
@@ -211,7 +211,7 @@ body, html, ul, li, h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  align-items: flex-start;
   padding-left: 200px;
   padding-top: 50px;
   margin: 0 auto; }
@@ -225,6 +225,7 @@ body, html, ul, li, h1 {
 .profile-picture {
   width: 300px;
   height: 300px;
+  border-radius: 1rem;
   box-shadow: 0 1rem 2rem #d9d9d9;
   transition: 0.4s ease-in-out; }
 
@@ -237,12 +238,14 @@ body, html, ul, li, h1 {
       width: auto; } }
 
 .cv-button {
-  background: #5c9598 !important;
+  background: #7200b2 !important;
   height: 60px;
   width: 300px;
-  font-size: 20px;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  font-family: 'Arvo', serif;
   box-shadow: 0 0.2rem 1rem #d9d9d9;
-  transition: 0.4s ease-in-out; }
+  transition: 0.2s ease-in-out; }
 
 .cv-button a {
   color: white; }
@@ -257,33 +260,45 @@ body, html, ul, li, h1 {
       margin-top: 0; } }
 
 .description-container h1 {
-  color: #5c9598;
+  color: #7200b2;
   font-family: 'Arvo', serif;
   font-size: 5rem; }
 
-.skills-list-container {
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  height: 500px; }
+
+.tech-skills-title {
+  background: #7200b2; }
+
+.tech-skills-title h4 {
+  padding: 1rem;
+  color: whitesmoke;
+  font-family: 'Arvo', serif; }
+
+.tech-skills-container {
+  width: 49%;
   text-align: left;
   list-style: none;
   box-shadow: 0 0.5rem 1rem #d9d9d9;
   transition: 0.4s ease-in-out; }
   @media (max-width: 800px) {
-    .skills-list-container {
+    .tech-skills-container {
       width: auto; } }
 
-.skills-list-container:hover {
-  transform: translate3d(0, -0.5rem, 1rem); }
-
-.skills-list-container h1 {
-  color: #5c9598; }
-
-.skills-list-container ul li {
+.tech-skills-container ul li {
   list-style: none; }
 
-.skills-list-container li {
-  margin: 1rem;
+.tech-skills-container li {
+  padding-left: 1rem;
+  margin: 0.25rem;
   font-size: 1.5rem; }
 
 .skill-icon {
+  width: 30px;
+  height: 30px;
   margin-right: 1rem; }
 
 .javascript {
@@ -297,6 +312,32 @@ body, html, ul, li, h1 {
 
 .databases {
   color: #3d9970; }
+
+.core-skills-title {
+  background: #7200b2; }
+
+.core-skills-title h4 {
+  padding: 1rem;
+  color: whitesmoke;
+  font-family: 'Arvo', serif; }
+
+.core-skills-container {
+  width: 49%;
+  text-align: left;
+  list-style: none;
+  box-shadow: 0 0.5rem 1rem #d9d9d9;
+  transition: 0.4s ease-in-out; }
+  @media (max-width: 800px) {
+    .core-skills-container {
+      width: auto; } }
+
+.core-skills-container ul li {
+  list-style: none; }
+
+.core-skills-container li {
+  padding-left: 1rem;
+  margin: 0.25rem;
+  font-size: 1.5rem; }
 
 /*********************/
 /*** Projects Page ***/

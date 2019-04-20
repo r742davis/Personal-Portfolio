@@ -36,13 +36,37 @@ class About extends Component {
             <p>
             I am passionate coder who relishes diving into both structures and the UI experience. I specialize in React, MongoDB, and Ruby on Rails. I am always looking to learn something new and challenge myself as a coder everyday.
             </p>
-              <hr />
             <div className="skills-container">
-              <div className="tech-skills">
-
+              <div className="tech-skills-container">
+                <div className="tech-skills-title">
+                  <h4>Tech Skills</h4>
+                </div>
+                <ul>
+                  <li><img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" className="skill-icon"/>HTML/CSS</li>
+                  <li><img src="https://sdtimes.com/wp-content/uploads/2018/01/bootstrap-stack.png" className="skill-icon"/>Bootstrap</li>
+                  <li><img src="https://cdn.worldvectorlogo.com/logos/sass-1.svg" className="skill-icon"/>Sass</li>
+                  <li><img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" className="skill-icon"/>React</li>
+                  <li><img src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/300/thumb/angular2.png" className="skill-icon"/>AngularJS</li>
+                  <li><img src="https://www.balena.io/docs//img/language/nodejs.svg" className="skill-icon"/>Node.js</li>
+                  <li><img src="https://img.icons8.com/color/48/000000/ruby-gemstone.png" className="skill-icon"/>Ruby</li>
+                  <li><img src="https://s3-eu-west-1.amazonaws.com/devinterface-web/production/technologies/40/medium/rubylogo111.png?1444285834" className="skill-icon"/>Ruby on Rails</li>
+                  <li><img src="https://cdn-images-1.medium.com/max/449/1*NRCOyVBY6Jiqr4Q9A1zoaQ.png" className="skill-icon"/>MongoDB/Express</li>
+                  <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/540px-Postgresql_elephant.svg.png" className="skill-icon"/>PostgreSQL</li>
+                </ul>
               </div>
-              <div className="core-skills">
-
+              <div className="core-skills-container">
+                <div className="core-skills-title">
+                  <h4>Core Skills</h4>
+                </div>
+                <ul>
+                  <li>Communication</li>
+                  <li>Teamwork</li>
+                  <li>Teaching</li>
+                  <li>Empathy</li>
+                  <li>Receptive to New Idea</li>
+                  <li>Contributive</li>
+                  <li>Personable</li>
+                </ul>
               </div>
             </div>
           </div>
