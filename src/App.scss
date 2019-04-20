@@ -417,22 +417,22 @@ body, html, ul, li, h1 {
   }
 }
 .project-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 22rem;
   height: 16rem;
   margin: 10px;
-  transition: 0.4s;
   object-fit: cover;
+  box-shadow: 0 0.5rem 1rem #d9d9d9;
+  transition: 0.4s;
   @include respond-to('small') { width: 400px; }
 }
-// .projects-container img:hover {
-//   box-shadow: rgba(114, 0, 178, 0.2) 0 0 0 8rem inset;
-//   transition: 0.2s;
-//   z-index: 2;
-//   cursor: pointer;
-// }
+.project-grid:hover {
+  filter:blur(1px) brightness(60%);
+  box-shadow: 0 0 16px #7200b2;
+}
+
+
+
+
 .project-grid:after{
   content: "";
   width: 80%;
@@ -452,8 +452,7 @@ body, html, ul, li, h1 {
   opacity: 0.7;
   transition: 0.4s;
 }
-.projects-container img {
-}
+
 #project-grid-1:after {
   content: "Mug Club";
 }

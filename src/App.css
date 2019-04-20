@@ -360,17 +360,19 @@ body, html, ul, li, h1 {
       transition: 0.4s; } }
 
 .project-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 22rem;
   height: 16rem;
   margin: 10px;
-  transition: 0.4s;
-  object-fit: cover; }
+  object-fit: cover;
+  box-shadow: 0 0.5rem 1rem #d9d9d9;
+  transition: 0.4s; }
   @media (max-width: 450px) {
     .project-grid {
       width: 400px; } }
+
+.project-grid:hover {
+  filter: blur(1px) brightness(60%);
+  box-shadow: 0 0 16px #7200b2; }
 
 .project-grid:after {
   content: "";
