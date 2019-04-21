@@ -68,7 +68,7 @@ class Projects extends Component {
       {this.state.isOpen1 ?
         <div className="backdrop">
           <div className="modal">
-            <h1>Hello</h1>
+            <h1>Hello 1</h1>
             <div>
               <h1 onClick={this.closeModal}>X</h1>
             </div>
@@ -76,6 +76,65 @@ class Projects extends Component {
         </div>
       : null
       }
+      {this.state.isOpen2 ?
+        <div className="backdrop">
+          <div className="modal">
+            <h1>Hello 2</h1>
+            <div>
+              <h1 onClick={this.closeModal}>X</h1>
+            </div>
+          </div>
+        </div>
+      : null
+      }
+      {this.state.isOpen3 ?
+        <div className="backdrop">
+          <div className="modal">
+            <h1>Hello 3</h1>
+            <div>
+              <h1 onClick={this.closeModal}>X</h1>
+            </div>
+          </div>
+        </div>
+      : null
+      }
+      {this.state.isOpen4 ?
+        <div className="backdrop">
+          <div className="modal">
+            <h1>Hello 4</h1>
+            <div>
+              <h1 onClick={this.closeModal}>X</h1>
+            </div>
+          </div>
+        </div>
+      : null
+      }
+      {this.state.isOpen5 ?
+        <div className="backdrop">
+          <div className="modal">
+            <h1>Hello 5</h1>
+            <div>
+              <h1 onClick={this.closeModal}>X</h1>
+            </div>
+          </div>
+        </div>
+      : null
+      }
+      {this.state.isOpen6 ?
+        <div className="backdrop">
+          <div className="modal">
+            <h1>Hello 6</h1>
+            <div>
+              <h1 onClick={this.closeModal}>X</h1>
+            </div>
+          </div>
+        </div>
+      : null
+      }
+
+
+
+
       <section id="projects">
         <div className="title-container">
           <h1 data-aos="fade-up">My Projects</h1>

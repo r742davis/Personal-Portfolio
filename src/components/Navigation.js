@@ -18,6 +18,7 @@ class Navigation extends Component {
       isOpen: false,
       scrolled: true
     };
+    this.handleClickOutside = this.handleClickOutside.bind(this);
   }
 
   toggle() {
@@ -33,7 +34,26 @@ class Navigation extends Component {
         this.setState({ scrolled })
       }
     })
+    document.addEventListener('mousedown', this.handleClick, false);
   }
+
+  componentWillUnmount() {
+    document.removeEventListener('mousedown', this.handleClick, false)
+  }
+
+  handleClick = e => {
+    if (this.node.contains(e.target)) {
+      return;
+    }
+
+    this.handleClickOutside();
+  }
+
+  handleClickOutside() {
+    this.setState({ isOpen: false })
+  }
+
+
 
   render() {
     return (
@@ -41,6 +61,7 @@ class Navigation extends Component {
         <Navbar
         light
         expand="md"
+        ref={node => this.node = node}
         className={this.state.scrolled ? "navbar" : "navbar-recolored"}
         >
           <NavbarBrand
