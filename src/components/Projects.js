@@ -58,6 +58,14 @@ class Projects extends Component {
   render() {
     return (
       <>
+      {this.state.isOpen1 ?
+        <div className="backdrop">
+          <div className="modal">
+            <h1>Hello</h1>
+          </div>
+        </div>
+      : null
+      }
       <section id="projects">
         <div className="title-container">
           <h1 data-aos="fade-up">My Projects</h1>
@@ -67,19 +75,10 @@ class Projects extends Component {
             <img
               src={project_1}
               className="project-grid"
-
               alt="project 1"
               onClick={this.toggleModal1}
             />
           </div>
-          {this.state.isOpen1 ?
-            <div className="backdrop">
-              <div className="modal">
-                <h1>Hello</h1>
-              </div>
-            </div>
-          : null
-          }
           <img
             src={project_2}
             className="project-grid"
