@@ -19,10 +19,17 @@ class Projects extends Component {
       isOpen5: false,
       isOpen6: false
     }
-    this.handleClick = this.handleClick.bind(this)
+    this.closeModal = this.closeModal.bind(this)
   }
-  handleClick() {
-    console.log("Hi");
+  closeModal() {
+    this.setState({
+      isOpen1: false,
+      isOpen2: false,
+      isOpen3: false,
+      isOpen4: false,
+      isOpen5: false,
+      isOpen6: false
+    })
   }
   toggleModal1 = () => {
     this.setState({
@@ -62,6 +69,9 @@ class Projects extends Component {
         <div className="backdrop">
           <div className="modal">
             <h1>Hello</h1>
+            <div>
+              <h1 onClick={this.closeModal}>X</h1>
+            </div>
           </div>
         </div>
       : null
