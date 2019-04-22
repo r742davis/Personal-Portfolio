@@ -312,7 +312,7 @@ body, html, ul, li, h1 {
 .frontend-skills-title h4 {
   padding: 1rem;
   color: whitesmoke;
-  font-family: 'Lato-Light', sans-serif;
+  font-family: 'Arvo', serif;
 }
 .frontend-skills-container {
   width: 49%;
@@ -343,7 +343,7 @@ body, html, ul, li, h1 {
 .backend-skills-title h4 {
   padding: 1rem;
   color: whitesmoke;
-  font-family: 'Lato-Light', sans-serif;
+  font-family: 'Arvo', serif;
 }
 .backend-skills-container {
   width: 49%;
@@ -431,8 +431,9 @@ body, html, ul, li, h1 {
   }
 }
 .project-grid:hover {
-  filter:blur(1px) brightness(60%);
+  filter: blur(1px) brightness(60%);
   box-shadow: 0 0 8px #7200b2;
+  cursor: pointer;
 }
 
 // Modal Style

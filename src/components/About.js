@@ -42,14 +42,14 @@ class About extends Component {
                   <h4>Frontend Skills</h4>
                 </div>
                 <ul>
-                  <li><img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" className="skill-icon"/>HTML/CSS</li>
-                  <li><img src="https://sdtimes.com/wp-content/uploads/2018/01/bootstrap-stack.png" className="skill-icon"/>Bootstrap</li>
-                  <li><img src="https://cdn.worldvectorlogo.com/logos/sass-1.svg" className="skill-icon"/>Sass</li>
-                  <li><img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" className="skill-icon"/>React</li>
-                  <li><img src="https://cdn.freebiesupply.com/logos/large/2x/redux-logo-png-transparent.png" className="skill-icon"/>Redux</li>
-                  <li><img src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/300/thumb/angular2.png" className="skill-icon"/>AngularJS</li>
-                  <li><img src="https://img.icons8.com/color/48/000000/ruby-gemstone.png" className="skill-icon"/>Ruby</li>
-                  <li><img src="http://pluspng.com/img-png/jquery-logo-png-kategoriedateilogo-software-wikipedia-256.png" className="skill-icon"/>jQuery</li>
+                  <li><img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" className="skill-icon" alt="html/css"/>HTML/CSS</li>
+                  <li><img src="https://sdtimes.com/wp-content/uploads/2018/01/bootstrap-stack.png" className="skill-icon" alt="bootstrap"/>Bootstrap</li>
+                  <li><img src="https://cdn.worldvectorlogo.com/logos/sass-1.svg" className="skill-icon" alt="sass"/>Sass</li>
+                  <li><img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" className="skill-icon" alt="react"/>React</li>
+                  <li><img src="https://cdn.freebiesupply.com/logos/large/2x/redux-logo-png-transparent.png" className="skill-icon" alt="redux"/>Redux</li>
+                  <li><img src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/300/thumb/angular2.png" className="skill-icon" alt="angular js"/>AngularJS</li>
+                  <li><img src="https://img.icons8.com/color/48/000000/ruby-gemstone.png" className="skill-icon" alt="ruby"/>Ruby</li>
+                  <li><img src="http://pluspng.com/img-png/jquery-logo-png-kategoriedateilogo-software-wikipedia-256.png" className="skill-icon" alt="j query"/>jQuery</li>
                 </ul>
               </div>
               <div className="backend-skills-container">
@@ -57,11 +57,11 @@ class About extends Component {
                   <h4>Backend Skills</h4>
                 </div>
                 <ul>
-                  <li><img src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/359/thumb/expressjslogo.png" className="skill-icon"/>Express</li>
-                  <li><img src="https://cdn-images-1.medium.com/max/449/1*NRCOyVBY6Jiqr4Q9A1zoaQ.png" className="skill-icon"/>MongoDB</li>
-                  <li><img src="https://www.balena.io/docs//img/language/nodejs.svg" className="skill-icon"/>Node.js</li>
-                  <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/540px-Postgresql_elephant.svg.png" className="skill-icon"/>PostgreSQL</li>
-                  <li><img src="https://s3-eu-west-1.amazonaws.com/devinterface-web/production/technologies/40/medium/rubylogo111.png?1444285834" className="skill-icon"/>Ruby on Rails</li>
+                  <li><img src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/359/thumb/expressjslogo.png" className="skill-icon" alt="express"/>Express</li>
+                  <li><img src="https://cdn-images-1.medium.com/max/449/1*NRCOyVBY6Jiqr4Q9A1zoaQ.png" className="skill-icon" alt="mongo db"/>MongoDB</li>
+                  <li><img src="https://www.balena.io/docs//img/language/nodejs.svg" className="skill-icon" alt="node js"/>Node.js</li>
+                  <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/540px-Postgresql_elephant.svg.png" className="skill-icon" alt="Postgre SQL"/>PostgreSQL</li>
+                  <li><img src="https://s3-eu-west-1.amazonaws.com/devinterface-web/production/technologies/40/medium/rubylogo111.png?1444285834" className="skill-icon" alt="ruby on rails"/>Ruby on Rails</li>
                 </ul>
               </div>
             </div>
