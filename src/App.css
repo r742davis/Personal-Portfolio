@@ -424,18 +424,22 @@ body, html, ul, li, h1 {
   grid-template-columns: 1fr 0.5fr 0.5fr;
   grid-template-rows: 30px 1fr 1fr 1fr 1fr 1fr; }
 
-.modal-grid div {
-  border: 1px solid blue; }
-
 .close-modal {
   background: green;
   grid-column: 1 / 4;
-  text-align: right; }
+  text-align: right;
+  padding-right: 10px; }
 
 .project-picture {
   background: yellow;
   grid-column: 1 / 2;
-  grid-row: 2 / 7; }
+  grid-row: 2 / 7;
+  align-self: center; }
+
+.project-picture img {
+  height: 300px;
+  width: 300px;
+  padding: 10px; }
 
 .project-title {
   background: rebeccapurple;
@@ -448,11 +452,19 @@ body, html, ul, li, h1 {
 
 .project-tech {
   background: teal;
-  grid-column: 2 / 4; }
+  grid-column: 2 / 3; }
+
+.project-tech-description {
+  background: steelblue;
+  grid-column: 3 / 4; }
 
 .project-links {
   background: indigo;
-  grid-column: 2 / 4; }
+  grid-column: 2 / 3; }
+
+.project-links-description {
+  background: maroon;
+  grid-column: 3 / 4; }
 
 @keyframes fade-in {
   0% {

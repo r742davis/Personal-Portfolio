@@ -72,15 +72,28 @@ class Projects extends Component {
               <div className="close-modal">
                 <h4 onClick={this.closeModal}>X</h4>
               </div>
-              <div className="project-picture"></div>
-              <div className="project-title"></div>
-              <div className="project-description"></div>
-              <div className="project-tech"></div>
-              <div className="project-links"></div>
-
+              <div className="project-picture">
+                <img src={project_1} alt="project picture" />
+              </div>
+              <div className="project-title">
+                <h2>Mug Club Membership App</h2>
+              </div>
+              <div className="project-description">
+                <p>A description of the project and why I took it on</p>
+              </div>
+              <div className="project-tech">
+                <h4>Tech:</h4>
+              </div>
+              <div className="project-tech-description">
+                <p>React Native, MongoDB, PostgreSQL</p>
+              </div>
+              <div className="project-links">
+                <h4>Links:</h4>
+              </div>
+              <div className="project-links-description">
+                <p>Github.com</p>
+              </div>
             </div>
-
-
           </div>
         </div>
       : null
@@ -88,10 +101,31 @@ class Projects extends Component {
       {this.state.isOpen2 ?
         <div className="backdrop">
           <div className="modal">
-
-            <h1>Hello 2</h1>
-            <div>
-              <h1 onClick={this.closeModal}>X</h1>
+            <div className="modal-grid">
+              <div className="close-modal">
+                <h4 onClick={this.closeModal}>X</h4>
+              </div>
+              <div className="project-picture">
+                <img src={project_2} alt="project picture" />
+              </div>
+              <div className="project-title">
+                <h2>Vie du Vin</h2>
+              </div>
+              <div className="project-description">
+                <p>A description of the project and why I took it on</p>
+              </div>
+              <div className="project-tech">
+                <h4>Tech:</h4>
+              </div>
+              <div className="project-tech-description">
+                <p>React Native, MongoDB, PostgreSQL</p>
+              </div>
+              <div className="project-links">
+                <h4>Links:</h4>
+              </div>
+              <div className="project-links-description">
+                <p>Github.com</p>
+              </div>
             </div>
           </div>
         </div>
@@ -100,9 +134,31 @@ class Projects extends Component {
       {this.state.isOpen3 ?
         <div className="backdrop">
           <div className="modal">
-            <h1>Hello 3</h1>
-            <div>
-              <h1 onClick={this.closeModal}>X</h1>
+            <div className="modal-grid">
+              <div className="close-modal">
+                <h4 onClick={this.closeModal}>X</h4>
+              </div>
+              <div className="project-picture">
+                <img src={project_3} alt="project picture" />
+              </div>
+              <div className="project-title">
+                <h2>Traveleritis</h2>
+              </div>
+              <div className="project-description">
+                <p>A description of the project and why I took it on</p>
+              </div>
+              <div className="project-tech">
+                <h4>Tech:</h4>
+              </div>
+              <div className="project-tech-description">
+                <p>React Native, MongoDB, PostgreSQL</p>
+              </div>
+              <div className="project-links">
+                <h4>Links:</h4>
+              </div>
+              <div className="project-links-description">
+                <p>Github.com</p>
+              </div>
             </div>
           </div>
         </div>
@@ -111,9 +167,31 @@ class Projects extends Component {
       {this.state.isOpen4 ?
         <div className="backdrop">
           <div className="modal">
-            <h1>Hello 4</h1>
-            <div>
-              <h1 onClick={this.closeModal}>X</h1>
+            <div className="modal-grid">
+              <div className="close-modal">
+                <h4 onClick={this.closeModal}>X</h4>
+              </div>
+              <div className="project-picture">
+                <img src={project_4} alt="project picture" />
+              </div>
+              <div className="project-title">
+                <h2>Baker's Dozen</h2>
+              </div>
+              <div className="project-description">
+                <p>A description of the project and why I took it on</p>
+              </div>
+              <div className="project-tech">
+                <h4>Tech:</h4>
+              </div>
+              <div className="project-tech-description">
+                <p>React Native, MongoDB, PostgreSQL</p>
+              </div>
+              <div className="project-links">
+                <h4>Links:</h4>
+              </div>
+              <div className="project-links-description">
+                <p>Github.com</p>
+              </div>
             </div>
           </div>
         </div>
@@ -122,9 +200,31 @@ class Projects extends Component {
       {this.state.isOpen5 ?
         <div className="backdrop">
           <div className="modal">
-            <h1>Hello 5</h1>
-            <div>
-              <h1 onClick={this.closeModal}>X</h1>
+            <div className="modal-grid">
+              <div className="close-modal">
+                <h4 onClick={this.closeModal}>X</h4>
+              </div>
+              <div className="project-picture">
+                <img src={project_5} alt="project picture" />
+              </div>
+              <div className="project-title">
+                <h2>Pokedex</h2>
+              </div>
+              <div className="project-description">
+                <p>A description of the project and why I took it on</p>
+              </div>
+              <div className="project-tech">
+                <h4>Tech:</h4>
+              </div>
+              <div className="project-tech-description">
+                <p>React Native, MongoDB, PostgreSQL</p>
+              </div>
+              <div className="project-links">
+                <h4>Links:</h4>
+              </div>
+              <div className="project-links-description">
+                <p>Github.com</p>
+              </div>
             </div>
           </div>
         </div>
@@ -133,9 +233,31 @@ class Projects extends Component {
       {this.state.isOpen6 ?
         <div className="backdrop">
           <div className="modal">
-            <h1>Hello 6</h1>
-            <div>
-              <h1 onClick={this.closeModal}>X</h1>
+            <div className="modal-grid">
+              <div className="close-modal">
+                <h4 onClick={this.closeModal}>X</h4>
+              </div>
+              <div className="project-picture">
+                <img src={project_6} alt="project picture" />
+              </div>
+              <div className="project-title">
+                <h2>Portfolio Site</h2>
+              </div>
+              <div className="project-description">
+                <p>A description of the project and why I took it on</p>
+              </div>
+              <div className="project-tech">
+                <h4>Tech:</h4>
+              </div>
+              <div className="project-tech-description">
+                <p>React, HTML, Sass</p>
+              </div>
+              <div className="project-links">
+                <h4>Links:</h4>
+              </div>
+              <div className="project-links-description">
+                <p>Github.com</p>
+              </div>
             </div>
           </div>
         </div>
