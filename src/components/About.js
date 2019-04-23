@@ -10,7 +10,7 @@ class About extends Component {
       <>
       <section id="about">
         <div className="title-container about-title">
-          <h1 data-aos="fade-up">My Story</h1>
+          <h1 data-aos="fade-up">About Me</h1>
         </div>
         <div className="about-container">
           <div className="picture-cv-container" data-aos="fade-up">
@@ -22,7 +22,7 @@ class About extends Component {
             <div className="cv-button-container">
               <MDBBtn className="cv-button">
                 <a
-                  href="https://drive.google.com/open?id=1XL9bvtIZfgzgDIp401hvK6Y-RZ6N70GK"
+                  href="https://drive.google.com/file/d/1QVdSpdP-JZ20GrZu0ApqVp-Mx-urqGHW/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer">Download CV
                 </a>

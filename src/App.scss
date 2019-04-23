@@ -450,8 +450,8 @@ body, html, ul, li, h1 {
 
 .modal {
   background: whitesmoke;
-  width: 500px;
-  height: 300px;
+  width: 600px;
+  height: 400px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -460,6 +460,46 @@ body, html, ul, li, h1 {
   margin: 0 auto;
   z-index: 10;
   animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.modal-grid {
+  display: grid;
+  width: 600px;
+  height: 400px;
+  grid-template-columns:
+    1fr 0.5fr 0.5fr;
+  grid-template-rows:
+    30px 1fr 1fr 1fr 1fr 1fr;
+}
+.modal-grid div {
+  border: 1px solid blue;
+}
+.close-modal {
+  background: green;
+  grid-column: 1 / 4;
+  text-align: right;
+}
+.project-picture {
+  background: yellow;
+  grid-column: 1 / 2;
+  grid-row: 2 / 7;
+}
+.project-title {
+  background: rebeccapurple;
+  grid-column: 2 / 4;
+}
+.project-description {
+  background: pink;
+  grid-column: 2 / 4;
+  grid-row: 3 / 5;
+}
+.project-tech {
+  background: teal;
+  grid-column: 2 / 4;
+}
+.project-links {
+  background: indigo;
+  grid-column: 2 / 4;
 }
 
 @keyframes fade-in {

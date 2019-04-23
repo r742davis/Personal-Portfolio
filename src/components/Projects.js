@@ -68,10 +68,19 @@ class Projects extends Component {
       {this.state.isOpen1 ?
         <div className="backdrop">
           <div className="modal">
-            <h1>Hello 1</h1>
-            <div>
-              <h1 onClick={this.closeModal}>X</h1>
+            <div className="modal-grid">
+              <div className="close-modal">
+                <h4 onClick={this.closeModal}>X</h4>
+              </div>
+              <div className="project-picture"></div>
+              <div className="project-title"></div>
+              <div className="project-description"></div>
+              <div className="project-tech"></div>
+              <div className="project-links"></div>
+
             </div>
+
+
           </div>
         </div>
       : null
@@ -79,6 +88,7 @@ class Projects extends Component {
       {this.state.isOpen2 ?
         <div className="backdrop">
           <div className="modal">
+
             <h1>Hello 2</h1>
             <div>
               <h1 onClick={this.closeModal}>X</h1>
