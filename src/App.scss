@@ -304,14 +304,12 @@ body, html, ul, li, h1 {
 .description-container p {
   font-size: 1.25rem;
 }
-.description-container-current-projects ul {
-  @include respond-to('xl') {
-    list-style: none;
-  }
-}
 .description-container-current-projects li {
   margin-left: 50px;
   font-size: 1.25rem;
+  @include respond-to('xl') {
+    list-style: none;
+  }
 }
 .description-container-current-projects a {
   color: #7200b2;
@@ -415,7 +413,7 @@ body, html, ul, li, h1 {
     [first] 18rem
     [second] 18rem;
   @include respond-to('xl') {
-    width: 42rem;
+    width: 800px;
     height: auto;
     grid-template-columns:
       [first] 1fr
@@ -427,7 +425,7 @@ body, html, ul, li, h1 {
     transition: 0.4s;
   }
   @include respond-to('medium') {
-    width: 30rem;
+    width: 450px;
     height: auto;
     grid-template-columns:
       [first] 1fr;

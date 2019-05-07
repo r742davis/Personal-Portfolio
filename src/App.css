@@ -285,13 +285,13 @@ body, html, ul, li, h1 {
 .description-container p {
   font-size: 1.25rem; }
 
-@media (max-width: 1200px) {
-  .description-container-current-projects ul {
-    list-style: none; } }
-
 .description-container-current-projects li {
   margin-left: 50px;
   font-size: 1.25rem; }
+
+@media (max-width: 1200px) {
+  .description-container-current-projects li {
+    list-style: none; } }
 
 .description-container-current-projects a {
   color: #7200b2; }
@@ -390,7 +390,7 @@ body, html, ul, li, h1 {
 
 @media (max-width: 1200px) {
   .projects-container {
-    width: 42rem;
+    width: 800px;
     height: auto;
     grid-template-columns: [first] 1fr [second] 1fr;
     grid-template-rows: [first] 16rem [second] 16rem [third] 16rem;
@@ -398,7 +398,7 @@ body, html, ul, li, h1 {
 
 @media (max-width: 800px) {
   .projects-container {
-    width: 30rem;
+    width: 450px;
     height: auto;
     grid-template-columns: [first] 1fr;
     grid-template-rows: [first] 16rem [second] 16rem [third] 16rem [fourth] 16rem [fifth] 16rem [sixth] 16rem;
