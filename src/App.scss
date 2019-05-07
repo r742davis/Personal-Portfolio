@@ -280,6 +280,7 @@ body, html, ul, li, h1 {
 // description container with name, title, and description
 .description-container {
   width: 700px;
+  margin-bottom: 50px;
   text-align: left;
   transition: 0.4s ease-in-out;
   @include respond-to('medium') {
@@ -292,13 +293,16 @@ body, html, ul, li, h1 {
   font-family: 'Arvo', serif;
   font-size: 5rem;
 }
+.description-container p {
+  font-size: 1.25rem;
+}
 
 //New skills container with frontend and backend skills sections
 .skills-container {
   display: flex;
   justify-content: space-between;
   width: auto;
-  height: 500px;
+  height: 425px;
   // border: 1px solid blue;
 }
 

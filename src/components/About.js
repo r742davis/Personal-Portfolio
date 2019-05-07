@@ -35,9 +35,21 @@ class About extends Component {
               <hr />
             <p>
             I am passionate coder who relishes diving into both structures and the UI experience. I specialize in React, MongoDB, and Ruby on Rails. I am always looking to learn something new and challenge myself as a coder everyday.
-
-            The thing that drew me to coding as a career was the idea of constantly growing. The entire industry, from tech giants all the way down to the individual, is constantly evolving. There's always something new to learn and that excites me. 
             </p>
+            <p>
+            The thing that drew me to coding as a career was the idea of constantly growing. The entire industry, from tech giants all the way down to the individual, is constantly evolving. There's always something new to learn and that excites me!
+            </p>
+            <p>
+            One of my personal strengths is my ability to communicate effectively and help people understand each other's perspectives. I have worked as a grade school science teaching assistant, run community meetings, planned large-scale county events, and worked as a counselor. I can connect people and have knack for resolving communication problems that often arise in workplaces.
+            </p>
+            <p>
+            I feel that effective communication is the cornerstone of any good business or organization. Not everyone has to get along, but they need to work together in order to build something better.
+            </p>
+            <h4>What Am I Currently Working On?</h4>
+              <ul>
+                <li>Hello</li>
+              </ul>
+              <hr />
             <div className="skills-container">
               <div className="frontend-skills-container">
                 <div className="frontend-skills-title">
