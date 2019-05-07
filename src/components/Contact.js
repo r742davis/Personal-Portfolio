@@ -18,10 +18,10 @@ class Contact extends Component {
           <MDBCol>
             <MDBCard className="card-container">
               <MDBCardBody>
-                <i className="fas fa-phone contact-icon"></i>
-                <MDBCardTitle>PHONE</MDBCardTitle>
-                <p><a href="tel:530-737-3198">
-                  (530) 737-3198
+                <i className="fab fa-github contact-icon"></i>
+                <MDBCardTitle>GITHUB</MDBCardTitle>
+                <p><a href="https://github.com/r742davis">
+                  r742davis
                 </a></p>
               </MDBCardBody>
             </MDBCard>
@@ -45,7 +45,6 @@ class Contact extends Component {
                 <div className="social-icon-container">
                   <a href="https://www.facebook.com/richard.trow.davis"><i className="fab fa-facebook social-icon"></i></a>
                   <a href="https://www.linkedin.com/in/richard-t-davis/"><i className="fab fa-linkedin social-icon"></i></a>
-                  <a href="https://github.com/r742davis"><i className="fab fa-github-square social-icon"></i></a>
                   <a href="https://medium.com/@richard.trow.davis"><i className="fab fa-medium social-icon"></i></a>
                 </div>
               </MDBCardBody>
