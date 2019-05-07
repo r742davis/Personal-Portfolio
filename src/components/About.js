@@ -37,7 +37,7 @@ class About extends Component {
             It can take a long time to figure out what you truly are passionate about. I entered college thinking I wanted to go into politics and become a lawyer. After deciding politics would destroy my sanity, I reached into the mental void by studying psychology. I eventually landed on cellular and molecular and wanted to pursue my medical doctorate as a psychiatrist. I was never truly passionate about any of these paths. I wanted to work with people but also be mentally challenged with puzzles and thought-experiments.
             </p>
             <p>
-            The day I found coding was the day I found sometime I was truly passionate about.
+            The day I found coding was the day I found my passion.
             </p>
             <p>
             What drew me to coding as a career was the idea of constantly growing. The entire industry, from tech giants all the way down to the individual, is constantly evolving. There's always some new tech to learn. That journey is what excites me!
@@ -53,8 +53,8 @@ class About extends Component {
               <ul className="description-container-current-projects">
                 <li>Mug Club Membership App (Madison Bear Garden)</li>
                 <li>My Portfolio Website</li>
-                <li>Advanced JavaScript (Andrei Neagoie)</li>
-                <li>Angular 7 (Maximilian Schwarzmüller)</li>
+                <li><a href="https://www.udemy.com/advanced-javascript-concepts/">Advanced JavaScript (Andrei Neagoie)</a></li>
+                <li><a href="https://www.udemy.com/the-complete-guide-to-angular-2/">Angular 7 (Maximilian Schwarzmüller)</a></li>
               </ul>
               <hr />
             <div className="skills-container">
