@@ -227,9 +227,6 @@ body, html, ul, li, h1 {
 #about {
   background: #f2f2f2;
   height: auto;
-  // @include respond-to('xl') { height: auto; }
-  // @include respond-to('large') { height: auto; }
-  // @include respond-to('medium') { height: auto; }
 }
 
 // whole page container
@@ -238,13 +235,18 @@ body, html, ul, li, h1 {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
-  // padding-left: 100px;
+  width: 1200px;
   padding-top: 50px;
   margin: 0 auto;
-  width: 1200px;
   @include respond-to('xl') {
     width: 1000px;
     justify-content: center;
+  }
+  @include respond-to('large') {
+    width: auto;
+  }
+  @include respond-to('medium') {
+    height: auto;
   }
 }
 // picture and cv download button container
@@ -302,6 +304,11 @@ body, html, ul, li, h1 {
 .description-container p {
   font-size: 1.25rem;
 }
+.description-container-current-projects ul {
+  @include respond-to('xl') {
+    list-style: none;
+  }
+}
 .description-container-current-projects li {
   margin-left: 50px;
   font-size: 1.25rem;
@@ -319,7 +326,12 @@ body, html, ul, li, h1 {
   justify-content: space-between;
   width: auto;
   height: 500px;
-  // border: 1px solid blue;
+  @include respond-to('medium') {
+    flex-direction: column;
+    height: auto;
+    width: 500px;
+    margin: 0 auto;
+  }
 }
 
 // skills list container with developer skills
@@ -338,7 +350,7 @@ body, html, ul, li, h1 {
   box-shadow: 0 0.5rem 1rem #d9d9d9;
   transition: 0.4s ease-in-out;
   @include respond-to('medium') {
-    width: auto;
+    width: 500px;
   }
 }
 .frontend-skills-container ul li {
@@ -369,7 +381,8 @@ body, html, ul, li, h1 {
   box-shadow: 0 0.5rem 1rem #d9d9d9;
   transition: 0.4s ease-in-out;
   @include respond-to('medium') {
-    width: auto;
+    width: 500px;
+    margin-top: 50px;
   }
 }
 .backend-skills-container ul li {

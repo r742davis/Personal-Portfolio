@@ -212,14 +212,22 @@ body, html, ul, li, h1 {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
+  width: 1200px;
   padding-top: 50px;
-  margin: 0 auto;
-  width: 1200px; }
+  margin: 0 auto; }
 
 @media (max-width: 1200px) {
   .about-container {
     width: 1000px;
     justify-content: center; } }
+
+@media (max-width: 1000px) {
+  .about-container {
+    width: auto; } }
+
+@media (max-width: 800px) {
+  .about-container {
+    height: auto; } }
 
 .picture-cv-container {
   display: flex;
@@ -277,6 +285,10 @@ body, html, ul, li, h1 {
 .description-container p {
   font-size: 1.25rem; }
 
+@media (max-width: 1200px) {
+  .description-container-current-projects ul {
+    list-style: none; } }
+
 .description-container-current-projects li {
   margin-left: 50px;
   font-size: 1.25rem; }
@@ -292,6 +304,13 @@ body, html, ul, li, h1 {
   justify-content: space-between;
   width: auto;
   height: 500px; }
+
+@media (max-width: 800px) {
+  .skills-container {
+    flex-direction: column;
+    height: auto;
+    width: 500px;
+    margin: 0 auto; } }
 
 .frontend-skills-title {
   background: #7200b2; }
@@ -310,7 +329,7 @@ body, html, ul, li, h1 {
 
 @media (max-width: 800px) {
   .frontend-skills-container {
-    width: auto; } }
+    width: 500px; } }
 
 .frontend-skills-container ul li {
   list-style: none; }
@@ -342,7 +361,8 @@ body, html, ul, li, h1 {
 
 @media (max-width: 800px) {
   .backend-skills-container {
-    width: auto; } }
+    width: 500px;
+    margin-top: 50px; } }
 
 .backend-skills-container ul li {
   list-style: none; }
