@@ -51,7 +51,7 @@ class About extends Component {
               <hr />
             <h4>What Am I Currently Working On?</h4>
               <ul className="description-container-current-projects">
-                <li>Mug Club Membership App (Madison Bear Garden)</li>
+                <li><a href="https://github.com/r742davis/mug_club">Mug Club Membership App (Madison Bear Garden)</a></li>
                 <li>My Portfolio Website</li>
                 <li><a href="https://www.udemy.com/advanced-javascript-concepts/">Advanced JavaScript (Andrei Neagoie)</a></li>
                 <li><a href="https://www.udemy.com/the-complete-guide-to-angular-2/">Angular 7 (Maximilian Schwarzmüller)</a></li>
