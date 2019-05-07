@@ -48,6 +48,7 @@ class About extends Component {
             <p>
             I feel that effective communication is the cornerstone of any good business or organization. Not everyone has to get along, but they need to work together in order to build something better.
             </p>
+              <hr />
             <h4>What Am I Currently Working On?</h4>
               <ul className="description-container-current-projects">
                 <li>Mug Club Membership App (Madison Bear Garden)</li>

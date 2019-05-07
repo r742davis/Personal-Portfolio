@@ -141,8 +141,8 @@ body, html, ul, li, h1 {
     padding-top: 75px; } }
 
 .title-container h1 {
-  font-family: 'Kristi', cursive;
-  font-size: 5rem;
+  font-family: 'Arvo', serif;
+  font-size: 3rem;
   display: inline-flex;
   padding-bottom: 0.5rem; }
 
@@ -264,8 +264,11 @@ body, html, ul, li, h1 {
 
 .description-container h1 {
   color: #7200b2;
-  font-family: 'Arvo', serif;
-  font-size: 5rem; }
+  font-family: 'Kristi', cursive;
+  font-size: 7rem; }
+
+.description-container h4 {
+  font-family: 'Arvo', serif; }
 
 .description-container p {
   font-size: 1.25rem; }
