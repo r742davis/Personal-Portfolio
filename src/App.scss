@@ -238,9 +238,10 @@ body, html, ul, li, h1 {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
-  padding-left: 100px;
+  // padding-left: 100px;
   padding-top: 50px;
   margin: 0 auto;
+  width: 1200px;
 }
 // picture and cv download button container
 .picture-cv-container {
