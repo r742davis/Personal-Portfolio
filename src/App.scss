@@ -242,6 +242,10 @@ body, html, ul, li, h1 {
   padding-top: 50px;
   margin: 0 auto;
   width: 1200px;
+  @include respond-to('xl') {
+    width: 1000px;
+    justify-content: center;
+  }
 }
 // picture and cv download button container
 .picture-cv-container {
@@ -283,9 +287,8 @@ body, html, ul, li, h1 {
   margin-bottom: 50px;
   text-align: left;
   transition: 0.4s ease-in-out;
-  @include respond-to('medium') {
+  @include respond-to('xl') {
     text-align: center;
-    margin-top: 0;
   }
 }
 .description-container h1 {
@@ -302,6 +305,12 @@ body, html, ul, li, h1 {
 .description-container-current-projects li {
   margin-left: 50px;
   font-size: 1.25rem;
+}
+.description-container-current-projects a {
+  color: #7200b2;
+}
+.description-container-current-projects a:hover {
+  color: #da99ff;
 }
 
 //New skills container with frontend and backend skills sections

@@ -216,6 +216,11 @@ body, html, ul, li, h1 {
   margin: 0 auto;
   width: 1200px; }
 
+@media (max-width: 1200px) {
+  .about-container {
+    width: 1000px;
+    justify-content: center; } }
+
 .picture-cv-container {
   display: flex;
   flex-direction: column;
@@ -257,10 +262,9 @@ body, html, ul, li, h1 {
   text-align: left;
   transition: 0.4s ease-in-out; }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .description-container {
-    text-align: center;
-    margin-top: 0; } }
+    text-align: center; } }
 
 .description-container h1 {
   color: #7200b2;
@@ -276,6 +280,12 @@ body, html, ul, li, h1 {
 .description-container-current-projects li {
   margin-left: 50px;
   font-size: 1.25rem; }
+
+.description-container-current-projects a {
+  color: #7200b2; }
+
+.description-container-current-projects a:hover {
+  color: #da99ff; }
 
 .skills-container {
   display: flex;
