@@ -270,11 +270,15 @@ body, html, ul, li, h1 {
 .description-container p {
   font-size: 1.25rem; }
 
+.description-container-current-projects li {
+  margin-left: 50px;
+  font-size: 1.25rem; }
+
 .skills-container {
   display: flex;
   justify-content: space-between;
   width: auto;
-  height: 425px; }
+  height: 500px; }
 
 .frontend-skills-title {
   background: #7200b2; }

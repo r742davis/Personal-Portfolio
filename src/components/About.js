@@ -34,20 +34,26 @@ class About extends Component {
             <h4>Full-Stack Web Developer</h4>
               <hr />
             <p>
-            I am passionate coder who relishes diving into both structures and the UI experience. I specialize in React, MongoDB, and Ruby on Rails. I am always looking to learn something new and challenge myself as a coder everyday.
+            It can take a long time to figure out what you truly are passionate about. I entered college thinking I wanted to go into politics and become a lawyer. After deciding politics would destroy my sanity, I reached into the mental void by studying psychology. I eventually landed on cellular and molecular and wanted to pursue my medical doctorate as a psychiatrist. I was never truly passionate about any of these paths. I wanted to work with people but also be mentally challenged with puzzles and thought-experiments.
             </p>
             <p>
-            The thing that drew me to coding as a career was the idea of constantly growing. The entire industry, from tech giants all the way down to the individual, is constantly evolving. There's always something new to learn and that excites me!
+            The day I found coding was the day I found sometime I was truly passionate about.
             </p>
             <p>
-            One of my personal strengths is my ability to communicate effectively and help people understand each other's perspectives. I have worked as a grade school science teaching assistant, run community meetings, planned large-scale county events, and worked as a counselor. I can connect people and have knack for resolving communication problems that often arise in workplaces.
+            What drew me to coding as a career was the idea of constantly growing. The entire industry, from tech giants all the way down to the individual, is constantly evolving. There's always some new tech to learn. That journey is what excites me!
+            </p>
+            <p>
+            One of my personal strengths is my ability to communicate effectively and help people understand each other's perspectives. I have worked as a grade school science teaching assistant, run community meetings, planned large-scale county events, and worked as a counselor. I can connect people and have knack for talking to anyone young, old, and in-between.
             </p>
             <p>
             I feel that effective communication is the cornerstone of any good business or organization. Not everyone has to get along, but they need to work together in order to build something better.
             </p>
             <h4>What Am I Currently Working On?</h4>
-              <ul>
-                <li>Hello</li>
+              <ul className="description-container-current-projects">
+                <li>Mug Club Membership App (Madison Bear Garden)</li>
+                <li>My Portfolio Website</li>
+                <li>Advanced JavaScript (Andrei Neagoie)</li>
+                <li>Angular 7 (Maximilian Schwarzmüller)</li>
               </ul>
               <hr />
             <div className="skills-container">
@@ -58,7 +64,9 @@ class About extends Component {
                 <ul>
                   <li><img src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/300/thumb/angular2.png" className="skill-icon" alt="angular js"/>AngularJS</li>
                   <li><img src="https://sdtimes.com/wp-content/uploads/2018/01/bootstrap-stack.png" className="skill-icon" alt="bootstrap"/>Bootstrap</li>
-                  <li><img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" className="skill-icon" alt="html/css"/>HTML/CSS</li>
+                  <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl_F-GgXnRsNYBTfuA-e9l84ZIz46UjUkgw3jufMIMrdS2QaemQg" className="skill-icon" alt="css"/>CSS</li>
+                  <li><img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" className="skill-icon" alt="html"/>HTML</li>
+                  <li><img src="https://www.gfxmag.com/wp-content/uploads/2016/07/javascript-vector-logo-1.png" className="skill-icon" alt="javascript"/>JavaScript</li>
                   <li><img src="http://pluspng.com/img-png/jquery-logo-png-kategoriedateilogo-software-wikipedia-256.png" className="skill-icon" alt="j query"/>jQuery</li>
                   <li><img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" className="skill-icon" alt="react"/>React</li>
                   <li><img src="https://cdn.freebiesupply.com/logos/large/2x/redux-logo-png-transparent.png" className="skill-icon" alt="redux"/>Redux</li>
