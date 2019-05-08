@@ -1,23 +1,47 @@
 self.__precacheManifest = [
   {
-    "revision": "a990f611f2305dc12965f186c2ef2690",
-    "url": "/portfolio_1/static/media/Roboto-Light.a990f611.eot"
+    "revision": "5bf145531213545e03ff41cd27df7d2b",
+    "url": "/portfolio_1/static/media/fa-brands-400.5bf14553.svg"
   },
   {
-    "revision": "2198a9f21664f5c62278",
-    "url": "/portfolio_1/static/css/main.911873ec.chunk.css"
+    "revision": "a47fb023413482f032e3",
+    "url": "/portfolio_1/static/css/main.7ff84079.chunk.css"
   },
   {
     "revision": "8260531fc1cbdc74fc80",
     "url": "/portfolio_1/static/js/runtime~main.f549b8ce.js"
   },
   {
-    "revision": "dc4bb86857f3aa226a14426eccd7ad7c",
-    "url": "/portfolio_1/static/media/starry-night.dc4bb868.jpg"
+    "revision": "99ded875d92521bf5d733bd663a67a30",
+    "url": "/portfolio_1/static/media/wines.99ded875.png"
   },
   {
-    "revision": "3fce271bd182aa26efcc",
-    "url": "/portfolio_1/static/js/2.92908d5e.chunk.js"
+    "revision": "00adf8df7329b5d1b88c",
+    "url": "/portfolio_1/static/js/2.50ff96e4.chunk.js"
+  },
+  {
+    "revision": "21fd6da0996dbae479aca80014cb0cb1",
+    "url": "/portfolio_1/static/media/bear.21fd6da0.jpg"
+  },
+  {
+    "revision": "044c39604d77986e7b1afeaa96739ad9",
+    "url": "/portfolio_1/static/media/traveleritis.044c3960.png"
+  },
+  {
+    "revision": "d5b042b89f86a96faa5ca8e51547b02e",
+    "url": "/portfolio_1/static/media/bakersdozen.d5b042b8.png"
+  },
+  {
+    "revision": "c16644748e020fd7b0e0946d8511934e",
+    "url": "/portfolio_1/static/media/pokemon.c1664474.png"
+  },
+  {
+    "revision": "51b477cd3b7b7cc7f51ff79f32036b88",
+    "url": "/portfolio_1/static/media/retro-computers.51b477cd.jpg"
+  },
+  {
+    "revision": "71b46dde9fddeec78d090183a8abb71d",
+    "url": "/portfolio_1/static/media/wine.71b46dde.jpg"
   },
   {
     "revision": "9c9fd70be09a74176bcfca8565bfa54d",
@@ -56,12 +80,12 @@ self.__precacheManifest = [
     "url": "/portfolio_1/static/media/fa-solid-900.a7140145.woff"
   },
   {
-    "revision": "a7b95dbdd87e0c809570affaf366a434",
-    "url": "/portfolio_1/static/media/fa-brands-400.a7b95dbd.eot"
-  },
-  {
     "revision": "98b6db59be947f563350d2284fc9ea36",
     "url": "/portfolio_1/static/media/fa-brands-400.98b6db59.ttf"
+  },
+  {
+    "revision": "a7b95dbdd87e0c809570affaf366a434",
+    "url": "/portfolio_1/static/media/fa-brands-400.a7b95dbd.eot"
   },
   {
     "revision": "5eb754ab7dbd2fee562360528db4c3c0",
@@ -76,8 +100,8 @@ self.__precacheManifest = [
     "url": "/portfolio_1/static/media/fa-solid-900.ff8d9f8a.ttf"
   },
   {
-    "revision": "5bf145531213545e03ff41cd27df7d2b",
-    "url": "/portfolio_1/static/media/fa-brands-400.5bf14553.svg"
+    "revision": "a47fb023413482f032e3",
+    "url": "/portfolio_1/static/js/main.55699dc4.chunk.js"
   },
   {
     "revision": "49279363201ed19a840796e05a74a91b",
@@ -96,20 +120,20 @@ self.__precacheManifest = [
     "url": "/portfolio_1/static/media/Roboto-Thin.dfe56a87.eot"
   },
   {
+    "revision": "a990f611f2305dc12965f186c2ef2690",
+    "url": "/portfolio_1/static/media/Roboto-Light.a990f611.eot"
+  },
+  {
     "revision": "30799efa5bf74129468ad4e257551dc3",
     "url": "/portfolio_1/static/media/Roboto-Regular.30799efa.eot"
   },
   {
-    "revision": "2198a9f21664f5c62278",
-    "url": "/portfolio_1/static/js/main.1dfcc281.chunk.js"
+    "revision": "4d9f3f9e5195e7b074bb63ba4ce42208",
+    "url": "/portfolio_1/static/media/Roboto-Medium.4d9f3f9e.eot"
   },
   {
     "revision": "ecdd509cadbf1ea78b8d2e31ec52328c",
     "url": "/portfolio_1/static/media/Roboto-Bold.ecdd509c.eot"
-  },
-  {
-    "revision": "4d9f3f9e5195e7b074bb63ba4ce42208",
-    "url": "/portfolio_1/static/media/Roboto-Medium.4d9f3f9e.eot"
   },
   {
     "revision": "954bbdeb86483e4ffea00c4591530ece",
@@ -120,24 +144,24 @@ self.__precacheManifest = [
     "url": "/portfolio_1/static/media/Roboto-Light.69f8a061.woff2"
   },
   {
-    "revision": "39b2c3031be6b4ea96e2e3e95d307814",
-    "url": "/portfolio_1/static/media/Roboto-Bold.39b2c303.woff2"
+    "revision": "2751ee43015f9884c3642f103b7f70c9",
+    "url": "/portfolio_1/static/media/Roboto-Regular.2751ee43.woff2"
   },
   {
     "revision": "574fd0b50367f886d359e8264938fc37",
     "url": "/portfolio_1/static/media/Roboto-Medium.574fd0b5.woff2"
   },
   {
-    "revision": "2751ee43015f9884c3642f103b7f70c9",
-    "url": "/portfolio_1/static/media/Roboto-Regular.2751ee43.woff2"
-  },
-  {
-    "revision": "3b813c2ae0d04909a33a18d792912ee7",
-    "url": "/portfolio_1/static/media/Roboto-Light.3b813c2a.woff"
+    "revision": "39b2c3031be6b4ea96e2e3e95d307814",
+    "url": "/portfolio_1/static/media/Roboto-Bold.39b2c303.woff2"
   },
   {
     "revision": "7500519de3d82e33d1587f8042e2afcb",
     "url": "/portfolio_1/static/media/Roboto-Thin.7500519d.woff"
+  },
+  {
+    "revision": "3b813c2ae0d04909a33a18d792912ee7",
+    "url": "/portfolio_1/static/media/Roboto-Light.3b813c2a.woff"
   },
   {
     "revision": "ba3dcd8903e3d0af5de7792777f8ae0d",
@@ -172,35 +196,11 @@ self.__precacheManifest = [
     "url": "/portfolio_1/static/media/Roboto-Bold.e31fcf18.ttf"
   },
   {
-    "revision": "fedf7c222c39cca1de068caca9d50cd4",
-    "url": "/portfolio_1/static/media/computer.fedf7c22.jpg"
-  },
-  {
-    "revision": "9e212a233f0f7221aa3eebdff458748d",
-    "url": "/portfolio_1/static/media/cactus.9e212a23.jpg"
-  },
-  {
-    "revision": "789a688222edc356062841ccd9485c13",
-    "url": "/portfolio_1/static/media/lily-flower.789a6882.jpg"
-  },
-  {
-    "revision": "b1f51b9f0a4e6854441ac22af393374f",
-    "url": "/portfolio_1/static/media/sky-river.b1f51b9f.jpg"
-  },
-  {
-    "revision": "70764b84984982244ae3c0f385e9b9fb",
-    "url": "/portfolio_1/static/media/comp-on-desk.70764b84.jpg"
-  },
-  {
-    "revision": "51b477cd3b7b7cc7f51ff79f32036b88",
-    "url": "/portfolio_1/static/media/retro-computers.51b477cd.jpg"
-  },
-  {
-    "revision": "3fce271bd182aa26efcc",
+    "revision": "00adf8df7329b5d1b88c",
     "url": "/portfolio_1/static/css/2.5b6f32a7.chunk.css"
   },
   {
-    "revision": "56302cf7d6a42f8f14f20b2231f61ea4",
+    "revision": "97f9845d6a4a58d5bfb8092087bf3142",
     "url": "/portfolio_1/index.html"
   }
 ];
