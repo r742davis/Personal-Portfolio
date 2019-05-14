@@ -66,7 +66,7 @@ class About extends Component {
                   <li><img src="https://sdtimes.com/wp-content/uploads/2018/01/bootstrap-stack.png" className="skill-icon" alt="bootstrap"/>Bootstrap</li>
                   <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl_F-GgXnRsNYBTfuA-e9l84ZIz46UjUkgw3jufMIMrdS2QaemQg" className="skill-icon" alt="css"/>CSS</li>
                   <li><img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" className="skill-icon" alt="html"/>HTML</li>
-                  <li><img src="https://www.gfxmag.com/wp-content/uploads/2016/07/javascript-vector-logo-1.png" className="skill-icon" alt="javascript"/>JavaScript</li>
+                  <li><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" className="skill-icon" alt="javascript"/>JavaScript</li>
                   <li><img src="http://pluspng.com/img-png/jquery-logo-png-kategoriedateilogo-software-wikipedia-256.png" className="skill-icon" alt="j query"/>jQuery</li>
                   <li><img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" className="skill-icon" alt="react"/>React</li>
                   <li><img src="https://cdn.freebiesupply.com/logos/large/2x/redux-logo-png-transparent.png" className="skill-icon" alt="redux"/>Redux</li>

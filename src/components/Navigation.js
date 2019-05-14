@@ -45,7 +45,6 @@ class Navigation extends Component {
         >
           <NavbarBrand
           className={this.state.scrolled ? "navbar-brand text-white" : "navbar-brand-recolored"}
-          href="/"
           >R
           </NavbarBrand>
           <NavbarToggler
