@@ -92,12 +92,12 @@ self.__precacheManifest = [
     "url": "/portfolio_1/static/media/fa-regular-400.5eb754ab.svg"
   },
   {
-    "revision": "ff8d9f8adb0d09f11d4816a152672f53",
-    "url": "/portfolio_1/static/media/fa-solid-900.ff8d9f8a.ttf"
-  },
-  {
     "revision": "46e7cec623d8bd790d9fdbc8de2d3ee7",
     "url": "/portfolio_1/static/media/fa-solid-900.46e7cec6.eot"
+  },
+  {
+    "revision": "ff8d9f8adb0d09f11d4816a152672f53",
+    "url": "/portfolio_1/static/media/fa-solid-900.ff8d9f8a.ttf"
   },
   {
     "revision": "c5aad0f04ad9182b8988",
@@ -156,6 +156,10 @@ self.__precacheManifest = [
     "url": "/portfolio_1/static/media/Roboto-Bold.39b2c303.woff2"
   },
   {
+    "revision": "7500519de3d82e33d1587f8042e2afcb",
+    "url": "/portfolio_1/static/media/Roboto-Thin.7500519d.woff"
+  },
+  {
     "revision": "3b813c2ae0d04909a33a18d792912ee7",
     "url": "/portfolio_1/static/media/Roboto-Light.3b813c2a.woff"
   },
@@ -172,24 +176,20 @@ self.__precacheManifest = [
     "url": "/portfolio_1/static/media/Roboto-Bold.dc81817d.woff"
   },
   {
-    "revision": "7500519de3d82e33d1587f8042e2afcb",
-    "url": "/portfolio_1/static/media/Roboto-Thin.7500519d.woff"
+    "revision": "94998475f6aea65f558494802416c1cf",
+    "url": "/portfolio_1/static/media/Roboto-Thin.94998475.ttf"
   },
   {
     "revision": "46e48ce0628835f68a7369d0254e4283",
     "url": "/portfolio_1/static/media/Roboto-Light.46e48ce0.ttf"
   },
   {
-    "revision": "94998475f6aea65f558494802416c1cf",
-    "url": "/portfolio_1/static/media/Roboto-Thin.94998475.ttf"
+    "revision": "df7b648ce5356ea1ebce435b3459fd60",
+    "url": "/portfolio_1/static/media/Roboto-Regular.df7b648c.ttf"
   },
   {
     "revision": "894a2ede85a483bf9bedefd4db45cdb9",
     "url": "/portfolio_1/static/media/Roboto-Medium.894a2ede.ttf"
-  },
-  {
-    "revision": "df7b648ce5356ea1ebce435b3459fd60",
-    "url": "/portfolio_1/static/media/Roboto-Regular.df7b648c.ttf"
   },
   {
     "revision": "e31fcf1885e371e19f5786c2bdfeae1b",
@@ -200,7 +200,7 @@ self.__precacheManifest = [
     "url": "/portfolio_1/static/css/2.5b6f32a7.chunk.css"
   },
   {
-    "revision": "35f2c85afe8b236780583e6d8421dac2",
+    "revision": "1c1692b31b054212b82503baf6d3f3b8",
     "url": "/portfolio_1/index.html"
   }
 ];
