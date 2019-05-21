@@ -15,6 +15,7 @@ import Project_2 from './modals/Project_2';
 import Project_3 from './modals/Project_3';
 import Project_4 from './modals/Project_4';
 import Project_5 from './modals/Project_5';
+import Project_6 from './modals/Project_6';
 
 class Projects extends Component {
   constructor(props) {
@@ -41,34 +42,22 @@ class Projects extends Component {
     })
   }
   toggleModal1 = () => {
-    this.setState({
-      isOpen1: !this.state.isOpen1
-    })
+    this.setState({ isOpen1: !this.state.isOpen1 })
   }
   toggleModal2 = () => {
-    this.setState({
-      isOpen2: !this.state.isOpen2
-    })
+    this.setState({ isOpen2: !this.state.isOpen2 })
   }
   toggleModal3 = () => {
-    this.setState({
-      isOpen3: !this.state.isOpen3
-    })
+    this.setState({ isOpen3: !this.state.isOpen3 })
   }
   toggleModal4 = () => {
-    this.setState({
-      isOpen4: !this.state.isOpen4
-    })
+    this.setState({ isOpen4: !this.state.isOpen4 })
   }
   toggleModal5 = () => {
-    this.setState({
-      isOpen5: !this.state.isOpen5
-    })
+    this.setState({ isOpen5: !this.state.isOpen5 })
   }
   toggleModal6 = () => {
-    this.setState({
-      isOpen6: !this.state.isOpen6
-    })
+    this.setState({ isOpen6: !this.state.isOpen6 })
   }
 
   render() {
@@ -94,42 +83,10 @@ class Projects extends Component {
         ? <Project_5 closeModal={this.closeModal} />
         : null
       }
-      {this.state.isOpen6 ?
-        <div className="backdrop">
-          <div className="modal">
-            <div className="modal-grid">
-              <div className="close-modal">
-                <i onClick={this.closeModal} className="fas fa-times"></i>
-              </div>
-              <div className="project-picture">
-                <img src={project_6} alt="portfolio" />
-              </div>
-              <div className="project-title">
-                <h2>Portfolio Site</h2>
-              </div>
-              <div className="project-description">
-                <p>I wanted to challenge myself to build a portfolio website using more than vanilla JS, HTML, and CSS. I used React and Sass to build this portfolio site</p>
-              </div>
-              <div className="project-tech">
-                <h4>Tech:</h4>
-              </div>
-              <div className="project-tech-description">
-                <p>React, Sass</p>
-              </div>
-              <div className="project-links">
-                <h4>Links:</h4>
-              </div>
-              <div className="project-links-description">
-                <p><a href="https://github.com/r742davis/portfolio_1">Project Code</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      : null
+      {this.state.isOpen6
+        ? <Project_6 closeModal={this.closeModal} />
+        : null
       }
-
-
-
 
       <section id="projects">
         <div className="title-container">
