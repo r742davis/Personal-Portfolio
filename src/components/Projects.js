@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 
 //Imported Pictures
 import project_1 from '../images/bear.jpg';
-
+import project_2 from '../images/wine.jpg';
 import project_3 from '../images/traveleritis.png';
 import project_4 from '../images/bakersdozen.png';
 import project_5 from '../images/pokemon.png';
 import project_6 from '../images/retro-computers.jpg';
-import wine from '../images/wine.jpg';
+
 
 //Imported Modal Components
 import Project_1 from './modals/Project_1';
@@ -90,19 +90,17 @@ class Projects extends Component {
 
       <section id="projects">
         <div className="title-container">
-          <h1 data-aos="fade-up">My Projects</h1>
+          <h1 data-aos="fade-up">Recent Projects</h1>
         </div>
         <div className="projects-container" data-aos="flip-up">
-          <div className="project-grid-1">
             <img
               src={project_1}
               className="project-grid"
               alt="project 1"
               onClick={this.toggleModal1}
             />
-          </div>
           <img
-            src={wine}
+            src={project_2}
             className="project-grid"
             id="project-grid-2"
             alt="project 2"

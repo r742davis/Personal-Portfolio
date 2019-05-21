@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import wine from '../../images/wine.jpg';
+import project_2 from '../../images/wine.jpg';
 
 class Project_2 extends Component {
   render() {
@@ -12,7 +12,7 @@ class Project_2 extends Component {
                 <i onClick={this.props.closeModal} className="fas fa-times"></i>
               </div>
               <div className="project-picture">
-                <img src={wine} alt="vie du vin" />
+                <img src={project_2} alt="vie du vin" />
               </div>
               <div className="project-title">
                 <h2>Vie du Vin</h2>
