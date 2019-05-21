@@ -13,13 +13,12 @@ class Home extends Component {
           </div>
           <h1>
             <ReactRotatingText
-              items={['Full-Stack Web Developer', 'UX Designer', 'Creative Writer', 'Traveler', 'Doggo Enthusiast', 'Wine Lover', 'Observer']}
+              items={['Full-Stack Web Developer', 'UX Designer', 'Creative Writer', 'Traveler', 'Doggo Enthusiast', 'Wine Lover', 'Coder']}
               pause={3000}
               typingInterval={120}
               deletingInterval={30}
             />
           </h1>
-
         </div>
       </section>
       </>
