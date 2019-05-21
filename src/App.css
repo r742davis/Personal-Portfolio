@@ -528,22 +528,14 @@ body, html, ul, li, h1 {
 
 /********************/
 /*** Contact Page ***/
-/*****************************************************/
+/********************/
 #contact {
   background: #f2f2f2;
-  height: 100vh; }
-
-@media (max-width: 1200px) {
-  #contact {
-    height: 120vh; } }
-
-@media (max-width: 1000px) {
-  #contact {
-    height: 120vh; } }
+  height: 120vh; }
 
 @media (max-width: 800px) {
   #contact {
-    height: 120vh; } }
+    height: 150vh; } }
 
 .contact-container {
   display: flex;
