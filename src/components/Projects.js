@@ -8,14 +8,13 @@ import project_4 from '../images/bakersdozen.png';
 import project_5 from '../images/pokemon.png';
 import project_6 from '../images/retro-computers.jpg';
 
-
 //Imported Modal Components
-import Project_1 from './modals/Project_1';
-import Project_2 from './modals/Project_2';
-import Project_3 from './modals/Project_3';
-import Project_4 from './modals/Project_4';
-import Project_5 from './modals/Project_5';
-import Project_6 from './modals/Project_6';
+import Project1 from './modals/Project_1';
+import Project2 from './modals/Project_2';
+import Project3 from './modals/Project_3';
+import Project4 from './modals/Project_4';
+import Project5 from './modals/Project_5';
+import Project6 from './modals/Project_6';
 
 class Projects extends Component {
   constructor(props) {
@@ -64,27 +63,27 @@ class Projects extends Component {
     return (
       <>
       {this.state.isOpen1
-        ? <Project_1 closeModal={this.closeModal} />
+        ? <Project1 closeModal={this.closeModal} />
         : null
       }
       {this.state.isOpen2
-        ? <Project_2 closeModal={this.closeModal} />
+        ? <Project2 closeModal={this.closeModal} />
         : null
       }
       {this.state.isOpen3
-        ? <Project_3 closeModal={this.closeModal} />
+        ? <Project3 closeModal={this.closeModal} />
         : null
       }
       {this.state.isOpen4
-        ? <Project_4 closeModal={this.closeModal} />
+        ? <Project4 closeModal={this.closeModal} />
         : null
       }
       {this.state.isOpen5
-        ? <Project_5 closeModal={this.closeModal} />
+        ? <Project5 closeModal={this.closeModal} />
         : null
       }
       {this.state.isOpen6
-        ? <Project_6 closeModal={this.closeModal} />
+        ? <Project6 closeModal={this.closeModal} />
         : null
       }
 
