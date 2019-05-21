@@ -92,12 +92,12 @@ class Projects extends Component {
           <h1 data-aos="fade-up">Recent Projects</h1>
         </div>
         <div className="projects-container" data-aos="flip-up">
-            <img
-              src={project_1}
-              className="project-grid"
-              alt="project 1"
-              onClick={this.toggleModal1}
-            />
+          <img
+            src={project_1}
+            className="project-grid"
+            alt="project 1"
+            onClick={this.toggleModal1}
+          />
           <img
             src={project_2}
             className="project-grid"

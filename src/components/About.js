@@ -4,6 +4,10 @@ import {
 } from 'mdbreact';
 import profile from '../images/richard-davis.jpeg';
 
+//Imported components for skills section
+import Frontend from './skills/Frontend';
+import Backend from './skills/Backend';
+
 class About extends Component {
   render() {
     return (
@@ -54,7 +58,7 @@ class About extends Component {
                 <li><a href="https://github.com/r742davis/mug_club">Mug Club Membership App (Madison Bear Garden)</a></li>
                 <li><a href="https://www.udemy.com/advanced-javascript-concepts/">Advanced JavaScript (Andrei Neagoie)</a></li>
                 <li><a href="https://javascript30.com/">JavaScript30</a></li>
-                
+
               </ul>
               <hr />
             <div className="skills-container">
