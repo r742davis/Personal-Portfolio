@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 //Imported Pictures
 import project_1 from '../images/bear.jpg';
-import project_2 from '../images/wines.png';
+
 import project_3 from '../images/traveleritis.png';
 import project_4 from '../images/bakersdozen.png';
 import project_5 from '../images/pokemon.png';
@@ -10,7 +10,8 @@ import project_6 from '../images/retro-computers.jpg';
 import wine from '../images/wine.jpg';
 
 //Imported Modal Components
-import Project_1 from './modals/Project_1'
+import Project_1 from './modals/Project_1';
+import Project_2 from './modals/Project_2';
 
 class Projects extends Component {
   constructor(props) {
@@ -74,39 +75,8 @@ class Projects extends Component {
       ? <Project_1 closeModal={this.closeModal}/>
       : null
       }
-      {this.state.isOpen2 ?
-        <div className="backdrop">
-          <div className="modal">
-            <div className="modal-grid">
-              <div className="close-modal">
-                <i onClick={this.closeModal} className="fas fa-times"></i>
-              </div>
-              <div className="project-picture">
-                <img src={wine} alt="vie du vin" />
-              </div>
-              <div className="project-title">
-                <h2>Vie du Vin</h2>
-              </div>
-              <div className="project-description">
-                <p>This was my final project for the General Assembly immersive web development program. I built a wine tracker that saves your wine lists according to the user who signs up and logs in. </p>
-              </div>
-              <div className="project-tech">
-                <h4>Tech:</h4>
-              </div>
-              <div className="project-tech-description">
-                <p>React, Redux, JWTs, MongoDB, ExpressJS, NodeJS</p>
-              </div>
-              <div className="project-links">
-                <h4>Links:</h4>
-              </div>
-              <div className="project-links-description">
-                <p><a href="https://arcane-brushlands-71780.herokuapp.com/wines">Vie Du Vin</a></p>
-                <p><a href="https://github.com/r742davis/vie_du_vin_frontend">Frontend Code</a></p>
-                <p><a href="https://github.com/r742davis/vie_du_vin_backend">Backend Code</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
+      {this.state.isOpen2
+      ? <Project_2 closeModal={this.closeModal}/>
       : null
       }
       {this.state.isOpen3 ?
