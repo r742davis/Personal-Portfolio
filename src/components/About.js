@@ -53,7 +53,8 @@ class About extends Component {
               <ul className="description-container-current-projects">
                 <li><a href="https://github.com/r742davis/mug_club">Mug Club Membership App (Madison Bear Garden)</a></li>
                 <li><a href="https://www.udemy.com/advanced-javascript-concepts/">Advanced JavaScript (Andrei Neagoie)</a></li>
-                <li><a href="https://www.udemy.com/the-complete-guide-to-angular-2/">Angular 7 (Maximilian Schwarzmüller)</a></li>
+                <li><a href="https://javascript30.com/">JavaScript30</a></li>
+                
               </ul>
               <hr />
             <div className="skills-container">
@@ -64,11 +65,11 @@ class About extends Component {
                 <ul>
                   <li><img src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/300/thumb/angular2.png" className="skill-icon" alt="angular js"/>AngularJS</li>
                   <li><img src="https://sdtimes.com/wp-content/uploads/2018/01/bootstrap-stack.png" className="skill-icon" alt="bootstrap"/>Bootstrap</li>
-                  <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl_F-GgXnRsNYBTfuA-e9l84ZIz46UjUkgw3jufMIMrdS2QaemQg" className="skill-icon" alt="css"/>CSS</li>
-                  <li><img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" className="skill-icon" alt="html"/>HTML</li>
+                  <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl_F-GgXnRsNYBTfuA-e9l84ZIz46UjUkgw3jufMIMrdS2QaemQg" className="skill-icon" alt="css"/>CSS3</li>
+                  <li><img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" className="skill-icon" alt="html"/>HTML5</li>
                   <li><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" className="skill-icon" alt="javascript"/>JavaScript</li>
                   <li><img src="http://pluspng.com/img-png/jquery-logo-png-kategoriedateilogo-software-wikipedia-256.png" className="skill-icon" alt="j query"/>jQuery</li>
-                  <li><img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" className="skill-icon" alt="react"/>React</li>
+                  <li><img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" className="skill-icon" alt="react"/>React.js</li>
                   <li><img src="https://cdn.freebiesupply.com/logos/large/2x/redux-logo-png-transparent.png" className="skill-icon" alt="redux"/>Redux</li>
                   <li><img src="https://img.icons8.com/color/48/000000/ruby-gemstone.png" className="skill-icon" alt="ruby"/>Ruby</li>
                   <li><img src="https://cdn.worldvectorlogo.com/logos/sass-1.svg" className="skill-icon" alt="sass"/>Sass</li>
@@ -79,7 +80,7 @@ class About extends Component {
                   <h4>Backend Skills</h4>
                 </div>
                 <ul>
-                  <li><img src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/359/thumb/expressjslogo.png" className="skill-icon" alt="express"/>Express</li>
+                  <li><img src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/359/thumb/expressjslogo.png" className="skill-icon" alt="express"/>Express.js</li>
                   <li><img src="https://cdn-images-1.medium.com/max/449/1*NRCOyVBY6Jiqr4Q9A1zoaQ.png" className="skill-icon" alt="mongo db"/>MongoDB</li>
                   <li><img src="https://www.balena.io/docs//img/language/nodejs.svg" className="skill-icon" alt="node js"/>Node.js</li>
                   <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/540px-Postgresql_elephant.svg.png" className="skill-icon" alt="Postgre SQL"/>PostgreSQL</li>
