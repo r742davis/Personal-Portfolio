@@ -13,6 +13,7 @@ import wine from '../images/wine.jpg';
 import Project_1 from './modals/Project_1';
 import Project_2 from './modals/Project_2';
 import Project_3 from './modals/Project_3';
+import Project_4 from './modals/Project_4';
 
 class Projects extends Component {
   constructor(props) {
@@ -85,37 +86,7 @@ class Projects extends Component {
       : null
       }
       {this.state.isOpen4 ?
-        <div className="backdrop">
-          <div className="modal">
-            <div className="modal-grid">
-              <div className="close-modal">
-                <i onClick={this.closeModal} className="fas fa-times"></i>
-              </div>
-              <div className="project-picture">
-                <img src={project_4} alt="bakers dozen" />
-              </div>
-              <div className="project-title">
-                <h2>Baker's Dozen</h2>
-              </div>
-              <div className="project-description">
-                <p>Baker's Dozen is an app where you can keep your favorite bakedgoods recipes and have them displayed beautifully. I created this project during my time at General Assembly and built in full authentication into the app.</p>
-              </div>
-              <div className="project-tech">
-                <h4>Tech:</h4>
-              </div>
-              <div className="project-tech-description">
-                <p>JavaScript, Express, Mongoose, MongoDB, NodeJS, EJS, HTML, CSS</p>
-              </div>
-              <div className="project-links">
-                <h4>Links:</h4>
-              </div>
-              <div className="project-links-description">
-                <p><a href="https://bakersdozen-project.herokuapp.com/bakersdozen">Baker's Dozen</a></p>
-                <p><a href="https://github.com/r742davis/Project_2">Project Code</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Project_4 closeModal={this.closeModal}/>
       : null
       }
       {this.state.isOpen5 ?
