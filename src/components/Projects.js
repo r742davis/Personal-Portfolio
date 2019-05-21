@@ -14,6 +14,7 @@ import Project_1 from './modals/Project_1';
 import Project_2 from './modals/Project_2';
 import Project_3 from './modals/Project_3';
 import Project_4 from './modals/Project_4';
+import Project_5 from './modals/Project_5';
 
 class Projects extends Component {
   constructor(props) {
@@ -74,54 +75,24 @@ class Projects extends Component {
     return (
       <>
       {this.state.isOpen1
-      ? <Project_1 closeModal={this.closeModal}/>
-      : null
+        ? <Project_1 closeModal={this.closeModal} />
+        : null
       }
       {this.state.isOpen2
-      ? <Project_2 closeModal={this.closeModal}/>
-      : null
+        ? <Project_2 closeModal={this.closeModal} />
+        : null
       }
       {this.state.isOpen3
-      ? <Project_3 closeModal={this.closeModal}/>
-      : null
+        ? <Project_3 closeModal={this.closeModal} />
+        : null
       }
-      {this.state.isOpen4 ?
-        <Project_4 closeModal={this.closeModal}/>
-      : null
+      {this.state.isOpen4
+        ? <Project_4 closeModal={this.closeModal} />
+        : null
       }
-      {this.state.isOpen5 ?
-        <div className="backdrop">
-          <div className="modal">
-            <div className="modal-grid">
-              <div className="close-modal">
-                <i onClick={this.closeModal} className="fas fa-times"></i>
-              </div>
-              <div className="project-picture">
-                <img src={project_5} alt="pokedex" />
-              </div>
-              <div className="project-title">
-                <h2>Pokedex</h2>
-              </div>
-              <div className="project-description">
-                <p>This was one of my first projects where we had to do API calls. I choose to use the PokeAPI and build a fully functioning Pokedex with a random Pokemon generator as well.</p>
-              </div>
-              <div className="project-tech">
-                <h4>Tech:</h4>
-              </div>
-              <div className="project-tech-description">
-                <p>JavaScript, AJAX/JSON, HTML, CSS</p>
-              </div>
-              <div className="project-links">
-                <h4>Links:</h4>
-              </div>
-              <div className="project-links-description">
-                <p><a href="https://r742davis.github.io/">Pokedex</a></p>
-                <p><a href="https://github.com/r742davis/r742davis.github.io">Project Code</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      : null
+      {this.state.isOpen5
+        ? <Project_5 closeModal={this.closeModal} />
+        : null
       }
       {this.state.isOpen6 ?
         <div className="backdrop">
