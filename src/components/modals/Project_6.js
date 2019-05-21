@@ -9,7 +9,7 @@ class Project_6 extends Component {
           <div className="modal">
             <div className="modal-grid">
               <div className="close-modal">
-                <i onClick={this.closeModal} className="fas fa-times"></i>
+                <i onClick={this.props.closeModal} className="fas fa-times"></i>
               </div>
               <div className="project-picture">
                 <img src={project_6} alt="portfolio" />
