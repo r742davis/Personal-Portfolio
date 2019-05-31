@@ -40,6 +40,11 @@ class Projects extends Component {
       isOpen6: false
     })
   }
+
+  toggleModal = (name) => {
+    console.log(name.target.classList);
+  }
+
   toggleModal1 = () => {
     this.setState({ isOpen1: !this.state.isOpen1 })
   }
@@ -94,41 +99,41 @@ class Projects extends Component {
         <div className="projects-container" data-aos="flip-up">
           <img
             src={project_1}
-            className="project-grid"
+            className="project-grid modal-one"
             alt="project 1"
-            onClick={this.toggleModal1}
+            onClick={this.toggleModal}
           />
           <img
             src={project_2}
-            className="project-grid"
+            className="project-grid modal-two"
             id="project-grid-2"
             alt="project 2"
             onClick={this.toggleModal2}
           />
           <img
             src={project_3}
-            className="project-grid"
+            className="project-grid modal-three"
             id="project-grid-3"
             alt="project 3"
             onClick={this.toggleModal3}
           />
           <img
             src={project_4}
-            className="project-grid"
+            className="project-grid modal-four"
             id="project-grid-4"
             alt="project 4"
             onClick={this.toggleModal4}
           />
           <img
             src={project_5}
-            className="project-grid"
+            className="project-grid modal-five"
             id="project-grid-5"
             alt="project 5"
             onClick={this.toggleModal5}
           />
           <img
             src={project_6}
-            className="project-grid"
+            className="project-grid modal-six"
             id="project-grid-6"
             alt="project 6"
             onClick={this.toggleModal6}
