@@ -42,7 +42,12 @@ class Projects extends Component {
   }
 
   toggleModal = (name) => {
-    console.log(name.target.classList);
+    let modal = name.target.classList
+    if(modal.contains('modal-one')) {
+      this.setState({ isOpen1: !this.state.isOpen1 })
+    } else if (name.target.classList.contains('modal-two')) {
+      console.log('Double yay!');
+    }
   }
 
   toggleModal1 = () => {
@@ -108,35 +113,35 @@ class Projects extends Component {
             className="project-grid modal-two"
             id="project-grid-2"
             alt="project 2"
-            onClick={this.toggleModal2}
+            onClick={this.toggleModal}
           />
           <img
             src={project_3}
             className="project-grid modal-three"
             id="project-grid-3"
             alt="project 3"
-            onClick={this.toggleModal3}
+            onClick={this.toggleModal}
           />
           <img
             src={project_4}
             className="project-grid modal-four"
             id="project-grid-4"
             alt="project 4"
-            onClick={this.toggleModal4}
+            onClick={this.toggleModal}
           />
           <img
             src={project_5}
             className="project-grid modal-five"
             id="project-grid-5"
             alt="project 5"
-            onClick={this.toggleModal5}
+            onClick={this.toggleModal}
           />
           <img
             src={project_6}
             className="project-grid modal-six"
             id="project-grid-6"
             alt="project 6"
-            onClick={this.toggleModal6}
+            onClick={this.toggleModal}
           />
         </div>
       </section>
