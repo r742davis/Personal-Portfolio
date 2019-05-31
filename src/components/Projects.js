@@ -28,9 +28,8 @@ class Projects extends Component {
       isOpen5: false,
       isOpen6: false
     }
-    this.closeModal = this.closeModal.bind(this)
   }
-  closeModal() {
+  closeModal = () => {
     this.setState({
       isOpen1: false,
       isOpen2: false,
