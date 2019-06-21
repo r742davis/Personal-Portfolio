@@ -8,7 +8,8 @@
   padding-right: 2rem !important;
   z-index: 2;
   box-shadow: none !important;
-  transition: color 1s; }
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
 
 @media (max-width: 767px) {
   .navbar {
@@ -23,13 +24,15 @@
   opacity: 1;
   padding-bottom: 50px;
   box-shadow: 0 0.4rem 1rem #d9d9d9 !important;
-  transition: color 1.0s; }
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
 
 .navbar-brand {
   font-family: 'Arvo', cursive;
   font-size: 2rem;
   font-weight: 200;
   margin-left: 2rem;
+  -webkit-transition: 0.4s;
   transition: 0.4s; }
 
 @media (max-width: 767px) {
@@ -94,6 +97,7 @@
 
 .nav-link-recolored {
   color: var(--primary) !important;
+  -webkit-transition: 0.2s;
   transition: 0.2s; }
 
 .nav-link-recolored:hover {

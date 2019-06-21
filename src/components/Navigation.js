@@ -34,6 +34,12 @@ class Navigation extends Component {
   };
 
   render() {
+
+    let navClass = 'nav-link-recolored section'
+    if (this.state.scrolled) {
+      navClass = 'nav-link section'
+    }
+
     return (
       <>
         <Navbar
@@ -49,22 +55,22 @@ class Navigation extends Component {
               <NavItem>
                 <NavLink
                   href="#home"
-                  className={this.state.scrolled ? "nav-link section" : "nav-link-recolored section"}>Home</NavLink>
+                  className={navClass}>Home</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
                   href="#about"
-                  className={this.state.scrolled ? "nav-link section" : "nav-link-recolored section"}>About</NavLink>
+                  className={navClass}>About</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
                   href="#projects"
-                  className={this.state.scrolled ? "nav-link section" : "nav-link-recolored section"}>Projects</NavLink>
+                  className={navClass}>Projects</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
                   href="#contact"
-                  className={this.state.scrolled ? "nav-link section" : "nav-link-recolored section"}>Contact</NavLink>
+                  className={navClass}>Contact</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
