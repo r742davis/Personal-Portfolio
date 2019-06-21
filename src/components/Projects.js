@@ -10,7 +10,7 @@ import project_5 from '../images/pokemon.png';
 import project_6 from '../images/retro-computers.jpg';
 
 //Imported Modal Components
-import Project1 from './modals/Project_1';
+// import Project1 from './modals/Project_1';
 import Project2 from './modals/Project_2';
 import Project3 from './modals/Project_3';
 import Project4 from './modals/Project_4';
@@ -30,8 +30,11 @@ class Projects extends Component {
       isOpen4: false,
       isOpen5: false,
       isOpen6: false,
+      showModal: false,
+      modalNumber: '',
       projects: [
         {
+          id: '1',
           name: 'Mug Club App',
           image: `${project_1}`,
           alt: 'mug club bear',
@@ -50,40 +53,61 @@ class Projects extends Component {
       isOpen3: false,
       isOpen4: false,
       isOpen5: false,
-      isOpen6: false
+      isOpen6: false,
+      showModal: false
     })
   }
 
-  openModal = (name) => {
-    let modal = name.target.classList
-    if(modal.contains('modal-one')) {
-      this.setState({ isOpen1: !this.state.isOpen1 })
-    } else if (modal.contains('modal-two')) {
-      this.setState({ isOpen2: !this.state.isOpen2 })
-    } else if (modal.contains('modal-three')) {
-      this.setState({ isOpen3: !this.state.isOpen3 })
-    } else if (modal.contains('modal-four')) {
-      this.setState({ isOpen4: !this.state.isOpen4 })
-    } else if (modal.contains('modal-five')) {
-      this.setState({ isOpen5: !this.state.isOpen5 })
-    } else if (modal.contains('modal-six')) {
-      this.setState({ isOpen6: !this.state.isOpen6 })
-    }
+  openModal = (number) => {
+    // let modal = name.target.classList
+
+    this.setState({modalNumber: number, showModal: true})
+    console.log(this.state.modalNumber)
+
+    // if(modal.contains('modal-one')) {
+    //   this.setState({ isOpen1: !this.state.isOpen1 })
+    // } else if (modal.contains('modal-two')) {
+    //   this.setState({ isOpen2: !this.state.isOpen2 })
+    // } else if (modal.contains('modal-three')) {
+    //   this.setState({ isOpen3: !this.state.isOpen3 })
+    // } else if (modal.contains('modal-four')) {
+    //   this.setState({ isOpen4: !this.state.isOpen4 })
+    // } else if (modal.contains('modal-five')) {
+    //   this.setState({ isOpen5: !this.state.isOpen5 })
+    // } else if (modal.contains('modal-six')) {
+    //   this.setState({ isOpen6: !this.state.isOpen6 })
+    // }
   }
 
   render() {
+
+    const projectList = this.state.projects.map(project => {
+      if (project.id === this.state.modalNumber && this.state.showModal) {
+        return <Modal
+            name={project.name}
+            image={project.image}
+            alt={project.alt}
+            description={project.description}
+            tech={project.tech}
+            link={project.link}
+            linkName={project.linkName}
+            closeModal={this.closeModal} />
+      }
+    })
+
     return (
       <>
+      {projectList}
       {this.state.isOpen1
         ? <Modal
-          name={this.state.projects[0].name}
-          image={this.state.projects[0].image}
-          alt={this.state.projects[0].alt}
-          description={this.state.projects[0].description}
-          tech={this.state.projects[0].tech}
-          link={this.state.projects[0].link}
-          linkName={this.state.projects[0].linkName}
-          closeModal={this.closeModal} />
+            name={this.state.projects[0].name}
+            image={this.state.projects[0].image}
+            alt={this.state.projects[0].alt}
+            description={this.state.projects[0].description}
+            tech={this.state.projects[0].tech}
+            link={this.state.projects[0].link}
+            linkName={this.state.projects[0].linkName}
+            closeModal={this.closeModal} />
         : null
       }
       {this.state.isOpen2
@@ -116,42 +140,42 @@ class Projects extends Component {
             src={project_1}
             className="project-grid modal-one"
             alt="project 1"
-            onClick={this.openModal}
+            onClick={() => this.openModal('1')}
           />
           <img
             src={project_2}
             className="project-grid modal-two"
             id="project-grid-2"
             alt="project 2"
-            onClick={this.openModal}
+            onClick={() => this.openModal('2')}
           />
           <img
             src={project_3}
             className="project-grid modal-three"
             id="project-grid-3"
             alt="project 3"
-            onClick={this.openModal}
+            onClick={() => this.openModal('3')}
           />
           <img
             src={project_4}
             className="project-grid modal-four"
             id="project-grid-4"
             alt="project 4"
-            onClick={this.openModal}
+            onClick={() => this.openModal('4')}
           />
           <img
             src={project_5}
             className="project-grid modal-five"
             id="project-grid-5"
             alt="project 5"
-            onClick={this.openModal}
+            onClick={() => this.openModal('5')}
           />
           <img
             src={project_6}
             className="project-grid modal-six"
             id="project-grid-6"
             alt="project 6"
-            onClick={this.openModal}
+            onClick={() => this.openModal('6')}
           />
         </div>
       </section>
