@@ -40,35 +40,34 @@ class Navigation extends Component {
     return (
       <>
         <Navbar
-        light
-        expand="md"
-        className={this.state.scrolled ? "navbar" : "navbar-recolored"}
+          light
+          expand="md"
+          className={this.state.scrolled ? "navbar" : "navbar-recolored"}
         >
           <NavbarBrand
-          className={this.state.scrolled ? "navbar-brand text-white" : "navbar-brand-recolored"}
-          >R
-          </NavbarBrand>
-          <NavbarToggler
-            onClick={this.toggle} />
-          <Collapse
-            isOpen={this.state.isOpen}
-            navbar
-          >
-            <Nav
-            className="ml-auto navbar-center"
-            navbar
-            >
+            className={this.state.scrolled ? "navbar-brand text-white" : "navbar-brand-recolored"}>R</NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto navbar-center" navbar>
               <NavItem>
-                <NavLink href="#home" className={this.state.scrolled ? "nav-link section" : "nav-link-recolored section"}>Home</NavLink>
+                <NavLink
+                  href="#home"
+                  className={this.state.scrolled ? "nav-link section" : "nav-link-recolored section"}>Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#about" className={this.state.scrolled ? "nav-link section" : "nav-link-recolored section"}>About</NavLink>
+                <NavLink
+                  href="#about"
+                  className={this.state.scrolled ? "nav-link section" : "nav-link-recolored section"}>About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#projects" className={this.state.scrolled ? "nav-link section" : "nav-link-recolored section"}>Projects</NavLink>
+                <NavLink
+                  href="#projects"
+                  className={this.state.scrolled ? "nav-link section" : "nav-link-recolored section"}>Projects</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#contact" className={this.state.scrolled ? "nav-link section" : "nav-link-recolored section"}>Contact</NavLink>
+                <NavLink
+                  href="#contact"
+                  className={this.state.scrolled ? "nav-link section" : "nav-link-recolored section"}>Contact</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
