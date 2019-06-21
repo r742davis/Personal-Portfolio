@@ -54,10 +54,9 @@
   font-family: 'Arvo', serif;
   box-shadow: 0 0.2rem 1rem #d9d9d9;
   transition: 0.2s ease-in-out;
-}
-
-.cv-button a {
-  color: white;
+  &:hover {
+    color: white;
+  }
 }
 // description container with name, title, and description
 .description-container {
@@ -94,8 +93,7 @@
 
 .description-container-current-projects a {
   color: var(--primary);
-}
-
-.description-container-current-projects a:hover {
-  color: var(--secondary);
+  &:hover {
+    color: var(--secondary);
+  }
 }

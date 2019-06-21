@@ -30,10 +30,10 @@ class Projects extends Component {
           alt: 'mug club bear',
           description: 'The Madison Bear Garden needs a better way to track their Mug Club members aside from their laptop and a spreadsheet. I am developing a mobile and desktop application that will help them track their members using a remote hosted database.',
           tech: 'React, MongoDB, Express, Node.js',
-          link: 'https://github.com/r742davis/mug_club',
+          link1: 'https://github.com/r742davis/mug_club',
           link2: '',
           link3: '',
-          linkName1: 'Mug Club GitHub Page',
+          linkName1: 'Project Code',
           linkName2: '',
           linkName3: ''
         },
@@ -44,10 +44,10 @@ class Projects extends Component {
           alt: 'computers on a desktop',
           description: 'I wanted to challenge myself to build a portfolio website using React and SASS. I built this portfolio using industry conventions, such as using functional components, separating out SCSS into component-specific files, and programmatically generating multiple components.',
           tech: 'React, SASS, Bootstrap 4',
-          link: 'https://github.com/r742davis/portfolio_1',
+          link1: 'https://github.com/r742davis/portfolio_1',
           link2: '',
           link3: '',
-          linkName: 'Portfolio Project Code',
+          linkName1: 'Project Code',
           linkName2: '',
           linkName3: ''
         },
@@ -58,53 +58,53 @@ class Projects extends Component {
           alt: 'wines glass and bottle with cheese and grapes',
           description: 'This was my final project for the General Assembly immersive web development program. I built a full-stack personal wine tracker app that saves your wine lists according to the user who signs up and logs in.',
           tech: 'React, Redux, JWTs, MongoDB, Express.js, Node.js',
-          link: 'https://arcane-brushlands-71780.herokuapp.com/wines',
-          link2: '',
-          link3: '',
-          linkName1: 'Mug Club GitHub Page',
-          linkName2: '',
-          linkName3: ''
+          link1: 'https://arcane-brushlands-71780.herokuapp.com/wines',
+          link2: 'https://github.com/r742davis/vie_du_vin_frontend',
+          link3: 'https://github.com/r742davis/vie_du_vin_backend',
+          linkName1: 'Vie Du Vin Website',
+          linkName2: 'Frontend Project Code',
+          linkName3: 'Backend Project Code'
         },
         {
           id: 4,
-          name: 'Mug Club App',
+          name: 'Traveleritis',
           image: `${project_4}`,
-          alt: 'mug club bear',
-          description: 'The Madison Bear Garden needs a better way to track their Mug Club members aside from their laptop and a spreadsheet. I am developing a mobile and desktop application that will help them track their members using a remote hosted database.',
-          tech: 'React, MongoDB, Express, Node.js',
-          link: 'https://arcane-brushlands-71780.herokuapp.com/wines',
-          link2: '',
+          alt: 'travel website',
+          description: 'This was a collaborative project at General Assembly where we built a travel planning site based around a custom API. The app is designed to help you plan trips and save them depending on the user authentication.',
+          tech: 'MEAN Stack (Mongoose, ExpressJS, AngularJS, NodeJS), MVVM Method',
+          link1: 'https://traveleritis.herokuapp.com',
+          link2: 'https://github.com/sharonmertens/branchforce',
           link3: '',
-          linkName1: 'Mug Club GitHub Page',
-          linkName2: '',
+          linkName1: 'Traveleritis Website',
+          linkName2: 'Project Code',
           linkName3: ''
         },
         {
           id: 5,
-          name: 'Mug Club App',
+          name: 'Baker\'s Dozen',
           image: `${project_5}`,
-          alt: 'mug club bear',
-          description: 'The Madison Bear Garden needs a better way to track their Mug Club members aside from their laptop and a spreadsheet. I am developing a mobile and desktop application that will help them track their members using a remote hosted database.',
-          tech: 'React, MongoDB, Express, Node.js',
-          link: 'https://arcane-brushlands-71780.herokuapp.com/wines',
-          link2: '',
+          alt: 'baker\'s dozen website',
+          description: 'Baker\'s Dozen is an app where you can keep your favorite bakedgoods recipes and have them displayed beautifully. I created this project during my time at General Assembly and built in full authentication into the app.',
+          tech: 'JavaScript, Express, Mongoose, MongoDB, NodeJS, EJS, HTML5, CSS3',
+          link1: 'https://bakersdozen-project.herokuapp.com/bakersdozen',
+          link2: 'https://github.com/r742davis/Project_2',
           link3: '',
-          linkName1: 'Mug Club GitHub Page',
-          linkName2: '',
+          linkName1: 'Baker\'s Dozen Website',
+          linkName2: 'Project Code',
           linkName3: ''
         },
         {
           id: 6,
-          name: 'Mug Club App',
+          name: 'Pokedex',
           image: `${project_6}`,
-          alt: 'mug club bear',
-          description: 'The Madison Bear Garden needs a better way to track their Mug Club members aside from their laptop and a spreadsheet. I am developing a mobile and desktop application that will help them track their members using a remote hosted database.',
-          tech: 'React, MongoDB, Express, Node.js',
-          link: 'https://arcane-brushlands-71780.herokuapp.com/wines',
-          link2: '',
+          alt: 'pokemon',
+          description: 'This was my first project where we had to do API calls using AJAX and Promises. I used the PokeAPI and built a fully functioning Pokedex with a random Pokemon generator as well.',
+          tech: 'JavaScript, AJAX/Promises, HTML5, CSS3, Node.js',
+          link1: 'https://r742davis.github.io/',
+          link2: 'https://github.com/r742davis/r742davis.github.io',
           link3: '',
-          linkName1: 'Mug Club GitHub Page',
-          linkName2: '',
+          linkName1: 'Pokedex Website',
+          linkName2: 'Project Code',
           linkName3: ''
         }
       ]
@@ -130,10 +130,10 @@ class Projects extends Component {
             alt={project.alt}
             description={project.description}
             tech={project.tech}
-            link={project.link}
+            link1={project.link1}
             link2={project.link2}
             link3={project.link3}
-            linkName={project.linkName}
+            linkName1={project.linkName1}
             linkName2={project.linkName2}
             linkName3={project.linkName3}
             closeModal={this.closeModal} />

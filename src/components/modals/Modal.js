@@ -1,4 +1,5 @@
 import React from 'react';
+import './Modal.css';
 
 const modal = (props) => {
   return (
@@ -27,7 +28,9 @@ const modal = (props) => {
             <h4>Links:</h4>
           </div>
           <div className="project-links-description">
-            <p><a href={props.link}>{props.linkName}</a></p>
+            <a href={props.link1}>{props.linkName1}</a>
+            <a href={props.link2}>{props.linkName2}</a>
+            <a href={props.link3}>{props.linkName3}</a>
           </div>
         </div>
       </div>
