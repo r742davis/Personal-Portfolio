@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Styling/Projects.css';
 
 //Imported Pictures
 import project_1 from '../images/bear.jpg';
