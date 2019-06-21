@@ -109,38 +109,7 @@ class Projects extends Component {
     return (
       <>
       {projectList}
-      {this.state.isOpen1
-        ? <Modal
-            name={this.state.projects[0].name}
-            image={this.state.projects[0].image}
-            alt={this.state.projects[0].alt}
-            description={this.state.projects[0].description}
-            tech={this.state.projects[0].tech}
-            link={this.state.projects[0].link}
-            linkName={this.state.projects[0].linkName}
-            closeModal={this.closeModal} />
-        : null
-      }
-      {this.state.isOpen2
-        ? <Project2 closeModal={this.closeModal} />
-        : null
-      }
-      {this.state.isOpen3
-        ? <Project3 closeModal={this.closeModal} />
-        : null
-      }
-      {this.state.isOpen4
-        ? <Project4 closeModal={this.closeModal} />
-        : null
-      }
-      {this.state.isOpen5
-        ? <Project5 closeModal={this.closeModal} />
-        : null
-      }
-      {this.state.isOpen6
-        ? <Project6 closeModal={this.closeModal} />
-        : null
-      }
+      
 
       <section id="projects">
         <div className="title-container">
