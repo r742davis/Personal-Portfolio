@@ -34,7 +34,7 @@ class Projects extends Component {
       modalNumber: '',
       projects: [
         {
-          id: '1',
+          id: 1,
           name: 'Mug Club App',
           image: `${project_1}`,
           alt: 'mug club bear',
@@ -84,6 +84,7 @@ class Projects extends Component {
     const projectList = this.state.projects.map(project => {
       if (project.id === this.state.modalNumber && this.state.showModal) {
         return <Modal
+            key={project.id}
             name={project.name}
             image={project.image}
             alt={project.alt}
@@ -140,7 +141,7 @@ class Projects extends Component {
             src={project_1}
             className="project-grid modal-one"
             alt="project 1"
-            onClick={() => this.openModal('1')}
+            onClick={() => this.openModal(1)}
           />
           <img
             src={project_2}
