@@ -44,9 +44,15 @@ class Contact extends Component {
                 <i className="fas fa-thumbs-up contact-icon"></i>
                 <MDBCardTitle>SOCIAL</MDBCardTitle>
                 <div className="social-icon-container">
-                  <a href="https://www.facebook.com/richard.trow.davis"><i className="fab fa-facebook social-icon"></i></a>
-                  <a href="https://www.linkedin.com/in/richard-t-davis/"><i className="fab fa-linkedin social-icon"></i></a>
-                  <a href="https://medium.com/@richard.trow.davis"><i className="fab fa-medium social-icon"></i></a>
+                  <a href="https://www.facebook.com/richard.trow.davis">
+                    <i className="fab fa-facebook social-icon"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/richard-t-davis/">
+                    <i className="fab fa-linkedin social-icon"></i>
+                  </a>
+                  <a href="https://medium.com/@richard.trow.davis">
+                    <i className="fab fa-medium social-icon"></i>
+                  </a>
                 </div>
               </MDBCardBody>
             </MDBCard>

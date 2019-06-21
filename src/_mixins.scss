@@ -4,8 +4,8 @@ $breakpoints: (
   'navbar': 767px,
   'large': 1000px,
   'xl': 1200px
-) !default;
-
+)
+!default;
 // Mixin that responds to @include
 @mixin respond-to($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
