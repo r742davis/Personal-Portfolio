@@ -139,6 +139,15 @@ class Projects extends Component {
       }
     })
 
+    const projectImages = this.state.projects.map(project => {
+      return <img
+        key={project.id}
+        src={project.image}
+        className='project-grid'
+        alt={`project_${project.id}`}
+        onClick={() => this.openModal(project.id)} />
+    })
+
     return (
       <>
       {projectModal}
@@ -148,47 +157,7 @@ class Projects extends Component {
           <h1 data-aos="fade-up">Recent Projects</h1>
         </div>
         <div className="projects-container" data-aos="fade-up">
-          <img
-            src={project_1}
-            className="project-grid modal-one"
-            alt="project 1"
-            onClick={() => this.openModal(1)}
-          />
-          <img
-            src={project_2}
-            className="project-grid modal-two"
-            id="project-grid-2"
-            alt="project 2"
-            onClick={() => this.openModal(2)}
-          />
-          <img
-            src={project_3}
-            className="project-grid modal-three"
-            id="project-grid-3"
-            alt="project 3"
-            onClick={() => this.openModal(3)}
-          />
-          <img
-            src={project_4}
-            className="project-grid modal-four"
-            id="project-grid-4"
-            alt="project 4"
-            onClick={() => this.openModal(4)}
-          />
-          <img
-            src={project_5}
-            className="project-grid modal-five"
-            id="project-grid-5"
-            alt="project 5"
-            onClick={() => this.openModal(5)}
-          />
-          <img
-            src={project_6}
-            className="project-grid modal-six"
-            id="project-grid-6"
-            alt="project 6"
-            onClick={() => this.openModal(6)}
-          />
+          {projectImages}
         </div>
       </section>
       </>
