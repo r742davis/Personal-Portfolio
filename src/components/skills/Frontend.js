@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Skills.css';
 
 class Frontend extends Component {
   render() {
