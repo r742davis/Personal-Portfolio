@@ -51,4 +51,5 @@
 .project-grid:hover {
   filter: blur(1px) brightness(60%);
   box-shadow: 0 0 8px var(--primary);
-  cursor: pointer; }
+  cursor: pointer;
+  transform: translate3d(0, -0.5rem, 0.5rem); }

@@ -150,8 +150,6 @@ class Projects extends Component {
 
     return (
       <>
-      {projectModal}
-
       <section id="projects">
         <div className="title-container">
           <h1 data-aos="fade-up">Recent Projects</h1>
@@ -160,6 +158,7 @@ class Projects extends Component {
           {projectImages}
         </div>
       </section>
+      {projectModal}
       </>
     )
   }

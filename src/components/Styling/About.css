@@ -33,37 +33,36 @@
   box-shadow: 0 1rem 2rem #d9d9d9;
   transition: 0.4s ease-in-out; }
 
-.cv-button-container {
-  width: 400px;
-  display: flex;
-  justify-content: center; }
-
-@media (max-width: 800px) {
-  .cv-button-container {
-    width: auto; } }
-
 .cv-button {
   background: var(--primary) !important;
   height: 60px;
-  width: 300px;
+  width: 200px;
+  margin-top: 10px;
   border-radius: 1rem;
   font-size: 1.25rem;
   font-family: 'Arvo', serif;
   box-shadow: 0 0.2rem 1rem #d9d9d9;
-  transition: 0.2s ease-in-out; }
+  transition: 0.4s ease-in-out; }
+
+.cv-button a {
+  color: white; }
 
 .cv-button:hover {
-  color: white; }
+  background-color: var(--secondary) !important;
+  cursor: pointer;
+  transform: translate3d(0, -0.2rem, 0.2rem); }
 
 .description-container {
   width: 700px;
   margin-bottom: 50px;
+  margin-left: 50px;
   text-align: left;
   transition: 0.4s ease-in-out; }
 
 @media (max-width: 1200px) {
   .description-container {
-    text-align: center; } }
+    text-align: center;
+    margin-left: 0px; } }
 
 .description-container h1 {
   color: var(--primary);
