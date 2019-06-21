@@ -27,7 +27,16 @@ class Projects extends Component {
       isOpen3: false,
       isOpen4: false,
       isOpen5: false,
-      isOpen6: false
+      isOpen6: false,
+      project1: {
+        name: 'Mug Club App',
+        image: {project_1},
+        alt: 'mug club bear',
+        description: 'The Madison Bear Garden needs a better way to track their Mug Club members aside from their laptop and a spreadsheet. I am developing a mobile and desktop application that will help them track their members using a remote hosted database.',
+        tech: 'React, MongoDB, Express, Node.js',
+        link: 'https://github.com/r742davis/mug_club',
+        linkName: 'Mug Club GitHub Page'
+      }
     }
   }
   closeModal = () => {
