@@ -1,0 +1,112 @@
+// Screen Size Breakpoints
+$breakpoints: (
+  'small': 450px,
+  'medium': 800px,
+  'navbar': 767px,
+  'large': 1000px,
+  'xl': 1200px
+) !default;
+
+// Mixin that responds to @include
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+#about {
+  background: #f2f2f2;
+  height: auto;
+}
+
+
+// whole page container
+.about-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 1200px;
+  padding-top: 50px;
+  margin: 0 auto;
+  @include respond-to('xl') {
+    width: 1000px;
+    justify-content: center;
+  }
+  @include respond-to('large') {
+    width: auto;
+  }
+  @include respond-to('medium') {
+    height: auto;
+  }
+}
+// picture and cv download button container
+.picture-cv-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-picture {
+  width: 300px;
+  height: 300px;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem #d9d9d9;
+  transition: 0.4s ease-in-out;
+}
+.cv-button-container {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  @include respond-to('medium') {  width: auto; }
+}
+.cv-button {
+  background: var(--primary) !important;
+  height: 60px;
+  width: 300px;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  font-family: 'Arvo', serif;
+  box-shadow: 0 0.2rem 1rem #d9d9d9;
+  transition: 0.2s ease-in-out;
+}
+.cv-button a {
+  color: white;
+}
+
+// description container with name, title, and description
+.description-container {
+  width: 700px;
+  margin-bottom: 50px;
+  text-align: left;
+  transition: 0.4s ease-in-out;
+  @include respond-to('xl') {
+    text-align: center;
+  }
+}
+.description-container h1 {
+  color: var(--primary);
+  font-family: 'Kristi', cursive;
+  font-size: 7rem;
+}
+.description-container h4 {
+  font-family: 'Arvo', serif;
+}
+.description-container p {
+  font-size: 1.25rem;
+}
+.description-container-current-projects li {
+  margin-left: 50px;
+  font-size: 1.25rem;
+  @include respond-to('xl') {
+    list-style: none;
+  }
+}
+.description-container-current-projects a {
+  color: var(--primary);
+}
+.description-container-current-projects a:hover {
+  color: var(--secondary);
+}
