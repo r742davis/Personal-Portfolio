@@ -116,7 +116,6 @@ class Projects extends Component {
 
   openModal = (number) => {
     this.setState({modalNumber: number, showModal: true})
-    console.log(this.state.modalNumber);
   }
 
   render() {
