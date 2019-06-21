@@ -1,26 +1,4 @@
-// Screen Size Breakpoints
-$breakpoints: (
-  'small': 450px,
-  'medium': 800px,
-  'navbar': 767px,
-  'large': 1000px,
-  'xl': 1200px
-) !default;
-
-// Mixin that responds to @include
-@mixin respond-to($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media (max-width: map-get($breakpoints, $breakpoint)) {
-      @content;
-    }
-  }
-}
-
-#about {
-  background: #f2f2f2;
-  height: auto;
-}
-
+@import '../_mixins.scss';
 
 // whole page container
 .about-container {
