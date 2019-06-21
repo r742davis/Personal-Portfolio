@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import './Styling/Home.css';
 const ReactRotatingText = require('react-rotating-text');
+
 
 class Home extends Component {
   render() {

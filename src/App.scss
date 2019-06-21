@@ -171,46 +171,7 @@ body, html, ul, li, h1 {
 /*****************/
 /*** Home Page ***/
 /*****************/
-#home {
-  @include respond-to('medium') {
-    height: auto;
-  }
-}
-.home-container {
-  background: url('./images/retro-computers.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-color: rgba(0,0,0,0.6);
-  background-blend-mode: multiply;
-  margin: 0 auto;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.home-container h1 {
-  color: white;
-}
-.tagline-container h2 {
-  transform: rotate(-10deg);
-  font-family: 'Kristi', cursive;
-  font-size: 5rem;
-  font-weight: 100;
-  color: whitesmoke;
-}
-.tagline-container h2:nth-child(2) {
-  text-align: center;
-  font-size: 6rem;
-  margin-bottom: 4rem;
-}
 
-/*** Blinking Cursor on Home Page ***/
-.react-rotating-text-cursor {
-  animation: blink 1.1s cubic-bezier(0.68, 0.01, 0.01, 0.99) infinite;
-}
 
 /******************/
 /*** About Page ***/
@@ -361,94 +322,6 @@ body, html, ul, li, h1 {
   filter: blur(1px) brightness(60%);
   box-shadow: 0 0 8px var(--primary);
   cursor: pointer;
-}
-
-/********************/
-/*** Contact Page ***/
-/********************/
-#contact {
-  background: #f2f2f2;
-  height: 120vh;
-  @include respond-to('medium') { height: 150vh; }
-}
-.contact-container {
-  display: flex;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  width: 70%;
-  height: 50vh;
-  @include respond-to('large') {
-    display: grid;
-    width: 800px;
-    grid-template-columns: 20rem 20rem;
-    grid-auto-rows: auto;
-  }
-  @include respond-to('medium') {
-    grid-template-columns: 20rem;
-    width: auto;
-    height: 80vh;
-  }
-}
-.card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 24px;
-  width: 22rem;
-  height: 16rem;
-  margin: 2rem 0.5rem 2rem 0.5rem;
-  box-shadow: 0 0.5rem 1rem #d9d9d9;
-  transition: 0.4s ease-in-out;
-  @include respond-to('xl') { width: 18rem; }
-  @include respond-to('medium') { margin-bottom: 0.25rem; }
-}
-.card-container:hover {
-  transform: translate3d(0, -0.5rem, 1rem);
-}
-.card-container h4 {
-  font-family: 'Arvo', serif;
-  font-size: 2rem;
-}
-.card-container p {
-  font-family: 'Lato-Light', sans-serif;
-  font-size: 1.25rem;
-}
-.card-container a {
-  text-decoration: none;
-  color: var(--primary);
-  transition: 0.2s;
-}
-.card-container a:hover {
-  color: var(--secondary);
-  transition: 0.2s;
-}
-.social-card {
-  @include respond-to('large') { width: 38rem; }
-  @include respond-to('medium') { width: 18rem; }
-}
-.contact-icon {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 2rem;
-  font-size: 3rem;
-}
-.social-icons-container {
-  display: flex;
-}
-.social-icon {
-  font-size: 3rem;
-  margin: 0.5rem;
-}
-
-/**************/
-/*** Footer ***/
-/*****************************************************/
-.footer {
-  margin-top: 2rem;
 }
 
 /******************/
