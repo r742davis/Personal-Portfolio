@@ -89,7 +89,7 @@ class Projects extends Component {
         <div className="title-container">
           <h1 data-aos="fade-up">Recent Projects</h1>
         </div>
-        <div className="projects-container" data-aos="flip-up">
+        <div className="projects-container" data-aos="fade-up">
           <img
             src={project_1}
             className="project-grid modal-one"

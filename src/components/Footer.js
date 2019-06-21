@@ -10,7 +10,7 @@ class Footer extends Component {
         <MDBFooter color="blue" className="footer font-small pt-4 mt-4">
           <div className="footer-copyright text-center py-3">
             <MDBContainer fluid>
-              &copy; {new Date().getFullYear()} Copyright - <a href="https://www.MDBootstrap.com"> Portfolio created using ReactJS, Bootstrap, and Sass </a>
+              &copy; {new Date().getFullYear()} Copyright - <a href="https://www.MDBootstrap.com"> Portfolio created using ReactJS, Bootstrap, and SASS </a>
             </MDBContainer>
           </div>
         </MDBFooter>

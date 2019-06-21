@@ -36,7 +36,7 @@ class About extends Component {
           <div className="description-container" data-aos="fade-up">
             <h1>Richard Davis</h1>
             <h4>Full-Stack Web Developer</h4>
-              <hr />
+            <hr />
             <p>
             It can take a long time to figure out what you truly are passionate about. I entered college thinking I wanted to go into politics and become a lawyer. After deciding politics would destroy my sanity, I reached into the mental void by studying psychology. I eventually landed on cellular and molecular and wanted to pursue my medical doctorate as a psychiatrist. I was never truly passionate about any of these paths. I wanted to work with people but also be mentally challenged with puzzles and thought-experiments.
             </p>
@@ -52,7 +52,7 @@ class About extends Component {
             <p>
             I feel that effective communication is the cornerstone of any good programming team. I aim to work with my fellow programmers and figure out solutions together.
             </p>
-              <hr />
+            <hr />
             <h4>What Am I Currently Working On?</h4>
               <ul className="description-container-current-projects">
                 <li><a href="https://github.com/r742davis/mug_club">Mug Club Membership App (Madison Bear Garden)</a></li>
