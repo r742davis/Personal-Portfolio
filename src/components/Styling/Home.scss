@@ -5,8 +5,9 @@
     height: auto;
   }
 }
+
 .home-container {
-  background: url('../../images/retro-computers.jpg') no-repeat center center;
+  background: url("../../images/retro-computers.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -20,9 +21,11 @@
   align-items: center;
   justify-content: center;
 }
+
 .home-container h1 {
   color: white;
 }
+
 .tagline-container h2 {
   transform: rotate(-10deg);
   font-family: 'Kristi', cursive;
@@ -30,12 +33,12 @@
   font-weight: 100;
   color: whitesmoke;
 }
+
 .tagline-container h2:nth-child(2) {
   text-align: center;
   font-size: 6rem;
   margin-bottom: 4rem;
 }
-
 /*** Blinking Cursor on Home Page ***/
 .react-rotating-text-cursor {
   animation: blink 1.1s cubic-bezier(0.68, 0.01, 0.01, 0.99) infinite;
@@ -44,9 +47,11 @@
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }

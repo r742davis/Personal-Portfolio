@@ -1,5 +1,4 @@
 @import '../../_mixins.scss';
-
 //New skills container with frontend and backend skills sections
 .skills-container {
   display: flex;
@@ -13,16 +12,17 @@
     margin: 0 auto;
   }
 }
-
 // skills list container with developer skills
 .frontend-skills-title {
   background: var(--primary);
 }
+
 .frontend-skills-title h4 {
   padding: 1rem;
   color: whitesmoke;
   font-family: 'Arvo', serif;
 }
+
 .frontend-skills-container {
   width: 49%;
   text-align: left;
@@ -33,27 +33,33 @@
     width: 500px;
   }
 }
+
 .frontend-skills-container ul li {
   list-style: none;
 }
+
 .frontend-skills-container li {
   padding-left: 1rem;
   margin: 0.25rem;
   font-size: 1.5rem;
 }
+
 .skill-icon {
   width: 30px;
   height: 30px;
   margin-right: 1rem;
 }
+
 .backend-skills-title {
   background: var(--primary);
 }
+
 .backend-skills-title h4 {
   padding: 1rem;
   color: whitesmoke;
   font-family: 'Arvo', serif;
 }
+
 .backend-skills-container {
   width: 49%;
   text-align: left;
@@ -65,9 +71,11 @@
     margin-top: 50px;
   }
 }
+
 .backend-skills-container ul li {
   list-style: none;
 }
+
 .backend-skills-container li {
   padding-left: 1rem;
   margin: 0.25rem;

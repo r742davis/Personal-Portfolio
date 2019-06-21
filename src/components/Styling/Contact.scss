@@ -3,8 +3,11 @@
 #contact {
   background: #f2f2f2;
   height: 120vh;
-  @include respond-to('medium') { height: 150vh; }
+  @include respond-to('medium') {
+    height: 150vh;
+  }
 }
+
 .contact-container {
   display: flex;
   margin: auto;
@@ -25,6 +28,7 @@
     height: 80vh;
   }
 }
+
 .card-container {
   display: flex;
   justify-content: center;
@@ -33,36 +37,51 @@
   font-size: 24px;
   width: 22rem;
   height: 16rem;
-  margin: 2rem 0.5rem 2rem 0.5rem;
+  margin: 2rem 0.5rem;
   box-shadow: 0 0.5rem 1rem #d9d9d9;
   transition: 0.4s ease-in-out;
-  @include respond-to('xl') { width: 18rem; }
-  @include respond-to('medium') { margin-bottom: 0.25rem; }
+  @include respond-to('xl') {
+    width: 18rem;
+  }
+  @include respond-to('medium') {
+    margin-bottom: 0.25rem;
+  }
+
   &:hover {
     transform: translate3d(0, -0.5rem, 0.5rem);
   }
 }
+
 .card-container h4 {
   font-family: 'Arvo', serif;
   font-size: 2rem;
 }
+
 .card-container p {
   font-family: 'Lato-Light', sans-serif;
   font-size: 1.25rem;
 }
+
 .card-container a {
   text-decoration: none;
   color: var(--primary);
   transition: 0.2s;
+
   &:hover {
     color: var(--secondary);
     transition: 0.2s;
   }
 }
+
 .social-card {
-  @include respond-to('large') { width: 38rem; }
-  @include respond-to('medium') { width: 18rem; }
+  @include respond-to('large') {
+    width: 38rem;
+  }
+  @include respond-to('medium') {
+    width: 18rem;
+  }
 }
+
 .contact-icon {
   display: flex;
   justify-content: center;
@@ -70,9 +89,11 @@
   padding: 2rem;
   font-size: 3rem;
 }
+
 .social-icons-container {
   display: flex;
 }
+
 .social-icon {
   font-size: 3rem;
   margin: 0.5rem;

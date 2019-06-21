@@ -3,44 +3,27 @@
 #projects {
   padding-bottom: 200px;
 }
+
 .projects-container {
   display: grid;
   width: 1200px;
   height: 600px;
-  margin: 0 auto;
-  margin-top: 1rem;
+  margin: 1rem auto 0;
   justify-items: center;
-  grid-template-columns:
-    [first] 1fr
-    [second] 1fr
-    [third] 1fr;
-  grid-template-rows:
-    [first] 18rem
-    [second] 18rem;
+  grid-template-columns: [first] 1fr [second] 1fr [third] 1fr;
+  grid-template-rows: [first] 18rem [second] 18rem;
   @include respond-to('xl') {
     width: 800px;
     height: auto;
-    grid-template-columns:
-      [first] 1fr
-      [second] 1fr;
-    grid-template-rows:
-      [first] 16rem
-      [second] 16rem
-      [third] 16rem;
+    grid-template-columns: [first] 1fr [second] 1fr;
+    grid-template-rows: [first] 16rem [second] 16rem [third] 16rem;
     transition: 0.4s;
   }
   @include respond-to('medium') {
     width: 450px;
     height: auto;
-    grid-template-columns:
-      [first] 1fr;
-    grid-template-rows:
-      [first] 16rem
-      [second] 16rem
-      [third] 16rem
-      [fourth] 16rem
-      [fifth] 16rem
-      [sixth] 16rem;
+    grid-template-columns: [first] 1fr;
+    grid-template-rows: [first] 16rem [second] 16rem [third] 16rem [fourth] 16rem [fifth] 16rem [sixth] 16rem;
     transition: 0.4s;
   }
   @include respond-to('small') {
@@ -49,6 +32,7 @@
     transition: 0.4s;
   }
 }
+
 .project-grid {
   width: 22rem;
   height: 16rem;
@@ -63,6 +47,7 @@
     width: 400px;
   }
 }
+
 .project-grid:hover {
   filter: blur(1px) brightness(60%);
   box-shadow: 0 0 8px var(--primary);

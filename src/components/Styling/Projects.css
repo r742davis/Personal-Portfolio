@@ -5,8 +5,7 @@
   display: grid;
   width: 1200px;
   height: 600px;
-  margin: 0 auto;
-  margin-top: 1rem;
+  margin: 1rem auto 0;
   justify-items: center;
   grid-template-columns: [first] 1fr [second] 1fr [third] 1fr;
   grid-template-rows: [first] 18rem [second] 18rem; }

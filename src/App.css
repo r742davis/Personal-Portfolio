@@ -4,7 +4,11 @@
   --secondary: #da99ff;
   --bg: white; }
 
-body, html, ul, li, h1 {
+body,
+h1,
+html,
+li,
+ul {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;

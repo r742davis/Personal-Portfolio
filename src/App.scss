@@ -5,18 +5,19 @@
   --secondary: #da99ff;
   --bg: white;
 }
-
 // Screen Size Breakpoints
 @import './_mixins.scss';
-
 // CSS Reset
-body, html, ul, li, h1 {
+body,
+h1,
+html,
+li,
+ul {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
   font-family: 'Lato', sans-serif;
 }
-
 /**************/
 /*** Titles ***/
 /**************/
@@ -29,12 +30,14 @@ body, html, ul, li, h1 {
     padding-top: 75px;
   }
 }
+
 .title-container h1 {
   font-family: 'Arvo', serif;
   font-size: 3rem;
   display: inline-flex;
   padding-bottom: 0.5rem;
 }
+
 .title-container h1:after {
   content: "";
   position: absolute;
