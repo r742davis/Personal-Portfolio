@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './modal.css';
+import './Modal.css';
 import project_2 from '../../images/wine.jpg';
 
 class Project_2 extends Component {

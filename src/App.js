@@ -4,11 +4,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 //---Component Imports---//
-import Navigation from './components/Navigation';
-import Home from './components/Home';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import Navigation from './Components/Navigation';
+import Home from './Components/Home';
+import About from './Components/About';
+import Projects from './Components/Projects';
+import Contact from './Components/Contact';
 
 class App extends Component {
   componentDidMount() {
@@ -24,7 +24,6 @@ class App extends Component {
         <About />
         <Projects />
         <Contact />
-
       </>
     );
   }

@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import './Styling/About.css';
-import {
-  MDBBtn
-} from 'mdbreact';
+import { MDBBtn } from 'mdbreact';
 import profile from '../images/richard-davis.jpeg';
 
-//Imported components for skills section
-import Backend from './skills/Backend';
-import Frontend from './skills/Frontend';
+//Skill components
+import Backend from './Skills/Backend';
+import Frontend from './Skills/Frontend';
 
 class About extends Component {
   render() {
