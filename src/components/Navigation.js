@@ -13,28 +13,25 @@ import {
 class Navigation extends Component {
   constructor(props) {
     super(props);
-
-    this.toggle = this.toggle.bind(this);
     this.state = {
       isOpen: false,
       scrolled: true
     };
   }
 
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
+  toggleMenu = () => {
+    this.setState({isOpen: !this.state.isOpen});
+  };
 
   componentDidMount() {
     document.addEventListener('scroll', () => {
-      const scrolled = window.scrollY < window.innerHeight;
+      const scrolled = window.scrollY < 100;
+      console.log(scrolled)
       if (scrolled !== this.state.scrolled) {
         this.setState({ scrolled })
       }
     })
-  }
+  };
 
   render() {
     return (
@@ -46,7 +43,7 @@ class Navigation extends Component {
         >
           <NavbarBrand
             className={this.state.scrolled ? "navbar-brand text-white" : "navbar-brand-recolored"}>R</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
+          <NavbarToggler onClick={this.toggleMenu} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto navbar-center" navbar>
               <NavItem>
