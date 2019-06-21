@@ -36,10 +36,9 @@
   transition: 0.4s ease-in-out;
 }
 
-
-
 .cv-button {
-  background: var(--primary) !important;
+  color:white;
+  background: var(--primary);
   height: 60px;
   width: 200px;
   margin-top: 10px;
@@ -48,11 +47,8 @@
   font-family: 'Arvo', serif;
   box-shadow: 0 0.2rem 1rem #d9d9d9;
   transition: 0.4s ease-in-out;
-  & a {
-    color: white;
-  }
   &:hover {
-    background-color: var(--secondary) !important;
+    background-color: var(--secondary);
     cursor: pointer;
     transform: translate3d(0, -0.2rem, 0.2rem);
   }

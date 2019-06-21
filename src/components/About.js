@@ -25,12 +25,8 @@ const about = () => {
           <h1>Richard Davis</h1>
           <h4>Full-Stack Web Developer</h4>
           <div className="cv-button-container">
-            <button className="cv-button">
-              <a
-                href="https://drive.google.com/file/d/1QVdSpdP-JZ20GrZu0ApqVp-Mx-urqGHW/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer">Download CV
-              </a>
+            <button className="cv-button" href="https://drive.google.com/file/d/1QVdSpdP-JZ20GrZu0ApqVp-Mx-urqGHW/view?usp=sharing">Download CV
+              
             </button>
           </div>
           <hr />
