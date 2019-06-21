@@ -17,6 +17,8 @@ import Project4 from './modals/Project_4';
 import Project5 from './modals/Project_5';
 import Project6 from './modals/Project_6';
 
+import Modal from './modals/Modal';
+
 class Projects extends Component {
   constructor(props) {
     super(props);
@@ -28,15 +30,17 @@ class Projects extends Component {
       isOpen4: false,
       isOpen5: false,
       isOpen6: false,
-      project1: {
-        name: 'Mug Club App',
-        image: {project_1},
-        alt: 'mug club bear',
-        description: 'The Madison Bear Garden needs a better way to track their Mug Club members aside from their laptop and a spreadsheet. I am developing a mobile and desktop application that will help them track their members using a remote hosted database.',
-        tech: 'React, MongoDB, Express, Node.js',
-        link: 'https://github.com/r742davis/mug_club',
-        linkName: 'Mug Club GitHub Page'
-      }
+      projects: [
+        {
+          name: 'Mug Club App',
+          image: `${project_1}`,
+          alt: 'mug club bear',
+          description: 'The Madison Bear Garden needs a better way to track their Mug Club members aside from their laptop and a spreadsheet. I am developing a mobile and desktop application that will help them track their members using a remote hosted database.',
+          tech: 'React, MongoDB, Express, Node.js',
+          link: 'https://github.com/r742davis/mug_club',
+          linkName: 'Mug Club GitHub Page'
+        }
+      ]
     }
   }
   closeModal = () => {
@@ -71,7 +75,15 @@ class Projects extends Component {
     return (
       <>
       {this.state.isOpen1
-        ? <Project1 closeModal={this.closeModal} />
+        ? <Modal
+          name={this.state.projects[0].name}
+          image={this.state.projects[0].image}
+          alt={this.state.projects[0].alt}
+          description={this.state.projects[0].description}
+          tech={this.state.projects[0].tech}
+          link={this.state.projects[0].link}
+          linkName={this.state.projects[0].linkName}
+          closeModal={this.closeModal} />
         : null
       }
       {this.state.isOpen2
