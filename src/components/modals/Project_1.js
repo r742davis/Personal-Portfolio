@@ -24,7 +24,7 @@ class Project_1 extends Component {
                 <h4>Tech:</h4>
               </div>
               <div className="project-tech-description">
-                <p>React Native, Ruby on Rails, Sass, PostgreSQL</p>
+                <p>React, MongoDB, Express, Node.js</p>
               </div>
               <div className="project-links">
                 <h4>Links:</h4>
