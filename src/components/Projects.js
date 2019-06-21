@@ -46,6 +46,46 @@ class Projects extends Component {
           tech: 'React, MongoDB, Express, Node.js',
           link: 'https://github.com/r742davis/mug_club',
           linkName: 'Mug Club GitHub Page'
+        },
+        {
+          id: 3,
+          name: 'Mug Club App',
+          image: `${project_3}`,
+          alt: 'mug club bear',
+          description: 'The Madison Bear Garden needs a better way to track their Mug Club members aside from their laptop and a spreadsheet. I am developing a mobile and desktop application that will help them track their members using a remote hosted database.',
+          tech: 'React, MongoDB, Express, Node.js',
+          link: 'https://github.com/r742davis/mug_club',
+          linkName: 'Mug Club GitHub Page'
+        },
+        {
+          id: 4,
+          name: 'Mug Club App',
+          image: `${project_4}`,
+          alt: 'mug club bear',
+          description: 'The Madison Bear Garden needs a better way to track their Mug Club members aside from their laptop and a spreadsheet. I am developing a mobile and desktop application that will help them track their members using a remote hosted database.',
+          tech: 'React, MongoDB, Express, Node.js',
+          link: 'https://github.com/r742davis/mug_club',
+          linkName: 'Mug Club GitHub Page'
+        },
+        {
+          id: 5,
+          name: 'Mug Club App',
+          image: `${project_5}`,
+          alt: 'mug club bear',
+          description: 'The Madison Bear Garden needs a better way to track their Mug Club members aside from their laptop and a spreadsheet. I am developing a mobile and desktop application that will help them track their members using a remote hosted database.',
+          tech: 'React, MongoDB, Express, Node.js',
+          link: 'https://github.com/r742davis/mug_club',
+          linkName: 'Mug Club GitHub Page'
+        },
+        {
+          id: 6,
+          name: 'Mug Club App',
+          image: `${project_6}`,
+          alt: 'mug club bear',
+          description: 'The Madison Bear Garden needs a better way to track their Mug Club members aside from their laptop and a spreadsheet. I am developing a mobile and desktop application that will help them track their members using a remote hosted database.',
+          tech: 'React, MongoDB, Express, Node.js',
+          link: 'https://github.com/r742davis/mug_club',
+          linkName: 'Mug Club GitHub Page'
         }
       ]
     }
@@ -55,10 +95,8 @@ class Projects extends Component {
   }
 
   openModal = (number) => {
-    // let modal = name.target.classList
-
     this.setState({modalNumber: number, showModal: true})
-    console.log(typeof(this.state.modalNumber));
+    console.log(this.state.modalNumber);
   }
 
   render() {
