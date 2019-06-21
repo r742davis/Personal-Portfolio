@@ -38,9 +38,9 @@
   transition: 0.4s ease-in-out;
   @include respond-to('xl') { width: 18rem; }
   @include respond-to('medium') { margin-bottom: 0.25rem; }
-}
-.card-container:hover {
-  transform: translate3d(0, -0.5rem, 1rem);
+  &:hover {
+    transform: translate3d(0, -0.5rem, 0.5rem);
+  }
 }
 .card-container h4 {
   font-family: 'Arvo', serif;
@@ -54,10 +54,10 @@
   text-decoration: none;
   color: var(--primary);
   transition: 0.2s;
-}
-.card-container a:hover {
-  color: var(--secondary);
-  transition: 0.2s;
+  &:hover {
+    color: var(--secondary);
+    transition: 0.2s;
+  }
 }
 .social-card {
   @include respond-to('large') { width: 38rem; }
