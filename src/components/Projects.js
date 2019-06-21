@@ -24,14 +24,8 @@ class Projects extends Component {
     super(props);
 
     this.state = {
-      isOpen1: false,
-      isOpen2: false,
-      isOpen3: false,
-      isOpen4: false,
-      isOpen5: false,
-      isOpen6: false,
       showModal: false,
-      modalNumber: '',
+      modalNumber: 0,
       projects: [
         {
           id: 1,
@@ -57,41 +51,19 @@ class Projects extends Component {
     }
   }
   closeModal = () => {
-    this.setState({
-      isOpen1: false,
-      isOpen2: false,
-      isOpen3: false,
-      isOpen4: false,
-      isOpen5: false,
-      isOpen6: false,
-      showModal: false
-    })
+    this.setState({showModal: false})
   }
 
   openModal = (number) => {
     // let modal = name.target.classList
 
     this.setState({modalNumber: number, showModal: true})
-    console.log(this.state.modalNumber)
-
-    // if(modal.contains('modal-one')) {
-    //   this.setState({ isOpen1: !this.state.isOpen1 })
-    // } else if (modal.contains('modal-two')) {
-    //   this.setState({ isOpen2: !this.state.isOpen2 })
-    // } else if (modal.contains('modal-three')) {
-    //   this.setState({ isOpen3: !this.state.isOpen3 })
-    // } else if (modal.contains('modal-four')) {
-    //   this.setState({ isOpen4: !this.state.isOpen4 })
-    // } else if (modal.contains('modal-five')) {
-    //   this.setState({ isOpen5: !this.state.isOpen5 })
-    // } else if (modal.contains('modal-six')) {
-    //   this.setState({ isOpen6: !this.state.isOpen6 })
-    // }
+    console.log(typeof(this.state.modalNumber));
   }
 
   render() {
 
-    const projectList = this.state.projects.map(project => {
+    const projectModal = this.state.projects.map(project => {
       if (project.id === this.state.modalNumber && this.state.showModal) {
         return <Modal
             key={project.id}
@@ -108,8 +80,7 @@ class Projects extends Component {
 
     return (
       <>
-      {projectList}
-      
+      {projectModal}
 
       <section id="projects">
         <div className="title-container">
