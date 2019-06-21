@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './modal.css';
 import project_6 from '../../images/retro-computers.jpg';
 
 class Project_6 extends Component {

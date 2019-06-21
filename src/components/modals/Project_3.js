@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './modal.css';
 import project_3 from '../../images/traveleritis.png';
 
 class Project_3 extends Component {
