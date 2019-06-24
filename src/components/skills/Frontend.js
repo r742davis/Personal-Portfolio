@@ -1,17 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Skills.css';
 
 const frontend = () => {
+  const [ skillState, setSkillState ] = useState({
+    skills: [
+      {
+        key: 1,
+        name: 'AngularJS',
+        link: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/300/thumb/angular2.png',
+        alt: 'angular js'
+      },
+      {
+        name: '',
+        link: '',
+        alt: ''
+      },
+      {
+        name: '',
+        link: '',
+        alt: ''
+      },
+      {
+        name: '',
+        link: '',
+        alt: ''
+      }
+    ]
+  });
+  const skillList = skillState.skills.map(skill => {
+    return <li><img
+      key={skill.key}
+      src={skill.link}
+      className='skill-icon'
+      alt={skill.alt}
+    />{skill.name}</li>
+  })
   return (
     <div className="frontend-skills-container">
       <div className="frontend-skills-title">
         <h4>Frontend Skills</h4>
       </div>
       <ul>
-        <li><img
-          src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/300/thumb/angular2.png"
-          className="skill-icon"
-          alt="angular js"/>AngularJS</li>
+        {skillList}
         <li><img
           src="https://sdtimes.com/wp-content/uploads/2018/01/bootstrap-stack.png"
           className="skill-icon"
