@@ -64,20 +64,17 @@
     text-align: center;
     margin-left: 0px;
   }
-}
-
-.description-container h1 {
-  color: var(--primary);
-  font-family: 'Kristi', cursive;
-  font-size: 7rem;
-}
-
-.description-container h4 {
-  font-family: 'Arvo', serif;
-}
-
-.description-container p {
-  font-size: 1.25rem;
+  & h1 {
+    color: var(--primary);
+    font-family: 'Kristi', cursive;
+    font-size: 7rem;
+  }
+  & h4 {
+    font-family: 'Arvo', serif;
+  }
+  & p {
+    font-size: 1.25rem;
+  }
 }
 
 .description-container-current-projects li {
@@ -97,6 +94,7 @@
 
 .paragraph-container {
   margin-top: 25px;
+  padding: 1rem;
   box-shadow: 0 0.5rem 1rem #d9d9d9;
   @include respond-to('medium') {
     flex-direction: column;

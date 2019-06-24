@@ -4,10 +4,11 @@
   display: flex;
   justify-content: space-between;
   width: auto;
-  height: 525px;
+  height: 550px;
   @include respond-to('medium') {
     flex-direction: column;
     height: auto;
+    padding-bottom: 25px;
     width: 500px;
     margin: 0 auto;
   }

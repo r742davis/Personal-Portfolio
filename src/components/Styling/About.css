@@ -89,6 +89,7 @@
 
 .paragraph-container {
   margin-top: 25px;
+  padding: 1rem;
   box-shadow: 0 0.5rem 1rem #d9d9d9; }
 
 @media (max-width: 800px) {
