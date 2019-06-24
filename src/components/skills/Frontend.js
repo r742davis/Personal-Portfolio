@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Skills.css';
 
 const frontend = () => {
-  const [ skillState, setSkillState ] = useState({
+  const [ skillState ] = useState({
     skills: [
       {
         name: 'AngularJS',
@@ -30,35 +30,39 @@ const frontend = () => {
         alt: 'JavaScript'
       },
       {
+        name: 'Jest',
+        link: 'https://seeklogo.com/images/J/jest-logo-F9901EBBF7-seeklogo.com.png',
+        alt: 'Jest'
+      },
+      {
         name: 'jQuery',
         link: 'http://pluspng.com/img-png/jquery-logo-png-kategoriedateilogo-software-wikipedia-256.png',
         alt: 'jQuery'
       },
       {
-        name: '',
-        link: '',
-        alt: ''
+        name: 'ReactJS',
+        link: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png',
+        alt: 'React JS'
       },
       {
-        name: '',
-        link: '',
-        alt: ''
+        name: 'Redux',
+        link: 'https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png',
+        alt: 'Redux'
       },
       {
-        name: '',
-        link: '',
-        alt: ''
+        name: 'Ruby',
+        link: 'https://img.icons8.com/color/48/000000/ruby-gemstone.png',
+        alt: 'Ruby'
       },
       {
-        name: '',
-        link: '',
-        alt: ''
+        name: 'SASS',
+        link: 'https://cdn.worldvectorlogo.com/logos/sass-1.svg',
+        alt: 'Sass'
       }
     ]
   });
   const skillList = skillState.skills.map((skill, index) => {
-    return <li><img
-      key={index}
+    return <li key={index}><img
       src={skill.link}
       className='skill-icon'
       alt={skill.alt}
@@ -71,22 +75,6 @@ const frontend = () => {
       </div>
       <ul>
         {skillList}
-        <li><img
-          src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
-          className="skill-icon"
-          alt="react"/>React.js</li>
-        <li><img
-          src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png"
-          className="skill-icon"
-          alt="redux"/>Redux</li>
-        <li><img
-          src="https://img.icons8.com/color/48/000000/ruby-gemstone.png"
-          className="skill-icon"
-          alt="ruby"/>Ruby</li>
-        <li><img
-          src="https://cdn.worldvectorlogo.com/logos/sass-1.svg"
-          className="skill-icon"
-          alt="sass"/>Sass</li>
       </ul>
     </div>
   )

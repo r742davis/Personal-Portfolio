@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   width: auto;
-  height: 500px;
+  height: 525px;
   @include respond-to('medium') {
     flex-direction: column;
     height: auto;

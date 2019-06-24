@@ -25,15 +25,20 @@ const backend = () => {
         alt: 'postgreSQL'
       },
       {
-        name: 'Roby on Rails',
+        name: 'RESTful APIs',
+        link: 'https://vitworks.com/wp-content/uploads/2017/02/consuming-restful-api.png',
+        alt: 'restful a p i'
+      },
+      {
+        name: 'Ruby on Rails',
         link: 'https://s3-eu-west-1.amazonaws.com/devinterface-web/production/technologies/40/medium/rubylogo111.png?1444285834g',
         alt: 'ruby on rails'
       }
     ]
   });
 
-  const skillList = skillState.skills.map(skill => {
-    return <li><img
+  const skillList = skillState.skills.map((skill, index) => {
+    return <li key={index}><img
       src={skill.link}
       className='skill-icon'
       alt={skill.alt}
