@@ -47,8 +47,8 @@ const backend = () => {
 
   return (
     <>
-      <div className="backend-skills-container">
-        <div className="backend-skills-title">
+      <div className="skills-container">
+        <div className="skills-title">
           <h4>Backend Skills</h4>
         </div>
         <ul>

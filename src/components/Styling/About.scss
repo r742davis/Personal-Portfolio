@@ -94,3 +94,15 @@
     color: var(--secondary);
   }
 }
+
+.paragraph-container {
+  margin-top: 25px;
+  box-shadow: 0 0.5rem 1rem #d9d9d9;
+  @include respond-to('medium') {
+    flex-direction: column;
+    height: auto;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+}

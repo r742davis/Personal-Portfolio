@@ -69,8 +69,8 @@ const frontend = () => {
     />{skill.name}</li>
   })
   return (
-    <div className="frontend-skills-container">
-      <div className="frontend-skills-title">
+    <div className="skills-container">
+      <div className="skills-title">
         <h4>Frontend Skills</h4>
       </div>
       <ul>

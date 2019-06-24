@@ -27,6 +27,10 @@ const about = () => {
             <a href="https://drive.google.com/open?id=1AViWMMmCsB66e_DtyGrZ3Jpb6xw4b4Bp"><button className="cv-button" >Download CV</button></a>
           </div>
           <hr />
+          <div className="skills-display-container">
+            <Frontend />
+            <Backend />
+          </div>
           <div className='paragraph-container'>
             <p>
             It can take a long time to figure out what you truly are passionate about. I entered college thinking I wanted to go into politics and become a lawyer. After deciding politics would destroy my sanity, I reached into the mental void by studying psychology. I eventually landed on cellular and molecular and wanted to pursue my medical doctorate as a psychiatrist. I was never truly passionate about any of these paths. I wanted to work with people but also be mentally challenged with puzzles and thought-experiments.
@@ -52,10 +56,7 @@ const about = () => {
               <li><a href="https://javascript30.com/">JavaScript30</a></li>
             </ul>
           <hr />
-          <div className="skills-container">
-            <Frontend />
-            <Backend />
-          </div>
+
         </div>
       </div>
     </section>
