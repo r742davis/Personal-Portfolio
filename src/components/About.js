@@ -24,7 +24,7 @@ const about = () => {
           <h1>Richard Davis</h1>
           <h4>Software Developer<br />Full Stack + React Specialty</h4>
           <div className="cv-button-container">
-            <a href="https://drive.google.com/open?id=1AViWMMmCsB66e_DtyGrZ3Jpb6xw4b4Bp"><button className="cv-button" >Download CV</button></a>
+            <a href="https://drive.google.com/open?id=1AViWMMmCsB66e_DtyGrZ3Jpb6xw4b4Bp"><button className="cv-button">Download CV</button></a>
           </div>
           <hr />
           <div className="skills-display-container">

@@ -91,7 +91,9 @@
   font-family: 'Arvo', serif; }
 
 .project-links-description {
-  grid-column: 3 / 4; }
+  grid-column: 3 / 4;
+  display: flex;
+  flex-direction: column; }
   .project-links-description a {
     color: var(--primary); }
     .project-links-description a:hover {

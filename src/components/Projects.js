@@ -115,7 +115,6 @@ class Projects extends Component {
   }
 
   render() {
-
     const projectModal = this.state.projects.map(project => {
       if (project.id === this.state.modalNumber && this.state.showModal) {
         return <Modal
@@ -146,15 +145,15 @@ class Projects extends Component {
 
     return (
       <>
-      <section id="projects">
-        <div className="title-container">
-          <h1 data-aos="fade-up">Recent Projects</h1>
-        </div>
-        <div className="projects-container" data-aos="fade-up">
-          {projectImages}
-        </div>
-      </section>
-      {projectModal}
+        <section id="projects">
+          <div className="title-container">
+            <h1 data-aos="fade-up">Recent Projects</h1>
+          </div>
+          <div className="projects-container" data-aos="fade-up">
+            {projectImages}
+          </div>
+        </section>
+        {projectModal}
       </>
     )
   }
