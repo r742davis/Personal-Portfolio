@@ -22,7 +22,7 @@ const about = () => {
         </div>
         <div className="description-container" data-aos="fade-up">
           <h1>Richard Davis</h1>
-          <h4>Software Developer<br />Full Stack + React Specialty</h4>
+          <h4>Full Stack Software Developer</h4>
           <div className="cv-button-container">
             <a href="https://drive.google.com/open?id=1AViWMMmCsB66e_DtyGrZ3Jpb6xw4b4Bp"><button className="cv-button">Download CV</button></a>
           </div>
