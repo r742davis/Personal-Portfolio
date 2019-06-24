@@ -9,7 +9,7 @@
   padding-top: 50px;
   margin: 0 auto;
   @include respond-to('xl') {
-    width: 1000px;
+    width: auto;
     justify-content: center;
   }
   @include respond-to('large') {
@@ -60,7 +60,7 @@
   margin-left: 50px;
   text-align: left;
   transition: 0.4s ease-in-out;
-  @include respond-to('xl') {
+  @include respond-to('large') {
     text-align: center;
     margin-left: 0px;
   }

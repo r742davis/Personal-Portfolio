@@ -25,9 +25,7 @@ const about = () => {
           <h1>Richard Davis</h1>
           <h4>Full-Stack Web Developer</h4>
           <div className="cv-button-container">
-            <button className="cv-button" href="https://drive.google.com/file/d/1QVdSpdP-JZ20GrZu0ApqVp-Mx-urqGHW/view?usp=sharing">Download CV
-              
-            </button>
+            <a href="https://drive.google.com/open?id=1AViWMMmCsB66e_DtyGrZ3Jpb6xw4b4Bp"><button className="cv-button" >Download CV</button></a>
           </div>
           <hr />
           <div className='paragraph-container'>

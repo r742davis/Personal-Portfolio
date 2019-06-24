@@ -1,7 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Skills.css';
 
 const backend = () => {
+  const [ skillState, setSkillState ] = useState({
+    skills: [
+      {
+        name: 'Express.js',
+        link: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/359/thumb/expressjslogo.png',
+        alt: 'express'
+      },
+      {
+        name: 'Express.js',
+        link: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/359/thumb/expressjslogo.png',
+        alt: 'express'
+      },
+      {
+        name: 'Express.js',
+        link: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/359/thumb/expressjslogo.png',
+        alt: 'express'
+      },
+      {
+        name: 'Express.js',
+        link: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/359/thumb/expressjslogo.png',
+        alt: 'express'
+      },
+      {
+        name: 'Express.js',
+        link: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/359/thumb/expressjslogo.png',
+        alt: 'express'
+      }
+    ]
+  });
+
+  const skillList = skillState.skills.map(skill => {
+    return <li><img
+      src={skill.link}
+      className='skill-icon'
+      alt={skill.alt}
+      />{skill.name}</li>
+  })
+
   return (
     <>
       <div className="backend-skills-container">
@@ -9,10 +47,8 @@ const backend = () => {
           <h4>Backend Skills</h4>
         </div>
         <ul>
-          <li><img
-            src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/359/thumb/expressjslogo.png"
-            className="skill-icon"
-            alt="express"/>Express.js</li>
+        {skillList}
+
           <li><img
             src="https://cdn-images-1.medium.com/max/449/1*NRCOyVBY6Jiqr4Q9A1zoaQ.png"
             className="skill-icon"

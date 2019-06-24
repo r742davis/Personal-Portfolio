@@ -9,7 +9,7 @@
 
 @media (max-width: 1200px) {
   .about-container {
-    width: 1000px;
+    width: auto;
     justify-content: center; } }
 
 @media (max-width: 1000px) {
@@ -57,7 +57,7 @@
   text-align: left;
   transition: 0.4s ease-in-out; }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .description-container {
     text-align: center;
     margin-left: 0px; } }
