@@ -9,10 +9,6 @@ import project_4 from '../images/traveleritis.png';
 import project_5 from '../images/bakersdozen.png';
 import project_6 from '../images/pokemon.png';
 
-//Imported Modal Components
-
-import Project6 from './modals/Project_6';
-
 import Modal from './modals/Modal';
 
 class Projects extends Component {
