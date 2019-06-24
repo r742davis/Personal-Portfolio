@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Skills.css';
 
 const backend = () => {
-  const [ skillState, setSkillState ] = useState({
+  const [ skillState ] = useState({
     skills: [
       {
         name: 'Express.js',

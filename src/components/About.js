@@ -1,6 +1,5 @@
 import React from 'react';
 import './Styling/About.css';
-import { MDBBtn } from 'mdbreact';
 import profile from '../images/richard-davis.jpeg';
 
 //Skill components
