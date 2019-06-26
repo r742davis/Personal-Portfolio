@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/portfolio_1/static/media/Roboto-Medium.4d9f3f9e.eot"
   },
   {
-    "revision": "005cf7bd6e8c0af81128",
-    "url": "/portfolio_1/static/css/main.07a925fe.chunk.css"
+    "revision": "39d92dc8ae5f42eb7edc",
+    "url": "/portfolio_1/static/css/main.8a482381.chunk.css"
   },
   {
     "revision": "8260531fc1cbdc74fc80",
@@ -28,32 +28,32 @@ self.__precacheManifest = [
     "url": "/portfolio_1/static/media/bear.21fd6da0.jpg"
   },
   {
-    "revision": "51b477cd3b7b7cc7f51ff79f32036b88",
-    "url": "/portfolio_1/static/media/retro-computers.51b477cd.jpg"
+    "revision": "966d21bcc9e115ce2bf7ac8e4bd157ed",
+    "url": "/portfolio_1/static/media/retro-computers.966d21bc.jpg"
   },
   {
     "revision": "71b46dde9fddeec78d090183a8abb71d",
     "url": "/portfolio_1/static/media/wine.71b46dde.jpg"
   },
   {
-    "revision": "044c39604d77986e7b1afeaa96739ad9",
-    "url": "/portfolio_1/static/media/traveleritis.044c3960.png"
+    "revision": "abbd60a45ff92d6ade62e4fd96ff5d30",
+    "url": "/portfolio_1/static/media/traveleritis.abbd60a4.jpg"
   },
   {
-    "revision": "d5b042b89f86a96faa5ca8e51547b02e",
-    "url": "/portfolio_1/static/media/bakersdozen.d5b042b8.png"
+    "revision": "2edbc4152c25a2c023a39a10cabd9d4c",
+    "url": "/portfolio_1/static/media/bakersdozen.2edbc415.jpg"
   },
   {
     "revision": "c16644748e020fd7b0e0946d8511934e",
     "url": "/portfolio_1/static/media/pokemon.c1664474.png"
   },
   {
-    "revision": "8ef6a08cdc1154920165680a4edde771",
-    "url": "/portfolio_1/static/media/arrow_right.8ef6a08c.svg"
-  },
-  {
     "revision": "11911410dca2de148f30954eb2fd5eab",
     "url": "/portfolio_1/static/media/arrow_left.11911410.svg"
+  },
+  {
+    "revision": "8ef6a08cdc1154920165680a4edde771",
+    "url": "/portfolio_1/static/media/arrow_right.8ef6a08c.svg"
   },
   {
     "revision": "dfe56a876d0282555d1e2458e278060f",
@@ -68,8 +68,8 @@ self.__precacheManifest = [
     "url": "/portfolio_1/static/media/Roboto-Regular.30799efa.eot"
   },
   {
-    "revision": "005cf7bd6e8c0af81128",
-    "url": "/portfolio_1/static/js/main.3b554293.chunk.js"
+    "revision": "39d92dc8ae5f42eb7edc",
+    "url": "/portfolio_1/static/js/main.e8e12f92.chunk.js"
   },
   {
     "revision": "ecdd509cadbf1ea78b8d2e31ec52328c",
@@ -108,35 +108,35 @@ self.__precacheManifest = [
     "url": "/portfolio_1/static/media/Roboto-Regular.ba3dcd89.woff"
   },
   {
-    "revision": "dc81817def276b4f21395f7ea5e88dcd",
-    "url": "/portfolio_1/static/media/Roboto-Bold.dc81817d.woff"
-  },
-  {
     "revision": "fc78759e93a6cac50458610e3d9d63a0",
     "url": "/portfolio_1/static/media/Roboto-Medium.fc78759e.woff"
   },
   {
-    "revision": "94998475f6aea65f558494802416c1cf",
-    "url": "/portfolio_1/static/media/Roboto-Thin.94998475.ttf"
+    "revision": "dc81817def276b4f21395f7ea5e88dcd",
+    "url": "/portfolio_1/static/media/Roboto-Bold.dc81817d.woff"
   },
   {
     "revision": "46e48ce0628835f68a7369d0254e4283",
     "url": "/portfolio_1/static/media/Roboto-Light.46e48ce0.ttf"
   },
   {
-    "revision": "894a2ede85a483bf9bedefd4db45cdb9",
-    "url": "/portfolio_1/static/media/Roboto-Medium.894a2ede.ttf"
+    "revision": "94998475f6aea65f558494802416c1cf",
+    "url": "/portfolio_1/static/media/Roboto-Thin.94998475.ttf"
   },
   {
     "revision": "df7b648ce5356ea1ebce435b3459fd60",
     "url": "/portfolio_1/static/media/Roboto-Regular.df7b648c.ttf"
   },
   {
+    "revision": "894a2ede85a483bf9bedefd4db45cdb9",
+    "url": "/portfolio_1/static/media/Roboto-Medium.894a2ede.ttf"
+  },
+  {
     "revision": "8110a32450ba139a0efb",
     "url": "/portfolio_1/static/css/2.32624b4a.chunk.css"
   },
   {
-    "revision": "bd700ead38440672c9629468d13d1c4d",
+    "revision": "3e5ed4a62b1628b69a1ddc5669b496f2",
     "url": "/portfolio_1/index.html"
   }
 ];
