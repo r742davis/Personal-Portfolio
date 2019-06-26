@@ -1,16 +1,26 @@
 @import '../../_mixins.scss';
 // whole page container
 .about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 1200px;
   padding-top: 50px;
   margin: 0 auto;
   @include respond-to('xl') {
     width: auto;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   @include respond-to('large') {
     width: auto;
@@ -22,10 +32,19 @@
 // picture and cv download button container
 
 .picture-cv-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .profile-picture {
@@ -33,6 +52,7 @@
   height: 300px;
   border-radius: 1rem;
   box-shadow: 0 1rem 2rem #d9d9d9;
+  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
 
@@ -43,14 +63,17 @@
   width: 200px;
   margin-top: 10px;
   border-radius: 1rem;
+  font-size: 20px;
   font-size: 1.25rem;
   font-family: 'Arvo', serif;
   box-shadow: 0 0.2rem 1rem #d9d9d9;
+  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   &:hover {
     background-color: var(--secondary);
     cursor: pointer;
-    transform: translate3d(0, -0.2rem, 0.2rem);
+    -webkit-transform: translate3d(0, -0.2rem, 0.2rem);
+            transform: translate3d(0, -0.2rem, 0.2rem);
   }
 }
 // description container with name, title, and description
@@ -59,6 +82,7 @@
   margin-bottom: 50px;
   margin-left: 50px;
   text-align: left;
+  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   @include respond-to('large') {
     text-align: center;
@@ -67,18 +91,21 @@
   & h1 {
     color: var(--primary);
     font-family: 'Kristi', cursive;
+    font-size: 112px;
     font-size: 7rem;
   }
   & h4 {
     font-family: 'Arvo', serif;
   }
   & p {
+    font-size: 20px;
     font-size: 1.25rem;
   }
 }
 
 .description-container-current-projects li {
   margin-left: 50px;
+  font-size: 20px;
   font-size: 1.25rem;
   @include respond-to('xl') {
     list-style: none;
@@ -94,10 +121,14 @@
 
 .paragraph-container {
   margin-top: 25px;
+  padding: 16px;
   padding: 1rem;
   box-shadow: 0 0.5rem 1rem #d9d9d9;
   @include respond-to('medium') {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: auto;
     width: 500px;
     margin: 0 auto;
