@@ -1,12 +1,19 @@
 @import '../../_mixins.scss';
 //New skills container with frontend and backend skills sections
 .skills-display-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: auto;
   height: 550px;
   @include respond-to('medium') {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: auto;
     padding-bottom: 25px;
     width: 500px;
@@ -17,6 +24,7 @@
 .skills-title {
   background: var(--primary);
   & h4 {
+    padding: 16px;
     padding: 1rem;
     color: whitesmoke;
     font-family: 'Arvo', serif;
@@ -29,6 +37,7 @@
   list-style: none;
   margin-top: 25px;
   box-shadow: 0 0.5rem 1rem #d9d9d9;
+  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   @include respond-to('medium') {
     width: 500px;
@@ -37,8 +46,11 @@
     list-style: none;
   }
   & li {
+    padding-left: 16px;
     padding-left: 1rem;
+    margin: 4px;
     margin: 0.25rem;
+    font-size: 24px;
     font-size: 1.5rem;
   }
 }
@@ -46,5 +58,6 @@
 .skill-icon {
   width: 30px;
   height: 30px;
+  margin-right: 16px;
   margin-right: 1rem;
 }

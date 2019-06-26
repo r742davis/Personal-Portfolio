@@ -18,13 +18,15 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.8);
   border-radius: 10px;
   display: block;
   margin: 0 auto;
   z-index: 10;
-  animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+          animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   @include respond-to('medium') {
     padding-bottom: 25px;
     width: 400px;
@@ -34,15 +36,25 @@
 }
 
 .modal-grid {
+  display: -ms-grid;
   display: grid;
   width: 650px;
   height: 400px;
-  grid-template-columns: 1fr 0.5fr 0.5fr;
-  grid-template-rows: 35px 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 0.5fr 0.5fr;
+      grid-template-columns: 1fr 0.5fr 0.5fr;
+  -ms-grid-rows: 35px 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 35px 1fr 1fr 1fr 1fr 1fr;
   @include respond-to('medium') {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     width: 400px;
     height: 650px;
@@ -57,12 +69,15 @@
   padding-right: 10px;
   padding-top: 2px;
   color: white;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
   & i {
+    font-size: 32px;
     font-size: 2rem;
     vertical-align:middle;
     &:hover {
       color: var(--secondary);
+      -webkit-transition: 0.2s;
       transition: 0.2s;
       -webkit-animation: jello-vertical 0.75s both;
 	    animation: jello-vertical 0.75s both;
@@ -79,19 +94,25 @@
 .project-picture {
   grid-column: 1 / 2;
   grid-row: 2 / 7;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .project-picture img {
   height: 350px;
   width: 300px;
   padding: 10px;
-  align-items: center;
-  object-fit: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50px;
   @include respond-to('medium') {
     height: 250px;
     width:auto;
+    -webkit-transition: 0.4s;
     transition: 0.4s;
   }
 }
@@ -127,8 +148,13 @@
 
 .project-links-description {
   grid-column: 3 / 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   & a {
     color: var(--primary);
     &:hover {
@@ -140,12 +166,16 @@
 //Animations
 
 @keyframes fade-in {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   0% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   }
 
   100% {
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   }
 }
 

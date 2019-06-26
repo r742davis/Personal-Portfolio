@@ -6,6 +6,7 @@
   position: fixed;
   width: 100%;
   top: 0;
+  padding: 0 32px 0 !important;
   padding: 0 2rem 0 !important;
   z-index: 2;
   box-shadow: none !important;
@@ -24,6 +25,7 @@
 .navbar-recolored {
   background: var(--bg) !important;
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   padding-bottom: 50px;
   box-shadow: 0 0.4rem 1rem #d9d9d9 !important;
   -webkit-transition: 0.4s;
@@ -32,8 +34,10 @@
 
 .navbar-brand {
   font-family: 'Arvo', cursive;
+  font-size: 32px;
   font-size: 2rem;
   font-weight: 200;
+  margin-left: 32px;
   margin-left: 2rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -46,16 +50,21 @@
 
 .navbar-brand-recolored {
   font-family: 'Arvo', serif;
+  font-size: 20px;
   font-size: 1.25rem;
   color: var(--primary) !important;
 }
 
 .nav-link {
+  font-size: 20px;
   font-size: 1.25rem;
   color: var(--secondary) !important;
   position: relative;
+  padding: 16px;
   padding: 1rem;
+  margin: 0 20px 0 0;
   margin: 0 1.25rem 0 0;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
   @include respond-to('navbar') {
     background: var(--bg) !important;
@@ -74,7 +83,8 @@
       -webkit-transform: scaleX(.8);
       transform: scaleX(.8);
       @include respond-to('navbar') {
-        transform: scaleX(0.4);
+        -webkit-transform: scaleX(0.4);
+                transform: scaleX(0.4);
       }
     }
   }
