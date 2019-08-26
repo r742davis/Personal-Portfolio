@@ -11,13 +11,10 @@ import {
 } from 'reactstrap';
 
 class Navigation extends Component {
-  constructor(props) {
-    super(props);
     this.state = {
       isOpen: false,
       scrolled: true
     };
-  }
 
   toggleMenu = () => {
     this.setState({isOpen: !this.state.isOpen});
