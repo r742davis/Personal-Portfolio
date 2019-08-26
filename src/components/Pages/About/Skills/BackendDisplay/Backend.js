@@ -1,37 +1,46 @@
 import React, { useState } from 'react';
+
 import '../Skills.css';
+
+import express from '../../../../../images/Icons/express.png';
+import mongo from '../../../../../images/Icons/mongo.jpg';
+import node from '../../../../../images/Icons/node.svg';
+import postgresql from '../../../../../images/Icons/postgresql.png';
+import api from '../../../../../images/Icons/restful_api.png';
+import rails from '../../../../../images/Icons/ruby_on_rails.png';
+
 
 const backend = () => {
   const [ skillState ] = useState({
     skills: [
       {
         name: 'Express.js',
-        link: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/359/thumb/expressjslogo.png',
+        link: `${express}`,
         alt: 'express'
       },
       {
         name: 'MongoDB',
-        link: 'https://cdn-images-1.medium.com/max/449/1*NRCOyVBY6Jiqr4Q9A1zoaQ.png',
+        link: `${mongo}`,
         alt: 'mongoDB'
       },
       {
         name: 'Node.js',
-        link: 'https://www.balena.io/docs//img/language/nodejs.svg',
+        link: `${node}`,
         alt: 'node js'
       },
       {
         name: 'PostgreSQL',
-        link: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/540px-Postgresql_elephant.svg.png',
+        link: `${postgresql}`,
         alt: 'postgreSQL'
       },
       {
         name: 'RESTful APIs',
-        link: 'https://vitworks.com/wp-content/uploads/2017/02/consuming-restful-api.png',
+        link: `${api}`,
         alt: 'restful a p i'
       },
       {
         name: 'Ruby on Rails',
-        link: 'https://s3-eu-west-1.amazonaws.com/devinterface-web/production/technologies/40/medium/rubylogo111.png?1444285834g',
+        link: `${rails}`,
         alt: 'ruby on rails'
       }
     ]
@@ -46,16 +55,14 @@ const backend = () => {
   })
 
   return (
-    <>
-      <div className="skills-container">
-        <div className="skills-title">
-          <h4>Backend Skills</h4>
-        </div>
-        <ul>
-          {skillList}
-        </ul>
+    <div className="skills-container">
+      <div className="skills-title">
+        <h4>Backend Skills</h4>
       </div>
-    </>
+      <ul>
+        {skillList}
+      </ul>
+    </div>
   )
 };
 

@@ -49,15 +49,6 @@ const about = () => {
             I feel that effective communication is the cornerstone of any good programming team. I aim to work with my fellow programmers and figure out solutions together.
             </p>
           </div>
-          <hr />
-          <h4>What Am I Currently Working On?</h4>
-            <ul className="description-container-current-projects">
-              <li><a href="https://github.com/r742davis/mug_club">Mug Club Membership App (Madison Bear Garden)</a></li>
-              <li><a href="https://www.udemy.com/advanced-javascript-concepts/">Advanced JavaScript (Andrei Neagoie)</a></li>
-              <li><a href="https://javascript30.com/">JavaScript30</a></li>
-            </ul>
-          <hr />
-
         </div>
       </div>
     </section>
