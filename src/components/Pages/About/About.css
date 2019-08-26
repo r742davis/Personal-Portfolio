@@ -14,18 +14,21 @@
   width: 1200px;
   padding-top: 50px;
   margin: 0 auto; }
-  @media (max-width: 1200px) {
-    .about-container {
-      width: auto;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; } }
-  @media (max-width: 1000px) {
-    .about-container {
-      width: auto; } }
-  @media (max-width: 800px) {
-    .about-container {
-      height: auto; } }
+
+@media (max-width: 1200px) {
+  .about-container {
+    width: auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
+
+@media (max-width: 1000px) {
+  .about-container {
+    width: auto; } }
+
+@media (max-width: 800px) {
+  .about-container {
+    height: auto; } }
 
 .picture-cv-container {
   display: -webkit-box;
@@ -63,11 +66,12 @@
   box-shadow: 0 0.2rem 1rem #d9d9d9;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out; }
-  .cv-button:hover {
-    background-color: var(--secondary);
-    cursor: pointer;
-    -webkit-transform: translate3d(0, -0.2rem, 0.2rem);
-    transform: translate3d(0, -0.2rem, 0.2rem); }
+
+.cv-button:hover {
+  background-color: var(--secondary);
+  cursor: pointer;
+  -webkit-transform: translate3d(0, -0.2rem, 0.2rem);
+  transform: translate3d(0, -0.2rem, 0.2rem); }
 
 .description-container {
   width: 700px;
@@ -76,48 +80,53 @@
   text-align: left;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out; }
-  @media (max-width: 1000px) {
-    .description-container {
-      text-align: center;
-      margin-left: 0px; } }
-  .description-container h1 {
-    color: var(--primary);
-    font-family: 'Kristi', cursive;
-    font-size: 112px;
-    font-size: 7rem; }
-  .description-container h4 {
-    font-family: 'Arvo', serif; }
-  .description-container p {
-    font-size: 20px;
-    font-size: 1.25rem; }
+
+@media (max-width: 1000px) {
+  .description-container {
+    text-align: center;
+    margin-left: 0px; } }
+
+.description-container h1 {
+  color: var(--primary);
+  font-family: 'Kristi', cursive;
+  font-size: 112px;
+  font-size: 7rem; }
+
+.description-container h4 {
+  font-family: 'Arvo', serif; }
+
+.description-container p {
+  font-size: 20px;
+  font-size: 1.25rem; }
 
 .description-container-current-projects li {
   margin-left: 50px;
   font-size: 20px;
   font-size: 1.25rem; }
-  @media (max-width: 1200px) {
-    .description-container-current-projects li {
-      list-style: none; } }
+
+@media (max-width: 1200px) {
+  .description-container-current-projects li {
+    list-style: none; } }
 
 .description-container-current-projects a {
   color: var(--primary); }
-  .description-container-current-projects a:hover {
-    color: var(--secondary); }
+
+.description-container-current-projects a:hover {
+  color: var(--secondary); }
 
 .paragraph-container {
   margin-top: 25px;
   padding: 16px;
   padding: 1rem;
   box-shadow: 0 0.5rem 1rem #d9d9d9; }
-  @media (max-width: 800px) {
-    .paragraph-container {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      height: auto;
-      width: 500px;
-      margin: 0 auto;
-      margin-top: 25px; } }
 
-/*# sourceMappingURL=About.css.map */
+@media (max-width: 800px) {
+  .paragraph-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: auto;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 25px; } }

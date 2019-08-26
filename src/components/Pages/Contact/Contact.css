@@ -1,9 +1,10 @@
 #contact {
   background: #f2f2f2;
   height: 120vh; }
-  @media (max-width: 800px) {
-    #contact {
-      height: 150vh; } }
+
+@media (max-width: 800px) {
+  #contact {
+    height: 150vh; } }
 
 .contact-container {
   display: -webkit-box;
@@ -19,20 +20,22 @@
   margin: 0 auto;
   width: 70%;
   height: 50vh; }
-  @media (max-width: 1000px) {
-    .contact-container {
-      display: -ms-grid;
-      display: grid;
-      width: 800px;
-      -ms-grid-columns: 20rem 20rem;
-      grid-template-columns: 20rem 20rem;
-      grid-auto-rows: auto; } }
-  @media (max-width: 800px) {
-    .contact-container {
-      -ms-grid-columns: 20rem;
-      grid-template-columns: 20rem;
-      width: auto;
-      height: 80vh; } }
+
+@media (max-width: 1000px) {
+  .contact-container {
+    display: -ms-grid;
+    display: grid;
+    width: 800px;
+    -ms-grid-columns: 20rem 20rem;
+    grid-template-columns: 20rem 20rem;
+    grid-auto-rows: auto; } }
+
+@media (max-width: 800px) {
+  .contact-container {
+    -ms-grid-columns: 20rem;
+    grid-template-columns: 20rem;
+    width: auto;
+    height: 80vh; } }
 
 .card-container {
   display: -webkit-box;
@@ -55,15 +58,18 @@
   box-shadow: 0 0.5rem 1rem #d9d9d9;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out; }
-  @media (max-width: 1200px) {
-    .card-container {
-      width: 18rem; } }
-  @media (max-width: 800px) {
-    .card-container {
-      margin-bottom: 0.25rem; } }
-  .card-container:hover {
-    -webkit-transform: translate3d(0, -0.5rem, 0.5rem);
-    transform: translate3d(0, -0.5rem, 0.5rem); }
+
+@media (max-width: 1200px) {
+  .card-container {
+    width: 18rem; } }
+
+@media (max-width: 800px) {
+  .card-container {
+    margin-bottom: 0.25rem; } }
+
+.card-container:hover {
+  -webkit-transform: translate3d(0, -0.5rem, 0.5rem);
+  transform: translate3d(0, -0.5rem, 0.5rem); }
 
 .card-container h4 {
   font-family: 'Arvo', serif;
@@ -80,14 +86,16 @@
   color: var(--primary);
   -webkit-transition: 0.2s;
   transition: 0.2s; }
-  .card-container a:hover {
-    color: var(--secondary);
-    -webkit-transition: 0.2s;
-    transition: 0.2s; }
+
+.card-container a:hover {
+  color: var(--secondary);
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
 
 @media (max-width: 1000px) {
   .social-card {
     width: 38rem; } }
+
 @media (max-width: 800px) {
   .social-card {
     width: 18rem; } }
@@ -115,5 +123,3 @@
   font-size: 3rem;
   margin: 8px;
   margin: 0.5rem; }
-
-/*# sourceMappingURL=Contact.css.map */

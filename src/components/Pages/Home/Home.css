@@ -57,6 +57,7 @@
   100% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; } }
+
 @keyframes blink {
   0% {
     opacity: 0;
@@ -67,5 +68,3 @@
   100% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; } }
-
-/*# sourceMappingURL=Home.css.map */

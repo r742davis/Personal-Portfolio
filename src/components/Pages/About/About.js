@@ -4,8 +4,8 @@ import './About.css';
 import profile from '../../../images/richard-davis.jpeg';
 
 //Skill components
-import Backend from '../../Skills/BackendDisplay/Backend';
-import Frontend from '../../Skills/FrontendDisplay/Frontend';
+import Backend from './Skills/BackendDisplay/Backend';
+import Frontend from './Skills/FrontendDisplay/Frontend';
 
 const about = () => {
   return (
