@@ -7,6 +7,7 @@ import mongo from '../../../../../images/Icons/mongo.jpg';
 import node from '../../../../../images/Icons/node.svg';
 import postgresql from '../../../../../images/Icons/postgresql.png';
 import api from '../../../../../images/Icons/restful_api.png';
+import ruby from '../../../../../images/Icons/ruby.png';
 import rails from '../../../../../images/Icons/ruby_on_rails.png';
 
 
@@ -17,6 +18,11 @@ const backend = () => {
         name: 'Express.js',
         link: `${express}`,
         alt: 'express'
+      },
+      {
+        name: 'JSON / APIs',
+        link: `${api}`,
+        alt: 'json restful a p i'
       },
       {
         name: 'MongoDB',
@@ -34,9 +40,9 @@ const backend = () => {
         alt: 'postgreSQL'
       },
       {
-        name: 'RESTful APIs',
-        link: `${api}`,
-        alt: 'restful a p i'
+        name: 'Ruby',
+        link: `${ruby}`,
+        alt: 'Ruby'
       },
       {
         name: 'Ruby on Rails',

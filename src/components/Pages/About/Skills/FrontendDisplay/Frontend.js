@@ -1,62 +1,68 @@
 import React, { useState } from 'react';
 import '../Skills.css';
 
+import angular from '../../../../../images/Icons/angular.png';
+import bootstrap from '../../../../../images/Icons/bootstrap.png';
+import css3 from '../../../../../images/Icons/css3.png';
+import html5 from '../../../../../images/Icons/html5.png';
+import javascript from '../../../../../images/Icons/javascript.png';
+import jest from '../../../../../images/Icons/jest.png';
+import jquery from '../../../../../images/Icons/jquery.png';
+import react from '../../../../../images/Icons/react.png';
+import redux from '../../../../../images/Icons/redux.png';
+import sass from '../../../../../images/Icons/sass.svg';
+
 const frontend = () => {
   const [ skillState ] = useState({
     skills: [
       {
         name: 'AngularJS',
-        link: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/300/thumb/angular2.png',
+        link: `${angular}`,
         alt: 'angular js'
       },
       {
         name: 'Bootstrap 4',
-        link: 'https://sdtimes.com/wp-content/uploads/2018/01/bootstrap-stack.png',
+        link: `${bootstrap}`,
         alt: 'Bootstrap 4'
       },
       {
         name: 'CSS3',
-        link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl_F-GgXnRsNYBTfuA-e9l84ZIz46UjUkgw3jufMIMrdS2QaemQg',
+        link: `${css3}`,
         alt: 'CSS 3'
       },
       {
         name: 'HTML5',
-        link: 'https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png',
+        link: `${html5}`,
         alt: 'HTML 5'
       },
       {
         name: 'JavaScript',
-        link: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
+        link: `${javascript}`,
         alt: 'JavaScript'
       },
       {
         name: 'Jest',
-        link: 'https://seeklogo.com/images/J/jest-logo-F9901EBBF7-seeklogo.com.png',
+        link: `${jest}`,
         alt: 'Jest'
       },
       {
         name: 'jQuery',
-        link: 'http://pluspng.com/img-png/jquery-logo-png-kategoriedateilogo-software-wikipedia-256.png',
+        link: `${jquery}`,
         alt: 'jQuery'
       },
       {
         name: 'ReactJS',
-        link: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png',
+        link: `${react}`,
         alt: 'React JS'
       },
       {
         name: 'Redux',
-        link: 'https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png',
+        link: `${redux}`,
         alt: 'Redux'
       },
       {
-        name: 'Ruby',
-        link: 'https://img.icons8.com/color/48/000000/ruby-gemstone.png',
-        alt: 'Ruby'
-      },
-      {
-        name: 'SASS',
-        link: 'https://cdn.worldvectorlogo.com/logos/sass-1.svg',
+        name: 'Sass',
+        link: `${sass}`,
         alt: 'Sass'
       }
     ]
