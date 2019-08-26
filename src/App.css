@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato+Light|Kristi|Arvo");
+@import url("https://fonts.googleapis.com/css?family=Arvo|Kristi|Lato:300&display=swap");
 :root {
   --primary: #7200b2;
   --secondary: #da99ff;
@@ -22,10 +22,9 @@ ul {
   display: flex;
   justify-content: center;
   margin: 0 auto; }
-
-@media (max-width: 800px) {
-  .title-container {
-    padding-top: 75px; } }
+  @media (max-width: 800px) {
+    .title-container {
+      padding-top: 75px; } }
 
 .title-container h1 {
   font-family: 'Arvo', serif;
@@ -45,3 +44,5 @@ ul {
   transform: scaleX(0.5);
   -webkit-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s; }
+
+/*# sourceMappingURL=App.css.map */

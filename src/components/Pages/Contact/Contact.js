@@ -1,5 +1,6 @@
 import React from 'react';
-import './Styling/Contact.css';
+
+import './Contact.css';
 import {
   MDBCard,
   MDBCardBody,

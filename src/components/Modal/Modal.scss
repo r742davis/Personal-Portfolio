@@ -12,10 +12,11 @@
 }
 
 .modal {
+  position: fixed;
+  z-index: 500;
   background: whitesmoke;
   width: 650px;
   height: 410px;
-  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -24,7 +25,6 @@
   border-radius: 10px;
   display: block;
   margin: 0 auto;
-  z-index: 10;
   -webkit-animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
           animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   @include respond-to('medium') {

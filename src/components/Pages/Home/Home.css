@@ -1,0 +1,71 @@
+@media (max-width: 800px) {
+  #home {
+    height: auto; } }
+
+.home-container {
+  background: url("../../../images/retro-computers.jpg") no-repeat center center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  margin: 0 auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.home-container h1 {
+  color: white; }
+
+.tagline-container h2 {
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  font-family: 'Kristi', cursive;
+  font-size: 80px;
+  font-size: 5rem;
+  font-weight: 100;
+  color: whitesmoke; }
+
+.tagline-container h2:nth-child(2) {
+  text-align: center;
+  font-size: 96px;
+  font-size: 6rem;
+  margin-bottom: 64px;
+  margin-bottom: 4rem; }
+
+/*** Blinking Cursor on Home Page ***/
+.react-rotating-text-cursor {
+  -webkit-animation: blink 1.1s cubic-bezier(0.68, 0.01, 0.01, 0.99) infinite;
+  animation: blink 1.1s cubic-bezier(0.68, 0.01, 0.01, 0.99) infinite; }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
+  50% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
+  100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; } }
+@keyframes blink {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
+  50% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
+  100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; } }
+
+/*# sourceMappingURL=Home.css.map */

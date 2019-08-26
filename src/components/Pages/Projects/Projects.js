@@ -1,23 +1,24 @@
 import React, { Component } from 'react';
-import './Styling/Projects.css';
+
+import './Projects.css';
+import Backdrop from '../../Modal/Backdrop/Backdrop';
+import Modal from '../../Modal/Modal';
 
 //Imported Pictures
-import project_1 from '../images/bear.jpg';
-import project_2 from '../images/retro-computers.jpg';
-import project_3 from '../images/wine.jpg';
-import project_4 from '../images/traveleritis.jpg';
-import project_5 from '../images/bakersdozen.jpg';
-import project_6 from '../images/pokemon.png';
+import project_1 from '../../../images/bear.jpg';
+import project_2 from '../../../images/retro-computers.jpg';
+import project_3 from '../../../images/wine.jpg';
+import project_4 from '../../../images/traveleritis.jpg';
+import project_5 from '../../../images/bakersdozen.jpg';
+import project_6 from '../../../images/pokemon.png';
 
-import Modal from './modals/Modal';
+
 
 class Projects extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      showModal: false,
+    state = {
+      modalOpen: false,
       modalNumber: 0,
+      showBackdrop: true,
       projects: [
         {
           id: 1,
@@ -105,18 +106,18 @@ class Projects extends Component {
         }
       ]
     }
-  }
+
   closeModal = () => {
-    this.setState({showModal: false})
+    this.setState({ modalOpen: false })
   }
 
   openModal = (number) => {
-    this.setState({modalNumber: number, showModal: true})
+    this.setState({ modalNumber: number, modalOpen: true })
   }
 
   render() {
     const projectModal = this.state.projects.map(project => {
-      if (project.id === this.state.modalNumber && this.state.showModal) {
+      if (project.id === this.state.modalNumber && this.state.modalOpen) {
         return <Modal
             key={project.id}
             name={project.name}
@@ -145,6 +146,10 @@ class Projects extends Component {
 
     return (
       <>
+        <Backdrop
+          show={this.state.showBackdrop}
+          modalOpen={this.state.modalOpen}
+          clicked={this.closeModal} />
         <section id="projects">
           <div className="title-container">
             <h1 data-aos="fade-up">Recent Projects</h1>

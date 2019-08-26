@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Styling/Navigation.css';
+import './Navigation.css';
 import {
   Collapse,
   Navbar,
@@ -11,7 +11,7 @@ import {
 } from 'reactstrap';
 
 class Navigation extends Component {
-    this.state = {
+    state = {
       isOpen: false,
       scrolled: true
     };

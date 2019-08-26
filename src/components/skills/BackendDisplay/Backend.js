@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Skills.css';
+import '../Skills.css';
 
 const backend = () => {
   const [ skillState ] = useState({

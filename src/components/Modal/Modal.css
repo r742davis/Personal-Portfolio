@@ -9,41 +9,55 @@
   z-index: 5; }
 
 .modal {
+  position: fixed;
+  z-index: 500;
   background: whitesmoke;
   width: 650px;
   height: 410px;
-  position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   display: block;
   margin: 0 auto;
-  z-index: 10;
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
-  @media (max-width: 800px) {
-    .modal {
-      padding-bottom: 25px;
-      width: 400px;
-      height: 710px;
-      margin: 0 auto; } }
+
+@media (max-width: 800px) {
+  .modal {
+    padding-bottom: 25px;
+    width: 400px;
+    height: 710px;
+    margin: 0 auto; } }
 
 .modal-grid {
+  display: -ms-grid;
   display: grid;
   width: 650px;
   height: 400px;
+  -ms-grid-columns: 1fr 0.5fr 0.5fr;
   grid-template-columns: 1fr 0.5fr 0.5fr;
+  -ms-grid-rows: 35px 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 35px 1fr 1fr 1fr 1fr 1fr; }
-  @media (max-width: 800px) {
-    .modal-grid {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      width: 400px;
-      height: 650px;
-      margin: 0 auto; } }
+
+@media (max-width: 800px) {
+  .modal-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 650px;
+    margin: 0 auto; } }
 
 .close-modal {
   background: var(--primary);
@@ -52,39 +66,52 @@
   padding-right: 10px;
   padding-top: 2px;
   color: white;
+  -webkit-transition: 0.2s;
   transition: 0.2s; }
-  .close-modal i {
-    font-size: 2rem;
-    vertical-align: middle; }
-    .close-modal i:hover {
-      color: var(--secondary);
-      transition: 0.2s;
-      -webkit-animation: jello-vertical 0.75s both;
-      animation: jello-vertical 0.75s both; }
-  @media (max-width: 800px) {
-    .close-modal {
-      background: none;
-      font-size: 3rem;
-      color: var(--primary);
-      padding: 0px; } }
+
+.close-modal i {
+  font-size: 32px;
+  font-size: 2rem;
+  vertical-align: middle; }
+
+.close-modal i:hover {
+  color: var(--secondary);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-animation: jello-vertical 0.75s both;
+  animation: jello-vertical 0.75s both; }
+
+@media (max-width: 800px) {
+  .close-modal {
+    background: none;
+    font-size: 3rem;
+    color: var(--primary);
+    padding: 0px; } }
 
 .project-picture {
   grid-column: 1 / 2;
   grid-row: 2 / 7;
+  -ms-flex-item-align: center;
   align-self: center; }
 
 .project-picture img {
   height: 350px;
   width: 300px;
   padding: 10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
   align-items: center;
+  -o-object-fit: cover;
   object-fit: cover;
   border-radius: 50px; }
-  @media (max-width: 800px) {
-    .project-picture img {
-      height: 250px;
-      width: auto;
-      transition: 0.4s; } }
+
+@media (max-width: 800px) {
+  .project-picture img {
+    height: 250px;
+    width: auto;
+    -webkit-transition: 0.4s;
+    transition: 0.4s; } }
 
 .project-title {
   grid-column: 2 / 4;
@@ -111,18 +138,29 @@
 
 .project-links-description {
   grid-column: 3 / 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column; }
-  .project-links-description a {
-    color: var(--primary); }
-    .project-links-description a:hover {
-      color: var(--secondary); }
+
+.project-links-description a {
+  color: var(--primary); }
+
+.project-links-description a:hover {
+  color: var(--secondary); }
 
 @keyframes fade-in {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   0% {
-    opacity: 0; }
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; } }
 
 @-webkit-keyframes jello-vertical {
   0% {

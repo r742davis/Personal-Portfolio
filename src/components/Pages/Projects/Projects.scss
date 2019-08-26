@@ -55,7 +55,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   box-shadow: 0 0.5rem 1rem #d9d9d9;
-  -webkit-transition: 0.4s;
+  -webkit-transition: 0.2s;
   transition: 0.4s;
   @include respond-to('xl') {
     height: 15rem;
@@ -63,7 +63,6 @@
   @include respond-to('medium') {
     width: 400px;
   }
-  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="1" /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
   &:hover {
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="1" /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
     -webkit-filter: blur(1px) brightness(60%);
@@ -71,7 +70,6 @@
     filter: progid:DXImageTransform.Microsoft.Blur(pixelradius=1) progid:DXImageTransform.Microsoft.Light();
     box-shadow: 0 0 8px var(--primary);
     cursor: pointer;
-    -webkit-transform: translate3d(0, -0.5rem, 0.5rem);
-            transform: translate3d(0, -0.5rem, 0.5rem);
+
   }
 }

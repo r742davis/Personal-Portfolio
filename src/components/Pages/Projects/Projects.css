@@ -2,42 +2,59 @@
   padding-bottom: 200px; }
 
 .projects-container {
+  display: -ms-grid;
   display: grid;
   width: 1200px;
   height: 600px;
+  margin: 16px auto 0;
   margin: 1rem auto 0;
+  -ms-grid-column-align: center;
   justify-items: center;
+  -ms-grid-columns: [first] 1fr [second] 1fr [third] 1fr;
   grid-template-columns: [first] 1fr [second] 1fr [third] 1fr;
+  -ms-grid-rows: [first] 18rem [second] 18rem;
   grid-template-rows: [first] 18rem [second] 18rem; }
 
 @media (max-width: 1200px) {
   .projects-container {
     width: 800px;
     height: auto;
+    -ms-grid-columns: [first] 1fr [second] 1fr;
     grid-template-columns: [first] 1fr [second] 1fr;
+    -ms-grid-rows: [first] 16rem [second] 16rem [third] 16rem;
     grid-template-rows: [first] 16rem [second] 16rem [third] 16rem;
+    -webkit-transition: 0.4s;
     transition: 0.4s; } }
 
 @media (max-width: 800px) {
   .projects-container {
     width: 450px;
     height: auto;
+    -ms-grid-columns: [first] 1fr;
     grid-template-columns: [first] 1fr;
+    -ms-grid-rows: [first] 16rem [second] 16rem [third] 16rem [fourth] 16rem [fifth] 16rem [sixth] 16rem;
     grid-template-rows: [first] 16rem [second] 16rem [third] 16rem [fourth] 16rem [fifth] 16rem [sixth] 16rem;
+    -webkit-transition: 0.4s;
     transition: 0.4s; } }
 
 @media (max-width: 450px) {
   .projects-container {
     width: 400px;
     height: auto;
+    -webkit-transition: 0.4s;
     transition: 0.4s; } }
 
 .project-grid {
+  filter: progid:DXImageTransform.Microsoft.Blur(pixelradius=1) progid:DXImageTransform.Microsoft.Light();
+  width: 352px;
   width: 22rem;
+  height: 256px;
   height: 16rem;
   margin: 10px;
+  -o-object-fit: cover;
   object-fit: cover;
   box-shadow: 0 0.5rem 1rem #d9d9d9;
+  -webkit-transition: 0.2s;
   transition: 0.4s; }
 
 @media (max-width: 1200px) {
@@ -49,7 +66,9 @@
     width: 400px; } }
 
 .project-grid:hover {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="1" /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  -webkit-filter: blur(1px) brightness(60%);
   filter: blur(1px) brightness(60%);
+  filter: progid:DXImageTransform.Microsoft.Blur(pixelradius=1) progid:DXImageTransform.Microsoft.Light();
   box-shadow: 0 0 8px var(--primary);
-  cursor: pointer;
-  transform: translate3d(0, -0.5rem, 0.5rem); }
+  cursor: pointer; }
