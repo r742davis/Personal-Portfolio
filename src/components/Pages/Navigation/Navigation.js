@@ -10,43 +10,22 @@ import {
   NavLink
 } from 'reactstrap';
 
-class Navigation extends Component {
-    state = {
-      isOpen: false,
-      scrolled: true
-    };
-
-  toggleMenu = () => {
-    this.setState({isOpen: !this.state.isOpen});
-  };
-
-  componentDidMount() {
-    document.addEventListener('scroll', () => {
-      const scrolled = window.scrollY < 100;
-      if (scrolled !== this.state.scrolled) {
-        this.setState({ scrolled })
-      }
-    })
-  };
-
-  render() {
-
-    let navClass = 'nav-link-recolored section'
-    if (this.state.scrolled) {
-      navClass = 'nav-link section'
-    }
+const navigation = (props) => {
+    const navClass = props.scrolled ? 'nav-link section' : 'nav-link-recolored section'
+    const navBar = props.scrolled ? "navbar" : "navbar-recolored";
+    const navBrand = props.scrolled ? "navbar-brand text-white" : "navbar-brand-recolored"
 
     return (
       <>
         <Navbar
           light
           expand="md"
-          className={this.state.scrolled ? "navbar" : "navbar-recolored"}
+          className={navBar}
         >
           <NavbarBrand
-            className={this.state.scrolled ? "navbar-brand text-white" : "navbar-brand-recolored"}>R</NavbarBrand>
-          <NavbarToggler onClick={this.toggleMenu} />
-          <Collapse isOpen={this.state.isOpen} navbar>
+            className={navBrand}>R</NavbarBrand>
+          <NavbarToggler onClick={props.toggle} />
+          <Collapse isOpen={props.isOpen} navbar>
             <Nav className="ml-auto navbar-center" navbar>
               <NavItem>
                 <NavLink href="#home" className={navClass}>Home</NavLink>
@@ -65,7 +44,6 @@ class Navigation extends Component {
         </Navbar>
       </>
     );
-  }
 }
 
-export default Navigation;
+export default navigation;

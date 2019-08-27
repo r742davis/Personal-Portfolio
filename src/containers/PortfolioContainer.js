@@ -15,21 +15,37 @@ import profile from '../images/richard-davis.jpeg';
 
 class PortfolioContainer extends Component {
   state = {
+    isOpen: false,
+    scrolled: true,
     profilePicture: `${profile}`,
     resumeLink: "https://drive.google.com/open?id=1uBbQxXBs0_efXux_Xy8g-pnKeVqlv8Bn"
-  }
+  };
 
   //---Page Animation---//
   componentDidMount() {
     AOS.init({
       duration: 500
+    });
+
+    document.addEventListener('scroll', () => {
+      const scrolled = window.scrollY < 100;
+      if (scrolled !== this.state.scrolled) {
+        this.setState({ scrolled })
+      }
     })
-  }
+  };
+
+  toggleMenu = () => {
+    this.setState({isOpen: !this.state.isOpen});
+  };
 
   render() {
     return (
       <>
-        <Navigation />
+        <Navigation
+          isOpen={this.state.isOpen}
+          scrolled={this.state.scrolled}
+          toggle={this.toggleMenu} />
         <Home />
         <About
           profile={this.state.profilePicture} resumeLink={this.state.resumeLink} />
