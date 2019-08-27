@@ -1,6 +1,6 @@
 import React from 'react';
 
-const description = (props) => {
+const description = () => {
   return (
     <div className='paragraph-container'>
       <p>

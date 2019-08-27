@@ -10,7 +10,7 @@ import Home from '../components/Pages/Home/Home';
 import Navigation from '../components/Pages/Navigation/Navigation';
 import Projects from '../components/Pages/Projects/Projects';
 
-//Profile Picture
+//---Profile Picture---//
 import profile from '../images/richard-davis.jpeg';
 
 class PortfolioContainer extends Component {
@@ -19,6 +19,7 @@ class PortfolioContainer extends Component {
     resumeLink: "https://drive.google.com/open?id=1uBbQxXBs0_efXux_Xy8g-pnKeVqlv8Bn"
   }
 
+  //---Page Animation---//
   componentDidMount() {
     AOS.init({
       duration: 500
