@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './About.css';
+import ProfilePicture from './ProfilePicture/ProfilePicture';
 
 
 //Skill components
@@ -15,17 +16,11 @@ const about = (props) => {
         <h1 data-aos="fade-up">About Me</h1>
       </div>
       <div className="about-container">
-        <div className="picture-cv-container" data-aos="fade-up">
-          <img
-            src={props.profile}
-            className="profile-picture"
-            alt="profile of richard"
-          />
-        </div>
+        <ProfilePicture profile={props.profile}/>
         <div className="description-container" data-aos="fade-up">
           <h1>Richard Davis</h1>
           <h4>Full Stack Software Developer</h4>
-          <ResumeButton resumeLink={props.resumeLink}/>
+            <ResumeButton resumeLink={props.resumeLink}/>
           <hr />
           <div className="skills-display-container">
             <Frontend />
