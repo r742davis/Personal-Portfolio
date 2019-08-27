@@ -1,13 +1,14 @@
 import React from 'react';
 
 import './About.css';
-import profile from '../../../images/richard-davis.jpeg';
+
 
 //Skill components
 import Backend from './Skills/BackendDisplay/Backend';
 import Frontend from './Skills/FrontendDisplay/Frontend';
+import ResumeButton from './ResumeButton/ResumeButton';
 
-const about = () => {
+const about = (props) => {
   return (
     <section id="about">
       <div className="title-container about-title">
@@ -16,7 +17,7 @@ const about = () => {
       <div className="about-container">
         <div className="picture-cv-container" data-aos="fade-up">
           <img
-            src={profile}
+            src={props.profile}
             className="profile-picture"
             alt="profile of richard"
           />
@@ -24,9 +25,7 @@ const about = () => {
         <div className="description-container" data-aos="fade-up">
           <h1>Richard Davis</h1>
           <h4>Full Stack Software Developer</h4>
-          <div className="cv-button-container">
-            <a href="https://drive.google.com/open?id=1AViWMMmCsB66e_DtyGrZ3Jpb6xw4b4Bp"><button className="cv-button">Download CV</button></a>
-          </div>
+          <ResumeButton resumeLink={props.resumeLink}/>
           <hr />
           <div className="skills-display-container">
             <Frontend />

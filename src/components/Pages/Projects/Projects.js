@@ -114,8 +114,9 @@ class Projects extends Component {
   }
 
   render() {
-    const projectModal = this.state.projects.map(project => {
-      if (project.id === this.state.modalNumber && this.state.modalOpen) {
+    const projectModal = this.state.projects
+      .map(project => {
+        if (project.id === this.state.modalNumber && this.state.modalOpen) {
         return <Modal
             key={project.id}
             name={project.name}
@@ -131,7 +132,7 @@ class Projects extends Component {
             linkName3={project.linkName3}
             closeModal={this.closeModal} />
       }
-    })
+    });
 
     const projectImages = this.state.projects.map(project => {
       return <img
@@ -140,7 +141,7 @@ class Projects extends Component {
         className='project-grid'
         alt={`project_${project.id}`}
         onClick={() => this.openModal(project.id)} />
-    })
+    });
 
     return (
       <>
