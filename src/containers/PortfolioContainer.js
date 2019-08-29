@@ -13,6 +13,14 @@ import Projects from '../components/Pages/Projects/Projects';
 //---Profile Picture---//
 import profile from '../images/richard-davis.jpeg';
 
+//---Project Photos---//
+import project_1 from '../../../images/bear.jpg';
+import project_2 from '../../../images/retro-computers.jpg';
+import project_3 from '../../../images/wine.jpg';
+import project_4 from '../../../images/traveleritis.jpg';
+import project_5 from '../../../images/bakersdozen.jpg';
+import project_6 from '../../../images/pokemon.png';
+
 class PortfolioContainer extends Component {
   state = {
     isOpen: false,
