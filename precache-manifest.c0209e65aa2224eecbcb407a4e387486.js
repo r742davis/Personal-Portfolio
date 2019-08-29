@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "4d9f3f9e5195e7b074bb63ba4ce42208",
-    "url": "/portfolio_1/static/media/Roboto-Medium.4d9f3f9e.eot"
+    "revision": "8ef6a08cdc1154920165680a4edde771",
+    "url": "/portfolio_1/static/media/arrow_right.8ef6a08c.svg"
   },
   {
-    "revision": "39d92dc8ae5f42eb7edc",
-    "url": "/portfolio_1/static/css/main.8a482381.chunk.css"
+    "revision": "9fcc4e86901fddbd8f12",
+    "url": "/portfolio_1/static/css/main.e0994479.chunk.css"
   },
   {
     "revision": "8260531fc1cbdc74fc80",
@@ -16,12 +16,8 @@ self.__precacheManifest = [
     "url": "/portfolio_1/static/media/Roboto-Bold.e31fcf18.ttf"
   },
   {
-    "revision": "8110a32450ba139a0efb",
-    "url": "/portfolio_1/static/js/2.b56086aa.chunk.js"
-  },
-  {
-    "revision": "9c9fd70be09a74176bcfca8565bfa54d",
-    "url": "/portfolio_1/static/media/richard-davis.9c9fd70b.jpeg"
+    "revision": "cf049a837064ef444335",
+    "url": "/portfolio_1/static/js/2.6b948d18.chunk.js"
   },
   {
     "revision": "21fd6da0996dbae479aca80014cb0cb1",
@@ -48,32 +44,80 @@ self.__precacheManifest = [
     "url": "/portfolio_1/static/media/pokemon.c1664474.png"
   },
   {
+    "revision": "e9c6b6ec29750e07a108d5a16b5ff5d4",
+    "url": "/portfolio_1/static/media/mongo.e9c6b6ec.jpg"
+  },
+  {
+    "revision": "85df9a578d374c8b39e02871baacffad",
+    "url": "/portfolio_1/static/media/node.85df9a57.svg"
+  },
+  {
+    "revision": "ea5a6b4e047b0d965fbef3699466da8d",
+    "url": "/portfolio_1/static/media/postgresql.ea5a6b4e.png"
+  },
+  {
+    "revision": "8febe1a13f181d25b478f655c8011a01",
+    "url": "/portfolio_1/static/media/ruby_on_rails.8febe1a1.png"
+  },
+  {
+    "revision": "7384412324c769e447d3c4f86e9ff068",
+    "url": "/portfolio_1/static/media/bootstrap.73844123.png"
+  },
+  {
+    "revision": "0cded3a3276425911d55a2552bf361bf",
+    "url": "/portfolio_1/static/media/javascript.0cded3a3.png"
+  },
+  {
+    "revision": "9edcb5106c553737a172ec833810fe2e",
+    "url": "/portfolio_1/static/media/jest.9edcb510.png"
+  },
+  {
+    "revision": "db8e895b3935cf67e86ff99cc2e15cce",
+    "url": "/portfolio_1/static/media/jquery.db8e895b.png"
+  },
+  {
+    "revision": "47ce6e77f039020ee2e76a10c1e988e9",
+    "url": "/portfolio_1/static/media/react.47ce6e77.png"
+  },
+  {
+    "revision": "59c467536111a981d904a050d335c2be",
+    "url": "/portfolio_1/static/media/redux.59c46753.png"
+  },
+  {
+    "revision": "8e766e9562509cb3fa14264580c5c0f9",
+    "url": "/portfolio_1/static/media/sass.8e766e95.svg"
+  },
+  {
+    "revision": "af121b3aa716a75ed5afa0e160a48903",
+    "url": "/portfolio_1/static/media/Richard-cropped.af121b3a.jpeg"
+  },
+  {
+    "revision": "9fcc4e86901fddbd8f12",
+    "url": "/portfolio_1/static/js/main.92ee9f73.chunk.js"
+  },
+  {
     "revision": "11911410dca2de148f30954eb2fd5eab",
     "url": "/portfolio_1/static/media/arrow_left.11911410.svg"
-  },
-  {
-    "revision": "8ef6a08cdc1154920165680a4edde771",
-    "url": "/portfolio_1/static/media/arrow_right.8ef6a08c.svg"
-  },
-  {
-    "revision": "dfe56a876d0282555d1e2458e278060f",
-    "url": "/portfolio_1/static/media/Roboto-Thin.dfe56a87.eot"
   },
   {
     "revision": "a990f611f2305dc12965f186c2ef2690",
     "url": "/portfolio_1/static/media/Roboto-Light.a990f611.eot"
   },
   {
+    "revision": "dfe56a876d0282555d1e2458e278060f",
+    "url": "/portfolio_1/static/media/Roboto-Thin.dfe56a87.eot"
+  },
+  {
     "revision": "30799efa5bf74129468ad4e257551dc3",
     "url": "/portfolio_1/static/media/Roboto-Regular.30799efa.eot"
   },
   {
-    "revision": "39d92dc8ae5f42eb7edc",
-    "url": "/portfolio_1/static/js/main.e8e12f92.chunk.js"
-  },
-  {
     "revision": "ecdd509cadbf1ea78b8d2e31ec52328c",
     "url": "/portfolio_1/static/media/Roboto-Bold.ecdd509c.eot"
+  },
+  {
+    "revision": "4d9f3f9e5195e7b074bb63ba4ce42208",
+    "url": "/portfolio_1/static/media/Roboto-Medium.4d9f3f9e.eot"
   },
   {
     "revision": "954bbdeb86483e4ffea00c4591530ece",
@@ -108,12 +152,12 @@ self.__precacheManifest = [
     "url": "/portfolio_1/static/media/Roboto-Regular.ba3dcd89.woff"
   },
   {
-    "revision": "fc78759e93a6cac50458610e3d9d63a0",
-    "url": "/portfolio_1/static/media/Roboto-Medium.fc78759e.woff"
-  },
-  {
     "revision": "dc81817def276b4f21395f7ea5e88dcd",
     "url": "/portfolio_1/static/media/Roboto-Bold.dc81817d.woff"
+  },
+  {
+    "revision": "fc78759e93a6cac50458610e3d9d63a0",
+    "url": "/portfolio_1/static/media/Roboto-Medium.fc78759e.woff"
   },
   {
     "revision": "46e48ce0628835f68a7369d0254e4283",
@@ -124,19 +168,19 @@ self.__precacheManifest = [
     "url": "/portfolio_1/static/media/Roboto-Regular.df7b648c.ttf"
   },
   {
-    "revision": "94998475f6aea65f558494802416c1cf",
-    "url": "/portfolio_1/static/media/Roboto-Thin.94998475.ttf"
-  },
-  {
     "revision": "894a2ede85a483bf9bedefd4db45cdb9",
     "url": "/portfolio_1/static/media/Roboto-Medium.894a2ede.ttf"
   },
   {
-    "revision": "8110a32450ba139a0efb",
-    "url": "/portfolio_1/static/css/2.32624b4a.chunk.css"
+    "revision": "94998475f6aea65f558494802416c1cf",
+    "url": "/portfolio_1/static/media/Roboto-Thin.94998475.ttf"
   },
   {
-    "revision": "cc218b509b1a07021308b5588119f5e4",
+    "revision": "cf049a837064ef444335",
+    "url": "/portfolio_1/static/css/2.c1cc9dce.chunk.css"
+  },
+  {
+    "revision": "e82602186ea15326cffd7a1d2f06e3c5",
     "url": "/portfolio_1/index.html"
   }
 ];
