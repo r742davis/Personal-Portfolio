@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './ResumeButton.css';
+
 const resumeButton = (props) => {
   return (
     <div className="cv-button-container">
