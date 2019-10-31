@@ -14,12 +14,13 @@ import Projects from '../components/Pages/Projects/Projects';
 import profile from '../images/Richard-cropped.jpeg';
 
 //---Project Photos---//
-import project_1 from '../images/bear.jpg';
-import project_2 from '../images/retro-computers.jpg';
-import project_3 from '../images/wine.jpg';
-import project_4 from '../images/traveleritis.jpg';
-import project_5 from '../images/bakersdozen.jpg';
-import project_6 from '../images/pokemon.png';
+import project_1 from '../images/harness-wealth-test.png';
+import project_2 from '../images/bear.jpg';
+import project_3 from '../images/retro-computers.jpg';
+import project_4 from '../images/wine.jpg';
+import project_5 from '../images/traveleritis.jpg';
+import project_6 from '../images/bakersdozen.jpg';
+
 
 class PortfolioContainer extends Component {
   state = {
@@ -33,10 +34,24 @@ class PortfolioContainer extends Component {
     projects: [
       {
         id: 1,
-        name: 'Mug Club App',
+        name: 'Harness Wealth Code Test',
         image: `${project_1}`,
+        alt: 'Harness Wealth Code Test',
+        description: 'A pure HTML and CSS frotn page web app created for Harness Wealth, a fintech startup.',
+        tech: 'HTML 5, CSS 3',
+        link1: 'https://harness-wealth-code-test.herokuapp.com/index.html',
+        link2: 'https://github.com/r742davis/Harness-Wealth-Code-Test',
+        link3: '',
+        linkName1: 'Website',
+        linkName2: 'Project Code',
+        linkName3: ''
+      },
+      {
+        id: 2,
+        name: 'Mug Club App',
+        image: `${project_2}`,
         alt: 'mug club bear',
-        description: 'The Madison Bear Garden needs a better way to track their Mug Club members aside from their laptop and a spreadsheet. I am developing a mobile and desktop application that will help them track their members using a remote hosted database.',
+        description: 'IN DEVELOPMENT - The Madison Bear Garden needs a better way to track their Mug Club members aside from their laptop and a spreadsheet. I am developing a mobile and desktop application that will help them track their members using a remote hosted database.',
         tech: 'React, MongoDB, Express, Node.js',
         link1: 'https://github.com/r742davis/mug_club',
         link2: '',
@@ -46,9 +61,9 @@ class PortfolioContainer extends Component {
         linkName3: ''
       },
       {
-        id: 2,
+        id: 3,
         name: 'Portfolio Website',
-        image: `${project_2}`,
+        image: `${project_3}`,
         alt: 'computers on a desktop',
         description: 'I wanted to challenge myself to build a portfolio website using React and SASS. I built this portfolio using industry conventions, such as using functional components, separating out SCSS into component-specific files, and programmatically generating multiple components.',
         tech: 'React, SASS, Bootstrap 4',
@@ -60,9 +75,9 @@ class PortfolioContainer extends Component {
         linkName3: ''
       },
       {
-        id: 3,
+        id: 4,
         name: 'Vie Du Vin',
-        image: `${project_3}`,
+        image: `${project_4}`,
         alt: 'wines glass and bottle with cheese and grapes',
         description: 'This was my final project for the General Assembly immersive web development program. I built a full-stack personal wine tracker app that saves your wine lists according to the user who signs up and logs in.',
         tech: 'React, Redux, JWTs, MongoDB, Express.js, Node.js',
@@ -74,9 +89,9 @@ class PortfolioContainer extends Component {
         linkName3: 'Backend Project Code'
       },
       {
-        id: 4,
+        id: 5,
         name: 'Traveleritis',
-        image: `${project_4}`,
+        image: `${project_5}`,
         alt: 'travel website',
         description: 'This was a collaborative project at General Assembly where we built a travel planning site based around a custom API. The app is designed to help you plan trips and save them depending on the user authentication.',
         tech: 'MEAN Stack (Mongoose, ExpressJS, AngularJS, NodeJS), MVVM Method',
@@ -88,9 +103,9 @@ class PortfolioContainer extends Component {
         linkName3: ''
       },
       {
-        id: 5,
+        id: 6,
         name: 'Baker\'s Dozen',
-        image: `${project_5}`,
+        image: `${project_6}`,
         alt: 'baker\'s dozen website',
         description: 'Baker\'s Dozen is an app where you can keep your favorite bakedgoods recipes and have them displayed beautifully. I created this project during my time at General Assembly and built in full authentication into the app.',
         tech: 'JavaScript, Express, Mongoose, MongoDB, NodeJS, EJS, HTML5, CSS3',
@@ -98,20 +113,6 @@ class PortfolioContainer extends Component {
         link2: 'https://github.com/r742davis/Project_2',
         link3: '',
         linkName1: 'Baker\'s Dozen Website',
-        linkName2: 'Project Code',
-        linkName3: ''
-      },
-      {
-        id: 6,
-        name: 'Pokedex',
-        image: `${project_6}`,
-        alt: 'pokemon',
-        description: 'This was my first project where we had to do API calls using AJAX and Promises. I used the PokeAPI and built a fully functioning Pokedex with a random Pokemon generator as well.',
-        tech: 'JavaScript, AJAX/Promises, HTML5, CSS3, Node.js',
-        link1: 'https://r742davis.github.io/',
-        link2: 'https://github.com/r742davis/r742davis.github.io',
-        link3: '',
-        linkName1: 'Pokedex Website',
         linkName2: 'Project Code',
         linkName3: ''
       }

@@ -4,14 +4,6 @@ import './Projects.css';
 import Backdrop from './Modal/Backdrop/Backdrop';
 import Modal from './Modal/Modal';
 
-//Imported Pictures
-import project_1 from '../../../images/bear.jpg';
-import project_2 from '../../../images/retro-computers.jpg';
-import project_3 from '../../../images/wine.jpg';
-import project_4 from '../../../images/traveleritis.jpg';
-import project_5 from '../../../images/bakersdozen.jpg';
-import project_6 from '../../../images/pokemon.png';
-
 const projects = (props) => {
 
   const projectModal = props.projects
