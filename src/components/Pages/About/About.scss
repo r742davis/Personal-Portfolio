@@ -1,6 +1,10 @@
 @import '../../../_mixins.scss';
 
 // whole page container
+#about {
+  background: #f2f2f2;
+}
+
 .about-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,10 +56,6 @@
 .profile-picture {
   width: 300px;
   height: 300px;
-  // border-radius: 1rem;
-  box-shadow: 0 1rem 2rem #d9d9d9;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
   @include respond-to('mobile') {
     width: 200px;
     height: 200px;

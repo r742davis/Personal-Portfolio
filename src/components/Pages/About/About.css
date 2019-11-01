@@ -1,3 +1,6 @@
+#about {
+  background: #f2f2f2; }
+
 .about-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,10 +51,7 @@
 
 .profile-picture {
   width: 300px;
-  height: 300px;
-  box-shadow: 0 1rem 2rem #d9d9d9;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out; }
+  height: 300px; }
 
 @media (max-width: 375px) {
   .profile-picture {

@@ -38,6 +38,11 @@
     width: auto;
     height: 80vh; } }
 
+@media (max-width: 450px) {
+  .contact-container {
+    height: 100%;
+    padding-bottom: 1rem; } }
+
 .card-container {
   display: -webkit-box;
   display: -ms-flexbox;

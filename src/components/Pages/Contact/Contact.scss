@@ -37,6 +37,10 @@
     width: auto;
     height: 80vh;
   }
+  @include respond-to('small') {
+    height: 100%;
+    padding-bottom: 1rem;
+  }
 }
 
 .card-container {
