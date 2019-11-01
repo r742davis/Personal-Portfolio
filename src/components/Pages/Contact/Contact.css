@@ -26,7 +26,7 @@
   .contact-container {
     display: -ms-grid;
     display: grid;
-    width: 800px;
+    width: 80%;
     -ms-grid-columns: 20rem 20rem;
     grid-template-columns: 20rem 20rem;
     grid-auto-rows: auto; } }

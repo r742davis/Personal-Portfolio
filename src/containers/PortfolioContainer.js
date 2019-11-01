@@ -37,7 +37,7 @@ class PortfolioContainer extends Component {
         name: 'Harness Wealth Code Test',
         image: `${project_1}`,
         alt: 'Harness Wealth Code Test',
-        description: 'A pure HTML and CSS frotn page web app created for Harness Wealth, a fintech startup.',
+        description: 'A pure HTML and CSS front page web app created for Harness Wealth, a fintech startup.',
         tech: 'HTML5, CSS3',
         link1: 'https://harness-wealth-code-test.herokuapp.com/index.html',
         link2: 'https://github.com/r742davis/Harness-Wealth-Code-Test',

@@ -14,7 +14,7 @@
 @media (max-width: 767px) {
   .navbar {
     background: var(--bg) !important;
-    box-shadow: 0 0.4rem 1rem #d9d9d9 !important; } }
+    box-shadow: 0 0.1rem 0.4rem #d9d9d9 !important; } }
 
 .navbar-center {
   text-align: center; }
@@ -28,20 +28,25 @@
   -webkit-transition: 0.4s;
   transition: 0.4s; }
 
+@media (max-width: 767px) {
+  .navbar-recolored {
+    background: var(--bg) !important;
+    box-shadow: 0 0.1rem 0.4rem #d9d9d9 !important; } }
+
 .navbar-brand {
   font-family: 'Arvo', cursive;
   font-size: 32px;
   font-size: 2rem;
   font-weight: 200;
-  margin-left: 32px;
-  margin-left: 2rem;
+  margin-left: 8px;
+  margin-left: 0.5rem;
   -webkit-transition: 0.4s;
   transition: 0.4s; }
 
 @media (max-width: 767px) {
   .navbar-brand {
     font-family: 'Arvo', cursive;
-    font-size: 1rem;
+    font-size: 2rem;
     color: var(--primary) !important; } }
 
 .navbar-brand-recolored {
@@ -49,6 +54,13 @@
   font-size: 20px;
   font-size: 1.25rem;
   color: var(--primary) !important; }
+
+.navbar-toggler {
+  font-size: 2rem; }
+
+@media (max-width: 375px) {
+  .navbar-toggler {
+    margin-right: 1rem; } }
 
 .nav-link {
   font-size: 20px;

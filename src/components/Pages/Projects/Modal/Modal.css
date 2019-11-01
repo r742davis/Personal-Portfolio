@@ -25,6 +25,11 @@
   -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
 
+@media (max-width: 450px) {
+  .modal {
+    width: 90%;
+    height: 525px; } }
+
 .modal-grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,6 +45,11 @@
   width: 400px;
   height: 650px;
   margin: 0 auto; }
+
+@media (max-width: 450px) {
+  .modal-grid {
+    width: 90%;
+    height: 400px; } }
 
 .close-modal {
   color: var(--primary);
@@ -81,29 +91,54 @@
   -webkit-transition: 0.4s;
   transition: 0.4s; }
 
+@media (max-width: 450px) {
+  .project-picture img {
+    width: auto;
+    height: 150px; } }
+
 .project-title {
   grid-column: 2 / 4;
   padding-top: 15px;
   font-family: 'Arvo', serif; }
+
+@media (max-width: 450px) {
+  .project-title h2 {
+    font-size: 1.25rem; } }
 
 .project-description {
   grid-column: 2 / 4;
   grid-row: 3 / 5;
   width: 90%; }
 
+@media (max-width: 450px) {
+  .project-description p {
+    font-size: 0.75rem; } }
+
 .project-tech {
   grid-column: 2 / 3;
   width: 100px;
   font-family: 'Arvo', serif; }
+
+@media (max-width: 450px) {
+  .project-tech h4 {
+    font-size: 1.25rem; } }
 
 .project-tech-description {
   grid-column: 3 / 4;
   width: 250px;
   padding-right: 10px; }
 
+@media (max-width: 450px) {
+  .project-tech-description p {
+    font-size: 0.75rem; } }
+
 .project-links {
   grid-column: 2 / 3;
   font-family: 'Arvo', serif; }
+
+@media (max-width: 450px) {
+  .project-links h4 {
+    font-size: 1.25rem; } }
 
 .project-links-description {
   grid-column: 3 / 4;
@@ -120,6 +155,10 @@
 
 .project-links-description a:hover {
   color: var(--secondary); }
+
+@media (max-width: 450px) {
+  .project-links-description a {
+    font-size: 0.75rem; } }
 
 @keyframes fade-in {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";

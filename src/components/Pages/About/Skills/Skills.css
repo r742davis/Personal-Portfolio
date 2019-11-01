@@ -16,7 +16,6 @@
     flex-direction: column;
     height: auto;
     padding-bottom: 25px;
-    width: 500px;
     margin: 0 auto; } }
 
 .skills-title {
@@ -39,7 +38,9 @@
 
 @media (max-width: 800px) {
   .skills-container {
-    width: 500px; } }
+    width: auto;
+    margin-left: 2rem;
+    margin-right: 2rem; } }
 
 .skills-container ul {
   list-style: none; }

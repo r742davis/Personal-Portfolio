@@ -27,6 +27,11 @@
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.8);
   -webkit-animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
           animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+  @include respond-to('small') {
+    width: 90%;
+    height: 525px;
+  }
 }
 
 .modal-grid {
@@ -44,6 +49,10 @@
   width: 400px;
   height: 650px;
   margin: 0 auto;
+  @include respond-to('small') {
+    width: 90%;
+    height: 400px;
+  }
 }
 
 .close-modal {
@@ -87,6 +96,10 @@
      object-fit: cover;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  @include respond-to('small') {
+    width: auto;
+    height: 150px;
+  }
 }
 
 .project-title {
@@ -94,11 +107,21 @@
   padding-top: 15px;
   font-family: 'Arvo', serif;
 }
+.project-title h2 {
+  @include respond-to('small') {
+    font-size: 1.25rem;
+  }
+}
 
 .project-description {
   grid-column: 2 / 4;
   grid-row: 3 / 5;
   width: 90%;
+}
+.project-description p {
+  @include respond-to('small') {
+    font-size: 0.75rem;
+  }
 }
 
 .project-tech {
@@ -106,16 +129,31 @@
   width: 100px;
   font-family: 'Arvo', serif;
 }
+.project-tech h4 {
+  @include respond-to('small') {
+    font-size: 1.25rem;
+  }
+}
 
 .project-tech-description {
   grid-column: 3 / 4;
   width: 250px;
   padding-right: 10px;
 }
+.project-tech-description p {
+  @include respond-to('small') {
+    font-size: 0.75rem;
+  }
+}
 
 .project-links {
   grid-column: 2 / 3;
   font-family: 'Arvo', serif;
+}
+.project-links h4 {
+  @include respond-to('small') {
+    font-size: 1.25rem;
+  }
 }
 
 .project-links-description {
@@ -132,6 +170,11 @@
     &:hover {
       color: var(--secondary);
     }
+  }
+}
+.project-links-description a {
+  @include respond-to('small') {
+    font-size: 0.75rem;
   }
 }
 

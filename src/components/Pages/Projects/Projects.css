@@ -37,9 +37,9 @@
     -webkit-transition: 0.4s;
     transition: 0.4s; } }
 
-@media (max-width: 450px) {
+@media (max-width: 375px) {
   .projects-container {
-    width: 400px;
+    width: auto;
     height: auto;
     -webkit-transition: 0.4s;
     transition: 0.4s; } }
@@ -64,6 +64,12 @@
 @media (max-width: 800px) {
   .project-grid {
     width: 400px; } }
+
+@media (max-width: 375px) {
+  .project-grid {
+    width: 350px;
+    object-fit: contain;
+    margin: 0; } }
 
 .project-grid:hover {
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="1" /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');

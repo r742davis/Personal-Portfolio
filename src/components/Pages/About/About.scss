@@ -1,6 +1,10 @@
 @import '../../../_mixins.scss';
 
 // whole page container
+#about {
+  width: 100%;
+}
+
 .about-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,11 +18,11 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 1200px;
+  width: auto;
   padding-top: 50px;
   margin: 0 auto;
   @include respond-to('xl') {
-    width: auto;
+    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -70,6 +74,9 @@
     text-align: center;
     margin-left: 0px;
   }
+  @include respond-to('mobile') {
+    width: 100%;
+  }
   & h1 {
     color: var(--primary);
     font-family: 'Kristi', cursive;
@@ -103,8 +110,8 @@
 
 .paragraph-container {
   margin-top: 25px;
-  padding: 16px;
-  padding: 1rem;
+  // padding: 16px;
+  // padding: 1rem;
   box-shadow: 0 0.5rem 1rem #d9d9d9;
   @include respond-to('medium') {
     -webkit-box-orient: vertical;
@@ -112,7 +119,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
-    width: 500px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 25px;
   }

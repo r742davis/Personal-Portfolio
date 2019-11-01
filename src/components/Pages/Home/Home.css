@@ -1,7 +1,6 @@
-@media (max-width: 800px) {
-  #home {
-    height: auto;
-    width: 100%; } }
+#home {
+  width: 100%;
+  overflow-x: visible; }
 
 .home-container {
   background: url("../../../images/retro-computers.jpg") no-repeat center center;
