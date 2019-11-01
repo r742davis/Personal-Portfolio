@@ -3,8 +3,9 @@
 #contact {
   background: #f2f2f2;
   height: 120vh;
-  @include respond-to('medium') {
-    height: 150vh;
+  width: 100%;
+  @include respond-to('small') {
+    height: auto;
   }
 }
 

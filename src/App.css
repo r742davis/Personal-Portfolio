@@ -4,15 +4,12 @@
   --secondary: #da99ff;
   --bg: white; }
 
-body,
-h1,
 html,
-li,
-ul {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  font-family: 'Lato', sans-serif; }
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px; }
 
 /**************/
 /*** Titles ***/
@@ -22,9 +19,10 @@ ul {
   display: flex;
   justify-content: center;
   margin: 0 auto; }
-  @media (max-width: 800px) {
-    .title-container {
-      padding-top: 75px; } }
+
+@media (max-width: 800px) {
+  .title-container {
+    padding-top: 75px; } }
 
 .title-container h1 {
   font-family: 'Arvo', serif;
@@ -44,5 +42,3 @@ ul {
   transform: scaleX(0.5);
   -webkit-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s; }
-
-/*# sourceMappingURL=App.css.map */
