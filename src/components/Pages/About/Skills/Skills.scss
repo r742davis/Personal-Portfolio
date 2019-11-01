@@ -43,6 +43,9 @@
     margin-left: 2rem;
     margin-right: 2rem;
   }
+  @include respond-to('small') {
+    padding-bottom: 1rem;
+  }
   & ul {
     list-style: none;
   }
@@ -53,6 +56,9 @@
     margin: 0.25rem;
     font-size: 24px;
     font-size: 1.5rem;
+    @include respond-to('mobile') {
+      font-size: 0.9rem;
+    }
   }
 }
 
@@ -61,4 +67,8 @@
   height: 30px;
   margin-right: 16px;
   margin-right: 1rem;
+  @include respond-to('mobile') {
+    width: 20px;
+    height: 20px;
+  }
 }

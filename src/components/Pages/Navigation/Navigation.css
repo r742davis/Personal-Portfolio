@@ -58,10 +58,6 @@
 .navbar-toggler {
   font-size: 2rem; }
 
-@media (max-width: 375px) {
-  .navbar-toggler {
-    margin-right: 1rem; } }
-
 .nav-link {
   font-size: 20px;
   font-size: 1.25rem;

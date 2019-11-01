@@ -42,6 +42,10 @@
     margin-left: 2rem;
     margin-right: 2rem; } }
 
+@media (max-width: 450px) {
+  .skills-container {
+    padding-bottom: 1rem; } }
+
 .skills-container ul {
   list-style: none; }
 
@@ -53,8 +57,17 @@
   font-size: 24px;
   font-size: 1.5rem; }
 
+@media (max-width: 375px) {
+  .skills-container li {
+    font-size: 0.9rem; } }
+
 .skill-icon {
   width: 30px;
   height: 30px;
   margin-right: 16px;
   margin-right: 1rem; }
+
+@media (max-width: 375px) {
+  .skill-icon {
+    width: 20px;
+    height: 20px; } }

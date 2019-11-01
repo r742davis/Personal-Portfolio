@@ -22,12 +22,11 @@ const about = (props) => {
           <h1>Richard Davis</h1>
           <h4>Full Stack Software Developer</h4>
           <ResumeButton resumeLink={props.resumeLink}/>
-          <hr />
+          <Description />
           <div className="skills-display-container">
             <Frontend />
             <Backend />
           </div>
-          <Description />
         </div>
       </div>
     </section>

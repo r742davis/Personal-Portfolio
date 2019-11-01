@@ -8,10 +8,14 @@
 // Screen Size Breakpoints
 @import './_mixins.scss';
 html,
-body,
-#root {
+body {
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
   margin: 0;
   padding: 0;
 }
@@ -33,6 +37,9 @@ body,
   font-size: 3rem;
   display: inline-flex;
   padding-bottom: 0.5rem;
+  @include respond-to('small') {
+    font-size: 2rem;
+  }
 }
 
 .title-container h1:after {
