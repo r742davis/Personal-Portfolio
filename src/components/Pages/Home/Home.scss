@@ -30,6 +30,9 @@
 
 .home-container h1 {
   color: white;
+  @include respond-to('small') {
+    font-size: 1.5rem;
+  }
 }
 
 .tagline-container h2 {
@@ -40,6 +43,9 @@
   font-size: 5rem;
   font-weight: 100;
   color: whitesmoke;
+  @include respond-to('small') {
+    font-size: 4rem;
+  }
 }
 
 .tagline-container h2:nth-child(2) {
@@ -48,6 +54,9 @@
   font-size: 6rem;
   margin-bottom: 64px;
   margin-bottom: 4rem;
+  @include respond-to('small') {
+    font-size: 4rem;
+  }
 }
 /*** Blinking Cursor on Home Page ***/
 .react-rotating-text-cursor {

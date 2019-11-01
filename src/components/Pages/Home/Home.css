@@ -27,6 +27,10 @@
 .home-container h1 {
   color: white; }
 
+@media (max-width: 450px) {
+  .home-container h1 {
+    font-size: 1.5rem; } }
+
 .tagline-container h2 {
   -webkit-transform: rotate(-10deg);
   transform: rotate(-10deg);
@@ -36,12 +40,20 @@
   font-weight: 100;
   color: whitesmoke; }
 
+@media (max-width: 450px) {
+  .tagline-container h2 {
+    font-size: 4rem; } }
+
 .tagline-container h2:nth-child(2) {
   text-align: center;
   font-size: 96px;
   font-size: 6rem;
   margin-bottom: 64px;
   margin-bottom: 4rem; }
+
+@media (max-width: 450px) {
+  .tagline-container h2:nth-child(2) {
+    font-size: 4rem; } }
 
 /*** Blinking Cursor on Home Page ***/
 .react-rotating-text-cursor {
