@@ -3,8 +3,9 @@ $breakpoints: (
   'small': 450px,
   'medium': 800px,
   'navbar': 767px,
-  'large': 1000px,
-  'xl': 1200px
+  'large': 1065px,
+  'xl': 1250px,
+  'xxl': 1450px
 )
 !default;
 // Mixin that responds to @include

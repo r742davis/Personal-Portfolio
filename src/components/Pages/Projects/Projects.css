@@ -16,7 +16,7 @@
   -ms-grid-rows: [first] 18rem [second] 18rem;
   grid-template-rows: [first] 18rem [second] 18rem; }
 
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   .projects-container {
     width: 800px;
     height: auto;
@@ -58,7 +58,7 @@
   -webkit-transition: 0.2s;
   transition: 0.4s; }
 
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   .project-grid {
     height: 15rem; } }
 

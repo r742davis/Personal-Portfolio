@@ -22,7 +22,7 @@
   width: 70%;
   height: 50vh; }
 
-@media (max-width: 1000px) {
+@media (max-width: 1065px) {
   .contact-container {
     display: -ms-grid;
     display: grid;
@@ -65,7 +65,7 @@
   -webkit-transition: 0.2s;
   transition: 0.2s; }
 
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   .card-container {
     width: 18rem; } }
 
@@ -97,7 +97,7 @@
   -webkit-transition: 0.2s;
   transition: 0.2s; }
 
-@media (max-width: 1000px) {
+@media (max-width: 1065px) {
   .social-card {
     width: 38rem; } }
 
