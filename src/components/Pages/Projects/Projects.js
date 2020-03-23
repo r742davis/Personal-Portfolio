@@ -30,7 +30,7 @@ const projects = (props) => {
     return <img
       key={project.id}
       src={project.image}
-      className='project-grid'
+      className='project-grid box-shadow hover-translate'
       alt={`project_${project.id}`}
       onClick={() => props.openModal(project.id)} />
   });
@@ -46,7 +46,7 @@ const projects = (props) => {
           <div className="title-container">
             <h1 data-aos="fade-up">Recent Projects</h1>
           </div>
-          <div className="projects-container" data-aos="fade-up">
+          <div className="projects-container box-shadow" data-aos="fade-up">
             {projectImages}
           </div>
         </section>

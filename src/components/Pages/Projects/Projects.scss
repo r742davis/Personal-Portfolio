@@ -2,16 +2,14 @@
 
 #projects {
   background: #f2f2f2;
-  padding-bottom: 200px;
 }
 
 .projects-container {
   display: -ms-grid;
   display: grid;
-  width: 1200px;
-  height: 600px;
-  margin: 16px auto 0;
-  margin: 1rem auto 0;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
   -ms-grid-column-align: center;
       justify-items: center;
   -ms-grid-columns: [first] 1fr [second] 1fr [third] 1fr;
@@ -19,7 +17,7 @@
   -ms-grid-rows: [first] 18rem [second] 18rem;
       grid-template-rows: [first] 18rem [second] 18rem;
   @include respond-to('xl') {
-    width: 800px;
+    width: 90%;
     height: auto;
     -ms-grid-columns: [first] 1fr [second] 1fr;
         grid-template-columns: [first] 1fr [second] 1fr;
@@ -47,15 +45,12 @@
 }
 
 .project-grid {
+  border: 2px solid blue;
   filter: progid:DXImageTransform.Microsoft.Blur(pixelradius=1) progid:DXImageTransform.Microsoft.Light();
-  width: 352px;
-  width: 22rem;
-  height: 256px;
-  height: 16rem;
-  margin: 10px;
+  width: 300px;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
-  box-shadow: 0 0.5rem 1rem #d9d9d9;
   -webkit-transition: 0.2s;
   transition: 0.4s;
   @include respond-to('xl') {
@@ -65,17 +60,14 @@
     width: 400px;
   }
   @include respond-to('mobile') {
-    width: 350px;
-    object-fit: contain;
+    width: 250px;
+    object-fit: cover;
     margin: 0;
   }
   &:hover {
-    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="1" /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
-    -webkit-filter: blur(1px) brightness(60%);
-            filter: blur(1px) brightness(60%);
-    filter: progid:DXImageTransform.Microsoft.Blur(pixelradius=1) progid:DXImageTransform.Microsoft.Light();
     box-shadow: 0 0 8px var(--primary);
     cursor: pointer;
   }
+
 
 }

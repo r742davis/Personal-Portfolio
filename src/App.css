@@ -50,3 +50,10 @@ ul {
   transform: scaleX(0.5);
   -webkit-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s; }
+
+.box-shadow {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.hover-translate:hover {
+  transform: scale(1.05);
+  transition: 0.125s; }
