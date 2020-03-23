@@ -5,118 +5,106 @@
   background: #f2f2f2;
 }
 
-.about-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  width: auto;
-  padding-top: 50px;
-  padding-left: 100px;
+.about__container {
+  width: 90%;
   margin: 0 auto;
-  @include respond-to('xl') {
-  width: 100%;
-  justify-content: center;
-  padding-left: 0px;
-  }
-  @include respond-to('large') {
-    width: 95%;
-  }
-  @include respond-to('medium') {
-    height: auto;
-  }
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  // align-items: flex-start;
+  // width: auto;
+  // margin: 0 auto;
+  // @include respond-to('xl') {
+  // width: 100%;
+  // justify-content: center;
+  // padding-left: 0px;
+  // }
+  // @include respond-to('large') {
+  //   width: 95%;
+  // }
+  // @include respond-to('medium') {
+  //   height: auto;
+  // }
 }
 // picture and cv download button container
 
-.picture-cv-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: auto;
-}
+// .picture-cv-container {
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: flex;
+  
+//   width: auto;
+// }
 
-.profile-picture {
-  width: 300px;
-  height: 300px;
+.about__profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
   @include respond-to('mobile') {
-    width: 200px;
-    height: 200px;
+    width: 50px;
+    height: 50px;
+  }
+}
+.about__name {
+  background: var(--primary);
+  color: white;
+  font-size: 2rem;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  & img {
+    margin-right: 50px;
   }
 }
 
-
-// description container with name, title, and description
-.description-container {
-  width: 1000px;
+.about__description-container {
+  width: 90%;
   margin-bottom: 50px;
-  margin-left: 50px;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  @include respond-to('xxl') {
-    width: 700px;
-  }
-  @include respond-to('large') {
-    text-align: center;
-    margin-left: 0px;
-  }
-  @include respond-to('mobile') {
-    width: 100%;
-  }
-  & h1 {
-    color: var(--primary);
-    font-family: 'Arvo', serif;
-    font-size: 5rem;
-    @include respond-to('small') {
-      margin-top: 0.5rem;
-      font-size: 2rem;
-    }
-  }
-  & h4 {
-    font-family: 'Arvo', serif;
-    @include respond-to('small') {
-      font-size: 1rem;
-    }
-  }
-  & p {
-    font-size: 20px;
-    font-size: 1.25rem;
-    @include respond-to('small') {
-      font-size: 0.9rem;
-    }
-  }
+  // @include respond-to('xxl') {
+  //   width: 700px;
+  // }
+  // @include respond-to('large') {
+  //   text-align: center;
+  //   margin-left: 0px;
+  // }
+  // @include respond-to('mobile') {
+  //   width: 100%;
+  // }
 }
 
-.description-container-current-projects li {
-  margin-left: 50px;
-  font-size: 20px;
-  font-size: 1.25rem;
-  @include respond-to('xl') {
-    list-style: none;
-  }
-  @include respond-to('small') {
-    margin-left: none;
-  }
-}
+// .description-container-current-projects li {
+//   margin-left: 50px;
+//   font-size: 20px;
+//   font-size: 1.25rem;
+//   @include respond-to('xl') {
+//     list-style: none;
+//   }
+//   @include respond-to('small') {
+//     margin-left: none;
+//   }
+// }
 
-.description-container-current-projects a {
-  color: var(--primary);
-  &:hover {
-    color: var(--secondary);
-  }
-}
+// .description-container-current-projects a {
+//   color: var(--primary);
+//   &:hover {
+//     color: var(--secondary);
+//   }
+// }
 
-.paragraph-container {
+.about__paragraph-container {
+  width: 100%;
   margin-top: 1rem;
   height: auto;
   display: flex;
@@ -126,8 +114,7 @@
    align-items: center;
   }
 }
-.paragraph-container p {
+.about__paragraph-container p {
   width: 80%;
-  text-align: left;
-  font-family: 'Arvo', serif;
+  font-size: 1rem;
 }

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Arvo|Kristi|Lato:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Arvo|Kristi|Lato:300|Roboto:wght@300;400;700&display=swap");
 :root {
   --primary: #7200b2;
   --secondary: #da99ff;
@@ -9,11 +9,13 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
 
 ul {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  list-style: none; }
 
 /**************/
 /*** Titles ***/
@@ -53,9 +55,6 @@ ul {
 
 .box-shadow {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-
-.box-shadow:hover {
-  box-shadow: 0 0 10px var(--primary); }
 
 .hover-translate:hover {
   cursor: pointer;

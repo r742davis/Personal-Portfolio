@@ -2,10 +2,10 @@ import React from 'react';
 
 const profilePicture = (props) => {
   return (
-    <div className="picture-cv-container" data-aos="fade-up">
+    <div className="picture-cv-container">
       <img
         src={props.profile}
-        className="profile-picture"
+        className="about__profile"
         alt="profile of richard"
       />
     </div>
