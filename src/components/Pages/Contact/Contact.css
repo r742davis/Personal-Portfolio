@@ -61,7 +61,6 @@
   height: 16rem;
   margin: 32px 8px;
   margin: 2rem 0.5rem;
-  box-shadow: none;
   -webkit-transition: 0.2s;
   transition: 0.2s; }
 
@@ -72,9 +71,6 @@
 @media (max-width: 800px) {
   .card-container {
     margin-bottom: 0.25rem; } }
-
-.card-container:hover {
-  box-shadow: 0 0.5rem 1rem #d9d9d9; }
 
 .card-container h4 {
   font-family: 'Arvo', serif;

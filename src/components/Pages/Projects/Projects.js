@@ -1,15 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import './Projects.css';
-import Backdrop from './Modal/Backdrop/Backdrop';
-import Modal from './Modal/Modal';
+import "./Projects.css";
+import Backdrop from "./Modal/Backdrop/Backdrop";
+import Modal from "./Modal/Modal";
 
-const projects = (props) => {
-
-  const projectModal = props.projects
-    .map(project => {
-      if (project.id === props.modalNumber && props.modalOpen) {
-      return <Modal
+const projects = props => {
+  const projectModal = props.projects.map(project => {
+    if (project.id === props.modalNumber && props.modalOpen) {
+      return (
+        <Modal
           key={project.id}
           name={project.name}
           image={project.image}
@@ -22,37 +21,47 @@ const projects = (props) => {
           linkName1={project.linkName1}
           linkName2={project.linkName2}
           linkName3={project.linkName3}
-          closeModal={props.closeModal} />
+          closeModal={props.closeModal}
+        />
+      );
     }
   });
 
   const projectImages = props.projects.map(project => {
-    return <img
-      key={project.id}
-      src={project.image}
-      className='project-grid box-shadow hover-translate'
-      alt={`project_${project.id}`}
-      onClick={() => props.openModal(project.id)} />
-  });
-
-
     return (
       <>
-        <Backdrop
-          show={props.showBackdrop}
-          modalOpen={props.modalOpen}
-          clicked={props.closeModal} />
-        <section id="projects">
-          <div className="title-container">
-            <h1 data-aos="fade-up">Recent Projects</h1>
-          </div>
-          <div className="projects-container box-shadow" data-aos="fade-up">
-            {projectImages}
-          </div>
-        </section>
-        {projectModal}
+        <div className="img__wrap hover-translate">
+          <img
+            key={project.id}
+            src={project.image}
+            className="project-grid box-shadow"
+            alt={`project_${project.id}`}
+            onClick={() => props.openModal(project.id)}
+          />
+          <h1 className="img__description">{project.name}</h1>
+        </div>
       </>
-    )
-}
+    );
+  });
+
+  return (
+    <>
+      <Backdrop
+        show={props.showBackdrop}
+        modalOpen={props.modalOpen}
+        clicked={props.closeModal}
+      />
+      <section id="projects">
+        <div className="title-container">
+          <h1 data-aos="fade-up">Projects</h1>
+        </div>
+        <div className="projects-container" data-aos="fade-up">
+          {projectImages}
+        </div>
+      </section>
+      {projectModal}
+    </>
+  );
+};
 
 export default projects;

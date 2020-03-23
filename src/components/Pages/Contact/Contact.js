@@ -16,7 +16,7 @@ const contact = () => {
       </div>
       <div className="contact-container" data-aos="fade-up">
       <MDBCol>
-        <MDBCard className="card-container">
+        <MDBCard className="card-container box-shadow">
           <MDBCardBody>
             <i className="fab fa-github contact-icon"></i>
             <MDBCardTitle>GITHUB</MDBCardTitle>
@@ -25,7 +25,7 @@ const contact = () => {
         </MDBCard>
       </MDBCol>
       <MDBCol>
-        <MDBCard className="card-container">
+        <MDBCard className="card-container box-shadow">
           <MDBCardBody>
             <i className="fas fa-at contact-icon"></i>
             <MDBCardTitle>EMAIL</MDBCardTitle>
@@ -34,7 +34,7 @@ const contact = () => {
         </MDBCard>
       </MDBCol>
       <MDBCol>
-        <MDBCard className="card-container social-card">
+        <MDBCard className="card-container social-card box-shadow">
           <MDBCardBody>
             <i className="fas fa-thumbs-up contact-icon"></i>
             <MDBCardTitle>SOCIAL</MDBCardTitle>
