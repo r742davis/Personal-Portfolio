@@ -7,7 +7,7 @@
     "bootstrap-css-only": "^4.4.1",
     "font-awesome": "^4.7.0",
     "gh-pages": "^2.2.0",
-    "mdbreact": "^4.25.4",
+    "mdbreact": "^4.25.5",
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -35,5 +35,5 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "homepage": "https://r742davis.github.io/portfolio_1/"
+  "homepage": "http://www.richardtrowdavis.com"
 }
