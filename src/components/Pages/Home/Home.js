@@ -23,6 +23,8 @@ const home = props => {
           <h2>Richard</h2>
           <h2>Davis</h2>
           {/* <h2>Full Stack Developer</h2> */}
+          <button>Contact</button>
+          <button>Resume</button>
         </div>
         {/* <h1>
           <ReactRotatingText

@@ -13,23 +13,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-
-.home-container h1 {
-  color: white; }
-
-@media (max-width: 450px) {
-  .home-container h1 {
-    font-size: 1.5rem; } }
+  justify-content: center;
+  padding-left: 20%; }
 
 .tagline-container h2 {
   color: var(--tertiary);
@@ -52,11 +38,28 @@
 .tagline-container h2:nth-child(3) {
   top: -5.5rem; }
 
-.tagline-container h2:nth-child(4) {
-  font-family: 'Lato', sans-serif;
-  font-weight: 110;
-  font-size: 2.4rem;
-  top: -6rem; }
+.tagline-container button {
+  background: transparent;
+  position: relative;
+  color: white;
+  border: none;
+  border: 1px solid white;
+  padding: 1rem;
+  width: 125px;
+  font-size: 2rem;
+  font-weight: 100;
+  border-radius: 0.25rem;
+  transition: 0.25s; }
+
+.tagline-container button:hover {
+  transition: 0.25s;
+  background: rgba(255, 255, 255, 0.125); }
+
+.tagline-container button:focus {
+  outline: none; }
+
+.tagline-container button:nth-child(5) {
+  margin-left: 1rem; }
 
 /*** Blinking Cursor on Home Page ***/
 .react-rotating-text-cursor {
