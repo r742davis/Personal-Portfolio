@@ -1,25 +1,40 @@
-import React from 'react';
-import './Home.css';
-const ReactRotatingText = require('react-rotating-text');
+import React from "react";
+import "./Home.css";
+const ReactRotatingText = require("react-rotating-text");
 
-const home = (props) => {
+const home = props => {
+  const terms = [
+    "Full-Stack Web Developer",
+    "React Engineer",
+    "Creative Writer",
+    "CSS Aficionado",
+    "Traveler",
+    "Doggo Enthusiast",
+    "Excessive Coffee Drinker",
+    "Wine Lover",
+    "Coder",
+    "Lifelong Learner",
+  ];
   return (
     <section id="home" onScroll={props.handleScroll}>
       <div className="home-container">
-        <div className='tagline-container'>
-          <h2>Hello, my name is</h2>
+        <div className="tagline-container">
+          <h2>Hello there! My name is</h2>
           <h2>Richard</h2>
+          <h2>Davis</h2>
+          {/* <h2>Full Stack Developer</h2> */}
         </div>
-        <h1>
+        {/* <h1>
           <ReactRotatingText
-            items={['Full-Stack Web Developer', 'UX Designer', 'Creative Writer', 'CSS Aficionado', 'Traveler', 'Doggo Enthusiast', 'Excessive Coffee Drinker', 'Wine Lover', 'Coder', 'Lifelong Learner', 'Obsessive Git Committer', 'React Reveler']}
-            pause={2250}
-            typingInterval={120}
-            deletingInterval={30} />
-        </h1>
+            items={terms}
+            pause={2500}
+            typingInterval={150}
+            deletingInterval={50}
+          />
+        </h1> */}
       </div>
     </section>
-  )
+  );
 };
 
 export default home;

@@ -6,15 +6,12 @@
   position: fixed;
   width: 100%;
   top: 0;
-  padding: 0 32px 0 !important;
   padding: 0 2rem 0 !important;
   z-index: 2;
   box-shadow: none !important;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
   @include respond-to('navbar') {
     background: var(--bg) !important;
-    box-shadow: 0 0.1rem 0.4rem #d9d9d9 !important;
   }
 }
 
@@ -25,14 +22,10 @@
 .navbar-recolored {
   background: var(--bg) !important;
   opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  padding-bottom: 50px;
-  box-shadow: 0 0.4rem 1rem #d9d9d9 !important;
-  -webkit-transition: 0.4s;
+  padding-bottom: 5rem;
   transition: 0.4s;
   @include respond-to('navbar') {
     background: var(--bg) !important;
-    box-shadow: 0 0.1rem 0.4rem #d9d9d9 !important;
   }
 }
 
@@ -54,8 +47,8 @@
 
 .navbar-brand-recolored {
   font-family: 'Arvo', serif;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 2rem;
+
   color: var(--primary) !important;
 }
 
@@ -65,28 +58,24 @@
 
 .nav-link {
   font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 1.8rem;
   color: var(--secondary) !important;
   position: relative;
-  padding: 16px;
-  padding: 1rem;
-  margin: 0 20px 0 0;
-  margin: 0 1.25rem 0 0;
-  -webkit-transition: 0.2s;
+  margin: 1.25rem;
   transition: 0.2s;
   @include respond-to('navbar') {
     background: var(--bg) !important;
     color: var(--primary) !important;
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   @include respond-to('small') {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   &:hover {
     color: var(--bg) !important;
     @include respond-to('navbar') {
-      color: var(--secondary) !important;
+      color: var(--primary) !important;
     }
 
     &:after {

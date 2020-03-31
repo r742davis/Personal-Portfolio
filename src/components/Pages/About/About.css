@@ -1,45 +1,44 @@
 #about {
-  background: #f2f2f2; }
+  background: var(--bg); }
 
 .about__container {
-  width: 90%;
+  width: 60%;
   margin: 0 auto;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px; }
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+  border: 1px solid red; }
 
 .about__profile {
-  width: 100px;
-  height: 100px;
-  border-radius: 100px; }
+  width: 10rem;
+  height: 10rem;
+  border-radius: 10rem; }
 
 @media (max-width: 375px) {
   .about__profile {
-    width: 50px;
-    height: 50px; } }
+    width: 5rem;
+    height: 5rem; } }
 
 .about__name {
-  background: var(--primary);
-  color: white;
-  font-size: 2rem;
+  color: var(--primary);
+  font-size: 5rem;
+  font-weight: bold;
   height: 150px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px; }
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
 
 .about__name img {
   margin-right: 50px; }
 
 .about__description-container {
   width: 90%;
-  margin-bottom: 50px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out; }
 
 .about__paragraph-container {

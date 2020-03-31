@@ -51,13 +51,13 @@ class PortfolioContainer extends Component {
         name: 'Mug Club App',
         image: `${project_2}`,
         alt: 'mug club bear',
-        description: 'IN DEVELOPMENT - The Madison Bear Garden needs a better way to track their Mug Club members aside from their laptop and a spreadsheet. I am developing a mobile and desktop application that will help them track their members using a remote hosted database.',
-        tech: 'React, Express.js, Node.js, MongoDB, Heroku',
+        description: 'The Madison Bear Garden needed a better way to track their Mug Club members compared to their current system: a laptop and Excel spreadsheet. I developed a mobile-friendly web app that will help them track their members\' Mug Club progress using a remote MongoDB database.',
+        tech: 'React.js, Express.js, Node.js, MongoDB, Heroku',
         link1: 'https://github.com/r742davis/mug_club',
-        link2: '',
+        link2: 'https://github.com/r742davis/mug_club',
         link3: '',
-        linkName1: 'Project Code',
-        linkName2: '',
+        linkName1: 'Mug Club Website - INCOMPLETE',
+        linkName2: 'GitHub - Project Code',
         linkName3: ''
       },
       {
