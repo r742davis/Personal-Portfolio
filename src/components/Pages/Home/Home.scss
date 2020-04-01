@@ -1,4 +1,4 @@
-@import '../../../_mixins.scss';
+@import "../../../_mixins.scss";
 
 #home {
   width: 100%;
@@ -8,19 +8,26 @@
 .home-container {
   background: url("../../../images/retro-computers.jpg") no-repeat center center;
   background-size: cover;
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(0, 0, 0, 0.75);
   background-blend-mode: multiply;
   margin: 0 auto;
   height: 100vh;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 20%;
   padding-right: 20%;
   margin-bottom: 5rem;
+
+}
+
+.tagline-container {
+  @include respond-to("mobile") {
+    position: relative;
+    top: -7.5rem;
+    padding-left: 1%;
+  }
 }
 
 .tagline-container h2 {
@@ -29,11 +36,11 @@
   text-align: left;
 }
 .tagline-container h2:nth-child(1) {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 100;
   font-size: 2.4rem;
   letter-spacing: 0.1rem;
-  bottom: -1rem;  
+  bottom: -1rem;
   @include respond-to("small") {
     font-size: 1.8rem;
   }
@@ -41,7 +48,7 @@
 
 .tagline-container h2:nth-child(2),
 .tagline-container h2:nth-child(3) {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 12.2rem;
   letter-spacing: 0.5rem;
   @include respond-to("small") {
@@ -70,7 +77,7 @@
   &:hover {
     transition: 0.25s;
     color: #111;
-    background: rgba(255,255,255,0.8);
+    background: rgba(255, 255, 255, 0.8);
   }
   &:focus {
     outline: none;
