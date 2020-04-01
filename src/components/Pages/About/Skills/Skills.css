@@ -14,7 +14,6 @@
 .skills__container {
   width: 45%;
   height: auto;
-  text-align: left;
   list-style: none;
   margin: 5rem 0 5rem 0;
   padding-bottom: 2rem;
@@ -22,6 +21,15 @@
 
 .skills__container li {
   padding: 2rem; }
+
+@media (max-width: 600px) {
+  .skills__container li {
+    padding: 1rem; } }
+
+@media (max-width: 600px) {
+  .skills__container {
+    width: 80%;
+    margin: 2rem 0 1rem 0; } }
 
 .skills__list {
   display: flex;

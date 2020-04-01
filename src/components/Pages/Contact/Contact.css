@@ -2,10 +2,9 @@
   background: white;
   height: auto;
   width: 100%;
-  padding-bottom: 15rem;
-  border: 1px solid red; }
+  padding-bottom: 15rem; }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   #contact {
     height: auto; } }
 
@@ -16,11 +15,9 @@
   justify-content: center;
   align-content: center;
   margin: 0 auto;
-  width: 80%;
-  border: 1px solid blue; }
+  width: 80%; }
 
 .contact__card {
-  border: 1px solid yellow;
   display: flex;
   justify-content: center;
   align-items: center;
