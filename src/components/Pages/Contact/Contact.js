@@ -14,27 +14,22 @@ const contact = () => {
       <div className="title-container">
         <h1 data-aos="fade-up">Contact Me</h1>
       </div>
-      <div className="contact-container" data-aos="fade-up">
-      <MDBCol>
-        <MDBCard className="card-container box-shadow">
+      <div className="contact__card-container" data-aos="fade-up">
+        <MDBCard className="contact__card box-shadow">
           <MDBCardBody>
             <i className="fab fa-github contact-icon"></i>
             <MDBCardTitle>GITHUB</MDBCardTitle>
             <p><a href="https://github.com/r742davis">r742davis</a></p>
           </MDBCardBody>
         </MDBCard>
-      </MDBCol>
-      <MDBCol>
-        <MDBCard className="card-container box-shadow">
+        <MDBCard className="contact__card box-shadow">
           <MDBCardBody>
             <i className="fas fa-at contact-icon"></i>
             <MDBCardTitle>EMAIL</MDBCardTitle>
             <p><a href="mailto:richardtrowdavis@gmail.com">richardtrowdavis@gmail.com</a></p>
           </MDBCardBody>
         </MDBCard>
-      </MDBCol>
-      <MDBCol>
-        <MDBCard className="card-container social-card box-shadow">
+        <MDBCard className="contact__card social-card box-shadow">
           <MDBCardBody>
             <i className="fas fa-thumbs-up contact-icon"></i>
             <MDBCardTitle>SOCIAL</MDBCardTitle>
@@ -51,7 +46,6 @@ const contact = () => {
             </div>
           </MDBCardBody>
         </MDBCard>
-      </MDBCol>
       </div>
     </section>
   )

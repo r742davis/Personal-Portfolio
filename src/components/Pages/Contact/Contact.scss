@@ -1,89 +1,53 @@
-@import '../../../_mixins.scss';
+@import "../../../_mixins.scss";
 
 #contact {
-  background: #f2f2f2;
-  height: 120vh;
+  background: white;
+  height: auto;
   width: 100%;
-  @include respond-to('small') {
+  padding-bottom: 15rem;
+  border: 1px solid red;
+  @include respond-to("small") {
     height: auto;
   }
 }
 
-.contact-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.contact__card-container {
   display: flex;
-  margin: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
   margin: 0 auto;
-  width: 70%;
-  height: 50vh;
-  @include respond-to('large') {
-    display: -ms-grid;
-    display: grid;
-    width: 80%;
-    -ms-grid-columns: 20rem 20rem;
-        grid-template-columns: 20rem 20rem;
-    grid-auto-rows: auto;
-  }
-  @include respond-to('medium') {
-    -ms-grid-columns: 20rem;
-        grid-template-columns: 20rem;
-    width: auto;
-    height: 80vh;
-  }
-  @include respond-to('small') {
-    height: 100%;
-    padding-bottom: 1rem;
-  }
+  
+  width: 80%;
+  border: 1px solid blue;
+  
 }
 
-.card-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.contact__card {
+  border: 1px solid yellow;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  font-size: 24px;
-  width: 352px;
-  width: 22rem;
-  height: 256px;
-  height: 16rem;
-  margin: 32px 8px;
-  margin: 2rem 0.5rem;
-  -webkit-transition: 0.2s;
+  width: 30rem;
+  height: 20rem;
+  margin: 0 auto;
+  margin: 1rem;
   transition: 0.2s;
-  @include respond-to('xl') {
-    width: 18rem;
-  }
-  @include respond-to('medium') {
-    margin-bottom: 0.25rem;
-  }
 }
 
-.card-container h4 {
-  font-family: 'Arvo', serif;
-  font-size: 32px;
+.contact__card h4 {
+  font-family: "Laro", serif;
+  font-size: 2.4rem;
+}
+
+.contact__card p {
+  font-family: "Lato-Light", sans-serif;
   font-size: 2rem;
 }
 
-.card-container p {
-  font-family: 'Lato-Light', sans-serif;
-  font-size: 20px;
-  font-size: 1.25rem;
-}
-
-.card-container a {
+.contact__card a {
   text-decoration: none;
   color: var(--primary);
   -webkit-transition: 0.2s;
@@ -96,27 +60,14 @@
   }
 }
 
-.social-card {
-  @include respond-to('large') {
-    width: 38rem;
-  }
-  @include respond-to('medium') {
-    width: 18rem;
-  }
-}
+
 
 .contact-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 0 auto;
-  padding: 32px;
   padding: 2rem;
-  font-size: 48px;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .social-icons-container {
