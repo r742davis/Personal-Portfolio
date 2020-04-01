@@ -85,28 +85,29 @@
 
 .modal__button-container {
   display: flex;
-  justify-content: flex-start; }
+  justify-content: space-between;
+  margin-top: 4rem; }
 
 .modal__button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: transparent;
+  background: var(--primary);
   position: relative;
-  color: var(--primary);
+  color: var(--tertiary);
   border: none;
   border: 1px solid var(--primary);
   padding: 1rem;
-  margin: 1rem;
-  width: 200px;
+  width: 150px;
   font-size: 1.5rem;
   border-radius: 0.5rem;
   transition: 0.25s; }
 
 .modal__button:hover {
   transition: 0.25s;
-  color: white;
-  background: var(--primary); }
+  color: var(--tertiary);
+  background: var(--secondary);
+  border: 1px solid var(--secondary); }
 
 .modal__button:focus {
   outline: none; }

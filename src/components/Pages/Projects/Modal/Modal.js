@@ -15,8 +15,8 @@ const modal = props => {
             </div>
             <h1 className="modal__project-title">{props.name}</h1>
             <p className="modal__project-description">{props.description}</p>
-            <h2 className="modal__project-tech">Tech:</h2>
-            <p className="modal__project-tech-description">{props.tech}</p>
+            {/* <h2 className="modal__project-tech">Tech:</h2>
+            <p className="modal__project-tech-description">{props.tech}</p> */}
             <div className="modal__button-container">
               <a className="modal__button" href={props.link1}>
                 Website
