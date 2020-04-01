@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "richardtrowdavis.com/precache-manifest.7e910db6373fe56f2137009a88783071.js"
+  "www.richardtrowdavis.com/precache-manifest.65af59adc82f71ed6ebb0862ec747c89.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("richardtrowdavis.com/index.html", {
+workbox.routing.registerNavigationRoute("www.richardtrowdavis.com/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
