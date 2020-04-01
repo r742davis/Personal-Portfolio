@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "richardtrowdavis.com/static/js/runtime~main.cc113324.js"
   },
   {
-    "revision": "11911410dca2de148f30954eb2fd5eab",
-    "url": "richardtrowdavis.com/static/media/arrow_left.11911410.svg"
+    "revision": "8ef6a08cdc1154920165680a4edde771",
+    "url": "richardtrowdavis.com/static/media/arrow_right.8ef6a08c.svg"
   },
   {
     "revision": "2295eaafde71c950c96c",
@@ -92,8 +92,8 @@ self.__precacheManifest = [
     "url": "richardtrowdavis.com/static/media/bakersdozen.2edbc415.jpg"
   },
   {
-    "revision": "8ef6a08cdc1154920165680a4edde771",
-    "url": "richardtrowdavis.com/static/media/arrow_right.8ef6a08c.svg"
+    "revision": "11911410dca2de148f30954eb2fd5eab",
+    "url": "richardtrowdavis.com/static/media/arrow_left.11911410.svg"
   },
   {
     "revision": "2295eaafde71c950c96c",
