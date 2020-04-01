@@ -64,12 +64,13 @@
   width: 125px;
   // top: -4rem;
   font-size: 2rem;
-  font-weight: 100;
-  border-radius: 0.25rem;
+  // font-weight: 100;
+  border-radius: 0.5rem;
   transition: 0.25s;
   &:hover {
     transition: 0.25s;
-    background: rgba(255,255,255,0.125);
+    color: #111;
+    background: rgba(255,255,255,0.8);
   }
   &:focus {
     outline: none;

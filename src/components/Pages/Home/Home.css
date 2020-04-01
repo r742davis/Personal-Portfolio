@@ -48,13 +48,13 @@
   padding: 1rem;
   width: 125px;
   font-size: 2rem;
-  font-weight: 100;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   transition: 0.25s; }
 
 .tagline-container button:hover {
   transition: 0.25s;
-  background: rgba(255, 255, 255, 0.125); }
+  color: #111;
+  background: rgba(255, 255, 255, 0.8); }
 
 .tagline-container button:focus {
   outline: none; }
