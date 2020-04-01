@@ -1,6 +1,6 @@
 #about {
   background: var(--bg);
-  height: 80vh;
+  height: auto;
   width: 100%; }
 
 .about__container {
@@ -24,25 +24,13 @@
 .about__profile {
   width: 10rem;
   height: 10rem;
-  border-radius: 10rem; }
+  border-radius: 10rem;
+  margin-bottom: 5rem; }
 
 @media (max-width: 375px) {
   .about__profile {
     width: 5rem;
     height: 5rem; } }
-
-.about__name {
-  color: var(--primary);
-  font-size: 5rem;
-  font-weight: bold;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center; }
-
-.about__name img {
-  margin-right: 50px; }
 
 .about__skills-container {
   width: 100%;
