@@ -44,8 +44,7 @@ class PortfolioContainer extends Component {
         link2: "https://github.com/r742davis/Harness-Wealth-Code-Test",
         link3: "",
         linkName1: "Website",
-        linkName2: "Project Code",
-        linkName3: ""
+        linkName2: "Project Code"
       },
       {
         id: 2,
@@ -58,9 +57,8 @@ class PortfolioContainer extends Component {
         link1: "https://github.com/r742davis/mug_club",
         link2: "https://github.com/r742davis/mug_club",
         link3: "",
-        linkName1: "Mug Club Website - INCOMPLETE",
-        linkName2: "GitHub - Project Code",
-        linkName3: ""
+        linkName1: "Mug Club Website",
+        linkName2: "GitHub - Project Code"
       },
       {
         id: 3,
@@ -74,8 +72,7 @@ class PortfolioContainer extends Component {
         link2: "",
         link3: "",
         linkName1: "Project Code",
-        linkName2: "",
-        linkName3: ""
+        linkName2: ""
       },
       {
         id: 4,
@@ -89,41 +86,40 @@ class PortfolioContainer extends Component {
         link2: "https://github.com/r742davis/vie_du_vin_frontend",
         link3: "https://github.com/r742davis/vie_du_vin_backend",
         linkName1: "Vie Du Vin Website",
-        linkName2: "Frontend Project Code",
-        linkName3: "Backend Project Code"
+        linkName2: "Project Code"
       },
-      {
-        id: 5,
-        name: "Traveleritis",
-        image: `${project_5}`,
-        alt: "travel website",
-        description:
-          "This was a collaborative project at General Assembly where we built a travel planning site based around a custom API. The app is designed to help you plan trips and save them depending on the user authentication.",
-        tech:
-          "MEAN Stack (Mongoose, Express.js, AngularJS, Node.js), MVVM Method",
-        link1: "https://traveleritis.herokuapp.com",
-        link2: "https://github.com/sharonmertens/branchforce",
-        link3: "",
-        linkName1: "Traveleritis Website",
-        linkName2: "Project Code",
-        linkName3: ""
-      },
-      {
-        id: 6,
-        name: "Baker's Dozen",
-        image: `${project_6}`,
-        alt: "baker's dozen website",
-        description:
-          "Baker's Dozen is an app where you can keep your favorite bakedgoods recipes and have them displayed beautifully. I created this project during my time at General Assembly and built in full authentication into the app.",
-        tech:
-          "JavaScript, Express.js, Mongoose, MongoDB, NodeJS, EJS, HTML5, CSS3",
-        link1: "https://bakersdozen-project.herokuapp.com/bakersdozen",
-        link2: "https://github.com/r742davis/Project_2",
-        link3: "",
-        linkName1: "Baker's Dozen Website",
-        linkName2: "Project Code",
-        linkName3: ""
-      }
+      // {
+      //   id: 5,
+      //   name: "Traveleritis",
+      //   image: `${project_5}`,
+      //   alt: "travel website",
+      //   description:
+      //     "This was a collaborative project at General Assembly where we built a travel planning site based around a custom API. The app is designed to help you plan trips and save them depending on the user authentication.",
+      //   tech:
+      //     "MEAN Stack (Mongoose, Express.js, AngularJS, Node.js), MVVM Method",
+      //   link1: "https://traveleritis.herokuapp.com",
+      //   link2: "https://github.com/sharonmertens/branchforce",
+      //   link3: "",
+      //   linkName1: "Traveleritis Website",
+      //   linkName2: "Project Code",
+      //   linkName3: ""
+      // },
+      // {
+      //   id: 6,
+      //   name: "Baker's Dozen",
+      //   image: `${project_6}`,
+      //   alt: "baker's dozen website",
+      //   description:
+      //     "Baker's Dozen is an app where you can keep your favorite bakedgoods recipes and have them displayed beautifully. I created this project during my time at General Assembly and built in full authentication into the app.",
+      //   tech:
+      //     "JavaScript, Express.js, Mongoose, MongoDB, NodeJS, EJS, HTML5, CSS3",
+      //   link1: "https://bakersdozen-project.herokuapp.com/bakersdozen",
+      //   link2: "https://github.com/r742davis/Project_2",
+      //   link3: "",
+      //   linkName1: "Baker's Dozen Website",
+      //   linkName2: "Project Code",
+      //   linkName3: ""
+      // }
     ]
   };
 

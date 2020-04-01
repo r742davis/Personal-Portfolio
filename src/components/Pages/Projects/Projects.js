@@ -17,10 +17,8 @@ const projects = props => {
           tech={project.tech}
           link1={project.link1}
           link2={project.link2}
-          link3={project.link3}
           linkName1={project.linkName1}
           linkName2={project.linkName2}
-          linkName3={project.linkName3}
           closeModal={props.closeModal}
         />
       );
@@ -30,15 +28,17 @@ const projects = props => {
   const projectImages = props.projects.map(project => {
     return (
       <>
-        <div 
-          onClick={() => props.openModal(project.id)}className="projects__grid-wrap">
+        <div
+          onClick={() => props.openModal(project.id)}
+          className="projects__grid-wrap"
+        >
           <img
             key={project.id}
             src={project.image}
             className="projects__grid-item box-shadow"
             alt={`project_${project.id}`}
           />
-          <h1 className="projects__grid-description">{project.name}</h1>
+          <h1 className="projects__grid-title">{project.name}</h1>
         </div>
       </>
     );

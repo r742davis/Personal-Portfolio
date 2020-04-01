@@ -3,7 +3,7 @@
 
 .projects__grid-item,
 .projects__grid-wrap,
-.projects__grid-description {
+.projects__grid-title {
   margin: 1rem;
   border-radius: 1rem;
   transition: 0.25s;
@@ -34,22 +34,23 @@
   width: auto;
   height: auto; }
 
-.projects__grid-description {
+.projects__grid-title {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  padding: 1rem;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.75);
   color: #fff;
   visibility: hidden;
   opacity: 0; }
 
-.projects__grid-wrap:hover .projects__grid-description {
+.projects__grid-wrap:hover .projects__grid-title {
   visibility: visible;
   opacity: 1;
   box-shadow: 0 0.5rem 1rem #a3a3a3; }
