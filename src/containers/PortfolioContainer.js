@@ -150,6 +150,8 @@ class PortfolioContainer extends Component {
   };
 
   openModal = number => {
+    console.log('works');
+    
     this.setState({ modalNumber: number, modalOpen: true });
   };
 

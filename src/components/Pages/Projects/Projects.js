@@ -30,15 +30,15 @@ const projects = props => {
   const projectImages = props.projects.map(project => {
     return (
       <>
-        <div className="img__wrap hover-translate">
+        <div 
+          onClick={() => props.openModal(project.id)}className="projects__grid-wrap">
           <img
             key={project.id}
             src={project.image}
-            className="project-grid box-shadow"
+            className="projects__grid-item box-shadow"
             alt={`project_${project.id}`}
-            onClick={() => props.openModal(project.id)}
           />
-          <h1 className="img__description">{project.name}</h1>
+          <h1 className="projects__grid-description">{project.name}</h1>
         </div>
       </>
     );
@@ -52,10 +52,8 @@ const projects = props => {
         clicked={props.closeModal}
       />
       <section id="projects">
-        <div className="title-container">
-          <h1 data-aos="fade-up">Projects</h1>
-        </div>
-        <div className="projects-container" data-aos="fade-up">
+        <h1 className="projects__title">My Recent Projects</h1>
+        <div className="projects__projects-container" data-aos="fade-up">
           {projectImages}
         </div>
       </section>

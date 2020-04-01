@@ -1,4 +1,4 @@
-@import '../../../_mixins.scss';
+@import "../../../_mixins.scss";
 
 // whole page container
 #about {
@@ -32,7 +32,7 @@
   height: 10rem;
   border-radius: 10rem;
   margin-bottom: 5rem;
-  @include respond-to('mobile') {
+  @include respond-to("mobile") {
     width: 5rem;
     height: 5rem;
   }
@@ -43,5 +43,3 @@
   display: flex;
   justify-content: space-between;
 }
-
-

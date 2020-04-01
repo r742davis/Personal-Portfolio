@@ -61,7 +61,7 @@ const backend = () => {
   });
 
   return (
-    <div className="skills__container">
+    <div className="skills__container box-shadow">
       <div className="skills__title">
         <h4>Backend</h4>
       </div>
