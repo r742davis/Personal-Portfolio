@@ -1,17 +1,8 @@
 import React, { Component } from "react";
 import "./Navigation.css";
-import Burger from "@animated-burgers/burger-squeeze";
 import "./Burger.css";
+import Burger from "@animated-burgers/burger-squeeze";
 
-// import {
-//   Collapse,
-//   Navbar,
-//   NavbarToggler,
-//   NavbarBrand,
-//   Nav,
-//   NavItem,
-//   NavLink
-// } from "reactstrap";
 
 class Navigation extends Component {
   state = {
@@ -27,64 +18,38 @@ class Navigation extends Component {
   render() {
     const navClass = this.props.scrolled
       ? "nav__container nav__slide-in-left"
-      : "nav__container nav__slide-in-left nav__container--scrolled";
+      : "nav__container nav__slide-in-left nav__container--scrolled box-shadow";
+    // const burgerScrolled = this.props.scrolled
+    //   ? "burger burger-lines"
+    //   : "burger burger-lines scrolled";
+    const navLink = this.props.scrolled
+      ? "nav__link"
+      : "nav__link nav__link--scrolled";
 
-    const burgerScrolled = this.props.scrolled
-      ? "burger burger-lines"
-      : "burger burger-lines scrolled"
-    // const navBar = this.props.scrolled ? "navbar" : "navbar-recolored";
-    // const navBrand = this.props.scrolled
-    //   ? "navbar-brand text-white"
-    //   : "navbar-brand-recolored";
     return (
       <>
         {this.state.burgerOpen && (
-          <nav 
-            onClick={() => this.toggleBurger()}
-            className={navClass}>
-            <a href="#about" className="nav__link">
+          <nav onClick={() => this.toggleBurger()} className={navClass}>
+            <a href="#about" className={navLink}>
               About
             </a>
-            <a href="#projects" className="nav__link">
+            <a href="#projects" className={navLink}>
               Projects
             </a>
-            <a href="#" className="nav__link">
+            <a href={this.props.resumeLink} className={navLink} target="_blank" rel="noopener noreferrer" >
               Resume
             </a>
-            <a href="#contact" className="nav__link">
+            <a href="#contact" className={navLink}>
               Contact
             </a>
           </nav>
         )}
-
         <nav className="nav__navbar">
           <Burger
             isOpen={this.state.burgerOpen}
             onClick={() => this.toggleBurger()}
           />
         </nav>
-          {/* <Nav className="ml-auto navbar-center" navbar>
-              <NavItem>
-                <NavLink href="#about" className={`${navClass} slide-in`}>
-                  About
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#projects" className={`${navClass} slide-in`}>
-                  Projects
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#" className={`${navClass} slide-in`}>
-                  Resume
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#contact" className={`${navClass} slide-in`}>
-                  Contact
-                </NavLink>
-              </NavItem>
-            </Nav> */}
       </>
     );
   }

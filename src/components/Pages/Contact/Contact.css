@@ -8,6 +8,13 @@
   #contact {
     height: auto; } }
 
+.contact__title {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+  font-family: "Lora", serif;
+  font-size: 3.2rem; }
+
 .contact__card-container {
   display: flex;
   flex-wrap: wrap;

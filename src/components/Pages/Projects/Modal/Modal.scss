@@ -14,8 +14,8 @@
 .modal {
   position: fixed;
   z-index: 500;
-  background: white;
-  border-radius: 2rem;
+  background: whitesmoke;
+  border-radius: 0.5rem;
   display: block;
   margin: 0 auto;
   width: 400px;
@@ -23,21 +23,17 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  @include respond-to("small") {
+    width: 80%;
+  }
 }
 
 .modal__grid {
-  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   text-align: left;
-  width: auto;
-  height: auto;
+  width: 100%;
   margin: 0 auto;
-  @include respond-to("small") {
-    width: 90%;
-    height: 400px;
-  }
 }
 
 .modal__close {
@@ -59,19 +55,33 @@
   }
 }
 
+.modal__project-picture img {
+  height: 200px;
+  width: 100%;
+  align-items: center;
+  object-fit: cover;
+  transition: 0.25s;
+}
+
 .modal__project-container {
   width: auto;
   height: auto;
-  padding: 0 10% 10% 10%;
+  margin: 10%;
+  text-align: center;
   & h1 {
     font-family: "Laro", serif;
-    margin-top: 1rem;
+    @include respond-to("mobile") {
+      font-size: 2rem;
+    }
   }
   & h2 {
     font-family: "Laro", serif;
   }
   & p {
     font-size: 1.5rem;
+    @include respond-to("mobile") {
+      font-size: 1.2rem;
+    }
   }
 }
 
@@ -79,17 +89,7 @@
   font-family: "Laro", serif;
 }
 
-.modal__project-picture {
-  border-radius: 1rem;
-  padding: 0.5rem;
-}
-.modal__project-picture img {
-  height: 25rem;
-  width: 100%;
-  align-items: center;
-  object-fit: contain;
-  transition: 0.25s;
-}
+
 .modal__button-container {
   display: flex;
   justify-content: space-between;
@@ -106,8 +106,7 @@
   border: none;
   border: 1px solid var(--primary);
   padding: 1rem;
-  // margin: 1rem;
-  width: 150px;
+  width: 45%;
   font-size: 1.5rem;
   border-radius: 0.5rem;
   transition: 0.25s;
@@ -123,16 +122,8 @@
   & a {
     text-align: center;
   }
+  
 }
-
-
-
-
-
-
-
-
-
 
 //Animations
 @-webkit-keyframes jello-vertical {

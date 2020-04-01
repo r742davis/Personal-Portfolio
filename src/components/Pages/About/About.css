@@ -16,21 +16,24 @@
   font-size: 3.2rem;
   position: relative; }
 
+@media (max-width: 375px) {
+  .about__container h1 {
+    font-size: 3rem; } }
+
 .about__container h2 {
   font-size: 3rem;
   font-weight: 100;
   line-height: 3rem; }
+
+@media (max-width: 375px) {
+  .about__container h2 {
+    font-size: 2rem; } }
 
 .about__profile {
   width: 10rem;
   height: 10rem;
   border-radius: 10rem;
   margin-bottom: 5rem; }
-
-@media (max-width: 375px) {
-  .about__profile {
-    width: 5rem;
-    height: 5rem; } }
 
 .about__skills-container {
   width: 100%;

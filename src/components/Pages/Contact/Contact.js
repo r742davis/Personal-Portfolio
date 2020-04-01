@@ -5,15 +5,12 @@ import {
   MDBCard,
   MDBCardBody,
   MDBCardTitle,
-  MDBCol
 } from 'mdbreact';
 
 const contact = () => {
   return (
     <section id="contact">
-      <div className="title-container">
-        <h1 data-aos="fade-up">Contact Me</h1>
-      </div>
+      <h1 className="contact__title" data-aos="fade-up">Contact Me</h1>
       <div className="contact__card-container" data-aos="fade-up">
         <MDBCard className="contact__card box-shadow">
           <MDBCardBody>

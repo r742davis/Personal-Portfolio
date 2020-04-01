@@ -20,11 +20,17 @@
   font-family: "Lora", serif;
   font-size: 3.2rem;
   position: relative;
+  @include respond-to("mobile") {
+    font-size: 3rem;
+  }
 }
 .about__container h2 {
   font-size: 3rem;
   font-weight: 100;
   line-height: 3rem;
+  @include respond-to("mobile") {
+    font-size: 2rem;
+  }
 }
 
 .about__profile {
@@ -32,10 +38,7 @@
   height: 10rem;
   border-radius: 10rem;
   margin-bottom: 5rem;
-  @include respond-to("mobile") {
-    width: 5rem;
-    height: 5rem;
-  }
+
 }
 
 .about__skills-container {

@@ -8,6 +8,7 @@ import jquery from "../../../../../images/Icons/jquery.png";
 import react from "../../../../../images/Icons/react.png";
 import redux from "../../../../../images/Icons/redux.png";
 import sass from "../../../../../images/Icons/sass.svg";
+const uniqid = require("uniqid");
 
 const frontend = () => {
   const [skillState] = useState({
@@ -51,7 +52,7 @@ const frontend = () => {
   });
   const skillList = skillState.skills.map((skill, index) => {
     return (
-      <li key={index}>
+      <li key={uniqid()}>
         <img src={skill.link} className="skill__icon" alt={skill.alt} />
       </li>
     );

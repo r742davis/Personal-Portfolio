@@ -53,7 +53,7 @@
   .tagline-container h2:nth-child(3) {
     top: -3rem; } }
 
-.tagline-container button {
+.tagline-container a {
   background: transparent;
   position: relative;
   color: white;
@@ -65,18 +65,18 @@
   border-radius: 0.5rem;
   transition: 0.25s; }
 
-.tagline-container button:hover {
+.tagline-container a:hover {
   transition: 0.25s;
   color: #111;
   background: rgba(255, 255, 255, 0.8); }
 
-.tagline-container button:focus {
+.tagline-container a:focus {
   outline: none; }
 
 @media (max-width: 600px) {
-  .tagline-container button {
+  .tagline-container a {
     width: 100px;
     font-size: 1.8rem; } }
 
-.tagline-container button:nth-child(5) {
+.tagline-container a:nth-child(5) {
   margin-left: 1rem; }

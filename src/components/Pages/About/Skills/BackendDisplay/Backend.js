@@ -9,6 +9,7 @@ import postgresql from "../../../../../images/Icons/postgresql.png";
 import graphql from "../../../../../images/Icons/graphql.png";
 import ruby from "../../../../../images/Icons/ruby.png";
 import rails from "../../../../../images/Icons/ruby_on_rails.png";
+const uniqid = require("uniqid");
 
 const backend = () => {
   const [skillState] = useState({
@@ -54,7 +55,7 @@ const backend = () => {
 
   const skillList = skillState.skills.map((skill, index) => {
     return (
-      <li key={index}>
+      <li key={uniqid()}>
         <img src={skill.link} className="skill__icon" alt={skill.alt} />
       </li>
     );

@@ -6,14 +6,13 @@ import ProfilePicture from "./ProfilePicture/ProfilePicture";
 //Skill components
 import Backend from "./Skills/BackendDisplay/Backend";
 import Frontend from "./Skills/FrontendDisplay/Frontend";
-import ResumeButton from "./ResumeButton/ResumeButton";
 
 const about = props => {
   return (
     <section id="about">
       <div className="about__container" data-aos="fade-up">
         <ProfilePicture profile={props.profile} />
-        <h1>Full Stack Developer, at your service!</h1>
+        <h1>I'm a Full Stack Developer!</h1>
         <h2>
           I specialize in React and MongoDB stacks, but I am excited to branch
           out into other languages and frameworks. I'm currently looking for

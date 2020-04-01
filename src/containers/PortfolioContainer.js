@@ -18,8 +18,8 @@ import project_1 from "../images/harness-wealth-test.png";
 import project_2 from "../images/bear.jpg";
 import project_3 from "../images/retro-computers.jpg";
 import project_4 from "../images/wine.jpg";
-import project_5 from "../images/traveleritis.jpg";
-import project_6 from "../images/bakersdozen.jpg";
+// import project_5 from "../images/traveleritis.jpg";
+// import project_6 from "../images/bakersdozen.jpg";
 
 class PortfolioContainer extends Component {
   state = {
@@ -30,19 +30,18 @@ class PortfolioContainer extends Component {
     scrolled: true,
     profilePicture: `${profile}`,
     resumeLink:
-      "https://drive.google.com/open?id=1uBbQxXBs0_efXux_Xy8g-pnKeVqlv8Bn",
+      "https://drive.google.com/file/d/1ixD7x87Ylstg0fItq8wzipvVtHf-sNo1/view?usp=sharing",
     projects: [
       {
         id: 1,
-        name: "Harness Wealth Code Test",
+        name: "Harness Wealth Landing Page",
         image: `${project_1}`,
-        alt: "Harness Wealth Code Test",
+        alt: "Harness Wealth Landing Page",
         description:
-          "A pure HTML and CSS front page web app created for Harness Wealth, a fintech startup.",
+          "A React.js landing page web app created for Harness Wealth, a fintech startup.",
         tech: "HTML5, CSS3",
         link1: "https://harness-wealth-code-test.herokuapp.com/index.html",
         link2: "https://github.com/r742davis/Harness-Wealth-Code-Test",
-        link3: "",
         linkName1: "Website",
         linkName2: "Project Code"
       },
@@ -56,7 +55,6 @@ class PortfolioContainer extends Component {
         tech: "React.js, Express.js, Node.js, MongoDB, Heroku",
         link1: "https://github.com/r742davis/mug_club",
         link2: "https://github.com/r742davis/mug_club",
-        link3: "",
         linkName1: "Mug Club Website",
         linkName2: "GitHub - Project Code"
       },
@@ -68,9 +66,8 @@ class PortfolioContainer extends Component {
         description:
           "I wanted to challenge myself to build a portfolio website using React and SASS. I built this portfolio using industry conventions, such as using functional components, separating out SCSS into component-specific files, and programmatically generating multiple components.",
         tech: "React, SASS, Bootstrap 4",
-        link1: "https://github.com/r742davis/portfolio_1",
-        link2: "",
-        link3: "",
+        link1: "www.richardtrowdavis.com",
+        link2: "https://github.com/r742davis/portfolio_1",
         linkName1: "Project Code",
         linkName2: ""
       },
@@ -84,7 +81,6 @@ class PortfolioContainer extends Component {
         tech: "React, Redux, JWTs, MongoDB, Express.js, Node.js",
         link1: "https://arcane-brushlands-71780.herokuapp.com/wines",
         link2: "https://github.com/r742davis/vie_du_vin_frontend",
-        link3: "https://github.com/r742davis/vie_du_vin_backend",
         linkName1: "Vie Du Vin Website",
         linkName2: "Project Code"
       },
@@ -130,11 +126,19 @@ class PortfolioContainer extends Component {
     });
 
     document.addEventListener("scroll", () => {
-      const scrolled = window.scrollY < 100;
+      const scrolled = window.scrollY < 500;
       if (scrolled !== this.state.scrolled) {
         this.setState({ scrolled });
       }
     });
+
+    // Wake up apps
+    fetch("https://harness-wealth-code-test.herokuapp.com/index.html", {mode: 'no-cors'})
+      .then(res => console.log('Woke up Harness Wealth app'))
+
+    fetch("https://arcane-brushlands-71780.herokuapp.com/wines", {mode: 'no-cors'})
+    .then(res => console.log('Woke up Vie Du Vin app'))
+
   }
 
   toggleMenu = () => {
@@ -145,9 +149,7 @@ class PortfolioContainer extends Component {
     this.setState({ modalOpen: false });
   };
 
-  openModal = number => {
-    console.log('works');
-    
+  openModal = number => {    
     this.setState({ modalNumber: number, modalOpen: true });
   };
 
@@ -158,8 +160,11 @@ class PortfolioContainer extends Component {
           isOpen={this.state.isOpen}
           scrolled={this.state.scrolled}
           toggle={this.toggleMenu}
+          resumeLink={this.state.resumeLink}
         />
-        <Home />
+        <Home 
+          resumeLink={this.state.resumeLink}
+        />
         <About
           profile={this.state.profilePicture}
           resumeLink={this.state.resumeLink}

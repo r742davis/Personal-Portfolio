@@ -3,13 +3,14 @@ import React from "react";
 import "./Projects.css";
 import Backdrop from "./Modal/Backdrop/Backdrop";
 import Modal from "./Modal/Modal";
+const uniqid = require("uniqid");
 
 const projects = props => {
   const projectModal = props.projects.map(project => {
     if (project.id === props.modalNumber && props.modalOpen) {
       return (
         <Modal
-          key={project.id}
+          key={uniqid()}
           name={project.name}
           image={project.image}
           alt={project.alt}
@@ -29,16 +30,19 @@ const projects = props => {
     return (
       <>
         <div
+          key={uniqid()}
           onClick={() => props.openModal(project.id)}
           className="projects__grid-wrap"
         >
           <img
-            key={project.id}
+            key={uniqid()}
             src={project.image}
             className="projects__grid-item box-shadow"
             alt={`project_${project.id}`}
           />
-          <h1 className="projects__grid-title">{project.name}</h1>
+          <h1 key={uniqid()} className="projects__grid-title">
+            {project.name}
+          </h1>
         </div>
       </>
     );
