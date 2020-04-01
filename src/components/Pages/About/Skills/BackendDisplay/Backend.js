@@ -1,75 +1,73 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import '../Skills.css';
+import "../Skills.css";
 
-import express from '../../../../../images/Icons/express.png';
-import mongo from '../../../../../images/Icons/mongo.jpg';
-import node from '../../../../../images/Icons/node.svg';
-import postgresql from '../../../../../images/Icons/postgresql.png';
-import api from '../../../../../images/Icons/restful_api.png';
-import ruby from '../../../../../images/Icons/ruby.png';
-import rails from '../../../../../images/Icons/ruby_on_rails.png';
-
+import express from "../../../../../images/Icons/express.png";
+import mongo from "../../../../../images/Icons/mongodb.png";
+import node from "../../../../../images/Icons/node.png";
+import postgresql from "../../../../../images/Icons/postgresql.png";
+import graphql from "../../../../../images/Icons/graphql.png";
+import ruby from "../../../../../images/Icons/ruby.png";
+import rails from "../../../../../images/Icons/ruby_on_rails.png";
 
 const backend = () => {
-  const [ skillState ] = useState({
+  const [skillState] = useState({
     skills: [
       {
-        name: 'Express.js',
-        link: `${express}`,
-        alt: 'express'
-      },
-      {
-        name: 'JSON / APIs',
-        link: `${api}`,
-        alt: 'json restful a p i'
-      },
-      {
-        name: 'MongoDB',
-        link: `${mongo}`,
-        alt: 'mongoDB'
-      },
-      {
-        name: 'Node.js',
+        name: "Node.js",
         link: `${node}`,
-        alt: 'node js'
+        alt: "node js"
       },
       {
-        name: 'PostgreSQL',
+        name: "MongoDB",
+        link: `${mongo}`,
+        alt: "mongoDB"
+      },
+      {
+        name: "Express",
+        link: `${express}`,
+        alt: "express"
+      },
+      {
+        name: "GraphQL",
+        link: `${graphql}`,
+        alt: "graph q l"
+      },
+
+      {
+        name: "PostgreSQL",
         link: `${postgresql}`,
-        alt: 'postgreSQL'
+        alt: "postgreSQL"
       },
       {
-        name: 'Ruby',
+        name: "Ruby",
         link: `${ruby}`,
-        alt: 'Ruby'
+        alt: "Ruby"
       },
       {
-        name: 'Ruby on Rails',
+        name: "Ruby on Rails",
         link: `${rails}`,
-        alt: 'ruby on rails'
+        alt: "ruby on rails"
       }
     ]
   });
 
   const skillList = skillState.skills.map((skill, index) => {
-    return <li key={index}><img
-      src={skill.link}
-      className='skill-icon'
-      alt={skill.alt}
-      />{skill.name}</li>
-  })
+    return (
+      <li key={index}>
+        <img src={skill.link} className="skill__icon" alt={skill.alt} />
+      </li>
+    );
+  });
 
   return (
-    <div className="skills-container">
-      <div className="skills-title">
-        <h4>Backend Skills</h4>
+    <div className="skills__container">
+      <div className="skills__title">
+        <h4>Backend</h4>
       </div>
-      <ul>
-        {skillList}
-      </ul>
+      <ul className="skills__list">{skillList}</ul>
     </div>
-  )
+  );
 };
 
 export default backend;

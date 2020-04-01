@@ -1,73 +1,38 @@
-.skills-display-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: auto;
-  height: 550px; }
+.skills__title {
+  background: var(--primary);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  text-align: center; }
 
-@media (max-width: 800px) {
-  .skills-display-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    height: auto;
-    padding-bottom: 25px;
-    margin: 0 auto; } }
+.skills__title h4 {
+  padding: 2rem;
+  color: var(--tertiary);
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem; }
 
-.skills-title {
-  background: var(--primary); }
-
-.skills-title h4 {
-  padding: 16px;
-  padding: 1rem;
-  color: whitesmoke;
-  font-family: 'Arvo', serif; }
-
-.skills-container {
-  width: 49%;
+.skills__container {
+  width: 45%;
+  height: auto;
   text-align: left;
   list-style: none;
-  margin-top: 25px;
+  margin: 5rem 0 2.5rem 0;
+  padding-bottom: 2rem;
   box-shadow: 0 0.5rem 1rem #d9d9d9;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out; }
+  border-radius: 1rem; }
 
-@media (max-width: 800px) {
-  .skills-container {
-    width: auto;
-    margin-left: 2rem;
-    margin-right: 2rem; } }
+.skills__container li {
+  padding: 1rem; }
 
-@media (max-width: 450px) {
-  .skills-container {
-    padding-bottom: 1rem; } }
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
 
-.skills-container ul {
-  list-style: none; }
-
-.skills-container li {
-  padding-left: 16px;
-  padding-left: 1rem;
-  margin: 4px;
-  margin: 0.25rem;
-  font-size: 24px;
-  font-size: 1.5rem; }
+.skill__icon {
+  width: 5rem;
+  height: 5rem; }
 
 @media (max-width: 375px) {
-  .skills-container li {
-    font-size: 0.9rem; } }
-
-.skill-icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 16px;
-  margin-right: 1rem; }
-
-@media (max-width: 375px) {
-  .skill-icon {
-    width: 20px;
-    height: 20px; } }
+  .skill__icon {
+    width: 2rem;
+    height: 2rem; } }
