@@ -33,19 +33,6 @@ class PortfolioContainer extends Component {
       "https://drive.google.com/file/d/1ixD7x87Ylstg0fItq8wzipvVtHf-sNo1/view?usp=sharing",
     projects: [
       {
-        id: 2,
-        name: "Harness Wealth Landing Page",
-        image: `${project_1}`,
-        alt: "Harness Wealth Landing Page",
-        description:
-          "A React.js landing page web app created for Harness Wealth, a fintech startup.",
-        tech: "HTML5, CSS3",
-        link1: "https://harness-wealth-code-test.herokuapp.com/index.html",
-        link2: "https://github.com/r742davis/Harness-Wealth-Code-Test",
-        linkName1: "Website",
-        linkName2: "Project Code"
-      },
-      {
         id: 1,
         name: "Mug Club App",
         image: `${project_2}`,
@@ -57,6 +44,19 @@ class PortfolioContainer extends Component {
         link2: "https://github.com/r742davis/mug_club",
         linkName1: "Website",
         linkName2: "GitHub - Project Code"
+      },
+      {
+        id: 2,
+        name: "Harness Wealth Landing Page",
+        image: `${project_1}`,
+        alt: "Harness Wealth Landing Page",
+        description:
+          "A React.js landing page web app created for Harness Wealth, a fintech startup.",
+        tech: "HTML5, CSS3",
+        link1: "https://harness-wealth-code-test.herokuapp.com/index.html",
+        link2: "https://github.com/r742davis/Harness-Wealth-Code-Test",
+        linkName1: "Website",
+        linkName2: "Project Code"
       },
       {
         id: 3,
