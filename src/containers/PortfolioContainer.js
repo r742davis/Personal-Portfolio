@@ -14,8 +14,8 @@ import Projects from "../components/Pages/Projects/Projects";
 import profile from "../images/Richard-cropped.jpeg";
 
 //---Project Photos---//
-import project_1 from "../images/harness-wealth-test.png";
-import project_2 from "../images/bear.jpg";
+import project_2 from "../images/harness-wealth-test.png";
+import project_1 from "../images/mug_club.png";
 import project_3 from "../images/retro-computers.jpg";
 import project_4 from "../images/wine.jpg";
 // import project_5 from "../images/traveleritis.jpg";
@@ -35,7 +35,7 @@ class PortfolioContainer extends Component {
       {
         id: 1,
         name: "Mug Club App",
-        image: `${project_2}`,
+        image: `${project_1}`,
         alt: "mug club bear",
         description:
           "The Madison Bear Garden needed a better way to track their Mug Club members. I developed a mobile-friendly web app that will help them track their members' Mug Club progress using a Heroku-hosted MongoDB database.",
@@ -48,10 +48,10 @@ class PortfolioContainer extends Component {
       {
         id: 2,
         name: "Harness Wealth Landing Page",
-        image: `${project_1}`,
+        image: `${project_2}`,
         alt: "Harness Wealth Landing Page",
         description:
-          "A React.js landing page web app created for Harness Wealth, a fintech startup.",
+          "A mobile-responsive landing page web app created for Harness Wealth, a fintech startup.",
         tech: "HTML5, CSS3",
         link1: "https://harness-wealth-code-test.herokuapp.com/index.html",
         link2: "https://github.com/r742davis/Harness-Wealth-Code-Test",
@@ -138,6 +138,9 @@ class PortfolioContainer extends Component {
 
     fetch("https://arcane-brushlands-71780.herokuapp.com/wines", {mode: 'no-cors'})
     .then(res => console.log('Woke up Vie Du Vin app'))
+
+    fetch("https://bearmugclub.herokuapp.com/", {mode: 'no-cors'})
+    .then(res => console.log('Woke up Mug Club app'))
 
   }
 
