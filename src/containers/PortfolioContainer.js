@@ -33,7 +33,7 @@ class PortfolioContainer extends Component {
       "https://drive.google.com/file/d/1ixD7x87Ylstg0fItq8wzipvVtHf-sNo1/view?usp=sharing",
     projects: [
       {
-        id: 1,
+        id: 2,
         name: "Harness Wealth Landing Page",
         image: `${project_1}`,
         alt: "Harness Wealth Landing Page",
@@ -46,16 +46,16 @@ class PortfolioContainer extends Component {
         linkName2: "Project Code"
       },
       {
-        id: 2,
+        id: 1,
         name: "Mug Club App",
         image: `${project_2}`,
         alt: "mug club bear",
         description:
-          "The Madison Bear Garden needed a better way to track their Mug Club members compared to their current system: a laptop and Excel spreadsheet. I developed a mobile-friendly web app that will help them track their members' Mug Club progress using a remote MongoDB database.",
-        tech: "React.js, Express.js, Node.js, MongoDB, Heroku",
-        link1: "https://github.com/r742davis/mug_club",
+          "The Madison Bear Garden needed a better way to track their Mug Club members. I developed a mobile-friendly web app that will help them track their members' Mug Club progress using a Heroku-hosted MongoDB database.",
+        tech: "React.js, Express.js, Node.js, MongoDB, Sass, Heroku",
+        link1: "https://bearmugclub.herokuapp.com/",
         link2: "https://github.com/r742davis/mug_club",
-        linkName1: "Mug Club Website",
+        linkName1: "Website",
         linkName2: "GitHub - Project Code"
       },
       {

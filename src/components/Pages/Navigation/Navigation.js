@@ -3,7 +3,6 @@ import "./Navigation.css";
 import "./Burger.css";
 import Burger from "@animated-burgers/burger-squeeze";
 
-
 class Navigation extends Component {
   state = {
     burgerOpen: false
@@ -36,7 +35,12 @@ class Navigation extends Component {
             <a href="#projects" className={navLink}>
               Projects
             </a>
-            <a href={this.props.resumeLink} className={navLink} target="_blank" rel="noopener noreferrer" >
+            <a
+              href={this.props.resumeLink}
+              className={navLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Resume
             </a>
             <a href="#contact" className={navLink}>
