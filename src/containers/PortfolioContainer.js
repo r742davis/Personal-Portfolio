@@ -38,7 +38,7 @@ class PortfolioContainer extends Component {
         image: `${project_1}`,
         alt: "mug club bear",
         description:
-          "The Madison Bear Garden needed a better way to track their Mug Club members. I developed a mobile-friendly web app that will help them track their members' Mug Club progress using a Heroku-hosted MongoDB database.",
+          "The Madison Bear Garden needed a better way to track their Mug Club members. I developed a mobile-friendly web app that will help them track their members' Mug Club progress using a Heroku-hosted MongoDB database. Test email: test1@gmail.com - Test password: test",
         tech: "React.js, Express.js, Node.js, MongoDB, Sass, Heroku",
         link1: "https://bearmugclub.herokuapp.com/",
         link2: "https://github.com/r742davis/mug_club",
