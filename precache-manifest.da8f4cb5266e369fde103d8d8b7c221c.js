@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "8d54b1bbead6f3e7f3e2",
+    "revision": "de6e8d1b84d15940e6ee",
     "url": "/static/css/main.7dce20ff.chunk.css"
   },
   {
-    "revision": "8d54b1bbead6f3e7f3e2",
-    "url": "/static/js/main.abec40d1.chunk.js"
+    "revision": "de6e8d1b84d15940e6ee",
+    "url": "/static/js/main.c0a339a7.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -72,8 +72,8 @@ self.__precacheManifest = [
     "url": "/static/media/harness-wealth-test.1f8a7140.png"
   },
   {
-    "revision": "21fd6da0996dbae479aca80014cb0cb1",
-    "url": "/static/media/bear.21fd6da0.jpg"
+    "revision": "4dcb840e72b7ba022c42af6c89d50d09",
+    "url": "/static/media/mug_club.4dcb840e.png"
   },
   {
     "revision": "966d21bcc9e115ce2bf7ac8e4bd157ed",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/static/media/arrow_right.8ef6a08c.svg"
   },
   {
-    "revision": "516c9d83d89df35474c8600efbfe152d",
+    "revision": "38061caa053b94bfd079d0a8a9bbaaed",
     "url": "/index.html"
   }
 ];
