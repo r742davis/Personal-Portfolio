@@ -10,7 +10,7 @@ const Backdrop = (props) => {
       )}
 
       {props.navOpen && (
-        <div className={`${classes.Backdrop} ${classes.Nav}`} onClick={props.clicked}></div>
+        <div className={`${classes.Backdrop} ${classes.Nav}`} onClick={() => props.toggleNav()}></div>
       )}
     </>
   ) 

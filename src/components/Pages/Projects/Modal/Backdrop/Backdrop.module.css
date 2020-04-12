@@ -10,4 +10,5 @@
   background-color: rgba(0, 0, 0, 0.5); }
 
 .Nav {
-  background: transparent; }
+  background: transparent;
+  z-index: 90; }

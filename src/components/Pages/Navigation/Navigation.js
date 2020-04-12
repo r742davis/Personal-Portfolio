@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import "./Navigation.css";
 import "./Burger.css";
+import Backdrop from "../Projects/Modal/Backdrop/Backdrop";
 import Burger from "@animated-burgers/burger-squeeze";
 
 class Navigation extends Component {
   state = {
-    burgerOpen: false
+    navOpen: false
   };
 
-  toggleBurger = () => {
+  toggleNav = () => {
     this.setState({
-      burgerOpen: !this.state.burgerOpen
+      navOpen: !this.state.navOpen
     });
   };
 
@@ -24,8 +25,8 @@ class Navigation extends Component {
 
     return (
       <>
-        {this.state.burgerOpen && (
-          <nav onClick={() => this.toggleBurger()} className={navClass}>
+        {this.state.navOpen && (
+          <nav onClick={() => this.toggleNav()} className={navClass}>
             <a href="#about" className={navLink}>
               About
             </a>
@@ -46,9 +47,12 @@ class Navigation extends Component {
           </nav>
         )}
         <nav className="nav__navbar">
+          <Backdrop 
+            navOpen={this.state.navOpen}
+            toggleNav={this.toggleNav}/>
           <Burger
-            isOpen={this.state.burgerOpen}
-            onClick={() => this.toggleBurger()}
+            isOpen={this.state.navOpen}
+            onClick={() => this.toggleNav()}
           />
         </nav>
       </>
