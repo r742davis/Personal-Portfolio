@@ -1,29 +1,33 @@
-import React from 'react';
+import React from "react";
 
-import './Contact.css';
-import {
-  MDBCard,
-  MDBCardBody,
-  MDBCardTitle,
-} from 'mdbreact';
+import "./Contact.css";
+import { MDBCard, MDBCardBody, MDBCardTitle } from "mdbreact";
 
 const contact = () => {
   return (
     <section id="contact">
-      <h1 className="contact__title" data-aos="fade-up">Contact Me</h1>
+      <h1 className="contact__title" data-aos="fade-up">
+        Contact Me
+      </h1>
       <div className="contact__card-container" data-aos="fade-up">
-        <MDBCard className="contact__card box-shadow">
-          <MDBCardBody>
-            <i className="fab fa-github contact-icon"></i>
-            <MDBCardTitle>GITHUB</MDBCardTitle>
-            <p><a href="https://github.com/r742davis">r742davis</a></p>
-          </MDBCardBody>
-        </MDBCard>
         <MDBCard className="contact__card box-shadow">
           <MDBCardBody>
             <i className="fas fa-at contact-icon"></i>
             <MDBCardTitle>EMAIL</MDBCardTitle>
-            <p><a href="mailto:richardtrowdavis@gmail.com">richardtrowdavis@gmail.com</a></p>
+            <p>
+              <a href="mailto:richardtrowdavis@gmail.com">
+                richardtrowdavis@gmail.com
+              </a>
+            </p>
+          </MDBCardBody>
+        </MDBCard>
+        <MDBCard className="contact__card box-shadow">
+          <MDBCardBody>
+            <i className="fab fa-github contact-icon"></i>
+            <MDBCardTitle>GITHUB</MDBCardTitle>
+            <p>
+              <a href="https://github.com/r742davis">r742davis</a>
+            </p>
           </MDBCardBody>
         </MDBCard>
         <MDBCard className="contact__card social-card box-shadow">
@@ -45,7 +49,7 @@ const contact = () => {
         </MDBCard>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default contact;
