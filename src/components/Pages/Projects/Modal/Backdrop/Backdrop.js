@@ -2,8 +2,18 @@ import React from 'react';
 
 import classes from './Backdrop.module.css';
 
-const backdrop = (props) => (
-  props.modalOpen ? <div className={classes.Backdrop} onClick={props.clicked}></div> : null
-);
+const Backdrop = (props) => {
+  return (
+    <>
+      {props.modalOpen && (
+        <div className={`${classes.Backdrop} ${classes.Modal}`} onClick={props.clicked}></div>
+      )}
 
-export default backdrop;
+      {props.navOpen && (
+        <div className={`${classes.Backdrop} ${classes.Nav}`} onClick={props.clicked}></div>
+      )}
+    </>
+  ) 
+};
+
+export default Backdrop;

@@ -18,9 +18,6 @@ class Navigation extends Component {
     const navClass = this.props.scrolled
       ? "nav__container nav__slide-in-left"
       : "nav__container nav__slide-in-left nav__container--scrolled box-shadow";
-    // const burgerScrolled = this.props.scrolled
-    //   ? "burger burger-lines"
-    //   : "burger burger-lines scrolled";
     const navLink = this.props.scrolled
       ? "nav__link"
       : "nav__link nav__link--scrolled";
