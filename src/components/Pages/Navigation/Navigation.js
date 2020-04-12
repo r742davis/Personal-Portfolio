@@ -25,6 +25,9 @@ class Navigation extends Component {
 
     return (
       <>
+        <Backdrop 
+            navOpen={this.state.navOpen}
+            toggleNav={this.toggleNav}/>
         {this.state.navOpen && (
           <nav onClick={() => this.toggleNav()} className={navClass}>
             <a href="#about" className={navLink}>
@@ -46,10 +49,8 @@ class Navigation extends Component {
             </a>
           </nav>
         )}
+
         <nav className="nav__navbar">
-          <Backdrop 
-            navOpen={this.state.navOpen}
-            toggleNav={this.toggleNav}/>
           <Burger
             isOpen={this.state.navOpen}
             onClick={() => this.toggleNav()}

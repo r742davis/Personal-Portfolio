@@ -10,8 +10,9 @@
   left: 0;
   overflow-x: hidden;
   padding-top: 5rem;
-  transition: 0.5s;
-  z-index: 100; }
+  transition: 0.25s;
+  border: 1px solid red;
+  z-index: 120; }
 
 @media (max-width: 600px) {
   .nav__container {
@@ -25,25 +26,14 @@
 .nav__container--scrolled {
   background: whitesmoke; }
 
-.nav__hamburger-menu {
-  color: var(--secondary) !important;
-  font-size: 2rem;
-  font-weight: 200;
-  margin: 1rem;
-  transition: 0.25s; }
-
-.nav__hamburger-menu:hover {
-  color: var(--secondary) !important; }
-
 .nav__navbar {
   background: transparent;
   overflow: hidden;
   position: fixed;
-  width: 100%;
   top: 0;
   margin: 2rem;
-  z-index: 2;
-  transition: 0.25s; }
+  transition: 0.25s;
+  z-index: 120; }
 
 @media (max-width: 600px) {
   .nav__navbar {
@@ -56,8 +46,8 @@
   font-size: 2rem;
   display: block;
   transition: 0.25s;
-  z-index: 1;
-  transition: 0.25s; }
+  z-index: 120;
+  cursor: pointer; }
 
 .nav__link:hover {
   color: var(--primary); }
@@ -75,6 +65,9 @@
 
 .nav__link--scrolled {
   color: var(--primary); }
+
+.nav__link--scrolled:hover {
+  color: var(--secondary); }
 
 .nav__slide-in-left {
   -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;

@@ -6,11 +6,11 @@ const Backdrop = (props) => {
   return (
     <>
       {props.modalOpen && (
-        <div className={`${classes.Backdrop} ${classes.Modal}`} onClick={props.clicked}></div>
+        <div className={`${classes.Backdrop} ${classes.ModalBackdrop}`} onClick={props.clicked}></div>
       )}
 
       {props.navOpen && (
-        <div className={`${classes.Backdrop} ${classes.Nav}`} onClick={() => props.toggleNav()}></div>
+        <div className={`${classes.Backdrop} ${classes.NavBackdrop}`} onClick={() => props.toggleNav()}></div>
       )}
     </>
   ) 

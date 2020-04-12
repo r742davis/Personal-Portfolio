@@ -12,8 +12,9 @@
   left: 0;
   overflow-x: hidden;
   padding-top: 5rem;
-  transition: 0.5s;
-  z-index: 100;
+  transition: 0.25s;
+  border: 1px solid red;
+  z-index: 120;
   @include respond-to("small") {
     height: 35%;
     width: 21%;
@@ -28,26 +29,16 @@
 .nav__container--scrolled {
   background: whitesmoke;
 }
-.nav__hamburger-menu {
-  color: var(--secondary) !important;
-  font-size: 2rem;
-  font-weight: 200;
-  margin: 1rem;
-  transition: 0.25s;
-  &:hover {
-    color: var(--secondary) !important;
-  }
-}
+
 
 .nav__navbar {
   background: transparent;
   overflow: hidden;
   position: fixed;
-  width: 100%;
   top: 0;
   margin: 2rem;
-  z-index: 2;
   transition: 0.25s;
+  z-index: 120;
   @include respond-to("small") {
     margin-left: 2rem;
   }
@@ -60,9 +51,8 @@
   font-size: 2rem;
   display: block;
   transition: 0.25s;
-  z-index: 1;
-  transition: 0.25s;
-
+  z-index: 120;
+  cursor: pointer;
   &:hover {
     color: var(--primary);
   }
@@ -79,6 +69,9 @@
 
 .nav__link--scrolled {
   color: var(--primary);
+  &:hover {
+    color: var(--secondary);
+  }
 }
 
 .nav__slide-in-left {

@@ -2,13 +2,13 @@
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 100;
   left: 0;
-  top: 0; }
+  top: 0;
+  z-index: 100; }
 
-.Modal {
-  background-color: rgba(0, 0, 0, 0.5); }
+.ModalBackdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 130; }
 
-.Nav {
-  background: transparent;
-  z-index: 90; }
+.NavBackdrop {
+  background: transparent; }
