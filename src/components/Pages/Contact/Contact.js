@@ -1,7 +1,11 @@
 import React from "react";
 
 import "./Contact.css";
-import { MDBCard, MDBCardBody, MDBCardTitle } from "mdbreact";
+import { 
+  MDBCard, 
+  MDBCardBody, 
+  MDBCardTitle 
+} from "mdbreact";
 
 const contact = () => {
   return (

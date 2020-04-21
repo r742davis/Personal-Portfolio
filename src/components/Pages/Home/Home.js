@@ -19,7 +19,7 @@ const home = props => {
     <section id="home" onScroll={props.handleScroll}>
       <div className="home-container">
         <div className="tagline-container">
-          <h2>Hello there! My name is</h2>
+          <h2>Hello! My name is</h2>
           <h2>Richard</h2>
           <h2>Davis</h2>
           <a href="#contact">Contact</a>
