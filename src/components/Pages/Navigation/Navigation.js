@@ -17,8 +17,8 @@ class Navigation extends Component {
 
   render() {
     const navClass = this.props.scrolled
-      ? "nav__container nav__slide-in-left"
-      : "nav__container nav__slide-in-left nav__container--scrolled box-shadow";
+      ? "nav__container nav__scale-in-tl"
+      : "nav__container nav__scale-in-tl nav__container--scrolled box-shadow";
     const navLink = this.props.scrolled
       ? "nav__link"
       : "nav__link nav__link--scrolled";
