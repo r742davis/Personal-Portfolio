@@ -7,7 +7,7 @@ import {
   MDBCardTitle 
 } from "mdbreact";
 
-const contact = () => {
+const Contact = () => {
   return (
     <section id="contact">
       <h1 className="contact__title" data-aos="fade-up">
@@ -56,4 +56,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;
