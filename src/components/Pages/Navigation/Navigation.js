@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "./Navigation.css";
 import "./Burger.css";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Backdrop from "../Projects/Modal/Backdrop/Backdrop";
 import NavBar from "./NavBar";
 import Burger from "@animated-burgers/burger-squeeze";
+import CSSTransition from "react-transition-group";
 
 class Navigation extends Component {
   state = {
@@ -18,20 +18,18 @@ class Navigation extends Component {
   };
 
   render() {
+    const { navOpen } = this.state;
     return (
       <>
-        <Backdrop navOpen={this.state.navOpen} toggleNav={this.toggleNav} />
+        <Backdrop navOpen={navOpen} toggleNav={this.toggleNav} />
         <NavBar
           scrolled={this.props.scrolled}
           toggleNav={this.toggleNav}
-          navOpen={this.state.navOpen}
+          navOpen={navOpen}
           resumeLink={this.props.resumeLink}
         />
         <nav className="nav__navbar">
-          <Burger
-            isOpen={this.state.navOpen}
-            onClick={() => this.toggleNav()}
-          />
+          <Burger isOpen={navOpen} onClick={() => this.toggleNav()} />
         </nav>
       </>
     );

@@ -11,7 +11,6 @@
     "mdbreact": "^4.25.5",
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
-    "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.13.1",
     "react-rotating-text": "^1.4.1",
     "react-router-dom": "^5.1.2",

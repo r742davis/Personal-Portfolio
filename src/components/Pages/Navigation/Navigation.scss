@@ -3,8 +3,7 @@
 .nav__container {
   background: white;
   position: fixed;
-  // border-bottom-right-radius: 1rem;
-  // border-top-right-radius: 1rem;
+  border-radius: 0.5rem;
   height: 40%;
   width: 300px;
   // margin-top: 1rem;
@@ -74,9 +73,6 @@
   animation: scale-in-tl 0.2s cubic-bezier(0.25, 0.46, 0.2, 0.94) both;
 }
 
-.nav__container-exit {
-
-}
 
 
 @-webkit-keyframes scale-in-tl {
