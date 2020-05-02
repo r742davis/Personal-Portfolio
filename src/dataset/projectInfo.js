@@ -12,12 +12,12 @@ export const projectInfo = [
     image: `${project_1}`,
     alt: "Sick Fits Website Image",
     description:
-      "A mobile-responsive landing page web app created for Harness Wealth, a fintech startup.",
+      "**Under Construction**",
     tech: "React, GraphQL, Apollo, Yoga, Styled Components, Stripe",
-    link1: "https://harness-wealth-code-test.herokuapp.com/index.html",
-    link2: "https://github.com/r742davis/Harness-Wealth-Code-Test",
+    link1: "",
+    link2: "https://github.com/r742davis/sick-fits",
     linkName1: "Website",
-    linkName2: "Project Code"
+    linkName2: "GitHub"
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ export const projectInfo = [
     link1: "https://bearmugclub.herokuapp.com/",
     link2: "https://github.com/r742davis/mug_club",
     linkName1: "Website",
-    linkName2: "GitHub - Project Code"
+    linkName2: "GitHub"
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ export const projectInfo = [
     link1: "https://harness-wealth-code-test.herokuapp.com/index.html",
     link2: "https://github.com/r742davis/Harness-Wealth-Code-Test",
     linkName1: "Website",
-    linkName2: "Project Code"
+    linkName2: "GitHub"
   },
   {
     id: 4,
@@ -53,9 +53,9 @@ export const projectInfo = [
     description:
       "I wanted to challenge myself to build a portfolio website using React and SASS. I built this portfolio using industry conventions, such as using functional components, separating out SCSS into component-specific files, and programmatically generating multiple components.",
     tech: "React, SASS, Bootstrap 4",
-    link1: "www.richardtrowdavis.com",
-    link2: "https://github.com/r742davis/portfolio_1",
-    linkName1: "Project Code",
+    link1: "https://github.com/r742davis/portfolio_1",
+    link2: "",
+    linkName1: "GitHub",
     linkName2: ""
   },
   {
@@ -68,8 +68,8 @@ export const projectInfo = [
     tech: "React, Redux, JWTs, MongoDB, Express.js, Node.js",
     link1: "https://arcane-brushlands-71780.herokuapp.com/wines",
     link2: "https://github.com/r742davis/vie_du_vin_frontend",
-    linkName1: "Vie Du Vin Website",
-    linkName2: "Project Code"
+    linkName1: "Website",
+    linkName2: "GitHub"
   },
   // {
   //   id: 5,
@@ -99,7 +99,7 @@ export const projectInfo = [
     link1: "https://bakersdozen-project.herokuapp.com/bakersdozen",
     link2: "https://github.com/r742davis/Project_2",
     link3: "",
-    linkName1: "Baker's Dozen Website",
+    linkName1: "Website",
     linkName2: "Project Code",
     linkName3: ""
   }

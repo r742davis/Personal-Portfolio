@@ -16,10 +16,10 @@ const renderProjects = ({ projects, modalOpen, closeModal, modalNumber }) =>
           alt={project.alt}
           description={project.description}
           tech={project.tech}
-          link1={project.link1}
-          link2={project.link2}
-          linkName1={project.linkName1}
-          linkName2={project.linkName2}
+          linkOne={project.link1}
+          linkTwo={project.link2}
+          nameOne={project.linkName1}
+          nameTwo={project.linkName2}
           closeModal={closeModal}
         />
       )
