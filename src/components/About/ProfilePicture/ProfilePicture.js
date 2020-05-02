@@ -1,13 +1,11 @@
 import React from "react";
 
-const profilePicture = props => {
-  return (
-    <img
-      src={props.profile}
-      className="about__profile"
-      alt="profile of richard"
-    />
-  );
-};
+const ProfilePicture = (props) => (
+  <img
+    src={props.profile}
+    className="about__profile"
+    alt="profile of richard davis"
+  />
+);
 
-export default profilePicture;
+export default ProfilePicture;

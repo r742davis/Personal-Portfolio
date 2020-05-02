@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
-const Description = (props) => {
-  return (
-    <div className={`${props.name}__description`}>
-      {props.children}
-    </div>
-  )
-};
+const Description = (props) => (
+  <div className={`${props.name}__description`}>{props.children}</div>
+);
 
 export default Description;
