@@ -6,7 +6,7 @@ import AboutPage from "../pages/about";
 import Contact from "../components/Contact/Contact";
 import HomePage from "../pages/home";
 import NavigationPage from "../pages/navigation";
-import Projects from "../components/Projects/Projects";
+import ProjectsPage from "../pages/projects";
 //---Profile Picture---//
 import profile from "../images/ProfilePic/Richard-cropped.jpeg";
 //---Project Photos---//
@@ -181,7 +181,7 @@ class PortfolioContainer extends React.Component {
           profile={this.state.profilePicture}
           resumeLink={this.state.resumeLink}
         />
-        <Projects
+        <ProjectsPage
           modalOpen={this.state.modalOpen}
           modalNumber={this.state.modalNumber}
           showBackdrop={this.state.showBackdrop}
