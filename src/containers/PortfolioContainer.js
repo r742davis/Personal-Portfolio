@@ -2,11 +2,12 @@ import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 //---Component Imports---//
-import About from "../components/Pages/About/About";
-import Contact from "../components/Pages/Contact/Contact";
-import Home from "../components/Pages/Home/Home";
-import Navigation from "../components/Pages/Navigation/Navigation";
-import Projects from "../components/Pages/Projects/Projects";
+import About from "../components/About/About";
+import Contact from "../components/Contact/Contact";
+import Home from "../components/Home/Home";
+import HomePage from "../pages/home";
+import Navigation from "../components/Navigation/Navigation";
+import Projects from "../components/Projects/Projects";
 //---Profile Picture---//
 import profile from "../images/ProfilePic/Richard-cropped.jpeg";
 //---Project Photos---//
@@ -174,9 +175,12 @@ class PortfolioContainer extends React.Component {
           toggle={this.toggleMenu}
           resumeLink={this.state.resumeLink}
         />
-        <Home 
+        <HomePage 
           resumeLink={this.state.resumeLink}
         />
+        {/* <Home 
+          resumeLink={this.state.resumeLink}
+        /> */}
         <About
           profile={this.state.profilePicture}
           resumeLink={this.state.resumeLink}

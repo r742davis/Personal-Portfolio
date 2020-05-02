@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "../Skills.css";
 
-import angular from "../../../../../images/Icons/angular.png";
-import bootstrap from "../../../../../images/Icons/bootstrap.png";
-import javascript from "../../../../../images/Icons/javascript.png";
-import jquery from "../../../../../images/Icons/jquery.png";
-import react from "../../../../../images/Icons/react.png";
-import redux from "../../../../../images/Icons/redux.png";
-import sass from "../../../../../images/Icons/sass.svg";
+import angular from "../../../../images/Icons/angular.png";
+import bootstrap from "../../../../images/Icons/bootstrap.png";
+import javascript from "../../../../images/Icons/javascript.png";
+import jquery from "../../../../images/Icons/jquery.png";
+import react from "../../../../images/Icons/react.png";
+import redux from "../../../../images/Icons/redux.png";
+import sass from "../../../../images/Icons/sass.svg";
 const uniqid = require("uniqid");
 
 const frontend = () => {

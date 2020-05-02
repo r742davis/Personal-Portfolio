@@ -2,13 +2,13 @@ import React, { useState } from "react";
 
 import "../Skills.css";
 
-import express from "../../../../../images/Icons/express.png";
-import mongo from "../../../../../images/Icons/mongodb.png";
-import node from "../../../../../images/Icons/node.png";
-import postgresql from "../../../../../images/Icons/postgresql.png";
-import graphql from "../../../../../images/Icons/graphql.png";
-import ruby from "../../../../../images/Icons/ruby.png";
-import rails from "../../../../../images/Icons/ruby_on_rails.png";
+import express from "../../../../images/Icons/express.png";
+import mongo from "../../../../images/Icons/mongodb.png";
+import node from "../../../../images/Icons/node.png";
+import postgresql from "../../../../images/Icons/postgresql.png";
+import graphql from "../../../../images/Icons/graphql.png";
+import ruby from "../../../../images/Icons/ruby.png";
+import rails from "../../../../images/Icons/ruby_on_rails.png";
 const uniqid = require("uniqid");
 
 const backend = () => {

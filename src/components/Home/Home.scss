@@ -1,4 +1,4 @@
-@import "../../../_mixins.scss";
+@import "../../_mixins.scss";
 
 #home {
   width: 100%;
@@ -6,7 +6,7 @@
 }
 
 .home-container {
-  background: url("../../../images/ProjectPics/retro-computers.jpg") no-repeat center center;
+  // background: url("../../images/ProjectPics/retro-computers.jpg") no-repeat center center;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.75);
   background-blend-mode: multiply;
