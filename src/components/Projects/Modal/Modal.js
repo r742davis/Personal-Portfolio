@@ -23,7 +23,7 @@ const linkCheck = ({ linkOne, linkTwo, nameOne, nameTwo }) => {
   }
 };
 
-const modal = (props) => {
+const Modal = (props) => {
   return (
     <>
       <div key={uniqid()} className="modal">
@@ -45,4 +45,4 @@ const modal = (props) => {
   );
 };
 
-export default modal;
+export default Modal;
