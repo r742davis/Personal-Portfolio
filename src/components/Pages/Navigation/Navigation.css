@@ -7,7 +7,7 @@
   left: 20px;
   overflow-x: hidden;
   padding-top: 5rem;
-  transition: 0.25s;
+  transition: 0.1s;
   z-index: 120; }
 
 @media (max-width: 600px) {
@@ -65,23 +65,9 @@
 .nav__link--scrolled:hover {
   color: var(--secondary); }
 
-.nav__scale-in-tl {
-  -webkit-animation: scale-in-tl 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: scale-in-tl 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-
-.example-enter {
-  opacity: 0.01; }
-
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in; }
-
-.example-leave {
-  opacity: 1; }
-
-.example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in; }
+.nav__animation {
+  -webkit-animation: scale-in-tl 0.2s cubic-bezier(0.25, 0.2, 0.45, 0.94) both;
+  animation: scale-in-tl 0.2s cubic-bezier(0.25, 0.46, 0.2, 0.94) both; }
 
 @-webkit-keyframes scale-in-tl {
   0% {

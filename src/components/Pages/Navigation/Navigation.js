@@ -1,55 +1,32 @@
 import React, { Component } from "react";
 import "./Navigation.css";
 import "./Burger.css";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Backdrop from "../Projects/Modal/Backdrop/Backdrop";
+import NavBar from "./NavBar";
 import Burger from "@animated-burgers/burger-squeeze";
 
 class Navigation extends Component {
   state = {
-    navOpen: false
+    navOpen: false,
   };
 
   toggleNav = () => {
     this.setState({
-      navOpen: !this.state.navOpen
+      navOpen: !this.state.navOpen,
     });
   };
 
   render() {
-    const navClass = this.props.scrolled
-      ? "nav__container nav__scale-in-tl"
-      : "nav__container nav__scale-in-tl nav__container--scrolled box-shadow";
-    const navLink = this.props.scrolled
-      ? "nav__link"
-      : "nav__link nav__link--scrolled";
-
     return (
       <>
-        <Backdrop 
-            navOpen={this.state.navOpen}
-            toggleNav={this.toggleNav}/>
-        {this.state.navOpen && (
-          <nav onClick={() => this.toggleNav()} className={navClass}>
-            <a href="#about" className={navLink}>
-              About
-            </a>
-            <a href="#projects" className={navLink}>
-              Projects
-            </a>
-            <a
-              href={this.props.resumeLink}
-              className={navLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Resume
-            </a>
-            <a href="#contact" className={navLink}>
-              Contact
-            </a>
-          </nav>
-        )}
-
+        <Backdrop navOpen={this.state.navOpen} toggleNav={this.toggleNav} />
+        <NavBar
+          scrolled={this.props.scrolled}
+          toggleNav={this.toggleNav}
+          navOpen={this.state.navOpen}
+          resumeLink={this.props.resumeLink}
+        />
         <nav className="nav__navbar">
           <Burger
             isOpen={this.state.navOpen}
