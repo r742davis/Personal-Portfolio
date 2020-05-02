@@ -1,27 +1,23 @@
-import React, { Component } from "react";
-
+import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 //---Component Imports---//
 import About from "../components/Pages/About/About";
 import Contact from "../components/Pages/Contact/Contact";
 import Home from "../components/Pages/Home/Home";
 import Navigation from "../components/Pages/Navigation/Navigation";
 import Projects from "../components/Pages/Projects/Projects";
-
 //---Profile Picture---//
-import profile from "../images/Richard-cropped.jpeg";
-
+import profile from "../images/ProfilePic/Richard-cropped.jpeg";
 //---Project Photos---//
-import project_2 from "../images/harness-wealth-test.png";
-import project_1 from "../images/mug_club.png";
-import project_3 from "../images/retro-computers.jpg";
-import project_4 from "../images/wine.jpg";
-// import project_5 from "../images/traveleritis.jpg";
-// import project_6 from "../images/bakersdozen.jpg";
+import project_1 from "../images/ProjectPics/sick-fits.png";
+import project_2 from "../images/ProjectPics/mug_club.png";
+import project_3 from "../images/ProjectPics/harness-wealth-test.png";
+import project_4 from "../images/ProjectPics/retro-computers.jpg";
+import project_5 from "../images/ProjectPics/wine.jpg";
+import project_6 from "../images/ProjectPics/bakersdozen.jpg";
 
-class PortfolioContainer extends Component {
+class PortfolioContainer extends React.Component {
   state = {
     modalOpen: false,
     modalNumber: 0,
@@ -34,8 +30,21 @@ class PortfolioContainer extends Component {
     projects: [
       {
         id: 1,
-        name: "Mug Club App",
+        name: "Sick Fits",
         image: `${project_1}`,
+        alt: "Sick Fits Website Image",
+        description:
+          "A mobile-responsive landing page web app created for Harness Wealth, a fintech startup.",
+        tech: "React, GraphQL, Apollo, Yoga, Styled Components, Stripe",
+        link1: "https://harness-wealth-code-test.herokuapp.com/index.html",
+        link2: "https://github.com/r742davis/Harness-Wealth-Code-Test",
+        linkName1: "Website",
+        linkName2: "Project Code"
+      },
+      {
+        id: 2,
+        name: "Mug Club App",
+        image: `${project_2}`,
         alt: "mug club bear",
         description:
           "The Madison Bear Garden needed a better way to track their Mug Club members. I developed a mobile-friendly web app that will help them track their members' Mug Club progress using a Heroku-hosted MongoDB database. Test email: test1@gmail.com - Test password: test",
@@ -46,9 +55,9 @@ class PortfolioContainer extends Component {
         linkName2: "GitHub - Project Code"
       },
       {
-        id: 2,
+        id: 3,
         name: "Harness Wealth Landing Page",
-        image: `${project_2}`,
+        image: `${project_3}`,
         alt: "Harness Wealth Landing Page",
         description:
           "A mobile-responsive landing page web app created for Harness Wealth, a fintech startup.",
@@ -59,9 +68,9 @@ class PortfolioContainer extends Component {
         linkName2: "Project Code"
       },
       {
-        id: 3,
+        id: 4,
         name: "Portfolio Website",
-        image: `${project_3}`,
+        image: `${project_4}`,
         alt: "computers on a desktop",
         description:
           "I wanted to challenge myself to build a portfolio website using React and SASS. I built this portfolio using industry conventions, such as using functional components, separating out SCSS into component-specific files, and programmatically generating multiple components.",
@@ -72,9 +81,9 @@ class PortfolioContainer extends Component {
         linkName2: ""
       },
       {
-        id: 4,
+        id: 5,
         name: "Vie Du Vin",
-        image: `${project_4}`,
+        image: `${project_5}`,
         alt: "wines glass and bottle with cheese and grapes",
         description:
           "This was my final project for the General Assembly immersive web development program. I built a full-stack personal wine tracker app that saves your wine lists according to the user who signs up and logs in.",
@@ -87,7 +96,7 @@ class PortfolioContainer extends Component {
       // {
       //   id: 5,
       //   name: "Traveleritis",
-      //   image: `${project_5}`,
+      //   image: `${project_7}`,
       //   alt: "travel website",
       //   description:
       //     "This was a collaborative project at General Assembly where we built a travel planning site based around a custom API. The app is designed to help you plan trips and save them depending on the user authentication.",
@@ -100,22 +109,22 @@ class PortfolioContainer extends Component {
       //   linkName2: "Project Code",
       //   linkName3: ""
       // },
-      // {
-      //   id: 6,
-      //   name: "Baker's Dozen",
-      //   image: `${project_6}`,
-      //   alt: "baker's dozen website",
-      //   description:
-      //     "Baker's Dozen is an app where you can keep your favorite bakedgoods recipes and have them displayed beautifully. I created this project during my time at General Assembly and built in full authentication into the app.",
-      //   tech:
-      //     "JavaScript, Express.js, Mongoose, MongoDB, NodeJS, EJS, HTML5, CSS3",
-      //   link1: "https://bakersdozen-project.herokuapp.com/bakersdozen",
-      //   link2: "https://github.com/r742davis/Project_2",
-      //   link3: "",
-      //   linkName1: "Baker's Dozen Website",
-      //   linkName2: "Project Code",
-      //   linkName3: ""
-      // }
+      {
+        id: 6,
+        name: "Baker's Dozen",
+        image: `${project_6}`,
+        alt: "baker's dozen website",
+        description:
+          "Baker's Dozen is an app where you can keep your favorite bakedgoods recipes and have them displayed beautifully. I created this project during my time at General Assembly and built in full authentication into the app.",
+        tech:
+          "JavaScript, Express.js, Mongoose, MongoDB, NodeJS, EJS, HTML5, CSS3",
+        link1: "https://bakersdozen-project.herokuapp.com/bakersdozen",
+        link2: "https://github.com/r742davis/Project_2",
+        link3: "",
+        linkName1: "Baker's Dozen Website",
+        linkName2: "Project Code",
+        linkName3: ""
+      }
     ]
   };
 
