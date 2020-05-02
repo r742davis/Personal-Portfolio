@@ -4,7 +4,6 @@ import "./Burger.css";
 import Backdrop from "../Projects/Modal/Backdrop/Backdrop";
 import NavBar from "./NavBar";
 import Burger from "@animated-burgers/burger-squeeze";
-import CSSTransition from "react-transition-group";
 
 class Navigation extends Component {
   state = {
