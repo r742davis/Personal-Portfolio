@@ -4,9 +4,8 @@ import "aos/dist/aos.css";
 //---Component Imports---//
 import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
-import Home from "../components/Home/Home";
 import HomePage from "../pages/home";
-import Navigation from "../components/Navigation/Navigation";
+import NavigationPage from "../pages/navigation";
 import Projects from "../components/Projects/Projects";
 //---Profile Picture---//
 import profile from "../images/ProfilePic/Richard-cropped.jpeg";
@@ -169,7 +168,7 @@ class PortfolioContainer extends React.Component {
   render() {
     return (
       <>
-        <Navigation
+        <NavigationPage
           isOpen={this.state.isOpen}
           scrolled={this.state.scrolled}
           toggle={this.toggleMenu}
@@ -178,9 +177,6 @@ class PortfolioContainer extends React.Component {
         <HomePage 
           resumeLink={this.state.resumeLink}
         />
-        {/* <Home 
-          resumeLink={this.state.resumeLink}
-        /> */}
         <About
           profile={this.state.profilePicture}
           resumeLink={this.state.resumeLink}
