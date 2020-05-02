@@ -2,7 +2,7 @@ import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 //---Component Imports---//
-import About from "../components/About/About";
+import AboutPage from "../pages/about";
 import Contact from "../components/Contact/Contact";
 import HomePage from "../pages/home";
 import NavigationPage from "../pages/navigation";
@@ -177,7 +177,7 @@ class PortfolioContainer extends React.Component {
         <HomePage 
           resumeLink={this.state.resumeLink}
         />
-        <About
+        <AboutPage
           profile={this.state.profilePicture}
           resumeLink={this.state.resumeLink}
         />
