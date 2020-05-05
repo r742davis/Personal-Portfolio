@@ -1,3 +1,4 @@
+import project_0 from "../images/ProjectPics/base-apparel.jpg";
 import project_1 from "../images/ProjectPics/sick-fits.png";
 import project_2 from "../images/ProjectPics/mug_club.png";
 import project_3 from "../images/ProjectPics/harness-wealth-test.png";
@@ -6,6 +7,19 @@ import project_5 from "../images/ProjectPics/wine.jpg";
 import project_6 from "../images/ProjectPics/bakersdozen.jpg";
 
 export const projectInfo = [
+  {
+    id: 0,
+    name: "Base Apparel",
+    image: `${project_0}`,
+    alt: "Base Apparel≈ Website Image",
+    description:
+      "**Under Construction**",
+    tech: "HTML, CSS, Sass, JavaScript, Photoshop",
+    linkOne: "",
+    linkTwo: "https://github.com/r742davis/Base-Apparel",
+    nameOne: "Website",
+    nameTwo: "GitHub"
+  },
   {
     id: 1,
     name: "Sick Fits",
