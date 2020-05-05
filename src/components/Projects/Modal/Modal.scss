@@ -1,4 +1,4 @@
-@import "../../../../_mixins.scss";
+@import "../../../_mixins.scss";
 
 .backdrop {
   position: fixed;
@@ -14,7 +14,7 @@
 .modal {
   position: fixed;
   z-index: 500;
-  background: whitesmoke;
+  background: white;
   border-radius: 0.5rem;
   display: block;
   margin: 0 auto;
@@ -37,13 +37,13 @@
 }
 
 .modal__close {
-  background: var(--primary);
+  // background: var(--primary);
   color: var(--primary);
   text-align: center;
   padding: 1rem;
   transition: 0.25s;
   & i {
-    color: white;
+    color: var(--primary);
     font-size: 3rem;
     vertical-align: middle;
     cursor: pointer;
@@ -89,7 +89,6 @@
   font-family: "Laro", serif;
 }
 
-
 .modal__button-container {
   display: flex;
   justify-content: space-between;
@@ -122,7 +121,6 @@
   & a {
     text-align: center;
   }
-  
 }
 
 //Animations

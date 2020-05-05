@@ -11,7 +11,7 @@
 .modal {
   position: fixed;
   z-index: 500;
-  background: whitesmoke;
+  background: white;
   border-radius: 0.5rem;
   display: block;
   margin: 0 auto;
@@ -33,14 +33,13 @@
   margin: 0 auto; }
 
 .modal__close {
-  background: var(--primary);
   color: var(--primary);
   text-align: center;
   padding: 1rem;
   transition: 0.25s; }
 
 .modal__close i {
-  color: white;
+  color: var(--primary);
   font-size: 3rem;
   vertical-align: middle;
   cursor: pointer; }
