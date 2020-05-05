@@ -8,11 +8,10 @@
   align-items: center;
   border-radius: 0.5rem;
   height: auto;
-  width: 90%;
+  width: 25rem;
   margin: 2rem;
   top: 4rem;
   overflow-x: hidden;
-  // padding-top: 4rem;
   box-shadow: 0 0.5rem 18px rgba(0, 0, 0, 0.2);
   z-index: 120;
   li {
@@ -21,14 +20,20 @@
     color: var(--primary);
     border-bottom: 2px solid #eef1f6;
     &:hover {
-      // color: white;
       background-color: #eef1f6;
       border-bottom: 2px solid #eef1f6;
+      @include respond-to("small") {
+        background-color: white;
+      }
     }
   }
   li:nth-child(4) {
     border: none;
-    
+  }
+  @include respond-to("small") {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -48,13 +53,27 @@
   border-bottom: 2px solid transparent;
   text-decoration: none;
   font-size: 2rem;
-  display: block;
+  display: flex;
+  align-items: center;
   transition: 0.25s;
   z-index: 120;
   cursor: pointer;
   animation: slide-in-blurred-left 0.5s cubic-bezier(0.23, 1, 0.32, 1) both;
   &:hover {
     color: inherit;
+  }
+  div {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  span {
+    width: auto;
+    height: auto;
+    margin-left: 1rem;
   }
 }
 #nav__link-projects {
@@ -75,14 +94,14 @@
 }
 
 .nav__animation {
-  -webkit-animation: scale-in-tl 0.2s cubic-bezier(0.25, 0.2, 0.45, 0.94) both;
-  animation: scale-in-tl 0.2s cubic-bezier(0.25, 0.46, 0.2, 0.94) both;
+  -webkit-animation: scale-in-tl 0.5s cubic-bezier(0.25, 0.2, 0.45, 0.94) both;
+  animation: scale-in-tl 0.5s cubic-bezier(0.25, 0.46, 0.2, 0.94) both;
 }
 
 @-webkit-keyframes scale-in-tl {
   0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
+    -webkit-transform: scale(.75);
+    transform: scale(.75);
     -webkit-transform-origin: 0% 0%;
     transform-origin: 0% 0%;
     opacity: 1;
