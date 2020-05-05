@@ -64,16 +64,18 @@
   color: white;
   border: none;
   border: 1px solid white;
-  padding: 1rem;
-  width: 125px;
+  padding: 1rem 1.5rem 1rem 1.5rem;
   font-size: 2rem;
   border-radius: 0.5rem;
   transition: 0.25s; }
 
 .tagline-container a:hover {
   transition: 0.25s;
-  color: #111;
-  background: rgba(255, 255, 255, 0.8); }
+  padding-left: 4rem;
+  padding-right: 4rem;
+  color: var(--primary);
+  background: white;
+  border: 1px solid transparent; }
 
 .tagline-container a:focus {
   outline: none; }
