@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "9798249c127a1cff1fb3",
-    "url": "/static/css/main.9514a601.chunk.css"
+    "revision": "0ff1c2b10423678e3144",
+    "url": "/static/css/main.c10dcc95.chunk.css"
   },
   {
-    "revision": "9798249c127a1cff1fb3",
-    "url": "/static/js/main.7cf3e614.chunk.js"
+    "revision": "0ff1c2b10423678e3144",
+    "url": "/static/js/main.26440608.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "d9259a781fa5dae7d329",
-    "url": "/static/css/2.d1078ced.chunk.css"
+    "revision": "4804cf4450fac1b02f00",
+    "url": "/static/css/2.b063df36.chunk.css"
   },
   {
-    "revision": "d9259a781fa5dae7d329",
-    "url": "/static/js/2.58ddf0cc.chunk.js"
+    "revision": "4804cf4450fac1b02f00",
+    "url": "/static/js/2.4832c37a.chunk.js"
   },
   {
     "revision": "c00129be5a29d1bf10051657df17b23c",
@@ -68,12 +68,20 @@ self.__precacheManifest = [
     "url": "/static/media/Richard-cropped.af121b3a.jpeg"
   },
   {
-    "revision": "1f8a714077aadb73820a65cc7b487e4a",
-    "url": "/static/media/harness-wealth-test.1f8a7140.png"
+    "revision": "5feff7a7e41dcd7cbc0771b6df525392",
+    "url": "/static/media/base-apparel.5feff7a7.jpg"
+  },
+  {
+    "revision": "1e368a2152ff47dd7db50234e6c8dee6",
+    "url": "/static/media/sick-fits.1e368a21.png"
   },
   {
     "revision": "4dcb840e72b7ba022c42af6c89d50d09",
     "url": "/static/media/mug_club.4dcb840e.png"
+  },
+  {
+    "revision": "1f8a714077aadb73820a65cc7b487e4a",
+    "url": "/static/media/harness-wealth-test.1f8a7140.png"
   },
   {
     "revision": "966d21bcc9e115ce2bf7ac8e4bd157ed",
@@ -84,6 +92,10 @@ self.__precacheManifest = [
     "url": "/static/media/wine.71b46dde.jpg"
   },
   {
+    "revision": "2edbc4152c25a2c023a39a10cabd9d4c",
+    "url": "/static/media/bakersdozen.2edbc415.jpg"
+  },
+  {
     "revision": "11911410dca2de148f30954eb2fd5eab",
     "url": "/static/media/arrow_left.11911410.svg"
   },
@@ -92,7 +104,7 @@ self.__precacheManifest = [
     "url": "/static/media/arrow_right.8ef6a08c.svg"
   },
   {
-    "revision": "18b9293a08ce7b938933e04596bf846e",
+    "revision": "037d2dbf07845f02f8131f8827f4e815",
     "url": "/index.html"
   }
 ];
