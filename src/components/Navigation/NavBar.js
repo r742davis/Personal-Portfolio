@@ -12,7 +12,7 @@ import {
 const renderNav = (props) => (
   <nav
     onClick={() => props.toggleNav()}
-    className="nav__container"
+    className="nav__container nav__animation"
   >
     <li>
       <a href="#about" className="nav__link" id="nav__link-about">
@@ -59,7 +59,7 @@ const NavBar = (props) => (
   <Animation 
     show={props.navOpen} 
     enter=""
-    exit="fadeOut">
+    exit="fadeOut 0.5s">
     {renderNav(props)}
   </Animation>
 );

@@ -13,9 +13,7 @@ const Animation = ({ show, enter, exit, modifiers, children }) => {
   };
 
   const style = {
-    animation: `${show ? enter : exit} 0.5s`,
-    zIndex: "120",
-    color: "blue",
+    animation: `${show ? enter : exit}`,
   }
 
   return (
