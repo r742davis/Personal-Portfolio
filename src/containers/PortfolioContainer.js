@@ -21,7 +21,7 @@ class PortfolioContainer extends React.Component {
     scrolled: true,
     profilePicture: `${profile}`,
     resumeLink:
-      "https://drive.google.com/file/d/1ixD7x87Ylstg0fItq8wzipvVtHf-sNo1/view?usp=sharing",
+      "https://drive.google.com/file/d/1VBspfwo-yLMxVPjm2Wduh5rdoQzQ6BAk/view?usp=sharing",
     projects: []
   };
 
