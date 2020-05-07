@@ -58,7 +58,7 @@ const renderNav = (props) => (
 const NavBar = (props) => (
   <Animation 
     show={props.navOpen} 
-    enter="fadeIn" 
+    enter=""
     exit="fadeOut">
     {renderNav(props)}
   </Animation>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Animations.css";
 
-const Animation = ({ show, enter, exit, children }) => {
+const Animation = ({ show, enter, exit, modifiers, children }) => {
   const [render, setRender] = useState(show);
 
   useEffect(() => {
@@ -12,10 +12,16 @@ const Animation = ({ show, enter, exit, children }) => {
     if (!show) setRender(false);
   };
 
+  const style = {
+    animation: `${show ? enter : exit} 0.5s`,
+    zIndex: "120",
+    color: "blue",
+  }
+
   return (
     render && (
       <div
-        style={{ animation: `${show ? enter : exit} 0.5s` }}
+        style={style}
         onAnimationEnd={onAnimationEnd}
       >
         {children}
