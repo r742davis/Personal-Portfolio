@@ -24,11 +24,17 @@
   width: 10rem;
   height: 10rem;
   border-radius: 10rem;
-  margin-bottom: 5rem; }
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem; }
 
 .about__description {
   font-size: 2rem;
-  line-height: 1; }
+  line-height: 1.25;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
 
 .about__skills-container {
   width: 100%;

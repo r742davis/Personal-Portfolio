@@ -13,9 +13,11 @@ const About = (props) => (
       <h1>I'm a Full Stack Developer!</h1>
       <Description name="about">
         <p>
-          I specialize in React and MongoDB stacks, but I am excited to branch
-          out into other languages and frameworks. I'm currently looking for
-          full-time opportunities alongside current freelance projects.
+          I specialize in full stack React/Node.js/MongoDB applications, <em>but</em> I am excited to branch
+          out into other languages and frameworks. Really, any kind of web technology is fair game.
+        </p>
+        <p>
+        I'm currently looking for full-time opportunities in New York City<span>🗽</span> or Los Angeles<span>🌴</span> :D
         </p>
       </Description>
       <div className="about__skills-container">
