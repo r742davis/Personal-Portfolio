@@ -10,7 +10,7 @@ import ProjectsPage from "../pages/projects";
 //---Profile Picture---//
 import profile from "../images/ProfilePic/Richard-cropped.jpeg";
 //---Project Photos---//
-import {projectInfo} from "../dataset/projectInfo"
+import { projectInfo } from "../dataset/projectInfo"
 
 class PortfolioContainer extends React.Component {
   state = {
