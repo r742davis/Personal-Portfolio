@@ -10,7 +10,7 @@ import ProjectsPage from "../pages/projects";
 //---Profile Picture---//
 import profile from "../images/ProfilePic/Richard-cropped.jpeg";
 //---Project Photos---//
-import { projectInfo } from "../dataset/projectInfo"
+import { projectInfo } from "../dataset/projectInfo";
 
 class PortfolioContainer extends React.Component {
   state = {
@@ -22,13 +22,13 @@ class PortfolioContainer extends React.Component {
     profilePicture: `${profile}`,
     resumeLink:
       "https://drive.google.com/file/d/1VBspfwo-yLMxVPjm2Wduh5rdoQzQ6BAk/view?usp=sharing",
-    projects: []
+    projects: [],
   };
 
   //---Page Animation---//
   componentDidMount() {
     AOS.init({
-      duration: 500
+      duration: 500,
     });
 
     document.addEventListener("scroll", () => {
@@ -39,18 +39,25 @@ class PortfolioContainer extends React.Component {
     });
 
     // Wake up apps
-    fetch("https://harness-wealth-code-test.herokuapp.com/index.html", {mode: 'no-cors'})
-      .then(res => console.log('Woke up Harness Wealth app'))
+    fetch("https://harness-wealth-code-test.herokuapp.com/index.html", {
+      mode: "no-cors",
+    }).then((res) => console.log("Woke up Harness Wealth app"));
 
-    fetch("https://arcane-brushlands-71780.herokuapp.com/wines", {mode: 'no-cors'})
-      .then(res => console.log('Woke up Vie Du Vin app'))
+    fetch("https://arcane-brushlands-71780.herokuapp.com/wines", {
+      mode: "no-cors",
+    }).then((res) => console.log("Woke up Vie Du Vin app"));
 
-    fetch("https://bearmugclub.herokuapp.com/", {mode: 'no-cors'})
-      .then(res => console.log('Woke up Mug Club app'))
+    fetch("https://bearmugclub.herokuapp.com/", {
+      mode: "no-cors",
+    }).then((res) => console.log("Woke up Mug Club app"));
+
+    // fetch("https://bearmugclub.herokuapp.com/", {
+    //   mode: "no-cors",
+    // }).then((res) => console.log("Woke up Bakersdozen app"));
 
     this.setState({
-      projects: projectInfo
-    })
+      projects: projectInfo,
+    });
   }
 
   toggleMenu = () => {
@@ -61,7 +68,7 @@ class PortfolioContainer extends React.Component {
     this.setState({ modalOpen: false });
   };
 
-  openModal = number => {    
+  openModal = (number) => {
     this.setState({ modalNumber: number, modalOpen: true });
   };
 
@@ -74,9 +81,7 @@ class PortfolioContainer extends React.Component {
           toggle={this.toggleMenu}
           resumeLink={this.state.resumeLink}
         />
-        <HomePage 
-          resumeLink={this.state.resumeLink}
-        />
+        <HomePage resumeLink={this.state.resumeLink} />
         <AboutPage
           profile={this.state.profilePicture}
           resumeLink={this.state.resumeLink}

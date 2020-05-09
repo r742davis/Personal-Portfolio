@@ -1,4 +1,4 @@
-@import "../../../_mixins.scss";
+@import "../../_mixins.scss";
 
 #projects {
   background: #f2f2f2;
@@ -21,7 +21,7 @@
 }
 
 .projects__projects-container {
-  width: 80%;
+  width: 90%;
   height: auto;
   margin: 0 auto;
   padding: 1rem;
@@ -31,7 +31,7 @@
 }
 
 .projects__grid-item {
-  width: 25rem;
+  width: 30rem;
   height: 25rem;
   object-fit: cover;
 }
@@ -49,6 +49,7 @@
   left: 0;
   right: 0;
   padding: 1rem;
+  font-family: 'Arvo', serif;
   display: flex;
   align-items: center;
   text-align: center;

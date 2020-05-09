@@ -4,7 +4,7 @@ import project_2 from "../images/ProjectPics/mug_club.png";
 import project_3 from "../images/ProjectPics/harness-wealth-test.png";
 import project_4 from "../images/ProjectPics/retro-computers.jpg";
 import project_5 from "../images/ProjectPics/wine.jpg";
-import project_6 from "../images/ProjectPics/bakersdozen.jpg";
+// import project_6 from "../images/ProjectPics/bakersdozen.jpg";
 
 export const projectInfo = [
   {
@@ -101,20 +101,20 @@ export const projectInfo = [
   //   nameTwo: "Project Code",
   //   linkName3: ""
   // },
-  {
-    id: 6,
-    name: "Baker's Dozen",
-    image: `${project_6}`,
-    alt: "baker's dozen website",
-    description:
-      "Baker's Dozen is an app where you can keep your favorite bakedgoods recipes and have them displayed beautifully. I created this project during my time at General Assembly and built in full authentication into the app.",
-    tech:
-      "JavaScript, Express.js, Mongoose, MongoDB, NodeJS, EJS, HTML5, CSS3",
-    linkOne: "https://bakersdozen-project.herokuapp.com/bakersdozen",
-    linkTwo: "https://github.com/r742davis/Project_2",
-    link3: "",
-    nameOne: "Website",
-    nameTwo: "Project Code",
-    linkName3: ""
-  }
+  // {
+  //   id: 6,
+  //   name: "Baker's Dozen",
+  //   image: `${project_6}`,
+  //   alt: "baker's dozen website",
+  //   description:
+  //     "Baker's Dozen is an app where you can keep your favorite bakedgoods recipes and have them displayed beautifully. I created this project during my time at General Assembly and built in full authentication into the app.",
+  //   tech:
+  //     "JavaScript, Express.js, Mongoose, MongoDB, NodeJS, EJS, HTML5, CSS3",
+  //   linkOne: "https://bakersdozen-project.herokuapp.com/bakersdozen",
+  //   linkTwo: "https://github.com/r742davis/Project_2",
+  //   link3: "",
+  //   nameOne: "Website",
+  //   nameTwo: "Project Code",
+  //   linkName3: ""
+  // }
 ];
