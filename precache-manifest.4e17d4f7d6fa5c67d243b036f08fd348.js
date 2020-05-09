@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "5350c25b96a87f8322b3",
-    "url": "/static/css/main.4e4e628c.chunk.css"
+    "revision": "d9399ab24d0309ba6a68",
+    "url": "/static/css/main.dee1ff96.chunk.css"
   },
   {
-    "revision": "5350c25b96a87f8322b3",
-    "url": "/static/js/main.f9d3d6eb.chunk.js"
+    "revision": "d9399ab24d0309ba6a68",
+    "url": "/static/js/main.f620cebb.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "4804cf4450fac1b02f00",
+    "revision": "06d94416eb32b2f0612a",
     "url": "/static/css/2.b063df36.chunk.css"
   },
   {
-    "revision": "4804cf4450fac1b02f00",
-    "url": "/static/js/2.4832c37a.chunk.js"
+    "revision": "06d94416eb32b2f0612a",
+    "url": "/static/js/2.71127226.chunk.js"
   },
   {
     "revision": "c00129be5a29d1bf10051657df17b23c",
@@ -92,19 +92,15 @@ self.__precacheManifest = [
     "url": "/static/media/wine.71b46dde.jpg"
   },
   {
-    "revision": "2edbc4152c25a2c023a39a10cabd9d4c",
-    "url": "/static/media/bakersdozen.2edbc415.jpg"
+    "revision": "8ef6a08cdc1154920165680a4edde771",
+    "url": "/static/media/arrow_right.8ef6a08c.svg"
   },
   {
     "revision": "11911410dca2de148f30954eb2fd5eab",
     "url": "/static/media/arrow_left.11911410.svg"
   },
   {
-    "revision": "8ef6a08cdc1154920165680a4edde771",
-    "url": "/static/media/arrow_right.8ef6a08c.svg"
-  },
-  {
-    "revision": "fc07604861c0de5a064e9eaa2b7d56be",
+    "revision": "e14d7c212038c023aa41bb9886b51ea2",
     "url": "/index.html"
   }
 ];
