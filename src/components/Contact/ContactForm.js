@@ -11,15 +11,14 @@ class ContactForm extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state);
-    fetch("./ContactForm.php",{
-      method: 'POST',
-      body: this.state,
-      headers : {
-        'Content-Type': 'application/json'
-      }
-    })
-    .then(res => console.log(res))
+    const data = document.getElementById('contact-form');
+    const formattedFormData = new FormData(data);
+    console.log(formattedFormData)
+    // fetch("ContactForm.php",{
+    //   method: 'POST',
+    //   body: formattedFormData,
+    // })
+    // .then(res => console.log(res.text()))
   };
 
   onChange = (e) => {
@@ -32,16 +31,19 @@ class ContactForm extends React.Component {
     return (
       <>
         <form
-          class="contact-form__container"
-          method="post"
+          className="contact-form__container"
+          id="contact-form"
+          method="POST"
+          // action="ContactForm.php"
           onSubmit={(e) => this.handleSubmit(e)}
         >
-          <h1 class="contact-form__title">Contact Form</h1>
+          <h1 className="contact-form__title">Contact Me</h1>
           <label htmlFor="name" value="Name">
             Name
             <input 
               name="name" 
               type="text" 
+              className="contact-form__name"
               onChange={(e) => this.onChange(e)} />
           </label>
           <label htmlFor="email" value="Email">
@@ -49,6 +51,7 @@ class ContactForm extends React.Component {
             <input 
               name="email" 
               type="email" 
+              className="contact-form__email"
               onChange={(e) => this.onChange(e)} />
           </label>
           <label htmlFor="phone" value="Phone Number">
@@ -56,6 +59,7 @@ class ContactForm extends React.Component {
             <input 
               name="phone" 
               type="tel" 
+              className="contact-form__phone"
               onChange={(e) => this.onChange(e)} />
           </label>
           <label htmlFor="message" value="Message">
