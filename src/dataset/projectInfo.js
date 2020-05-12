@@ -13,9 +13,9 @@ export const projectInfo = [
     image: `${project_0}`,
     alt: "Base Apparel≈ Website Image",
     description:
-      "**Under Construction**",
-    tech: "HTML, CSS, Sass, JavaScript, Photoshop",
-    linkOne: "",
+      "A frontend design project to work on HTML, CSS, JavaScript, and UX Design.",
+    tech: "HTML, CSS, Sass, JavaScript, UX Design, Photoshop",
+    linkOne: "https://base-apparel.herokuapp.com/index.html",
     linkTwo: "https://github.com/r742davis/Base-Apparel",
     nameOne: "Website",
     nameTwo: "GitHub"
