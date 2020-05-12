@@ -1,11 +1,13 @@
 import React from "react";
 
 import "./Contact.css";
+import "./ContactForm";
 import { 
   MDBCard, 
   MDBCardBody, 
   MDBCardTitle 
 } from "mdbreact";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
@@ -52,6 +54,7 @@ const Contact = () => {
           </MDBCardBody>
         </MDBCard>
       </div>
+      <ContactForm></ContactForm>
     </section>
   );
 };
