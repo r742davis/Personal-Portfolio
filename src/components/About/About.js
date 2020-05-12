@@ -17,7 +17,7 @@ const About = (props) => (
           out into other languages and frameworks. Really, any kind of web technology is fair game.
         </p>
         <p>
-        I'm currently looking for full-time opportunities in New York City<span>🗽</span> or Los Angeles<span>🌴</span> :D
+        I'm currently looking for full-time opportunities in New York City<span role="img" aria-label="Statue of Liberty, New York">🗽</span> or Los Angeles<span role="img" aria-label="Palm Tree, Los Angeles">🌴</span> :D
         </p>
       </Description>
       <div className="about__skills-container">
