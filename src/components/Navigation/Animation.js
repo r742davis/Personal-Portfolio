@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Animations.css";
 
-const Animation = ({ show, enter, exit, modifiers, children }) => {
+const Animation = ({ show, enter, exit, children }) => {
   const [render, setRender] = useState(show);
 
   useEffect(() => {

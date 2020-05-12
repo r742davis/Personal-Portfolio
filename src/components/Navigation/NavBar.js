@@ -56,12 +56,15 @@ const renderNav = (props) => (
 );
 
 const NavBar = (props) => (
-  <Animation 
-    show={props.navOpen} 
-    enter=""
-    exit="fadeOut 0.25s">
-    {renderNav(props)}
-  </Animation>
+  <>
+    {props.navOpen && renderNav(props)}
+
+  </>
+  // <Animation 
+  //   show={props.navOpen} 
+  //   enter=""
+  //   exit="fadeOut 0.25s">
+  // </Animation>
 );
 
 export default NavBar;
