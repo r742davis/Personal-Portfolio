@@ -12,7 +12,7 @@ import {
 const renderNav = (props) => (
   <nav
     onClick={() => props.toggleNav()}
-    className="nav__container nav__animation"
+    className="nav__container"
   >
     <li>
       <a href="#about" className="nav__link" id="nav__link-about">
@@ -55,16 +55,6 @@ const renderNav = (props) => (
   </nav>
 );
 
-const NavBar = (props) => (
-  <>
-    {props.navOpen && renderNav(props)}
-
-  </>
-  // <Animation 
-  //   show={props.navOpen} 
-  //   enter=""
-  //   exit="fadeOut 0.25s">
-  // </Animation>
-);
+const NavBar = (props) => props.navOpen && renderNav(props);
 
 export default NavBar;
