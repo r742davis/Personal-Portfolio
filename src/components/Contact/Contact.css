@@ -34,13 +34,17 @@
   height: 20rem;
   margin: 0 auto;
   margin: 1rem;
-  transition: 0.2s; }
+  transition: 0.2s;
+  border-radius: 1rem; }
+
+.contact__card i {
+  margin-top: 20px; }
 
 .contact__card h4 {
   font-size: 2.4rem; }
 
 .contact__card p {
-  font-size: 1.6rem; }
+  font-size: 2rem; }
 
 .contact__card a {
   text-decoration: none;

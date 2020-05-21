@@ -5,7 +5,6 @@ import "./ContactForm";
 import { 
   MDBCard, 
   MDBCardBody, 
-  MDBCardTitle 
 } from "mdbreact";
 import ContactForm from "./ContactForm";
 
@@ -21,7 +20,6 @@ const Contact = () => (
       <MDBCard className="contact__card box-shadow">
         <MDBCardBody>
           <i className="fas fa-at contact-icon"></i>
-          <MDBCardTitle>EMAIL</MDBCardTitle>
           <p>
             <a href="mailto:richard.davis.dev@gmail.com">
               richard.davis.dev@gmail.com
@@ -32,7 +30,6 @@ const Contact = () => (
       <MDBCard className="contact__card box-shadow">
         <MDBCardBody>
           <i className="fab fa-github contact-icon"></i>
-          <MDBCardTitle>GITHUB</MDBCardTitle>
           <p>
             <a href="https://github.com/r742davis">r742davis</a>
           </p>
@@ -41,7 +38,6 @@ const Contact = () => (
       <MDBCard className="contact__card social-card box-shadow">
         <MDBCardBody>
           <i className="fas fa-thumbs-up contact-icon"></i>
-          <MDBCardTitle>SOCIAL</MDBCardTitle>
           <div className="social-icon-container">
             <a href="https://www.facebook.com/richard.trow.davis">
               <i className="fab fa-facebook social-icon"></i>

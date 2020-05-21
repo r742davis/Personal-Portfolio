@@ -39,11 +39,15 @@
   margin: 0 auto;
   margin: 1rem;
   transition: 0.2s;
+  border-radius: 1rem;
+  i {
+    margin-top: 20px;
+  }
   h4 {
     font-size: 2.4rem;
   }
   p {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
   a {
     text-decoration: none;

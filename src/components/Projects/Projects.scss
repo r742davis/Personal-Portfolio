@@ -28,6 +28,9 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  @include respond-to('small') {
+    width: 50%;
+  }
 }
 
 .projects__grid-item {
