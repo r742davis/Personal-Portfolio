@@ -38,12 +38,13 @@
     margin-left: 5%;
     margin-right: 5%; } }
 
-.nav__navbar {
+.nav__burger {
   background: transparent;
   overflow: hidden;
   position: fixed;
-  top: 0;
-  margin: 2rem;
+  top: 6rem;
+  left: 2rem;
+  margin-top: -4rem;
   transition: 0.25s;
   z-index: 120; }
 

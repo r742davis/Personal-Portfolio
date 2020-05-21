@@ -27,7 +27,7 @@ class Navigation extends Component {
           navOpen={navOpen}
           resumeLink={this.props.resumeLink}
         />
-        <nav className="nav__navbar">
+        <nav className="nav__burger">
           <Burger isOpen={navOpen} onClick={() => this.toggleNav()} />
         </nav>
       </>
