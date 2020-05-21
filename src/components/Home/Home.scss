@@ -36,9 +36,9 @@
   z-index: 10;
 }
 .tagline-container h2:nth-child(1) {
-  font-family: "Lato", sans-serif;
+  // font-family: "Lato", sans-serif;
   font-weight: 100;
-  font-size: 2.4rem;
+  font-size: 2rem;
   letter-spacing: 0.1rem;
   bottom: -1rem;
   @include respond-to("small") {
@@ -68,8 +68,9 @@
   position: relative;
   color: white;
   border: none;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   padding: 1rem 1.5rem 1rem 1.5rem;
+  top: -4.5rem;
   font-size: 2rem;
   border-radius: 0.5rem;
   transition: 0.25s;
