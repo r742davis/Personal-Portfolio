@@ -78,13 +78,13 @@
   margin-left: 1rem; }
 
 #nav__link-projects {
-  animation-delay: 0.05s; }
+  animation-delay: 0.025s; }
 
 #nav__link-resume {
-  animation-delay: 0.075s; }
+  animation-delay: 0.05s; }
 
 #nav__link-contact {
-  animation-delay: 0.1s; }
+  animation-delay: 0.075s; }
 
 .nav__link--scrolled {
   color: var(--primary); }

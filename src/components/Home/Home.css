@@ -83,7 +83,8 @@
 @media (max-width: 600px) {
   .tagline-container a {
     width: 100px;
-    font-size: 1.8rem; } }
+    font-size: 1.8rem;
+    top: 2rem; } }
 
 .tagline-container a:nth-child(5) {
   margin-left: 1rem; }
