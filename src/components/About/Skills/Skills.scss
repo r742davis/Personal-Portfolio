@@ -1,4 +1,4 @@
-@import '../../../../_mixins.scss';
+@import '../../../_mixins.scss';
 
 // skills list container with developer skills
 .skills__title {
@@ -10,7 +10,6 @@
   & h4 {
     padding: 2rem;
     color: var(--tertiary);
-    font-family: 'Roboto', sans-serif;
     font-size: 2rem;
   }
 }

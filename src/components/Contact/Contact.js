@@ -23,8 +23,8 @@ const Contact = () => (
           <i className="fas fa-at contact-icon"></i>
           <MDBCardTitle>EMAIL</MDBCardTitle>
           <p>
-            <a href="mailto:richardtrowdavis@gmail.com">
-              richardtrowdavis@gmail.com
+            <a href="mailto:richard.davis.dev@gmail.com">
+              richard.davis.dev@gmail.com
             </a>
           </p>
         </MDBCardBody>

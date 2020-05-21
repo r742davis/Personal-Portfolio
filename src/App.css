@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Arvo|Kristi|Lato:300|Roboto:wght@100;300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@400;700&family=Lato:wght@100&family=Libre+Franklin:wght@200;300&family=Lora:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap");
 :root {
   --primary: #4BACC6;
   --secondary: #40bccf;
@@ -13,7 +13,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Arimo', sans-serif;
   font-size: 10px; }
 
 ul {

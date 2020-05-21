@@ -7,14 +7,14 @@
   @include respond-to("small") {
     height: auto;
   }
-
 }
 
 .contact__title {
   text-align: center;
   padding-top: 5rem;
   padding-bottom: 2.5rem;
-  font-family: "Lora", serif;
+  font-family: "Arvo", serif;
+  font-weight: 700;
   font-size: 3.2rem;
 }
 
@@ -27,7 +27,6 @@
   margin: 0 auto;
   margin-bottom: 100px;
   width: 80%;
-  
 }
 
 .contact__card {
@@ -40,32 +39,25 @@
   margin: 0 auto;
   margin: 1rem;
   transition: 0.2s;
-}
-
-.contact__card h4 {
-  font-family: "Laro", serif;
-  font-size: 2.4rem;
-}
-
-.contact__card p {
-  font-family: "Lato-Light", sans-serif;
-  font-size: 2rem;
-}
-
-.contact__card a {
-  text-decoration: none;
-  color: var(--primary);
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-
-  &:hover {
-    color: var(--secondary);
+  h4 {
+    font-size: 2.4rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+  a {
+    text-decoration: none;
+    color: var(--primary);
     -webkit-transition: 0.2s;
     transition: 0.2s;
+
+    &:hover {
+      color: var(--secondary);
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
+    }
   }
 }
-
-
 
 .contact-icon {
   display: flex;
