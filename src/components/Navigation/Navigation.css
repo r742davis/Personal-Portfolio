@@ -59,7 +59,8 @@
   transition: 0.25s;
   z-index: 120;
   cursor: pointer;
-  animation: slide-in-blurred-left 0.5s cubic-bezier(0.23, 1, 0.32, 1) both; }
+  animation: slide-in-blurred-left 0.5s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation-delay: 0.025s; }
 
 .nav__link:hover {
   color: inherit; }
@@ -78,13 +79,13 @@
   margin-left: 1rem; }
 
 #nav__link-projects {
-  animation-delay: 0.025s; }
-
-#nav__link-resume {
   animation-delay: 0.05s; }
 
-#nav__link-contact {
+#nav__link-resume {
   animation-delay: 0.075s; }
+
+#nav__link-contact {
+  animation-delay: 0.1s; }
 
 .nav__link--scrolled {
   color: var(--primary); }
