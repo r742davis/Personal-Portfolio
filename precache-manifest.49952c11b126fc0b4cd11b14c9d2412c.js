@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "00468bdaa454825f248a",
-    "url": "/static/css/main.2769f62c.chunk.css"
+    "revision": "20863aa3d82eec250580",
+    "url": "/static/css/main.92e9b2b2.chunk.css"
   },
   {
-    "revision": "00468bdaa454825f248a",
+    "revision": "20863aa3d82eec250580",
     "url": "/static/js/main.569d3175.chunk.js"
   },
   {
@@ -92,15 +92,15 @@ self.__precacheManifest = [
     "url": "/static/media/wine.71b46dde.jpg"
   },
   {
-    "revision": "11911410dca2de148f30954eb2fd5eab",
-    "url": "/static/media/arrow_left.11911410.svg"
-  },
-  {
     "revision": "8ef6a08cdc1154920165680a4edde771",
     "url": "/static/media/arrow_right.8ef6a08c.svg"
   },
   {
-    "revision": "d2af7cea94a3d875d30205ecf8e26227",
+    "revision": "11911410dca2de148f30954eb2fd5eab",
+    "url": "/static/media/arrow_left.11911410.svg"
+  },
+  {
+    "revision": "99d6aac32ff4d787d86a379c976db8e0",
     "url": "/index.html"
   }
 ];
