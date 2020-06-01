@@ -1,6 +1,5 @@
 import React from "react";
 import "./Navigation.css";
-import Animation from "./Animation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAddressCard,
