@@ -55,6 +55,18 @@ class PortfolioContainer extends React.Component {
       mode: "no-cors",
     }).then((res) => console.log("Woke up Base Apparel app"));
 
+    fetch("https://base-apparel.herokuapp.com/index.html", {
+      mode: "no-cors",
+    }).then((res) => console.log("Woke up Sick Fits app"));
+
+    fetch("https://sickfits-yoga-prod-rdavis.herokuapp.com/", {
+      mode: "no-cors",
+    }).then((res) => console.log("Woke up Sick Fits Yoga component"));
+    
+    fetch("https://sick-fits-prod-2d4a62018a.herokuapp.com/", {
+      mode: "no-cors",
+    }).then((res) => console.log("Woke up Sick Fits Apollo component"));
+
     this.setState({
       projects: projectInfo,
     });

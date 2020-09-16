@@ -1,5 +1,5 @@
-import project_0 from "../images/ProjectPics/base-apparel.jpg";
-import project_1 from "../images/ProjectPics/sick-fits.png";
+import project_0 from "../images/ProjectPics/sick-fits-logo.png";
+import project_1 from "../images/ProjectPics/base-apparel.jpg";
 import project_2 from "../images/ProjectPics/mug_club.png";
 import project_3 from "../images/ProjectPics/harness-wealth-test.png";
 import project_4 from "../images/ProjectPics/retro-computers.jpg";
@@ -9,27 +9,27 @@ import project_5 from "../images/ProjectPics/wine.jpg";
 export const projectInfo = [
   {
     id: 0,
-    name: "Base Apparel",
+    name: "Sick Fits",
     image: `${project_0}`,
+    alt: "Sick Fits Website Image",
+    description:
+      "An e-commerce demo website for freelance customers. Built with React, GraphQL, Apollo, Yoga, and Next.js",
+    tech: "React, GraphQL, Apollo, Yoga, Next.js, Styled Components, Stripe",
+    linkOne: "https://sickfits-next-prod-rdavis.herokuapp.com/signup",
+    linkTwo: "https://github.com/r742davis/sick-fits",
+    nameOne: "Website",
+    nameTwo: "GitHub"
+  },
+  {
+    id: 1,
+    name: "Base Apparel",
+    image: `${project_1}`,
     alt: "Base Apparel≈ Website Image",
     description:
       "A frontend design project to work on HTML, CSS, JavaScript, and UX Design.",
     tech: "HTML, CSS, Sass, JavaScript, UX Design, Photoshop",
     linkOne: "https://base-apparel.herokuapp.com/index.html",
     linkTwo: "https://github.com/r742davis/Base-Apparel",
-    nameOne: "Website",
-    nameTwo: "GitHub"
-  },
-  {
-    id: 1,
-    name: "Sick Fits",
-    image: `${project_1}`,
-    alt: "Sick Fits Website Image",
-    description:
-      "**Under Construction**",
-    tech: "React, GraphQL, Apollo, Yoga, Styled Components, Stripe",
-    linkOne: "",
-    linkTwo: "https://github.com/r742davis/sick-fits",
     nameOne: "Website",
     nameTwo: "GitHub"
   },
