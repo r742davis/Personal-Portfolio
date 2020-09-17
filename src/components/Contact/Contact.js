@@ -2,10 +2,7 @@ import React from "react";
 
 import "./Contact.css";
 import "./ContactForm";
-import { 
-  MDBCard, 
-  MDBCardBody, 
-} from "mdbreact";
+import { MDBCard, MDBCardBody } from "mdbreact";
 import ContactForm from "./ContactForm";
 
 const Contact = () => (
@@ -53,6 +50,6 @@ const Contact = () => (
       </MDBCard>
     </div>
   </section>
-  )
-  
-  export default Contact;
+);
+
+export default Contact;

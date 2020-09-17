@@ -18,7 +18,7 @@ export const projectInfo = [
     linkOne: "https://sickfits-next-prod-rdavis.herokuapp.com/signup",
     linkTwo: "https://github.com/r742davis/sick-fits",
     nameOne: "Website",
-    nameTwo: "GitHub"
+    nameTwo: "GitHub",
   },
   {
     id: 1,
@@ -31,7 +31,7 @@ export const projectInfo = [
     linkOne: "https://base-apparel.herokuapp.com/index.html",
     linkTwo: "https://github.com/r742davis/Base-Apparel",
     nameOne: "Website",
-    nameTwo: "GitHub"
+    nameTwo: "GitHub",
   },
   {
     id: 2,
@@ -44,7 +44,7 @@ export const projectInfo = [
     linkOne: "https://bearmugclub.herokuapp.com/",
     linkTwo: "https://github.com/r742davis/mug_club",
     nameOne: "Website",
-    nameTwo: "GitHub"
+    nameTwo: "GitHub",
   },
   {
     id: 3,
@@ -57,7 +57,7 @@ export const projectInfo = [
     linkOne: "https://harness-wealth-code-test.herokuapp.com/index.html",
     linkTwo: "https://github.com/r742davis/Harness-Wealth-Code-Test",
     nameOne: "Website",
-    nameTwo: "GitHub"
+    nameTwo: "GitHub",
   },
   {
     id: 4,
@@ -70,7 +70,7 @@ export const projectInfo = [
     linkOne: "https://github.com/r742davis/portfolio_1",
     linkTwo: "",
     nameOne: "GitHub",
-    nameTwo: ""
+    nameTwo: "",
   },
   {
     id: 5,
@@ -83,7 +83,7 @@ export const projectInfo = [
     linkOne: "https://arcane-brushlands-71780.herokuapp.com/wines",
     linkTwo: "https://github.com/r742davis/vie_du_vin_frontend",
     nameOne: "Website",
-    nameTwo: "GitHub"
+    nameTwo: "GitHub",
   },
   // {
   //   id: 5,

@@ -9,10 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const renderNav = (props) => (
-  <nav
-    onClick={() => props.toggleNav()}
-    className="nav__container"
-  >
+  <nav onClick={() => props.toggleNav()} className="nav__container">
     <li>
       <a href="#about" className="nav__link" id="nav__link-about">
         <div>

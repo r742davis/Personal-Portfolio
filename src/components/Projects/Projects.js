@@ -8,11 +8,7 @@ const renderProjects = ({ projects, modalOpen, closeModal, modalNumber }) =>
     (project) =>
       project.id === modalNumber &&
       modalOpen && (
-        <Modal
-          key={project.id}
-          closeModal={closeModal}
-          {...project}
-        />
+        <Modal key={project.id} closeModal={closeModal} {...project} />
       )
   );
 

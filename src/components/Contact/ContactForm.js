@@ -11,9 +11,9 @@ class ContactForm extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    const data = document.getElementById('contact-form');
+    const data = document.getElementById("contact-form");
     const formattedFormData = new FormData(data);
-    console.log(formattedFormData)
+    console.log(formattedFormData);
     // fetch("ContactForm.php",{
     //   method: 'POST',
     //   body: formattedFormData,
@@ -40,27 +40,30 @@ class ContactForm extends React.Component {
           <h1 className="contact-form__title">Contact Me</h1>
           <label htmlFor="name" value="Name">
             Name
-            <input 
-              name="name" 
-              type="text" 
+            <input
+              name="name"
+              type="text"
               className="contact-form__name"
-              onChange={(e) => this.onChange(e)} />
+              onChange={(e) => this.onChange(e)}
+            />
           </label>
           <label htmlFor="email" value="Email">
             Email
-            <input 
-              name="email" 
-              type="email" 
+            <input
+              name="email"
+              type="email"
               className="contact-form__email"
-              onChange={(e) => this.onChange(e)} />
+              onChange={(e) => this.onChange(e)}
+            />
           </label>
           <label htmlFor="phone" value="Phone Number">
             Phone Number
-            <input 
-              name="phone" 
-              type="tel" 
+            <input
+              name="phone"
+              type="tel"
               className="contact-form__phone"
-              onChange={(e) => this.onChange(e)} />
+              onChange={(e) => this.onChange(e)}
+            />
           </label>
           <label htmlFor="message" value="Message">
             Message
@@ -70,9 +73,7 @@ class ContactForm extends React.Component {
               onChange={(e) => this.onChange(e)}
             ></textarea>
           </label>
-          <button 
-            type="submit" 
-            className="contact-form__submit">
+          <button type="submit" className="contact-form__submit">
             Submit
           </button>
         </form>
