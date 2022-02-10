@@ -12,7 +12,7 @@
     "font-awesome": "^4.7.0",
     "gh-pages": "^2.2.0",
     "mdbreact": "^4.26.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-rotating-text": "^1.4.1",
